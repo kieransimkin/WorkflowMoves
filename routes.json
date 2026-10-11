@@ -1,5 +1,15 @@
 [
   {
+    "target": "Tools/EPK Motion QA/audit_epk_evidence.py",
+    "source": "tools/audit_epk_evidence.py",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/epk-evidence-gate.md",
+    "source": "workflows/epk-evidence-gate.md",
+    "mode": "copy"
+  },
+  {
     "target": "Workflows/epk-mobile-motion.md",
     "source": "workflows/epk-mobile-motion.md",
     "mode": "copy"

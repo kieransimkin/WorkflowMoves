@@ -1,0 +1,9 @@
+# EPK motion and timing evidence gate
+
+Run `python tools/audit_epk_evidence.py tools/epk-evidence.example.json` for an offline example. Feed dated observations acquired through the supported browser to the same read-only checker. It neither controls a browser nor publishes a page.
+
+Declare every suitable painted motion consumer separately. Each needs one sensor route, a meaningful bounded delivered sample, a changed painted result, independent desktop pointer parity, extent evidence and neutral resets for motion off, reduced motion, forced colours, hiding, screen rotation and teardown. A partial attachment, an inert CSS variable or permission response alone cannot pass. Identify synthetic, emulated and physical evidence accurately. A synthetic pass never certifies physical delivery or frame rate.
+
+Timing records retain exact metadata-derived URLs, including encoding and queries, and identify each dependent consumer. Capture hosted/parser readiness and a metadata-only source-switch test. Multi-track consumers need an exact track association and matching metadata mapping. Missing metadata needs a disabled download and retained audio/readable lyrics, never a hardcoded fallback. Use `tools/audit_epk_timing_bindings.py` independently on fresh saved and rendered HTML: the evidence checker validates records, not the completeness of a source scan.
+
+Require measured 1440/900/390 no-overflow observations. Keep source/candidate hashes, screenshots, runtime/package identities, keyboard/preference paths and approval/publication states in the private task record. The checker does not certify rights, private-information handling, public persistence, song fit or keyword demand. Review adopted keyword targets through KeywordMoves' saved-page audit and the campaign policy, keeping natural variants and research-only phrases explicit.
