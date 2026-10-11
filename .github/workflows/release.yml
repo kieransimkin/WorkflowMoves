@@ -1,0 +1,27 @@
+name: Release workflows
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -v
+      - name: Build exact source archive and checksum
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          mkdir release
+          git archive --format=zip --prefix=my-songs-workflows/ -o "release/my-songs-workflows-${RELEASE_TAG}.zip" HEAD
+          cd release
+          sha256sum *.zip > SHA256SUMS.txt
+      - name: Publish matching release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${{ github.ref_name }}" release/* --verify-tag --title "My Songs workflows ${{ github.ref_name }}" --notes "StemLab native DanceRudiments selection for BPM videos and EPK motion; additive workflow routing and verified GitHub push completion rules. The archive is the exact tested source revision. Private music and evidence are excluded."
