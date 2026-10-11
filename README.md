@@ -2,9 +2,11 @@
 
 Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
 
-Version: 0.1.4. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.5. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 `rules/blog-artwork.md` and `fragments/blog-artwork.md` require fresh pictorial featured artwork for ordinary blog articles. Useful rendered summaries and evidence diagrams remain supplementary body media. The guarded routes install this preference into project instructions, both blog-writer skill copies and the publication-verification workflow. `examples/blog-artwork.md` shows how a publicity roundup can combine original illustration, a factual summary and readable source links.
+
+`rules/epk-mobile-motion.md` requires each EPK job and recurring audit to verify suitable mobile sensor connections, permission handling, visual consumers, independent desktop input and lifecycle gates. `workflows/epk-mobile-motion.md` records the verification and exact publication procedure. The rule installs into AGENTS.md, weekly sync, the capability audit and pointer gate.
 
 `rules/immediate-publicity-reconciliation.md` requires same-job evidence capture, ledger reconciliation and EPK staging whenever song publicity is verified. `workflows/verified-song-publicity.md` preserves attribution, reuse limits and exact public-save approval. The rule installs into project instructions, the coverage archive, the reply audit and weekly sync. `tools/publicity_inventory.py` inventories local marketing text with source hashes, candidate lines and explicit unavailable/skipped records. Matches never establish a verified outcome; original-source review remains required. The scanner rejects missing roots so an invalid path cannot appear to be an empty successful audit.
 
