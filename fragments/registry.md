@@ -1,0 +1,5 @@
+## Current StemLab motion matcher (11 October 2026)
+
+Current supported invocation: `& 'Z:\My Songs\Tools\StemLab.ps1' <command>`. This selects released StemLab 1.4.0 (source `15e6725069c2d5f8383f3d2b9503f60beb728e2f`) and native DanceRudiments 0.2.4 in `Tools/stemlab-runtime-1.4.0/.venv`, using retained Python 3.11 dependencies through a documented `.pth` link. The wheel SHA-256 is `389e845bb45623241314820dcabae92ecc12f5874996bc6bcb39b3a71568d64d`, matching GitHub's asset digest and checksum manifest. The earlier StemLab section below is historical provisioning evidence; its editable 1.2.0 checkout remains untouched.
+
+Use `rudiments <saved-results> --output <new-directory>` for stem/consensus candidates, or standalone canonical audio with accepted `--bpm` and `--output` for a labelled mix-only report. Native import exposes 1,731 catalogue entries; eight focused tests pass and real bundled Arcadians audio returns 15 candidates among the initial collection's 28 patterns. That smoke test does not verify every pattern or aesthetic fit. Follow `Workflows/stemlab-rudiment-motion-selection.md` for selection, phase, output provenance and destination QA.
