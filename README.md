@@ -2,7 +2,9 @@
 
 Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
 
-Version: 0.1.1. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.2. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+
+`rules/epk-timing-metadata.md` makes WordPress-selected metadata the single timing-source authority. `tools/audit_epk_timing_bindings.py page.html --configured-url URL` is a read-only offline preflight for hardcoded timing literals, including relative LRC/CUE paths and selected JSON URLs. A passing preflight does not prove attachment identity, parser success, artist approval or runtime association; the workflow requires those separately. The plugin-generated `dance-moves-core-js-extra` metadata script is the only script exemption. Page-local timing attributes and downloads must bind to the supported runtime configuration; unavailable metadata must not fall back to a literal. Install this rule additively into AGENTS.md and the weekly release workflow through the existing guarded routes.
 
 `workflows/stemlab-rudiment-motion-selection.md` is the shared motion-selection contract. `routes.json` defines additive insertions into the existing video, EPK, analysis, sprite, Canvas and shared-template workflows and their discoverable skill copies. `rules/github-publication.md` is the project-wide GitHub completion rule. `tools/StemLab.ps1` installs to the workspace's Tools directory.
 

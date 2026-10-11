@@ -1,5 +1,24 @@
 [
   {
+    "target": "Tools/weekly-sync-repair/audit_epk_timing_bindings.py",
+    "source": "tools/audit_epk_timing_bindings.py",
+    "mode": "copy"
+  },
+  {
+    "target": "AGENTS.md",
+    "source": "rules/epk-timing-metadata.md",
+    "mode": "insert",
+    "anchor": "## Evidence-backed publicity notes in every song EPK",
+    "identity": "## WordPress metadata is the only EPK timing-file authority"
+  },
+  {
+    "target": "Workflows/weekly-release-and-epk-sync.md",
+    "source": "rules/epk-timing-metadata.md",
+    "mode": "insert",
+    "anchor": "## Promote newly uploaded DistroKid assets",
+    "identity": "## WordPress metadata is the only EPK timing-file authority"
+  },
+  {
     "target": "Workflows/stemlab-rudiment-motion-selection.md",
     "source": "workflows/stemlab-rudiment-motion-selection.md",
     "mode": "copy"
