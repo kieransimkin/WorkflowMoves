@@ -87,7 +87,7 @@ def audit(record):
     kinds = sorted({r.get('evidence_kind') for r in record.get('motion', {}).get('routes', []) if r.get('evidence_kind')})
     return {'page_id': record.get('page_id'), 'status': 'failed' if failures else 'passed',
             'failures': failures, 'motion_evidence_kinds': kinds,
-            'physical_sensor_delivery_certified': bool(kinds) and kinds == ['physical'],
+            'physical_sensor_evidence_declared': bool(kinds) and kinds == ['physical'],
             'limits': 'Recorded evidence only. A pass does not certify publication, physical frame rate, rights or keyword demand.'}
 
 if __name__ == '__main__':

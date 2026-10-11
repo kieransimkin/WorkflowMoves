@@ -17,7 +17,7 @@ def record():
 
 class EvidenceTests(unittest.TestCase):
     def test_complete_synthetic_is_not_physical_certification(self):
-        result=module.audit(record()); self.assertEqual(result['status'],'passed'); self.assertFalse(result['physical_sensor_delivery_certified'])
+        result=module.audit(record()); self.assertEqual(result['status'],'passed'); self.assertFalse(result['physical_sensor_evidence_declared'])
     def test_partial_sensor_attachment_fails(self):
         r=record(); r['motion']['required_consumers'].append('below-fold-card'); self.assertEqual(module.audit(r)['status'],'failed')
     def test_duplicate_sensor_route_fails(self):
