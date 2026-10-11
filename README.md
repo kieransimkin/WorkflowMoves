@@ -2,7 +2,9 @@
 
 Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
 
-Version: 0.1.2. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.3. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+
+`rules/immediate-publicity-reconciliation.md` requires same-job evidence capture, ledger reconciliation and EPK staging whenever song publicity is verified. `workflows/verified-song-publicity.md` preserves attribution, reuse limits and exact public-save approval. The rule installs into project instructions, the coverage archive, the reply audit and weekly sync. `tools/publicity_inventory.py` inventories local marketing text with source hashes, candidate lines and explicit unavailable/skipped records. Matches never establish a verified outcome; original-source review remains required. The scanner rejects missing roots so an invalid path cannot appear to be an empty successful audit.
 
 `rules/epk-timing-metadata.md` makes WordPress-selected metadata the single timing-source authority. `tools/audit_epk_timing_bindings.py page.html --configured-url URL` is a read-only offline preflight for hardcoded timing literals, including relative LRC/CUE paths and selected JSON URLs. A passing preflight does not prove attachment identity, parser success, artist approval or runtime association; the workflow requires those separately. The plugin-generated `dance-moves-core-js-extra` metadata script is the only script exemption. Page-local timing attributes and downloads must bind to the supported runtime configuration; unavailable metadata must not fall back to a literal. Install this rule additively into AGENTS.md and the weekly release workflow through the existing guarded routes.
 

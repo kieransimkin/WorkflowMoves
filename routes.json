@@ -1,5 +1,43 @@
 [
   {
+    "target": "AGENTS.md",
+    "source": "rules/immediate-publicity-reconciliation.md",
+    "mode": "insert",
+    "anchor": "## Evidence-backed publicity notes in every song EPK",
+    "identity": "## Reconcile verified song publicity immediately"
+  },
+  {
+    "target": "Workflows/weekly-release-and-epk-sync.md",
+    "source": "rules/immediate-publicity-reconciliation.md",
+    "mode": "insert",
+    "anchor": "## Promote newly uploaded DistroKid assets",
+    "identity": "## Reconcile verified song publicity immediately"
+  },
+  {
+    "target": "Workflows/VERIFIED-COVERAGE-EPK-ARCHIVE.md",
+    "source": "rules/immediate-publicity-reconciliation.md",
+    "mode": "insert",
+    "anchor": "## Evidence states",
+    "identity": "## Reconcile verified song publicity immediately"
+  },
+  {
+    "target": "Workflows/outreach-email-reply-audit.md",
+    "source": "rules/immediate-publicity-reconciliation.md",
+    "mode": "insert",
+    "anchor": "## Backlog and completeness contract",
+    "identity": "## Reconcile verified song publicity immediately"
+  },
+  {
+    "target": "Workflows/verified-song-publicity.md",
+    "source": "workflows/verified-song-publicity.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Tools/publicity_inventory.py",
+    "source": "tools/publicity_inventory.py",
+    "mode": "copy"
+  },
+  {
     "target": "Tools/weekly-sync-repair/audit_epk_timing_bindings.py",
     "source": "tools/audit_epk_timing_bindings.py",
     "mode": "copy"
