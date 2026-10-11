@@ -1,0 +1,16 @@
+[
+  {
+    "epk_id": 1,
+    "url": "https://youtube.com/shorts/abcDEfg_123",
+    "kind": "short",
+    "publication_state": "verified_public",
+    "asset_group": "verified-render-hash"
+  },
+  {
+    "epk_id": 1,
+    "url": "https://instagram.com/reel/EXAMPLE/",
+    "kind": "short",
+    "publication_state": "verified_public",
+    "asset_group": "verified-render-hash"
+  }
+]
