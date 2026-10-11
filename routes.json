@@ -1,5 +1,59 @@
 [
   {
+    "target": "AGENTS.md",
+    "source": "rules/automatic-publicity-publication.md",
+    "mode": "insert",
+    "anchor": "## Reconcile verified song publicity immediately",
+    "identity": "## Automatically publish verified publicity additions"
+  },
+  {
+    "target": "Workflows/weekly-release-and-epk-sync.md",
+    "source": "rules/automatic-publicity-publication.md",
+    "mode": "insert",
+    "anchor": "## Reconcile verified song publicity immediately",
+    "identity": "## Automatically publish verified publicity additions"
+  },
+  {
+    "target": "Workflows/VERIFIED-COVERAGE-EPK-ARCHIVE.md",
+    "source": "rules/automatic-publicity-publication.md",
+    "mode": "insert",
+    "anchor": "## Reconcile verified song publicity immediately",
+    "identity": "## Automatically publish verified publicity additions"
+  },
+  {
+    "target": "Workflows/outreach-email-reply-audit.md",
+    "source": "rules/automatic-publicity-publication.md",
+    "mode": "insert",
+    "anchor": "## Reconcile verified song publicity immediately",
+    "identity": "## Automatically publish verified publicity additions"
+  },
+  {
+    "target": "Workflows/epk-dancemoves-capability-audit.md",
+    "source": "rules/automatic-publicity-publication.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Automatically publish verified publicity additions"
+  },
+  {
+    "target": "Workflows/epk-pointer-regression.md",
+    "source": "rules/automatic-publicity-publication.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Automatically publish verified publicity additions"
+  },
+  {
+    "target": ".codex-relocated-home/skills/wordpress-epk-publisher/SKILL.md",
+    "source": "rules/automatic-publicity-publication.md",
+    "mode": "insert",
+    "anchor": "## Reconcile DanceMoves before every EPK change",
+    "identity": "## Automatically publish verified publicity additions"
+  },
+  {
+    "target": "Workflows/automatic-publicity-publication.md",
+    "source": "rules/automatic-publicity-publication.md",
+    "mode": "copy"
+  },
+  {
     "target": "Tools/EPK Motion QA/audit_epk_evidence.py",
     "source": "tools/audit_epk_evidence.py",
     "mode": "copy"
