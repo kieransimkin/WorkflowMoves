@@ -34,6 +34,34 @@
   },
   {
     "target": "AGENTS.md",
+    "source": "rules/blog-artwork.md",
+    "mode": "insert",
+    "anchor": "## Project blog documentation and publication",
+    "identity": "## Blog images must include actual artwork"
+  },
+  {
+    "target": "skill-source/project-blog-writer/SKILL.md",
+    "source": "fragments/blog-artwork.md",
+    "mode": "insert",
+    "anchor": "### Create fresh visuals for every article",
+    "identity": "### Require actual artwork alongside explanatory graphics"
+  },
+  {
+    "target": ".agents/skills/project-blog-writer/SKILL.md",
+    "source": "fragments/blog-artwork.md",
+    "mode": "insert",
+    "anchor": "### Create fresh visuals for every article",
+    "identity": "### Require actual artwork alongside explanatory graphics"
+  },
+  {
+    "target": "Workflows/blog-post-source-verification.md",
+    "source": "fragments/blog-artwork.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "### Require actual artwork alongside explanatory graphics"
+  },
+  {
+    "target": "AGENTS.md",
     "source": "rules/immediate-publicity-reconciliation.md",
     "mode": "insert",
     "anchor": "## Evidence-backed publicity notes in every song EPK",

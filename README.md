@@ -2,7 +2,9 @@
 
 Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
 
-Version: 0.1.4. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.5. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+
+`rules/blog-artwork.md` and `fragments/blog-artwork.md` require fresh pictorial featured artwork for ordinary blog articles. Useful rendered summaries and evidence diagrams remain supplementary body media. The guarded routes install this preference into project instructions, both blog-writer skill copies and the publication-verification workflow. `examples/blog-artwork.md` shows how a publicity roundup can combine original illustration, a factual summary and readable source links.
 
 `rules/epk-mobile-motion.md` requires each EPK job and recurring audit to verify suitable mobile sensor connections, permission handling, visual consumers, independent desktop input and lifecycle gates. `workflows/epk-mobile-motion.md` records the verification and exact publication procedure. The rule installs into AGENTS.md, weekly sync, the capability audit and pointer gate.
 
