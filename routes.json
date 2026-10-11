@@ -1,5 +1,38 @@
 [
   {
+    "target": "Workflows/epk-mobile-motion.md",
+    "source": "workflows/epk-mobile-motion.md",
+    "mode": "copy"
+  },
+  {
+    "target": "AGENTS.md",
+    "source": "rules/epk-mobile-motion.md",
+    "mode": "insert",
+    "anchor": "## WordPress metadata is the only EPK timing-file authority",
+    "identity": "## Connect suitable EPK effects to mobile motion"
+  },
+  {
+    "target": "Workflows/weekly-release-and-epk-sync.md",
+    "source": "rules/epk-mobile-motion.md",
+    "mode": "insert",
+    "anchor": "## WordPress metadata is the only EPK timing-file authority",
+    "identity": "## Connect suitable EPK effects to mobile motion"
+  },
+  {
+    "target": "Workflows/epk-dancemoves-capability-audit.md",
+    "source": "rules/epk-mobile-motion.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Connect suitable EPK effects to mobile motion"
+  },
+  {
+    "target": "Workflows/epk-pointer-regression.md",
+    "source": "rules/epk-mobile-motion.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Connect suitable EPK effects to mobile motion"
+  },
+  {
     "target": "AGENTS.md",
     "source": "rules/immediate-publicity-reconciliation.md",
     "mode": "insert",
