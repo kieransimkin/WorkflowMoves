@@ -1,0 +1,5 @@
+## Blog images must include actual artwork
+
+- Standing instruction from Kieran, 11 October 2026: every new blog article needs fresh, article-specific artwork with a meaningful visual subject and composition. Its featured image must be pictorial artwork, such as an illustration, photograph, painting or collage; a text card, table, dashboard or rendered summary alone does not satisfy this requirement.
+- Keep useful rendered summaries, diagrams, screenshots and demonstrations as explanatory body media when they help readers. Add actual artwork alongside them. Relevant restrained typography is allowed when imagery is primary. Use the image-generation skill for appropriate new raster illustration requests rather than substituting text rendered into HTML or an image.
+- Apply through the project blog writer skill and ordinary blog publishing workflow. Preserve fresh-media, public-use, accessibility, evidence and publication safeguards. Keep actual publicity facts and original links in readable article text; artwork illustrates the subject and must not fabricate an event or endorsement.

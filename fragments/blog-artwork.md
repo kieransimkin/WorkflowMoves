@@ -1,0 +1,5 @@
+### Require actual artwork alongside explanatory graphics
+
+Kieran's instruction, 11 October 2026: every new blog entry needs fresh, article-specific artwork with a meaningful visual subject and composition. Use illustration, photography, painting, collage or another pictorial treatment that expresses the article's subject. The featured image should be actual artwork, not prose, a table, a dashboard, a list of findings or a rendered summary placed into an image. Use the available image-generation skill when a new raster illustration is appropriate; do not substitute an HTML text card for requested artwork.
+
+Accurate rendered summaries, diagrams, screenshots and demonstrations may remain as useful explanatory media in the article body. They supplement the artwork; they do not replace it. This does not require an image to be entirely text-free: restrained, relevant typography is allowed when the visual composition remains primary. Keep the existing fresh-asset, rights, privacy, accessibility and in-body rich-media requirements. Describe illustrative art accurately and keep the verified facts and original-source links in readable article text.
