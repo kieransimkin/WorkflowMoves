@@ -1,6 +1,27 @@
 [
   {
     "target": "AGENTS.md",
+    "source": "rules/youtube-tiktok-first.md",
+    "mode": "insert",
+    "anchor": "## Keep published campaign media in its EPK",
+    "identity": "## Publish to YouTube and TikTok first"
+  },
+  {
+    "target": "Workflows/release-video-social-scheduling.md",
+    "source": "rules/youtube-tiktok-first.md",
+    "mode": "insert",
+    "anchor": "## Reconcile published campaign media with EPKs",
+    "identity": "## Publish to YouTube and TikTok first"
+  },
+  {
+    "target": "SHORT-FORM-PUBLISHING-WORKFLOW.md",
+    "source": "rules/youtube-tiktok-first.md",
+    "mode": "insert",
+    "anchor": "## Reconcile published campaign media with EPKs",
+    "identity": "## Publish to YouTube and TikTok first"
+  },
+  {
+    "target": "AGENTS.md",
     "source": "rules/campaign-media-epk-sync.md",
     "mode": "insert",
     "anchor": "## Connect suitable EPK effects to mobile motion",
