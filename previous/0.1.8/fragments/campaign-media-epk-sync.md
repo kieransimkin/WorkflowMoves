@@ -1,0 +1,3 @@
+## Reconcile published campaign media with EPKs
+
+Follow Z:/My Songs/Workflows/campaign-media-epk-sync.md during the same job whenever a campaign video, YouTube Short or social post is verified published. Embed every distinct YouTube video/Short where permitted. A proven same-video cross-post produces one EPK item using YouTube. Include genuinely different posts without presenting artist promotion as independent publicity. Schedules/drafts remain pending. Use fresh-source merges, preserve timing/mobile motion and exact public-save gates, and record staged/blocked versus verified-live states. This requirement supersedes older wording that postpones EPK inclusion until a settled analytics window or selects only a subset of published campaign material.

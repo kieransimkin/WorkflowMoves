@@ -22,8 +22,13 @@ class Coverage(unittest.TestCase):
         self.assertIn('needs_publication_verification',[x['coverage'] for x in m.audit(rows,page(''))['items']])
     def test_restricted_item_requires_link(self):
         x=item(embed_blocked_reason='age restricted')
-        self.assertEqual(m.audit([x],page(''))['items'][0]['coverage'],'missing_link_embed_blocked')
-        self.assertEqual(m.audit([x],page('<a href="'+x['url']+'">Watch</a>'))['items'][0]['coverage'],'linked_embed_blocked')
+        self.assertEqual(m.audit([x],page(''))['items'][0]['coverage'],'missing_native_fallback')
+        self.assertEqual(m.audit([x],page('<a href="'+x['url']+'">Watch</a>'))['items'][0]['coverage'],'missing_native_fallback')
+    def test_native_fallback_requires_exact_source_evidence(self):
+        x=item(embed_blocked_reason='Embedding denied',wordpress_url='https://artist.example/clip.mp4',source_hash_verified=True)
+        self.assertEqual(m.audit([x],page('<video src="https://artist.example/clip.mp4"></video>'))['items'][0]['coverage'],'native_fallback_source_present')
+        x['source_hash_verified']=False
+        self.assertEqual(m.audit([x],page('<video src="https://artist.example/clip.mp4"></video>'))['items'][0]['coverage'],'missing_native_fallback')
     def test_unavailable_and_invalid_inputs(self):
         self.assertEqual(m.audit([item()],[])['items'][0]['coverage'],'epk_unavailable')
         with self.assertRaises(ValueError):m.audit([{}],[])
