@@ -51,7 +51,9 @@ def audit(ledger,pages):
             parser=VisibleMedia();parser.feed(content);id_=identity(chosen['url'])
             if chosen.get('kind') in {'video','short'} and id_.startswith('youtube:'):
                 if id_ in parser.embeds:row['coverage']='embedded_source_present'
-                elif chosen.get('embed_blocked_reason'):row['coverage']='linked_embed_blocked' if id_ in parser.links else 'missing_link_embed_blocked'
+                elif chosen.get('embed_blocked_reason'):
+                    native=chosen.get('wordpress_url')
+                    row['coverage']='native_fallback_source_present' if native and chosen.get('source_hash_verified') is True and identity(native) in parser.embeds else 'missing_native_fallback'
                 else:row['coverage']='missing_embed'
             else:row['coverage']='linked_or_embedded_source_present' if id_ in parser.links|parser.embeds else 'missing_content'
         out.append(row)

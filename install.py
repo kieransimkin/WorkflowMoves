@@ -42,7 +42,7 @@ def plan(root: Path, package: Path = PACKAGE) -> list[dict]:
         before = seen.get(target, target.read_bytes() if target.exists() else b"")
         source = contained(package, row["source"]).read_bytes()
         if row["mode"] == "copy":
-            if before and before != source:
+            if before and before != source and not (row.get('previous_source') and before == contained(package, row['previous_source']).read_bytes()):
                 raise ValueError(f"Existing destination differs: {row['target']}")
             after = source
         else:
@@ -53,7 +53,12 @@ def plan(root: Path, package: Path = PACKAGE) -> list[dict]:
             old = before.decode("utf-8-sig")
             newline = "\r\n" if "\r\n" in old else "\n"
             snippet = source.decode("utf-8-sig").replace("\r\n", "\n").strip().replace("\n", newline)
-            updated = merge(old, snippet, row["anchor"], row["identity"], newline)
+            previous = row.get("previous_source")
+            prior = contained(package, previous).read_text(encoding="utf-8-sig").replace("\r\n", "\n").strip().replace("\n", newline) if previous else None
+            if prior and snippet not in old and old.count(prior) == 1 and old.count(row["identity"]) == 1:
+                updated = old.replace(prior, snippet, 1)
+            else:
+                updated = merge(old, snippet, row["anchor"], row["identity"], newline)
             after = (b"\xef\xbb\xbf" if has_bom else b"") + updated.encode("utf-8")
         seen[target] = after
         changes.append({"target": str(target), "before": before, "after": after})
