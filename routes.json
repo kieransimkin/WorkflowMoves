@@ -1,6 +1,32 @@
 [
   {
     "target": "AGENTS.md",
+    "source": "rules/canonical-metadata-wordpress-sync.md",
+    "mode": "insert",
+    "anchor": "## WordPress metadata is the only EPK timing-file authority",
+    "identity": "## Synchronize canonical song metadata into WordPress"
+  },
+  {
+    "target": "Workflows/weekly-release-and-epk-sync.md",
+    "source": "rules/canonical-metadata-wordpress-sync.md",
+    "mode": "insert",
+    "anchor": "## WordPress metadata is the only EPK timing-file authority",
+    "identity": "## Synchronize canonical song metadata into WordPress"
+  },
+  {
+    "target": "Releases/reports/workflows/weekly-release-and-epk-sync.md",
+    "source": "rules/canonical-metadata-wordpress-sync.md",
+    "mode": "insert",
+    "anchor": "## Core sequence",
+    "identity": "## Synchronize canonical song metadata into WordPress"
+  },
+  {
+    "target": "Workflows/canonical-song-metadata-wordpress-sync.md",
+    "source": "rules/canonical-metadata-wordpress-sync.md",
+    "mode": "copy"
+  },
+  {
+    "target": "AGENTS.md",
     "source": "rules/youtube-tiktok-first.md",
     "mode": "insert",
     "anchor": "## Keep published campaign media in its EPK",

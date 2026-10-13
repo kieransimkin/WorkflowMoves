@@ -2,7 +2,9 @@
 
 Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
 
-Version: 0.1.16. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.17. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+
+\`rules/canonical-metadata-wordpress-sync.md\` requires same-job WordPress synchronization of verified canonical BPM, lyric/cue timing and critical song metadata. Local canonical storage is not completion. Narrow property-only changes, preserved live content, existing mandatory approval gates and independent editor/public/runtime/hosted-byte verification remain authoritative. Guarded routes install this rule into project instructions and both weekly workflow copies.
 
 `rules/browser-tab-hygiene.md` and `workflows/browser-tab-hygiene.md` make tab reuse, ownership-aware same-job cleanup and independent closure verification part of every browser job. Completed job-created windows also close through documented controls where available; connections supporting only tab closure record that limit. Retained tabs need a specific next action or user deliverable and must be reviewed on the next turn. Active work and unsaved forms are preserved. Additive routes reach project instructions, video scheduling and browser recovery. Tab cleanup is not evidence of a connection repair or a diagnosed cause; app-managed helpers and Codex must not be stopped as a generic workaround.
 
