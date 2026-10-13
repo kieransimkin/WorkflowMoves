@@ -2,7 +2,9 @@
 
 Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
 
-Version: 0.1.11. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.12. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+
+`fragments/browser-fresh-chat-recovery.md` adds the verified recovery route for an app-managed browser transport that has closed. A user-approved same-directory fork preserves completed actions and reconnects through the documented Browser runtime; helpers must not be terminated. Current authenticated access and the original task's result are verified independently before claiming recovery.
 
 `rules/youtube-tiktok-first.md` makes YouTube and TikTok the first applicable publishing destinations whenever Kieran asks to publish. Additive routes install the rule into project instructions and both video publishing workflows. Destination exclusions, content suitability, evidence-backed posting times, existing approval requirements and same-job EPK reconciliation remain authoritative; record an inapplicable platform or verified blocker and continue the remaining authorised work.
 

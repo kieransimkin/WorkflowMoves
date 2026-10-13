@@ -550,5 +550,12 @@
     "target": "Tools/EPK Campaign Media/epk_cover_player.js",
     "source": "tools/epk_cover_player.js",
     "mode": "copy"
+  },
+  {
+    "target": "Workflows/codex-browser-runtime-recovery.md",
+    "source": "fragments/browser-fresh-chat-recovery.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Fresh chat recovery for a closed browser transport"
   }
 ]
