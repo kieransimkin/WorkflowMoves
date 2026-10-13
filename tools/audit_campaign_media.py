@@ -15,12 +15,14 @@ def identity(url):
 
 class VisibleMedia(HTMLParser):
     def __init__(self):
-        super().__init__(convert_charrefs=True); self.stack=[]; self.links=set();self.embeds=set()
+        super().__init__(convert_charrefs=True); self.stack=[]; self.links=set();self.embeds=set();self.deferred_embeds=set()
     def handle_starttag(self,tag,attrs):
-        a=dict(attrs); inherited=any(hidden for _,hidden in self.stack)
+        a=dict(attrs); inherited=any(item[1] for item in self.stack)
         hidden=inherited or tag in {'script','style','template','noscript','head'} or 'hidden' in a or a.get('aria-hidden')=='true' or bool(re.search(r'display\s*:\s*none|visibility\s*:\s*hidden',a.get('style',''),re.I))
-        if tag not in {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}: self.stack.append((tag,hidden))
-        if hidden:return
+        if tag not in {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}: self.stack.append((tag,hidden,tag=='template' and 'data-epk-video-template' in a))
+        if hidden:
+            if tag=='iframe' and a.get('src') and any(item[2] for item in self.stack):self.deferred_embeds.add(identity(a['src']))
+            return
         if tag=='a' and a.get('href'):self.links.add(identity(a['href']))
         if tag=='iframe' and a.get('src'):self.embeds.add(identity(a['src']))
         if tag in {'video','source'} and a.get('src'):self.embeds.add(identity(a['src']))
@@ -51,6 +53,7 @@ def audit(ledger,pages):
             parser=VisibleMedia();parser.feed(content);id_=identity(chosen['url'])
             if chosen.get('kind') in {'video','short'} and id_.startswith('youtube:'):
                 if id_ in parser.embeds:row['coverage']='embedded_source_present'
+                elif id_ in parser.deferred_embeds:row['coverage']='deferred_embed_source_present'
                 elif chosen.get('embed_blocked_reason'):
                     native=chosen.get('wordpress_url')
                     row['coverage']='native_fallback_source_present' if native and chosen.get('source_hash_verified') is True and identity(native) in parser.embeds else 'missing_native_fallback'

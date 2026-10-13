@@ -2,7 +2,7 @@
 
 Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
 
-Version: 0.1.10. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.11. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 `rules/youtube-tiktok-first.md` makes YouTube and TikTok the first applicable publishing destinations whenever Kieran asks to publish. Additive routes install the rule into project instructions and both video publishing workflows. Destination exclusions, content suitability, evidence-backed posting times, existing approval requirements and same-job EPK reconciliation remain authoritative; record an inapplicable platform or verified blocker and continue the remaining authorised work.
 
@@ -29,3 +29,9 @@ Campaign-media rules require same-job EPK reconciliation of published videos, Yo
 ## Potential problems
 
 If a Windows checkout reports that an installed copied document differs immediately after a Git update, compare raw bytes and newline style before overwriting it. Version 0.1.1 pins source text to LF with `.gitattributes`, matching the release archive and initially installed copies. For a preserved old checkout, use the downloaded release source or a fresh 0.1.1 checkout; never normalise unrelated workspace files. Linux and Windows CI cover the additive installer. Different instruction text remains a conflict, even when newlines are consistent.
+
+## Artwork-first campaign players
+
+`tools/compose_epk_cover.py` replaces an added, vertically stacked hero player with the original square cover and an accessible Play button. The iframe stays in an inert template until an explicit click; playback is requested on reveal. Return to artwork removes the player and stops it; pagehide resets active covers. Existing source, timing metadata, motion and other videos are preserved. The paired `epk_cover_player.js` is embedded verbatim by the composer, with no animation clock, sensor listener, iframe API polling or plugin deployment.
+
+Example: `python tools/compose_epk_cover.py fresh-page.html --cover-url https://example.invalid/cover.png --cover-alt "Release artwork" --output candidate.html`. Preview and inspect the exact candidate before an approved save. The coverage auditor labels this `deferred_embed_source_present`; that label does not prove playback. Click every player and record an advancing media timeline, buffering/error/age states and responsive cover/reveal bounds. HTTP, oEmbed or iframe load success alone is insufficient.
