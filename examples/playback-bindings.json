@@ -1,0 +1,17 @@
+{
+  "master": {
+    "id": "synthetic-master:v1",
+    "duration": 120,
+    "urls": []
+  },
+  "players": [
+    {
+      "kind": "youtube",
+      "id": "ABCDEFGHIJK",
+      "offset": 48,
+      "duration": 20,
+      "playerStart": 0,
+      "masterVerified": true
+    }
+  ]
+}
