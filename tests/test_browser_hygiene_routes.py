@@ -22,6 +22,10 @@ class BrowserHygieneRoutes(unittest.TestCase):
             source = package / row['source']
             source.parent.mkdir(parents=True, exist_ok=True)
             source.write_bytes((PACKAGE / row['source']).read_bytes())
+            if row.get('previous_source'):
+                prior_source = package / row['previous_source']
+                prior_source.parent.mkdir(parents=True, exist_ok=True)
+                prior_source.write_bytes((PACKAGE / row['previous_source']).read_bytes())
             if row['mode'] == 'insert':
                 target = root / row['target']
                 target.parent.mkdir(parents=True, exist_ok=True)
