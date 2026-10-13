@@ -18,3 +18,9 @@ Input ledger JSON rows contain epk_id, url, kind (video/short/post), publication
 Run: python "Z:/My Songs/Tools/EPK Campaign Media/audit_campaign_media.py" ledger.json catalogue.json --output coverage.json
 
 Primary embedding references reviewed 12 October 2026: https://support.google.com/youtube/answer/171780?hl=en-GB and https://developers.google.com/youtube/player_parameters . YouTube restrictions remain unchanged. Independently authorised original artist files may be hosted on WordPress; unavailable originals remain a recorded hold.
+
+## Artwork-first hero playback
+
+Keep the hero at the approved square artwork geometry. The video stays behind the 1:1 artwork until an accessible Play button is pressed. Do not stack a second full video above the cover. Use `Tools/EPK Campaign Media/compose_epk_cover.py` and its paired `epk_cover_player.js` for a fresh-source additive conversion of the campaign featured player. Its iframe is an inert template until the visitor gesture, then requests playback with native YouTube controls. Return to artwork removes the iframe and restores the cover; pagehide resets the same state. Preserve all other media, CSS/scripts, lyrics, timing selections and existing mobile input owners.
+
+The offline audit distinguishes declared deferred embeds from active embed source. Neither proves playback. On every video audit, click all applicable controls and record an advancing media timeline, ready/paused state, asset identity and any buffering, age, regional, embedding or browser-control failure. Check square cover geometry and revealed bounds on desktop/tablet/mobile, keyboard activation, close/reopen, teardown and retained source links. Recheck source before an authorised public save, then verify persisted public content and real controls; retain exact candidate/saved hashes and limitations.

@@ -32,13 +32,13 @@
     "target": "Workflows/campaign-media-epk-sync.md",
     "source": "workflows/campaign-media-epk-sync.md",
     "mode": "copy",
-    "previous_source": "previous/0.1.8/workflows/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.10/campaign-media-epk-sync.md"
   },
   {
     "target": "Tools/EPK Campaign Media/audit_campaign_media.py",
     "source": "tools/audit_campaign_media.py",
     "mode": "copy",
-    "previous_source": "previous/0.1.8/tools/audit_campaign_media.py"
+    "previous_source": "previous/0.1.10/audit_campaign_media.py"
   },
   {
     "target": "Releases/reports/workflows/weekly-release-and-epk-sync.md",
@@ -540,6 +540,16 @@
     "mode": "insert",
     "anchor": "## Evidence and inputs",
     "identity": "## Select motion with StemLab's DanceRudiments matcher"
+  },
+  {
+    "target": "Tools/EPK Campaign Media/compose_epk_cover.py",
+    "source": "tools/compose_epk_cover.py",
+    "mode": "copy"
+  },
+  {
+    "target": "Tools/EPK Campaign Media/epk_cover_player.js",
+    "source": "tools/epk_cover_player.js",
+    "mode": "copy"
   },
   {
     "target": "Workflows/codex-browser-runtime-recovery.md",
