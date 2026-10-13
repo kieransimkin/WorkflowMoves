@@ -16,6 +16,14 @@ Close job-created tabs once their required verification is complete. Close borro
 
 Use the documented tab close operation, then obtain a fresh tab list and verify each expected ID is absent. Keep attempted and verified closure counts separate. Do not claim that an inaccessible tab closed. Finish the cleanup during the same job; do not silently carry ordinary completed tabs into another daily run.
 
+## Windows and retained tabs
+
+Close a job-created browser window after its last required tab has finished, using the documented window control if the selected browser exposes one. First close the eligible tabs through their supported controls. Where only tab closure is available, verify those closures and record the remaining window limitation; never terminate a browser, app or helper process as a substitute. Preserve windows containing another owner's active work or a deliberate user handoff.
+
+Use the documented handoff mark only for a specific next action, and the deliverable mark only for a tab intentionally left for Kieran. Do not mark every tab merely to preserve a connection. Each retained tab or window needs an owner, reason and next action; review it on the next turn and close it promptly when that purpose ends. Agent-created tabs are temporary by default in the current in-app Browser, and marks are turn-scoped; do not rely on those defaults instead of same-job verification.
+
+Complete cleanup after each finished browser phase and before returning the final result. Record attempted and independently verified tab/window closures separately, including retained or inaccessible items. A saved rule is configuration evidence, not proof of closure, adoption by another running chat or a permanent crash repair.
+
 ## Recovery and acceptance
 
 Distinguish a stale tab, disconnected browser, kernel setup error and closed tool transport. Tab cleanup may reduce unused resources but does not diagnose any of these errors. Keep recovery attempts bounded and materially different. Do not create an endless chain of replacement tabs.
