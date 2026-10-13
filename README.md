@@ -2,7 +2,7 @@
 
 Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
 
-Version: 0.1.13. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.14. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 `rules/browser-tab-hygiene.md` and `workflows/browser-tab-hygiene.md` make tab reuse, ownership-aware same-job cleanup and independent closure verification part of every browser job. Active work and unsaved forms are preserved. Additive routes reach project instructions, video scheduling and browser recovery. Tab cleanup is not evidence of a connection repair or a diagnosed cause; app-managed helpers and Codex must not be stopped as a generic workaround.
 
@@ -41,3 +41,9 @@ If a Windows checkout reports that an installed copied document differs immediat
 `tools/compose_epk_cover.py` replaces an added, vertically stacked hero player with the original square cover and an accessible Play button. The iframe stays in an inert template until an explicit click; playback is requested on reveal. Return to artwork removes the player and stops it; pagehide resets active covers. Existing source, timing metadata, motion and other videos are preserved. The paired `epk_cover_player.js` is embedded verbatim by the composer, with no animation clock, sensor listener, iframe API polling or plugin deployment.
 
 Example: `python tools/compose_epk_cover.py fresh-page.html --cover-url https://example.invalid/cover.png --cover-alt "Release artwork" --output candidate.html`. Preview and inspect the exact candidate before an approved save. The coverage auditor labels this `deferred_embed_source_present`; that label does not prove playback. Click every player and record an advancing media timeline, buffering/error/age states and responsive cover/reveal bounds. HTTP, oEmbed or iframe load success alone is insufficient.
+
+## Verified master playback bindings
+
+`tools/compose_epk_playback.py fresh-page.html bindings.json --output candidate.html` validates explicit full-master and partial-track associations and attaches the narrow `bind_epk_players.js` adapter. Use DanceMoves 3.1.20 or a verified compatible successor. The original square hero creates its API-enabled iframe only after Play; reveal/close events attach and tear down its shared playback owner. Other YouTube and native players use the same master source, including repeated native audio controls. Lazy below-fold iframes attach when approaching the viewport, preserving lazy loading and avoiding readiness timeouts before their browser load. No page-level cue parser or video polling loop is introduced.
+
+Bindings contain a public master identity and exact programme duration, approved same-site audio references, and one row per verified video with song `offset`, soundtrack `duration` and `playerStart`. Keep original render hashes and trim receipts privately. See `examples/playback-bindings.json`: a 20-second Short beginning 48 seconds into a 120-second song advances song time from 48 to 68. Missing or alternate-version mappings remain explicit holds; playback alone never establishes soundtrack identity. Preserve WordPress-selected timing, existing choreography, mobile input, accessibility and publication gates.
