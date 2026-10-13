@@ -1,0 +1,10 @@
+## Close completed browser tabs
+
+Standing instruction from Kieran, 13 October 2026: prevent completed browser jobs from accumulating unused tabs. Apply to every My Songs chat, agent, campaign and recurring job. Follow `Workflows/browser-tab-hygiene.md` through the supported Browser controls.
+
+- Reuse a suitable existing tab before creating another. Track tab ID, purpose and ownership; a tab being hidden or inactive does not prove that it is safe to close.
+- After retaining evidence and completing the required verification, close tabs created by the job and borrowed tabs explicitly released by their owner. Close completed preview, diagnostic and read-only verification tabs promptly, not at the next scheduled run.
+- Preserve active work, unsaved forms, uploads, other owners' tabs and any tab intentionally handed to Kieran. Checkpoint and obtain the applicable authority before discarding unsaved state. Record a retained tab's owner, reason and next action privately.
+- Verify closure with a fresh tab list. A close request, timeout, queued panel request or another chat's working connection is not proof of closure or restoration here. Report inaccessible tabs as precise cleanup holds; do not keep opening replacements indefinitely.
+- Before troubleshooting, read the known signatures and failed remedies in `Workflows/codex-browser-runtime-recovery.md`; preserve their evidence dates and verification limits. Use bounded, documented connection recovery. Do not stop app-managed helpers as a generic restart: that can leave a closed transport without a replacement. Never terminate or restart Codex/ChatGPT, bypass browser controls, clear sign-ins or weaken permissions. A full-tab reset needs explicit authority and a safe checkpoint; a fresh-chat recovery needs its existing approval.
+- Keep tab hygiene separate from diagnosis. A high tab count is not evidence of a memory leak, credit-related failure or missing temporary path. Test the previously failing operation before calling a repair complete.
