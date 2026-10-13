@@ -2,7 +2,11 @@
 
 Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
 
-Version: 0.1.12. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.13. StemLab runtime baseline: released 1.4.0 with native DanceRudiments 0.2.4. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+
+`rules/browser-tab-hygiene.md` and `workflows/browser-tab-hygiene.md` make tab reuse, ownership-aware same-job cleanup and independent closure verification part of every browser job. Active work and unsaved forms are preserved. Additive routes reach project instructions, video scheduling and browser recovery. Tab cleanup is not evidence of a connection repair or a diagnosed cause; app-managed helpers and Codex must not be stopped as a generic workaround.
+
+`fragments/browser-recovery-lessons.md` retains dated pre-execution, reset, temporary-path and closed-transport findings, including remedies that did not work. It keeps working access in another chat, verified tab closure, current usage availability and restoration of the failing conversation distinct. Exact operational evidence remains private in the workspace, outside this package.
 
 `fragments/browser-fresh-chat-recovery.md` adds the verified recovery route for an app-managed browser transport that has closed. A user-approved same-directory fork preserves completed actions and reconnects through the documented Browser runtime; helpers must not be terminated. Current authenticated access and the original task's result are verified independently before claiming recovery.
 

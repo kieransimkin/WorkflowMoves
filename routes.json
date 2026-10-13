@@ -557,5 +557,38 @@
     "mode": "insert",
     "anchor": "## Potential problems",
     "identity": "## Fresh chat recovery for a closed browser transport"
+  },
+  {
+    "target": "AGENTS.md",
+    "source": "rules/browser-tab-hygiene.md",
+    "mode": "insert",
+    "anchor": "## Form-field write verification",
+    "identity": "## Close completed browser tabs"
+  },
+  {
+    "target": "Workflows/browser-tab-hygiene.md",
+    "source": "workflows/browser-tab-hygiene.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/release-video-social-scheduling.md",
+    "source": "fragments/browser-tab-hygiene.md",
+    "mode": "insert",
+    "anchor": "## Publish to YouTube and TikTok first",
+    "identity": "## Browser tab ownership and cleanup"
+  },
+  {
+    "target": "Workflows/codex-browser-runtime-recovery.md",
+    "source": "fragments/browser-tab-hygiene.md",
+    "mode": "insert",
+    "anchor": "## Fresh chat recovery for a closed browser transport",
+    "identity": "## Browser tab ownership and cleanup"
+  },
+  {
+    "target": "Workflows/codex-browser-runtime-recovery.md",
+    "source": "fragments/browser-recovery-lessons.md",
+    "mode": "insert",
+    "anchor": "## Browser tab ownership and cleanup",
+    "identity": "## Known signatures and bounded recovery"
   }
 ]

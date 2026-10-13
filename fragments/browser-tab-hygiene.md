@@ -1,0 +1,3 @@
+## Browser tab ownership and cleanup
+
+Follow `Z:/My Songs/Workflows/browser-tab-hygiene.md`: reuse suitable tabs, track ownership, retain verification evidence, close completed job-owned tabs during the same job and confirm their absence in a fresh list. Preserve other owners' active tabs, unsaved forms, uploads and deliberate user handoffs. Record precise cleanup holds; do not open unlimited replacements or treat a high tab count as a diagnosed cause. Recovery must use supported controls without stopping app-managed helpers, restarting Codex/ChatGPT, weakening permissions or clearing sign-ins.
