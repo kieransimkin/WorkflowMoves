@@ -18,4 +18,20 @@ class CoverContract(unittest.TestCase):
   out=compose.compose(W,'https://example.invalid/art.png','Art');r=audit.audit([dict(epk_id=1,url='https://youtu.be/ABCDEFGHIJK',kind='video',publication_state='verified_public')],[dict(id=1,content=dict(rendered=out))]);self.assertEqual(r['items'][0]['coverage'],'deferred_embed_source_present')
  def test_ordinary_hidden_template_not_accepted(self):
   r=audit.audit([dict(epk_id=1,url='https://youtu.be/ABCDEFGHIJK',kind='video',publication_state='verified_public')],[dict(id=1,content=dict(rendered='<template><iframe src="https://www.youtube.com/embed/ABCDEFGHIJK"></iframe></template>'))]);self.assertEqual(r['items'][0]['coverage'],'missing_embed')
+ def test_direct_cover_rule_keeps_scope_media_and_declarations(self):
+  source='<style>@media(min-width:800px){.song .epk-cover-wrap>.epk-cover{border-radius:10px;transform:none}}</style>'
+  updated=compose.extend_direct_cover_selectors(source)
+  self.assertEqual(updated,'<style>@media(min-width:800px){.song .epk-cover-wrap>.epk-cover,.song .epk-cover-wrap>.epk-cover-player>.epk-cover{border-radius:10px;transform:none}}</style>')
+  self.assertEqual(compose.extend_direct_cover_selectors(updated),updated)
+ def test_existing_style_repair_preserves_template_and_runtime(self):
+  original=compose.compose(W+'<img src="https://example.invalid/art.png">','https://example.invalid/art.png','Art')
+  repaired=compose.repair_cover_styles(original)
+  self.assertIn('<template data-epk-video-template><iframe',repaired)
+  self.assertIn('<script data-epk-cover-runtime>',repaired)
+  self.assertNotIn('bottom:auto;padding:2rem 6vw',repaired)
+  self.assertIn('height:100%;max-height:100vw',repaired)
+ def test_style_repair_requires_unambiguous_composed_cover(self):
+  self.assertRaises(ValueError,compose.repair_cover_styles,'<main></main>')
+  original=compose.compose(W,'https://example.invalid/art.png','Art')
+  self.assertRaises(ValueError,compose.repair_cover_styles,original+original)
 if __name__=='__main__':unittest.main()

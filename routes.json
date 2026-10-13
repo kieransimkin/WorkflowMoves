@@ -544,7 +544,8 @@
   {
     "target": "Tools/EPK Campaign Media/compose_epk_cover.py",
     "source": "tools/compose_epk_cover.py",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.14/tools/compose_epk_cover.py"
   },
   {
     "target": "Tools/EPK Campaign Media/epk_cover_player.js",
