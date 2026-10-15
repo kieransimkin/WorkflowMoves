@@ -76,7 +76,7 @@ def audit_widths(rows):
                 if expected not in errors or max(errors[expected]) > tolerance:
                     failures.append(f'{label}: {ident} has uneven alignment/gutters')
         screenshot = row.get('screenshot', {})
-        if not isinstance(screenshot, dict) or not screenshot.get('path') or screenshot.get('width') != width or screenshot.get('height') != height or screenshot.get('reviewed') is not True:
+        if not isinstance(screenshot, dict) or not screenshot.get('path') or type(screenshot.get('width')) is not int or type(screenshot.get('height')) is not int or abs(screenshot['width']-width)>1 or not finite(height) or abs(screenshot['height']-height)>1 or screenshot.get('reviewed') is not True:
             failures.append(f'{label}: missing reviewed screenshot at the actual target dimensions')
         if row.get('below_fold_reviewed') is not True:
             failures.append(f'{label}: below-fold content/controls have not been reviewed')

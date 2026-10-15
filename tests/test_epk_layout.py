@@ -51,6 +51,12 @@ class LayoutTests(unittest.TestCase):
         rows=widths(); rows[4]['screenshot']['height']=242
         self.assertTrue(module.audit_widths(rows))
 
+    def test_browser_pixel_rounding_is_bounded(self):
+        rows=widths(); rows[1]['screenshot']['height']=899
+        self.assertEqual(module.audit_widths(rows),[])
+        rows[1]['screenshot']['height']=898
+        self.assertTrue(module.audit_widths(rows))
+
     def test_missing_measurements_are_not_zero(self):
         for field in ('content_overflow','text_overflow','clipped_text','alignments','visible_images','measured_width'):
             rows=widths(); del rows[0][field]

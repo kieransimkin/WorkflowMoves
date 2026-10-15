@@ -50,9 +50,11 @@ class LayoutRoutes(unittest.TestCase):
                 elif row.get('previous_source'):target.write_bytes((ROOT/row['previous_source']).read_bytes())
             checker=root/'Tools/EPK Motion QA/audit_epk_evidence.py'
             checker.write_text('Another owner changed this.\n')
+            layout=root/'Tools/EPK Motion QA/audit_epk_layout.py'
+            before=layout.read_bytes() if layout.exists() else None
             with self.assertRaises(ValueError):module.install(root,ROOT,manifest='routes.mobile-layout.json')
             self.assertEqual(checker.read_text(),'Another owner changed this.\n')
-            self.assertFalse((root/'Tools/EPK Motion QA/audit_epk_layout.py').exists())
+            self.assertEqual(layout.read_bytes() if layout.exists() else None,before)
 
 
 if __name__=='__main__':unittest.main()
