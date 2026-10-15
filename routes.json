@@ -243,17 +243,20 @@
   {
     "target": "Tools/EPK Motion QA/audit_epk_evidence.py",
     "source": "tools/audit_epk_evidence.py",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.21/tools/audit_epk_evidence.py"
   },
   {
     "target": "Workflows/epk-evidence-gate.md",
     "source": "workflows/epk-evidence-gate.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.21/workflows/epk-evidence-gate.md"
   },
   {
     "target": "Workflows/epk-mobile-motion.md",
     "source": "workflows/epk-mobile-motion.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.21/workflows/epk-mobile-motion.md"
   },
   {
     "target": "AGENTS.md",
@@ -754,5 +757,41 @@
     "source": "workflows/scheduled-danceflow-tool-use.md",
     "mode": "copy",
     "previous_source": "previous/staged-0.1.22/workflows/scheduled-danceflow-tool-use.md"
+  },
+  {
+    "target": "Tools/EPK Motion QA/audit_epk_layout.py",
+    "source": "tools/audit_epk_layout.py",
+    "mode": "copy"
+  },
+  {
+    "target": "Tools/EPK Motion QA/collect_epk_layout.js",
+    "source": "tools/collect_epk_layout.js",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/epk-responsive-layout-qa.md",
+    "source": "workflows/epk-responsive-layout-qa.md",
+    "mode": "copy"
+  },
+  {
+    "target": "AGENTS.md",
+    "source": "rules/epk-responsive-layout-qa.md",
+    "mode": "insert",
+    "anchor": "## WordPress EPK merge and preservation",
+    "identity": "## Test EPKs across common mobile widths"
+  },
+  {
+    "target": "Workflows/weekly-release-and-epk-sync.md",
+    "source": "rules/epk-responsive-layout-qa.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Test EPKs across common mobile widths"
+  },
+  {
+    "target": "Releases/reports/workflows/weekly-release-and-epk-sync.md",
+    "source": "rules/epk-responsive-layout-qa.md",
+    "mode": "insert",
+    "anchor": "## Core sequence",
+    "identity": "## Test EPKs across common mobile widths"
   }
 ]

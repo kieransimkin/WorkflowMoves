@@ -1,0 +1,17 @@
+{
+  "page_id": "intentional-static-example",
+  "motion": {
+    "required_consumers": [],
+    "intentional_static_reason": "Static artwork and ordinary button hover only; no spatial phone consumer."
+  },
+  "timing": {
+    "configured": {},
+    "hardcoded_literals": [],
+    "consumers": []
+  },
+  "widths": [
+    {"width": 1440, "overflow": false},
+    {"width": 900, "overflow": false},
+    {"width": 390, "overflow": false}
+  ]
+}

@@ -4,6 +4,7 @@ import argparse
 import json
 import math
 from pathlib import Path
+from audit_epk_layout import audit_widths
 
 RESETS = ('motion_off', 'reduced_motion', 'forced_colours', 'hidden', 'rotation', 'teardown')
 
@@ -81,9 +82,7 @@ def audit_timing(timing):
 
 def audit(record):
     failures = audit_motion(record.get('motion', {})) + audit_timing(record.get('timing', {}))
-    widths = record.get('widths', [])
-    if {w.get('width') for w in widths} != {390, 900, 1440} or len(widths) != 3 or any(w.get('overflow') is not False for w in widths):
-        failures.append('Missing desktop/tablet/mobile no-overflow evidence')
+    failures.extend(audit_widths(record.get('widths')))
     kinds = sorted({r.get('evidence_kind') for r in record.get('motion', {}).get('routes', []) if r.get('evidence_kind')})
     return {'page_id': record.get('page_id'), 'status': 'failed' if failures else 'passed',
             'failures': failures, 'motion_evidence_kinds': kinds,
