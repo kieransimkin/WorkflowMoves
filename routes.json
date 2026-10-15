@@ -748,5 +748,10 @@
     "mode": "insert",
     "anchor": "# Inter-agent communication",
     "identity": "# Browser cleanup after use"
+  },
+  {
+    "target": "Workflows/scheduled-danceflow-tool-use.md",
+    "source": "workflows/scheduled-danceflow-tool-use.md",
+    "mode": "copy"
   }
 ]
