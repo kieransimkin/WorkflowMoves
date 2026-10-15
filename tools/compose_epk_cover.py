@@ -43,8 +43,7 @@ def compose(source,cover_url,cover_alt):
   if Attributes(hit.group()).attrs.get('src')==cover_url:image=hit;break
  original=image.group() if image else '<img src="'+html.escape(cover_url,quote=True)+'" alt="'+html.escape(cover_alt,quote=True)+'" width="1254" height="1254">'
  esc=lambda x:html.escape(x,quote=True)
- watch='https://www.youtube.com/watch?v='+url.rsplit('/',1)[1]
- box='<div class="epk-cover-player" data-epk-cover-player="'+url.rsplit('/',1)[1]+'">'+original+'<button type="button" class="epk-cover-player__play" data-epk-video-play aria-label="Play '+esc(title)+'">&#9654;</button><div class="epk-cover-player__slot" data-epk-video-slot hidden></div><button type="button" class="epk-cover-player__close" data-epk-video-close hidden aria-label="Return to cover artwork">&#215;</button><template data-epk-video-template>'+iframe+'</template></div><a class="epk-cover-player__watch" href="'+watch+'" target="_blank" rel="noopener">Watch on YouTube</a>'
+ box='<div class="epk-cover-player" data-epk-cover-player="'+url.rsplit('/',1)[1]+'">'+original+'<button type="button" class="epk-cover-player__play" data-epk-video-play aria-label="Play '+esc(title)+'">&#9654;</button><div class="epk-cover-player__slot" data-epk-video-slot hidden></div><button type="button" class="epk-cover-player__close" data-epk-video-close hidden aria-label="Return to cover artwork">&#215;</button><template data-epk-video-template>'+iframe+'</template></div>'
  if image:body=body[:image.start()]+box+body[image.end():]
  else:body=body[:widget.start()]+box+body[widget.start():]
  js=Path(__file__).with_name('epk_cover_player.js').read_text(encoding='utf-8').strip()
