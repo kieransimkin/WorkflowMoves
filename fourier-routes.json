@@ -1,0 +1,25 @@
+[
+  {
+    "target": "Tools/StemLab.ps1",
+    "source": "tools/StemLab.ps1",
+    "mode": "copy",
+    "previous_source": "previous/0.1.24/tools/StemLab.ps1"
+  },
+  {
+    "target": "Workflows/stemlab-audio-motion-recordings.md",
+    "source": "workflows/stemlab-audio-motion-recordings.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.24/workflows/stemlab-audio-motion-recordings.md"
+  },
+  {
+    "target": "Workflows/scheduled-danceflow-tool-use.md",
+    "source": "workflows/scheduled-danceflow-tool-use.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.24/workflows/scheduled-danceflow-tool-use.md"
+  },
+  {
+    "target": "Workflows/stemlab-fourier-frequency-bands.md",
+    "source": "workflows/stemlab-fourier-frequency-bands.md",
+    "mode": "copy"
+  }
+]

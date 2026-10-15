@@ -4,7 +4,7 @@ Use this route when the design needs movements derived directly from audio ampli
 
 ## Released runtime and ownership
 
-Use `& 'Z:\My Songs\Tools\StemLab.ps1' <command>`. The 15 October 2026 baseline is [StemLab 1.5.0](https://github.com/kieransimkin/stemlab/releases/tag/v1.5.0), commit `9225b7494e361a653e60d71be95e8339c46a4c9e`, and [DanceRudiments 0.3.0](https://github.com/kieransimkin/DanceRudiments/releases/tag/v0.3.0), commit `b89d1b80fcd8a8d8e02394ec718b6f4debd97b94`. Check actual imported package paths and versions. Old editable checkouts and already-exported HTML do not acquire new APIs automatically. Preserve earlier environments and exports.
+Use `& 'Z:\My Songs\Tools\StemLab.ps1' <command>`. The 16 October 2026 runtime baseline is [StemLab 1.6.0](https://github.com/kieransimkin/stemlab/releases/tag/v1.6.0), and [DanceRudiments 0.3.0](https://github.com/kieransimkin/DanceRudiments/releases/tag/v0.3.0), commit `b89d1b80fcd8a8d8e02394ec718b6f4debd97b94`. Check actual imported package paths and versions. Old editable checkouts and already-exported HTML do not acquire new APIs automatically. Preserve earlier environments and exports.
 
 StemLab owns separation, filtering, envelope extraction and batch provenance. DanceRudiments owns the `dancerudiments.recording` schema, native C++/Python non-looping sampler and shared WASM comparison harness. Use those APIs rather than a copied DSP or movement renderer. Named legacy patterns remain XYZ, integer-pip and looping. The new arbitrary-dimensional recording format does not add general N-D C# or TypeScript bindings, or imply an installed DanceMoves adapter.
 
