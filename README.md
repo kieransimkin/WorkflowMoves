@@ -4,7 +4,7 @@ Private, versioned project rules and workflow additions for Kieran's local My So
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.21. StemLab runtime baseline: released 1.5.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.22. StemLab runtime baseline: released 1.5.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 \`rules/canonical-metadata-wordpress-sync.md\` requires same-job WordPress synchronization of verified canonical BPM, lyric/cue timing and critical song metadata. Local canonical storage is not completion. Narrow property-only changes, preserved live content, existing mandatory approval gates and independent editor/public/runtime/hosted-byte verification remain authoritative. Guarded routes install this rule into project instructions and both weekly workflow copies.
 
@@ -59,3 +59,9 @@ Cinematic heroes retain their existing frame height and title overlay, with a sq
 `tools/compose_epk_playback.py fresh-page.html bindings.json --output candidate.html` validates explicit full-master and partial-track associations and attaches the narrow `bind_epk_players.js` adapter. Use DanceMoves 3.1.20 or a verified compatible successor. The original square hero creates its API-enabled iframe only after Play; reveal/close events attach and tear down its shared playback owner. Other YouTube and native players use the same master source, including repeated native audio controls. Lazy below-fold iframes attach when approaching the viewport, preserving lazy loading and avoiding readiness timeouts before their browser load. No page-level cue parser or video polling loop is introduced.
 
 Bindings contain a public master identity and exact programme duration, approved same-site audio references, and one row per verified video with song `offset`, soundtrack `duration` and `playerStart`. Keep original render hashes and trim receipts privately. See `examples/playback-bindings.json`: a 20-second Short beginning 48 seconds into a 120-second song advances song time from 48 to 68. Missing or alternate-version mappings remain explicit holds; playback alone never establishes soundtrack identity. Preserve WordPress-selected timing, existing choreography, mobile input, accessibility and publication gates.
+
+## Scheduled jobs and complete tool use
+
+`workflows/scheduled-danceflow-tool-use.md` maps the complete applicable capabilities of all eleven DanceFlow tools to scheduled campaign, analytics, EPK, lyric, outreach and maintenance jobs. It requires a purpose-specific plan, supported composition and actual integration evidence, including reasoned unavailable/not-applicable states. Existing scope, dates, read-only restrictions, approvals, privacy and costs remain authoritative. DanceVault stays experimental; ThumbMoves is cache-only; Short Shifter remains independent.
+
+`fragments/scheduled-danceflow-tool-use.md` is the maintained prompt fragment. Apply it through the supported automation update control with a job-specific capability plan; this package does not edit scheduler TOML or ship private job definitions. Preserve every other field and verify persisted configuration. Install the shared guide with `python install.py --root "Z:\My Songs" --routes ecosystem-job-routes.json`, using `--check` first. Scheduler configuration is not proof a job has run or every tool is active.
