@@ -1,0 +1,3 @@
+## Phrase auditions and recorded listening feedback
+
+Invoke `Z:\My Songs\Tools\StemLab.ps1`, preserving the old editable checkout. Follow `Z:\My Songs\Workflows\stemlab-phrase-and-clip-evidence.md` for `phrase-loops <saved-results>` with explicit canonical line timing, optional measured bar-phase filtering and exact-hash/native-frame artist feedback. Its separate `stemlab.phrase_loops.v1` report proposes line-complete auditions; it does not upgrade an unresolved strict `stemlab.loops.v1` result. Preserve strict reports, sample-exact exports, original source offsets, vocal/narrative/seam holds and attended listening. Never invent ratings, line ends, meter or canonical authority from a score.

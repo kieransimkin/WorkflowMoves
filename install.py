@@ -33,8 +33,8 @@ def merge(text: str, snippet: str, anchor: str, identity: str, newline: str = "\
     return text.replace(anchor, snippet.rstrip() + newline * 2 + anchor, 1)
 
 
-def plan(root: Path, package: Path = PACKAGE) -> list[dict]:
-    routes = json.loads((package / "routes.json").read_text(encoding="utf-8"))
+def plan(root: Path, package: Path = PACKAGE, manifest: str = "routes.json") -> list[dict]:
+    routes = json.loads(contained(package, manifest).read_text(encoding="utf-8"))
     changes = []
     seen = {}
     for row in routes:
@@ -72,8 +72,8 @@ def plan(root: Path, package: Path = PACKAGE) -> list[dict]:
     return list(combined.values())
 
 
-def install(root: Path, package: Path = PACKAGE, check: bool = False) -> list[dict]:
-    changes = plan(root, package)
+def install(root: Path, package: Path = PACKAGE, check: bool = False, manifest: str = "routes.json") -> list[dict]:
+    changes = plan(root, package, manifest)
     results = []
     for item in changes:
         target = Path(item["target"])
@@ -94,9 +94,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, required=True)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--routes", default="routes.json", help="Reviewed route manifest inside this package; defaults to all routes")
     parser.add_argument("--record", type=Path)
     options = parser.parse_args()
-    records = install(options.root, check=options.check)
+    records = install(options.root, check=options.check, manifest=options.routes)
     serialized = json.dumps(records, indent=2)
     if options.record:
         options.record.parent.mkdir(parents=True, exist_ok=True)

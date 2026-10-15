@@ -371,12 +371,14 @@
   {
     "target": "Workflows/stemlab-rudiment-motion-selection.md",
     "source": "workflows/stemlab-rudiment-motion-selection.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.17/workflows/stemlab-rudiment-motion-selection.md"
   },
   {
     "target": "Tools/StemLab.ps1",
     "source": "tools/StemLab.ps1",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.17/tools/StemLab.ps1"
   },
   {
     "target": "AGENTS.md",
@@ -397,105 +399,120 @@
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Potential problems",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Workflows/local-epk-playback-preview-verification.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Native DanceRudiments sprite playback",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Workflows/epk-dancemoves-capability-audit.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Potential problems",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Workflows/SHORT-FORM-VIDEO-WORKFLOW.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Acceptance checklist",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Workflows/protest-shorts-rendering-and-qa.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Full-length 16:9 lyric visualiser derivative",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Workflows/shared-site-template-effects.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Source and patch contract",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Workflows/wordpress-epk-repeated-svg-gutters.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Potential problems",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Workflows/epk-canonical-sprite-assets.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Reference and generation contract",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Workflows/weekly-release-and-epk-sync.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Promote newly uploaded DistroKid assets",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "skill-source/render-bpm-cue-videos/SKILL.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Establish timing authority",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Establish timing authority",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "skill-source/dance-animations-and-effects/SKILL.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Implement mechanics in DanceMoves first",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": ".agents/skills/dance-animations-and-effects/SKILL.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Implement mechanics in DanceMoves first",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": ".codex-relocated-home/skills/wordpress-epk-publisher/SKILL.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Reconcile DanceMoves before every EPK change",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "skill-source/epk-effect-test-harness/SKILL.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Route the work",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Workflows/spotify-upcoming-canvas.md",
@@ -537,14 +554,16 @@
     "source": "fragments/analysis.md",
     "mode": "insert",
     "anchor": "## Default route",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/analysis.md"
   },
   {
     "target": ".codex-relocated-home/skills/use-and-improve-stemlab/SKILL.md",
     "source": "fragments/analysis.md",
     "mode": "insert",
     "anchor": "## Default route",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/analysis.md"
   },
   {
     "target": "skill-source/sprite-cycle-generation/SKILL.md",
@@ -558,14 +577,16 @@
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Evidence and inputs",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": ".agents/skills/render-bpm-cue-videos/references/render-contract.md",
     "source": "fragments/motion.md",
     "mode": "insert",
     "anchor": "## Evidence and inputs",
-    "identity": "## Select motion with StemLab's DanceRudiments matcher"
+    "identity": "## Select motion with StemLab's DanceRudiments matcher",
+    "previous_source": "previous/0.1.17/fragments/motion.md"
   },
   {
     "target": "Tools/EPK Campaign Media/compose_epk_cover.py",
@@ -637,5 +658,88 @@
     "target": "Tools/EPK Campaign Media/clean_epk_video_links.py",
     "source": "tools/clean_epk_video_links.py",
     "mode": "copy"
+  },
+  {
+    "target": "Workflows/stemlab-audio-motion-recordings.md",
+    "source": "workflows/stemlab-audio-motion-recordings.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/stemlab-phrase-and-clip-evidence.md",
+    "source": "workflows/stemlab-phrase-and-clip-evidence.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/use-and-improve-stemlab/SKILL.md",
+    "source": "fragments/stemlab-analysis-1.5.md",
+    "mode": "insert",
+    "anchor": "## Default route",
+    "identity": "## Released StemLab analysis and viewer routes"
+  },
+  {
+    "target": ".codex-relocated-home/skills/use-and-improve-stemlab/SKILL.md",
+    "source": "fragments/stemlab-analysis-1.5.md",
+    "mode": "insert",
+    "anchor": "## Default route",
+    "identity": "## Released StemLab analysis and viewer routes"
+  },
+  {
+    "target": "skill-source/find-loopable-song-sections/SKILL.md",
+    "source": "fragments/stemlab-phrase-loops.md",
+    "mode": "insert",
+    "anchor": "## Start with authority",
+    "identity": "## Phrase auditions and recorded listening feedback"
+  },
+  {
+    "target": ".agents/skills/find-loopable-song-sections/SKILL.md",
+    "source": "fragments/stemlab-phrase-loops.md",
+    "mode": "insert",
+    "anchor": "## Start with authority",
+    "identity": "## Phrase auditions and recorded listening feedback"
+  },
+  {
+    "target": "Workflows/stemlab-loop-audition-packaging.md",
+    "source": "fragments/stemlab-phrase-loops.md",
+    "mode": "insert",
+    "anchor": "## Motion hand-off after excerpt selection",
+    "identity": "## Phrase auditions and recorded listening feedback"
+  },
+  {
+    "target": "Workflows/epk-video-metadata.md",
+    "source": "fragments/stemlab-clip-matching.md",
+    "mode": "insert",
+    "anchor": "## Contract",
+    "identity": "## Verify partial soundtrack offsets with StemLab"
+  },
+  {
+    "target": "Workflows/stemlab-radio-edit-workflow.md",
+    "source": "fragments/stemlab-clip-matching.md",
+    "mode": "insert",
+    "anchor": "## Required retained evidence",
+    "identity": "## Verify partial soundtrack offsets with StemLab"
+  },
+  {
+    "target": "skill-source/find-loopable-song-sections/SKILL.md",
+    "source": "fragments/loop-runtime.md",
+    "previous_source": "previous/0.1.17/fragments/loop-runtime.md",
+    "mode": "insert",
+    "anchor": "### Musical structure",
+    "identity": "as the default automated candidate generator."
+  },
+  {
+    "target": ".agents/skills/find-loopable-song-sections/SKILL.md",
+    "source": "fragments/loop-runtime.md",
+    "previous_source": "previous/0.1.17/fragments/loop-runtime.md",
+    "mode": "insert",
+    "anchor": "### Musical structure",
+    "identity": "as the default automated candidate generator."
+  },
+  {
+    "target": "Tools/README.md",
+    "source": "fragments/stemlab-runtime.md",
+    "previous_source": "previous/0.1.17/fragments/stemlab-runtime.md",
+    "mode": "insert",
+    "anchor": "## RasterMoves",
+    "identity": "## Current StemLab motion matcher"
   }
 ]

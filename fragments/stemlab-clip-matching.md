@@ -1,0 +1,3 @@
+## Verify partial soundtrack offsets with StemLab
+
+When an existing campaign clip needs an independent source-clock check, follow `Z:\My Songs\Workflows\stemlab-phrase-and-clip-evidence.md` and run `Tools/StemLab.ps1 match-clip <master> <original-render> --output <new-report.json>`. Retain both hashes, actual preroll/outro interval, offset/duration/playerStart, uniqueness and timing checks alongside original render/trim receipts. An unresolved report exits 2 and keeps the mapping held; do not infer offsets from titles or duration. Correlation establishes neither exact master bytes, artist approval, rights nor track identity. Preserve metadata-derived timing, shared playback ownership and all public-save gates.
