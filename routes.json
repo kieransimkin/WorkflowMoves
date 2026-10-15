@@ -613,13 +613,13 @@
     "mode": "insert",
     "anchor": "## Form-field write verification",
     "identity": "## Close completed browser tabs",
-    "previous_source": "previous/0.1.14/rules/browser-tab-hygiene.md"
+    "previous_source": "previous/0.1.19/rules/browser-tab-hygiene.md"
   },
   {
     "target": "Workflows/browser-tab-hygiene.md",
     "source": "workflows/browser-tab-hygiene.md",
     "mode": "copy",
-    "previous_source": "previous/0.1.14/workflows/browser-tab-hygiene.md"
+    "previous_source": "previous/0.1.19/workflows/browser-tab-hygiene.md"
   },
   {
     "target": "Workflows/release-video-social-scheduling.md",
@@ -627,7 +627,7 @@
     "mode": "insert",
     "anchor": "## Publish to YouTube and TikTok first",
     "identity": "## Browser tab ownership and cleanup",
-    "previous_source": "previous/0.1.14/fragments/browser-tab-hygiene.md"
+    "previous_source": "previous/0.1.19/fragments/browser-tab-hygiene.md"
   },
   {
     "target": "Workflows/codex-browser-runtime-recovery.md",
@@ -635,7 +635,7 @@
     "mode": "insert",
     "anchor": "## Fresh chat recovery for a closed browser transport",
     "identity": "## Browser tab ownership and cleanup",
-    "previous_source": "previous/0.1.14/fragments/browser-tab-hygiene.md"
+    "previous_source": "previous/0.1.19/fragments/browser-tab-hygiene.md"
   },
   {
     "target": "Workflows/codex-browser-runtime-recovery.md",
@@ -741,5 +741,12 @@
     "mode": "insert",
     "anchor": "## RasterMoves",
     "identity": "## Current StemLab motion matcher"
+  },
+  {
+    "target": ".codex-relocated-home/AGENTS.md",
+    "source": "rules/global-browser-cleanup.md",
+    "mode": "insert",
+    "anchor": "# Inter-agent communication",
+    "identity": "# Browser cleanup after use"
   }
 ]

@@ -4,9 +4,11 @@ Private, versioned project rules and workflow additions for Kieran's local My So
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.20. StemLab runtime baseline: released 1.5.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.21. StemLab runtime baseline: released 1.5.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 \`rules/canonical-metadata-wordpress-sync.md\` requires same-job WordPress synchronization of verified canonical BPM, lyric/cue timing and critical song metadata. Local canonical storage is not completion. Narrow property-only changes, preserved live content, existing mandatory approval gates and independent editor/public/runtime/hosted-byte verification remain authoritative. Guarded routes install this rule into project instructions and both weekly workflow copies.
+
+`rules/global-browser-cleanup.md` installs the cleanup contract into the Z-side global instructions for every workspace. Empty inventories never certify visible-window cleanup when the user or UI contradicts them; agent closures, independent disappearance and manual cleanup remain distinct.
 
 `rules/browser-tab-hygiene.md` and `workflows/browser-tab-hygiene.md` make tab reuse, ownership-aware same-job cleanup and independent closure verification part of every browser job. Completed job-created windows also close through documented controls where available; connections supporting only tab closure record that limit. Retained tabs need a specific next action or user deliverable and must be reviewed on the next turn. Active work and unsaved forms are preserved. Additive routes reach project instructions, video scheduling and browser recovery. Tab cleanup is not evidence of a connection repair or a diagnosed cause; app-managed helpers and Codex must not be stopped as a generic workaround.
 
