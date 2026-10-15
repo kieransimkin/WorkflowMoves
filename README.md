@@ -4,7 +4,7 @@ Private, versioned project rules and workflow additions for Kieran's local My So
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.22. StemLab runtime baseline: released 1.5.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.23. StemLab runtime baseline: released 1.5.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 \`rules/canonical-metadata-wordpress-sync.md\` requires same-job WordPress synchronization of verified canonical BPM, lyric/cue timing and critical song metadata. Local canonical storage is not completion. Narrow property-only changes, preserved live content, existing mandatory approval gates and independent editor/public/runtime/hosted-byte verification remain authoritative. Guarded routes install this rule into project instructions and both weekly workflow copies.
 
@@ -19,6 +19,8 @@ Version: 0.1.22. StemLab runtime baseline: released 1.5.0 with native DanceRudim
 `rules/youtube-tiktok-first.md` makes YouTube and TikTok the first applicable publishing destinations whenever Kieran asks to publish. Additive routes install the rule into project instructions and both video publishing workflows. Destination exclusions, content suitability, evidence-backed posting times, existing approval requirements and same-job EPK reconciliation remain authoritative; record an inapplicable platform or verified blocker and continue the remaining authorised work.
 
 `rules/blog-artwork.md` and `fragments/blog-artwork.md` require fresh pictorial featured artwork for ordinary blog articles. Useful rendered summaries and evidence diagrams remain supplementary body media. The guarded routes install this preference into project instructions, both blog-writer skill copies and the publication-verification workflow. `examples/blog-artwork.md` shows how a publicity roundup can combine original illustration, a factual summary and readable source links.
+
+`tools/audit_epk_layout.py` and the read-only `tools/collect_epk_layout.js` enforce a nine-width responsive gate, including five phone widths. They check actual viewport/capture dimensions, text and control clipping, declared artwork/content alignment, image readiness and reviewed below-fold content. See `workflows/epk-responsive-layout-qa.md`. The combined evidence checker uses this same gate; legacy single-phone records no longer pass.
 
 `tools/audit_epk_evidence.py` checks recorded painted phone responses for every declared spatial consumer, lifecycle resets, exact metadata timing sources, parser and metadata-only switching evidence, multi-track associations and responsive observations. It rejects partial sensor attachments and keeps synthetic evidence separate from physical delivery. See `workflows/epk-evidence-gate.md` and the generic JSON example. It does not automate a browser or certify public persistence, rights or keyword demand.
 

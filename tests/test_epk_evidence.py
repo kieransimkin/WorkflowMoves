@@ -2,12 +2,17 @@ import copy
 import importlib.util
 from pathlib import Path
 import unittest
+import sys
+
+sys.path.insert(0,str(Path(__file__).parents[1]/'tools'))
+from test_epk_layout import observation
+from audit_epk_layout import REQUIRED_WIDTHS
 
 spec = importlib.util.spec_from_file_location('epk_evidence', Path(__file__).parents[1]/'tools/audit_epk_evidence.py')
 module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
 
 def record():
-    return {'page_id': 'example', 'widths': [{'width':w,'overflow':False} for w in (390,900,1440)],
+    return {'page_id': 'example', 'widths': [observation(w) for w in REQUIRED_WIDTHS],
             'motion': {'required_consumers':['hero'], 'routes':[{'consumer':'hero','controller':'example:hero',
               'sensor_owner_count':1,'evidence_kind':'synthetic','sample':{'x':.8,'y':-.6},
               'visual_before':'matrix-neutral','visual_after':'matrix-moved','extent_within_bounds':True,

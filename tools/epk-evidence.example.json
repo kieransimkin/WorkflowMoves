@@ -10,8 +10,365 @@
     "consumers": []
   },
   "widths": [
-    {"width": 1440, "overflow": false},
-    {"width": 900, "overflow": false},
-    {"width": 390, "overflow": false}
+    {
+      "width": 320,
+      "height": 900,
+      "measured_width": 320,
+      "measured_height": 900,
+      "client_width": 320,
+      "scroll_width": 320,
+      "overflow": false,
+      "ready_state": "complete",
+      "evidence_kind": "emulated",
+      "content_overflow": [],
+      "text_overflow": [],
+      "clipped_text": [],
+      "scrolling_descendants": [],
+      "offscreen_focus_links": [],
+      "visible_images": [],
+      "alignments": [
+        {
+          "selector": ".art",
+          "matches": 1,
+          "container_matches": 1,
+          "expected": "center",
+          "target": {
+            "left": 30,
+            "right": 290
+          },
+          "container": {
+            "left": 14,
+            "right": 306
+          }
+        }
+      ],
+      "screenshot": {
+        "path": "fixture-320.jpg",
+        "width": 320,
+        "height": 900,
+        "reviewed": true
+      },
+      "below_fold_reviewed": true
+    },
+    {
+      "width": 375,
+      "height": 900,
+      "measured_width": 375,
+      "measured_height": 900,
+      "client_width": 375,
+      "scroll_width": 375,
+      "overflow": false,
+      "ready_state": "complete",
+      "evidence_kind": "emulated",
+      "content_overflow": [],
+      "text_overflow": [],
+      "clipped_text": [],
+      "scrolling_descendants": [],
+      "offscreen_focus_links": [],
+      "visible_images": [],
+      "alignments": [
+        {
+          "selector": ".art",
+          "matches": 1,
+          "container_matches": 1,
+          "expected": "center",
+          "target": {
+            "left": 30,
+            "right": 345
+          },
+          "container": {
+            "left": 14,
+            "right": 361
+          }
+        }
+      ],
+      "screenshot": {
+        "path": "fixture-375.jpg",
+        "width": 375,
+        "height": 900,
+        "reviewed": true
+      },
+      "below_fold_reviewed": true
+    },
+    {
+      "width": 390,
+      "height": 900,
+      "measured_width": 390,
+      "measured_height": 900,
+      "client_width": 390,
+      "scroll_width": 390,
+      "overflow": false,
+      "ready_state": "complete",
+      "evidence_kind": "emulated",
+      "content_overflow": [],
+      "text_overflow": [],
+      "clipped_text": [],
+      "scrolling_descendants": [],
+      "offscreen_focus_links": [],
+      "visible_images": [],
+      "alignments": [
+        {
+          "selector": ".art",
+          "matches": 1,
+          "container_matches": 1,
+          "expected": "center",
+          "target": {
+            "left": 30,
+            "right": 360
+          },
+          "container": {
+            "left": 14,
+            "right": 376
+          }
+        }
+      ],
+      "screenshot": {
+        "path": "fixture-390.jpg",
+        "width": 390,
+        "height": 900,
+        "reviewed": true
+      },
+      "below_fold_reviewed": true
+    },
+    {
+      "width": 414,
+      "height": 900,
+      "measured_width": 414,
+      "measured_height": 900,
+      "client_width": 414,
+      "scroll_width": 414,
+      "overflow": false,
+      "ready_state": "complete",
+      "evidence_kind": "emulated",
+      "content_overflow": [],
+      "text_overflow": [],
+      "clipped_text": [],
+      "scrolling_descendants": [],
+      "offscreen_focus_links": [],
+      "visible_images": [],
+      "alignments": [
+        {
+          "selector": ".art",
+          "matches": 1,
+          "container_matches": 1,
+          "expected": "center",
+          "target": {
+            "left": 30,
+            "right": 384
+          },
+          "container": {
+            "left": 14,
+            "right": 400
+          }
+        }
+      ],
+      "screenshot": {
+        "path": "fixture-414.jpg",
+        "width": 414,
+        "height": 900,
+        "reviewed": true
+      },
+      "below_fold_reviewed": true
+    },
+    {
+      "width": 430,
+      "height": 900,
+      "measured_width": 430,
+      "measured_height": 900,
+      "client_width": 430,
+      "scroll_width": 430,
+      "overflow": false,
+      "ready_state": "complete",
+      "evidence_kind": "emulated",
+      "content_overflow": [],
+      "text_overflow": [],
+      "clipped_text": [],
+      "scrolling_descendants": [],
+      "offscreen_focus_links": [],
+      "visible_images": [],
+      "alignments": [
+        {
+          "selector": ".art",
+          "matches": 1,
+          "container_matches": 1,
+          "expected": "center",
+          "target": {
+            "left": 30,
+            "right": 400
+          },
+          "container": {
+            "left": 14,
+            "right": 416
+          }
+        }
+      ],
+      "screenshot": {
+        "path": "fixture-430.jpg",
+        "width": 430,
+        "height": 900,
+        "reviewed": true
+      },
+      "below_fold_reviewed": true
+    },
+    {
+      "width": 760,
+      "height": 900,
+      "measured_width": 760,
+      "measured_height": 900,
+      "client_width": 760,
+      "scroll_width": 760,
+      "overflow": false,
+      "ready_state": "complete",
+      "evidence_kind": "emulated",
+      "content_overflow": [],
+      "text_overflow": [],
+      "clipped_text": [],
+      "scrolling_descendants": [],
+      "offscreen_focus_links": [],
+      "visible_images": [],
+      "alignments": [
+        {
+          "selector": ".art",
+          "matches": 1,
+          "container_matches": 1,
+          "expected": "center",
+          "target": {
+            "left": 30,
+            "right": 730
+          },
+          "container": {
+            "left": 14,
+            "right": 746
+          }
+        }
+      ],
+      "screenshot": {
+        "path": "fixture-760.jpg",
+        "width": 760,
+        "height": 900,
+        "reviewed": true
+      },
+      "below_fold_reviewed": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "measured_width": 768,
+      "measured_height": 900,
+      "client_width": 768,
+      "scroll_width": 768,
+      "overflow": false,
+      "ready_state": "complete",
+      "evidence_kind": "emulated",
+      "content_overflow": [],
+      "text_overflow": [],
+      "clipped_text": [],
+      "scrolling_descendants": [],
+      "offscreen_focus_links": [],
+      "visible_images": [],
+      "alignments": [
+        {
+          "selector": ".art",
+          "matches": 1,
+          "container_matches": 1,
+          "expected": "center",
+          "target": {
+            "left": 30,
+            "right": 738
+          },
+          "container": {
+            "left": 14,
+            "right": 754
+          }
+        }
+      ],
+      "screenshot": {
+        "path": "fixture-768.jpg",
+        "width": 768,
+        "height": 900,
+        "reviewed": true
+      },
+      "below_fold_reviewed": true
+    },
+    {
+      "width": 900,
+      "height": 900,
+      "measured_width": 900,
+      "measured_height": 900,
+      "client_width": 900,
+      "scroll_width": 900,
+      "overflow": false,
+      "ready_state": "complete",
+      "evidence_kind": "emulated",
+      "content_overflow": [],
+      "text_overflow": [],
+      "clipped_text": [],
+      "scrolling_descendants": [],
+      "offscreen_focus_links": [],
+      "visible_images": [],
+      "alignments": [
+        {
+          "selector": ".art",
+          "matches": 1,
+          "container_matches": 1,
+          "expected": "center",
+          "target": {
+            "left": 30,
+            "right": 870
+          },
+          "container": {
+            "left": 14,
+            "right": 886
+          }
+        }
+      ],
+      "screenshot": {
+        "path": "fixture-900.jpg",
+        "width": 900,
+        "height": 900,
+        "reviewed": true
+      },
+      "below_fold_reviewed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "measured_width": 1440,
+      "measured_height": 900,
+      "client_width": 1440,
+      "scroll_width": 1440,
+      "overflow": false,
+      "ready_state": "complete",
+      "evidence_kind": "emulated",
+      "content_overflow": [],
+      "text_overflow": [],
+      "clipped_text": [],
+      "scrolling_descendants": [],
+      "offscreen_focus_links": [],
+      "visible_images": [],
+      "alignments": [
+        {
+          "selector": ".art",
+          "matches": 1,
+          "container_matches": 1,
+          "expected": "center",
+          "target": {
+            "left": 30,
+            "right": 1410
+          },
+          "container": {
+            "left": 14,
+            "right": 1426
+          }
+        }
+      ],
+      "screenshot": {
+        "path": "fixture-1440.jpg",
+        "width": 1440,
+        "height": 900,
+        "reviewed": true
+      },
+      "below_fold_reviewed": true
+    }
   ]
 }
