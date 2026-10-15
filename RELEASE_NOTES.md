@@ -1,0 +1,5 @@
+Use released StemLab 1.5.0 and DanceRudiments 0.3.0 through the verified project launcher. Add shared routes for N-dimensional native recordings, independent-stem pairs, controlled envelope smoothing, source-attributed beat estimates, shared viewer controls, phrase auditions and clip-source offsets. Preserve canonical timing, strict-loop/listening decisions, private media and public-deployment gates.
+
+Scoped installation accepts a reviewed in-package route manifest, preserving unselected owners and exact known predecessors. The EPK clip-evidence addition lives in the video-metadata workflow, avoiding a copy/insert repeat conflict in campaign-media reconciliation. Existing EPK link cleanup and other latest workflow features are retained.
+
+Validation covers workflow preservation/containment/repeat installation plus 162 focused upstream feature tests and five installed-wheel synthetic CLI checks. Native values, non-looping bounds and the known 1.25-second clip offset are verified. Browser-rendered controls and attended listening remain separate evidence. The archive is exact tested source; song material, local runtime wheels and operational evidence are excluded.

@@ -52,13 +52,13 @@
     "mode": "insert",
     "anchor": "## Connect suitable EPK effects to mobile motion",
     "identity": "## Keep published campaign media in its EPK",
-    "previous_source": "previous/0.1.12/rules/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/rules/campaign-media-epk-sync.md"
   },
   {
     "target": "Workflows/campaign-media-epk-sync.md",
     "source": "workflows/campaign-media-epk-sync.md",
     "mode": "copy",
-    "previous_source": "previous/0.1.12/workflows/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/workflows/campaign-media-epk-sync.md"
   },
   {
     "target": "Tools/EPK Campaign Media/audit_campaign_media.py",
@@ -72,7 +72,7 @@
     "mode": "insert",
     "anchor": "## Core sequence",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "Workflows/weekly-release-and-epk-sync.md",
@@ -80,7 +80,7 @@
     "mode": "insert",
     "anchor": "## Automatically publish verified publicity additions",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "Workflows/release-video-social-scheduling.md",
@@ -88,7 +88,7 @@
     "mode": "insert",
     "anchor": "## Potential problems",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "Workflows/SHORT-FORM-VIDEO-WORKFLOW.md",
@@ -96,7 +96,7 @@
     "mode": "insert",
     "anchor": "## Acceptance checklist",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "SHORT-FORM-PUBLISHING-WORKFLOW.md",
@@ -104,7 +104,7 @@
     "mode": "insert",
     "anchor": "## Core sequence",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "Releases/tools/youtube-publishing-workflow.md",
@@ -112,7 +112,7 @@
     "mode": "insert",
     "anchor": "## 7. Evidence and follow-up",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "YouTube Studio Daily Reports/WORKFLOW.md",
@@ -120,7 +120,7 @@
     "mode": "insert",
     "anchor": "## Run sequence",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "Workflows/epk-video-metadata.md",
@@ -128,7 +128,7 @@
     "mode": "insert",
     "anchor": "## Contract",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "Workflows/outreach-email-reply-audit.md",
@@ -136,7 +136,7 @@
     "mode": "insert",
     "anchor": "## Automatically publish verified publicity additions",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": ".codex-relocated-home/skills/wordpress-epk-publisher/SKILL.md",
@@ -144,7 +144,7 @@
     "mode": "insert",
     "anchor": "## Reconcile DanceMoves before every EPK change",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "skill-source/social-video-scheduling/SKILL.md",
@@ -152,7 +152,7 @@
     "mode": "insert",
     "anchor": "## Potential problems",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "skill-source/daily-music-marketing-run/SKILL.md",
@@ -160,7 +160,7 @@
     "mode": "insert",
     "anchor": "## Reconcile before acting",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "skill-source/evidence-gated-music-campaign/SKILL.md",
@@ -168,7 +168,7 @@
     "mode": "insert",
     "anchor": "## Procedure",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "skill-source/render-bpm-cue-videos/SKILL.md",
@@ -176,7 +176,7 @@
     "mode": "insert",
     "anchor": "## Verify the exact encoded file",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
@@ -184,7 +184,7 @@
     "mode": "insert",
     "anchor": "## Verify the exact encoded file",
     "identity": "## Reconcile published campaign media with EPKs",
-    "previous_source": "previous/0.1.12/fragments/campaign-media-epk-sync.md"
+    "previous_source": "previous/0.1.17/fragments/campaign-media-epk-sync.md"
   },
   {
     "target": "AGENTS.md",
@@ -592,7 +592,7 @@
     "target": "Tools/EPK Campaign Media/compose_epk_cover.py",
     "source": "tools/compose_epk_cover.py",
     "mode": "copy",
-    "previous_source": "previous/0.1.14/tools/compose_epk_cover.py"
+    "previous_source": "previous/0.1.17/tools/compose_epk_cover.py"
   },
   {
     "target": "Tools/EPK Campaign Media/epk_cover_player.js",
@@ -655,6 +655,11 @@
     "mode": "copy"
   },
   {
+    "target": "Tools/EPK Campaign Media/clean_epk_video_links.py",
+    "source": "tools/clean_epk_video_links.py",
+    "mode": "copy"
+  },
+  {
     "target": "Workflows/stemlab-audio-motion-recordings.md",
     "source": "workflows/stemlab-audio-motion-recordings.md",
     "mode": "copy"
@@ -700,10 +705,10 @@
     "identity": "## Phrase auditions and recorded listening feedback"
   },
   {
-    "target": "Workflows/campaign-media-epk-sync.md",
+    "target": "Workflows/epk-video-metadata.md",
     "source": "fragments/stemlab-clip-matching.md",
     "mode": "insert",
-    "anchor": "## Artwork-first hero playback",
+    "anchor": "## Contract",
     "identity": "## Verify partial soundtrack offsets with StemLab"
   },
   {
