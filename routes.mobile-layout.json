@@ -20,7 +20,8 @@
   {
     "target": "Tools/EPK Motion QA/audit_epk_layout.py",
     "source": "tools/audit_epk_layout.py",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.23/tools/audit_epk_layout.py"
   },
   {
     "target": "Tools/EPK Motion QA/collect_epk_layout.js",
@@ -30,7 +31,8 @@
   {
     "target": "Workflows/epk-responsive-layout-qa.md",
     "source": "workflows/epk-responsive-layout-qa.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.23/workflows/epk-responsive-layout-qa.md"
   },
   {
     "target": "AGENTS.md",
