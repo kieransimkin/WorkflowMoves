@@ -2,6 +2,7 @@
   {
     "target": "Workflows/scheduled-danceflow-tool-use.md",
     "source": "workflows/scheduled-danceflow-tool-use.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/staged-0.1.22/workflows/scheduled-danceflow-tool-use.md"
   }
 ]
