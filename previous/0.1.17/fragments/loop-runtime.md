@@ -1,0 +1,1 @@
+- Use the current checkout at `Z:\My Songs\Tools\stemlab` as the default automated candidate generator. Inspect existing results first; run `stemlab loops <results-folder> --per-section 2 --export-loops` when reusable evidence exists, or include loop analysis in a necessary new `practical` analysis.

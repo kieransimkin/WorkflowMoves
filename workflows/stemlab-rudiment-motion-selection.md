@@ -4,11 +4,17 @@ Use StemLab to find matching DanceRudiments before selecting new or materially r
 
 ## Runtime and source authority
 
-Invoke `Z:\My Songs\Tools\StemLab.ps1`. It selects the verified StemLab 1.4.0 wheel and official native DanceRudiments 0.2.4 wheel in `Tools/stemlab-runtime-1.4.0/.venv`. The dirty historical `Tools/stemlab` checkout is preserved. The new Python 3.11 environment shares retained analysis dependencies using `project_analysis_dependencies.pth`, while owning its StemLab/native packages separately. Record imported paths, versions, interpreter, catalogue identity and source commit; never trust a bare PATH command.
+Invoke `Z:\My Songs\Tools\StemLab.ps1`. It selects the verified StemLab 1.5.0 wheel and official native DanceRudiments 0.3.0 wheel in `Tools/stemlab-runtime-1.5.0/.venv`. The dirty historical `Tools/stemlab` checkout is preserved. The new Python 3.11 environment shares retained analysis dependencies using `project_analysis_dependencies.pth`, while owning its StemLab/native packages separately. Record imported paths, versions, interpreter, catalogue identity and source commit; never trust a bare PATH command.
 
-Source: [StemLab v1.4.0](https://github.com/kieransimkin/stemlab/releases/tag/v1.4.0), commit `15e6725069c2d5f8383f3d2b9503f60beb728e2f`. Method: [official rudiments documentation](https://github.com/kieransimkin/stemlab/blob/v1.4.0/docs/rudiments.md). The matcher calls independent DanceRudiments C++ `catalogue()` and `sample(name, integer_pip)` APIs. Do not copy the catalogue or movement functions into a renderer.
+Source: [StemLab v1.4.0](https://github.com/kieransimkin/stemlab/releases/tag/v1.5.0), commit `9225b7494e361a653e60d71be95e8339c46a4c9e`. Method: [official rudiments documentation](https://github.com/kieransimkin/stemlab/blob/v1.5.0/docs/rudiments.md). The matcher calls independent DanceRudiments C++ `catalogue()` and `sample(name, integer_pip)` APIs. Do not copy the catalogue or movement functions into a renderer.
 
 Resolve canonical master/stems and SHA-256 values, programme duration, accepted BPM, beat-grid evidence, cues, lyrics, intended excerpt and visual guide. Reused analysis must identify the same programme. Save new reports in dated release-local directories; retain older evidence.
+
+## Audio-derived recordings are a separate route
+
+For actual stem/filter envelope movements, independent axes, stem-pair batches or controlled peak/average/moving-average comparisons, follow `Z:\My Songs\Workflows\stemlab-audio-motion-recordings.md`. Released StemLab 1.5.0 and DanceRudiments 0.3.0 add a native non-looping arbitrary-dimensional recording format and the shared X-Y/bar-graph review harness. Catalogue matching below remains required before choosing new named rhythmic choreography. A generated recording is not a ranked catalogue match, a seamless loop or an automatically supported live DanceMoves effect.
+
+New analysis runs BeatNet/BeatThis after separation on both the master and every labelled percussion stem, preserving separator/source hashes and one consensus vote per detector family. Reuse saved evidence first; old results do not acquire these passes retroactively. Keep accepted BPM, estimated grid and phase provenance separate. For phrase-complete auditions and existing clip offsets, see `Z:\My Songs\Workflows\stemlab-phrase-and-clip-evidence.md`.
 
 ## Generate candidates
 
@@ -70,7 +76,7 @@ EPKs require play/pause, forward/backward seek, rate change, end/replay, motion 
 
 ## Potential problems
 
-- **Old CLI has no `rudiments`:** historical editable StemLab reports 1.2.0. Use the explicit launcher and require imported source in the installed 1.4.0 wheel. Do not reset the old checkout or point PYTHONPATH at it. Verified 11 October with native 0.2.4 (1,731 catalogue entries), eight focused tests and real bundled-audio CLI output.
+- **Old CLI has no `rudiments`:** historical editable StemLab reports 1.2.0. Use the explicit launcher and require imported source in the installed 1.5.0 wheel. Do not reset the old checkout or point PYTHONPATH at it. The earlier 11 October baseline was 1.4.0/native 0.2.4. The 15 October baseline is the checksum-verified 1.5.0/native 0.3.0 environment; record current verification separately. The catalogue still has 1,731 entries, so count alone cannot establish the new recording API.
 - **uv/pytest returns WinError 5:** consult `stemlab-restricted-temporary-directory-recovery.md` and tool-runtime guidance. On 11 October the sandbox denied cache/environment writes and pytest's fresh temporary directory; narrowly approved execution of the unchanged commands succeeded. Use a fresh empty test path, preserve failed evidence and do not alter system permissions.
 - **Window/phase misses the target section:** retain source window/grid/descriptor. Choose covering evidence or analyse a separately identified excerpt with its original source offset. A local maximum proves neither whole-song fit nor verified downbeats.
 

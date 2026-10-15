@@ -1,0 +1,7 @@
+## Current StemLab motion matcher and audio recordings (15 October 2026)
+
+Invoke `& 'Z:\My Songs\Tools\StemLab.ps1' <command>`. The released baseline is StemLab 1.5.0 (source `9225b7494e361a653e60d71be95e8339c46a4c9e`) with native DanceRudiments 0.3.0 (source `b89d1b80fcd8a8d8e02394ec718b6f4debd97b94`) in `Tools/stemlab-runtime-1.5.0/.venv`. This Python 3.11 environment owns both packages and shares the retained analysis dependencies through `project_analysis_dependencies.pth`. Earlier 1.4.0 and editable 1.2.0 installations remain available for rollback and historical reproduction.
+
+Official wheel SHA-256 values: StemLab `9ab19c70ce8358ee8a0a0287d2d10899607821e02d2fac9df73611103b0cbfbc`; Windows CPython 3.11 DanceRudiments `069eb592c5250be54f54134c96f0e78f0dd7f06b2e2b18d1eb413428229a459a`. Verify imported paths/versions and the requested API, not only the unchanged 1,731-entry catalogue. The wheels are separate local runtime assets, outside the workflow package.
+
+Follow `Workflows/stemlab-rudiment-motion-selection.md` for catalogue candidates; `Workflows/stemlab-audio-motion-recordings.md` for arbitrary-dimensional envelopes, stem pairs, smoothing and shared viewers; and `Workflows/stemlab-phrase-and-clip-evidence.md` for lyric-complete auditions, explicit feedback and clip offsets. Reuse saved evidence before new inference. Runtime imports, synthetic numerical/native verification, actual browser controls, attended listening and public deployment are separate evidence states; consult the dated integration report for checks actually completed.

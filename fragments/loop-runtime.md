@@ -1,0 +1,1 @@
+- Use the verified `Z:\My Songs\Tools\StemLab.ps1` released runtime as the default automated candidate generator. Inspect existing results first; run `& 'Z:\My Songs\Tools\StemLab.ps1' loops <results-folder> --per-section 2 --export-loops` when reusable evidence exists, or include loop analysis in a necessary new `practical` analysis. Preserve the historical editable checkout.
