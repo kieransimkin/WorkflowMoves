@@ -1,0 +1,10 @@
+# Browser cleanup after use
+
+Standing instruction from Kieran, 15 October 2026: in every chat, project, agent task and recurring workflow, close browser tabs and windows when their work is finished. Apply across workspaces, including browser work outside My Songs.
+
+- Reuse an appropriate existing tab. Identify the correct browser/chat/window scope through supported discovery and selection; retain tab IDs, purpose and ownership privately.
+- After retaining required evidence and independently verifying sends, uploads, saves or schedules, close completed job-created tabs and released borrowed tabs after each finished browser phase and before final hand-off. Close finished job-created windows through documented controls where available. Do not terminate browsers, Codex or helpers as a substitute.
+- Preserve active work, uploads, unsaved forms, other owners' pages and deliberate user handoffs. Each retained tab needs an owner, reason and next action. Use handoff/deliverable marks only for that specific purpose, never merely to keep an entire inventory alive.
+- An empty tool list proves only that the selected connection reports no accessible tabs. When Kieran or visible app state shows open tabs, record the discrepancy and check documented session/window selection; do not claim the visible tabs were closed or the whole app is clean. Leave a precise hold if the visible session cannot be controlled. Never inspect profiles/session stores or use private app internals to bypass that limit.
+- Verify actual closure through the supported close operation and a fresh inventory. Keep attempted closure, acknowledged-and-verified closure, independent disappearance and Kieran's manual cleanup separate. A sent cleanup request or saved rule is not proof of closure, memory savings or adoption by another running chat.
+- Keep private ownership and cleanup receipts in each chat's permitted workspace; preserve the existing private coordination policy. Continue the original task after cleanup when it remains authorised, without waking unrelated completed work.

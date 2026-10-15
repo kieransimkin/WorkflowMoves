@@ -24,6 +24,12 @@ Use the documented handoff mark only for a specific next action, and the deliver
 
 Complete cleanup after each finished browser phase and before returning the final result. Record attempted and independently verified tab/window closures separately, including retained or inaccessible items. A saved rule is configuration evidence, not proof of closure, adoption by another running chat or a permanent crash repair.
 
+## Empty inventory and visible-tab discrepancies
+
+An empty tool inventory establishes only that the selected connection reports no accessible tabs. If Kieran or the visible app shows browser tabs, record a session/window-scope discrepancy and verify the correct documented browser selection; do not label the chat or whole app clean from that empty result. Never inspect profiles/session stores or use private app internals to repair the mismatch. Distinguish tabs the agent successfully closed and independently verified absent from tabs that disappeared through Kieran or another owner; record manual closures separately.
+
+If current visible tabs cannot be matched to a documented controllable session, retain a precise access hold. Keep scope-specific inventories, user-reported manual cleanup, successful close acknowledgements and subsequent absence distinct. A routing error or an empty list after a stale close does not prove the agent closed every former tab.
+
 ## Recovery and acceptance
 
 Distinguish a stale tab, disconnected browser, kernel setup error and closed tool transport. Tab cleanup may reduce unused resources but does not diagnose any of these errors. Keep recovery attempts bounded and materially different. Do not create an endless chain of replacement tabs.
