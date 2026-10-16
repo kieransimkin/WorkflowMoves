@@ -47,5 +47,21 @@
     "mode": "insert",
     "identity": "# Project-local models for every DanceFlow project",
     "anchor": "# Inter-agent communication"
+  },
+  {
+    "source": "skills/assess-visual-identity/SKILL.md",
+    "target": ".codex-relocated-home/skills/assess-visual-identity/SKILL.md",
+    "mode": "copy",
+    "previous_source": "previous/prismmoves-bootstrap/skills/assess-visual-identity/SKILL.md"
+  },
+  {
+    "source": "skills/assess-visual-identity/references/assessment-model.md",
+    "target": ".codex-relocated-home/skills/assess-visual-identity/references/assessment-model.md",
+    "mode": "copy"
+  },
+  {
+    "source": "skills/assess-visual-identity/assets/visual-profile-example.png",
+    "target": ".codex-relocated-home/skills/assess-visual-identity/assets/visual-profile-example.png",
+    "mode": "copy"
   }
 ]
