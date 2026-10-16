@@ -2,97 +2,111 @@
   {
     "target": "Workflows/framerudiments-rendering.md",
     "source": "workflows/framerudiments-rendering.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.27/workflows/framerudiments-rendering.md"
   },
   {
     "target": "skill-source/render-bpm-cue-videos/SKILL.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Select motion with StemLab's DanceRudiments matcher",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Select motion with StemLab's DanceRudiments matcher",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": "skill-source/render-bpm-cue-videos/references/render-contract.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Select motion with StemLab's DanceRudiments matcher",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": ".agents/skills/render-bpm-cue-videos/references/render-contract.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Select motion with StemLab's DanceRudiments matcher",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": "skill-source/use-and-improve-stemlab/SKILL.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Select motion with StemLab's DanceRudiments matcher",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": ".codex-relocated-home/skills/use-and-improve-stemlab/SKILL.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Select motion with StemLab's DanceRudiments matcher",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": "skill-source/find-loopable-song-sections/SKILL.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Motion hand-off after excerpt selection",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": ".agents/skills/find-loopable-song-sections/SKILL.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Motion hand-off after excerpt selection",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": "skill-source/sprite-cycle-generation/SKILL.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## StemLab selection of accompanying rhythmic movement",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": "skill-source/dance-animations-and-effects/SKILL.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Select motion with StemLab's DanceRudiments matcher",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": ".agents/skills/dance-animations-and-effects/SKILL.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Select motion with StemLab's DanceRudiments matcher",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": "Workflows/offline-native-dancerudiments-sprites.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Select motion with StemLab's DanceRudiments matcher",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   },
   {
     "target": "Workflows/release-video-social-scheduling.md",
     "source": "fragments/framerudiments-rendering.md",
     "mode": "insert",
     "anchor": "## Browser tab ownership and cleanup",
-    "identity": "## Use FrameRudiments for offline rendering"
+    "identity": "## Use FrameRudiments for offline rendering",
+    "previous_source": "previous/0.1.27/fragments/framerudiments-rendering.md"
   }
 ]

@@ -39,7 +39,7 @@ class SharedToolAdoption(unittest.TestCase):
             self.assertTrue(all(r['status'] == 'current' for r in installer.install(
                 workspace, ROOT, check=True, manifest='tool-adoption-routes.json')))
 
-    def test_unreviewed_shared_guide_edit_stops_before_installation(self):
+    def test_unreviewed_renderer_routing_edit_stops_before_installation(self):
         with tempfile.TemporaryDirectory() as directory:
             workspace = Path(directory)
             for row in json.loads((ROOT / 'tool-adoption-routes.json').read_text()):
@@ -50,8 +50,8 @@ class SharedToolAdoption(unittest.TestCase):
                 else:
                     path.write_bytes((ROOT / row['previous_source']).read_bytes())
             target = workspace / 'Workflows/scheduled-danceflow-tool-use.md'
-            target.write_bytes(target.read_bytes() + b'\nAnother owner changed this.\n')
+            target.write_bytes(target.read_bytes() + b'\n| **FrameRudiments** | Another owner changed this managed row. |\n')
             original_global = (workspace / '.codex-relocated-home/AGENTS.md').read_bytes()
-            with self.assertRaisesRegex(ValueError, 'Existing destination differs'):
+            with self.assertRaisesRegex(ValueError, 'Existing managed block differs'):
                 installer.install(workspace, ROOT, manifest='tool-adoption-routes.json')
             self.assertEqual((workspace / '.codex-relocated-home/AGENTS.md').read_bytes(), original_global)
