@@ -17,7 +17,7 @@
     "target": "Workflows/scheduled-danceflow-tool-use.md",
     "source": "fragments/framerudiments-capability-row.md",
     "mode": "insert",
-    "previous_source": "previous/0.1.27/fragments/framerudiments-capability-row.md",
+    "previous_source": "previous/0.1.28/fragments/framerudiments-capability-row.md",
     "identity": "| **FrameRudiments** |",
     "anchor": "| **DanceMoves** |"
   },
@@ -25,6 +25,6 @@
     "target": "DanceFlow/ecosystem.md",
     "source": "workflows/danceflow-ecosystem.md",
     "mode": "copy",
-    "previous_source": "previous/0.1.27/ecosystem.md"
+    "previous_source": "previous/0.1.28/workflows/danceflow-ecosystem.md"
   }
 ]

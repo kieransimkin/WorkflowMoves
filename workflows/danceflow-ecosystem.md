@@ -11,7 +11,7 @@ Membership does not imply that every pair of tools has an automatic integration.
 | --- | --- | --- |
 | StemLab | Music, stem, rhythm, structure, harmony, lyric and sonic analysis; inspectable timing and loop evidence | https://github.com/kieransimkin/stemlab |
 | DanceRudiments | Deterministic rhythmic movement functions and a pattern visualizer | https://github.com/kieransimkin/DanceRudiments |
-| FrameRudiments | Offline Python Shorts and lyric visualiser rendering from DanceRudiments motion and saved StemLab evidence | https://github.com/kieransimkin/FrameRudiments (PyPI: `framerudiments`, published 0.1.2) |
+| FrameRudiments | Offline Python Shorts and lyric visualiser rendering from DanceRudiments motion and saved StemLab evidence | https://github.com/kieransimkin/FrameRudiments (PyPI: `framerudiments`, published 0.1.3) |
 | DanceMoves | Clocks, rendering, effects, input, scheduling, accessibility, lifecycle and adaptive quality for web motion | https://github.com/kieransimkin/DanceMoves |
 | KeywordMoves | Source-specific keyword research, imports, observations and evidence comparison | https://github.com/kieransimkin/keywordmoves |
 | RasterMoves | Reusable raster-media and image preparation | https://github.com/kieransimkin/RasterMoves |
