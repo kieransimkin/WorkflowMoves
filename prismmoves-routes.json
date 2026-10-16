@@ -1,0 +1,51 @@
+[
+  {
+    "source": "workflows/prismmoves-visual-analysis.md",
+    "target": "Workflows/prismmoves-visual-analysis.md",
+    "mode": "copy",
+    "previous_source": "previous/prismmoves-bootstrap/workflows/prismmoves-visual-analysis.md"
+  },
+  {
+    "source": "workflows/media/prismmoves-visual-profile-example.png",
+    "target": "Workflows/media/prismmoves-visual-profile-example.png",
+    "mode": "copy"
+  },
+  {
+    "source": "tools/PrismMoves.ps1",
+    "target": "Tools/PrismMoves.ps1",
+    "mode": "copy"
+  },
+  {
+    "source": "skills/prismmoves/SKILL.md",
+    "target": ".codex-relocated-home/skills/prismmoves/SKILL.md",
+    "mode": "copy",
+    "previous_source": "previous/prismmoves-bootstrap/skills/prismmoves/SKILL.md"
+  },
+  {
+    "source": "skills/prismmoves/assets/visual-profile-example.png",
+    "target": ".codex-relocated-home/skills/prismmoves/assets/visual-profile-example.png",
+    "mode": "copy"
+  },
+  {
+    "source": "fragments/prismmoves-visual-analysis.md",
+    "target": "Workflows/scheduled-danceflow-tool-use.md",
+    "mode": "insert",
+    "previous_source": "previous/prismmoves-bootstrap/fragments/prismmoves-visual-analysis.md",
+    "identity": "## PrismMoves and PixelCue visual evidence",
+    "anchor": "## Project-local model storage"
+  },
+  {
+    "source": "rules/project-local-models.md",
+    "target": "AGENTS.md",
+    "mode": "insert",
+    "identity": "# Project-local models for every DanceFlow project",
+    "anchor": "# Inter-agent communication"
+  },
+  {
+    "source": "rules/project-local-models.md",
+    "target": ".codex-relocated-home/AGENTS.md",
+    "mode": "insert",
+    "identity": "# Project-local models for every DanceFlow project",
+    "anchor": "# Inter-agent communication"
+  }
+]
