@@ -4,7 +4,7 @@ Private, versioned project rules and workflow additions for Kieran's local My So
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.24. StemLab runtime baseline: released 1.5.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.25. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 \`rules/canonical-metadata-wordpress-sync.md\` requires same-job WordPress synchronization of verified canonical BPM, lyric/cue timing and critical song metadata. Local canonical storage is not completion. Narrow property-only changes, preserved live content, existing mandatory approval gates and independent editor/public/runtime/hosted-byte verification remain authoritative. Guarded routes install this rule into project instructions and both weekly workflow copies.
 
@@ -67,3 +67,7 @@ Bindings contain a public master identity and exact programme duration, approved
 `workflows/scheduled-danceflow-tool-use.md` maps the complete applicable capabilities of all eleven DanceFlow tools to scheduled campaign, analytics, EPK, lyric, outreach and maintenance jobs. Generic KeywordMoves routes can also serve appropriate work-search/profile/Etsy tasks while preserving HunnyBee entity confinement; benefits and unrelated research remain outside scope. It requires a purpose-specific plan, supported composition and actual integration evidence, including reasoned unavailable/not-applicable states. Existing scope, dates, read-only restrictions, approvals, privacy and costs remain authoritative. DanceVault stays experimental; ThumbMoves is cache-only; Short Shifter remains independent.
 
 `fragments/scheduled-danceflow-tool-use.md` is the maintained prompt fragment. Apply it through the supported automation update control with a job-specific capability plan; this package does not edit scheduler TOML or ship private job definitions. Preserve every other field and verify persisted configuration. Install the shared guide with `python install.py --root "Z:\My Songs" --routes ecosystem-job-routes.json`, using `--check` first. Scheduler configuration is not proof a job has run or every tool is active.
+
+## Fourier frequency-band recordings
+
+StemLab 1.6.0 adds `record-rudiment --frequency-bands N` for exactly N frequency-derived dimensions from a master or stem. Use the maintained [Fourier guide](workflows/stemlab-fourier-frequency-bands.md), source-rate FFT/window/bucket provenance and the existing native clock/bipolar export. `fourier-routes.json` scopes installation to the verified launcher and three relevant guides; publish and verify the runtime before applying it. Existing schedule metadata and publication/access gates are preserved.

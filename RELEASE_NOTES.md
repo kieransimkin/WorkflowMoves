@@ -1,3 +1,5 @@
-Keep the multi-width EPK gate strict while accepting a maximum one-pixel screenshot rounding difference. Actual browser integration exposed a 375x900 viewport captured at 375x899; wrongly scaled 430x242 captures still fail. Require explicit supported screenshot framing to prevent desktop scrollbar exclusion from shrinking a capture, and independently inspect the saved image dimensions. Never resize an incorrect capture to manufacture a pass.
+# My Songs workflows v0.1.25
 
-Retains all nine required widths, text/control/clipping and alignment checks, artwork readiness, below-fold review, motion/timing requirements and publication gates. Guarded predecessor routes support upgrades from the prior layout checker and workflow. 88 unit and installation tests pass; real source/candidate browser observations and capture dimensions are checked separately.
+Connect the canonical StemLab launcher to the separately verified 1.6.0 runtime and document Fourier frequency buckets as native recording dimensions. N buckets produce exactly N ascending-frequency dimensions, with existing bipolar scaling and the 64-pip clock.
+
+Add the Fourier source/FFT/range/spacing/provenance guide, update the audio-motion and complete scheduled-tool capability guides, and retain exact previous-source copies for safe scoped upgrades. The four-route manifest changes only this integration and preserves all other rules, jobs, media and deployment gates.
