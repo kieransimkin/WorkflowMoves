@@ -1,0 +1,28 @@
+[
+  {
+    "target": ".codex-relocated-home/AGENTS.md",
+    "source": "rules/use-and-improve-danceflow.md",
+    "mode": "insert",
+    "anchor": "# Inter-agent communication",
+    "identity": "## Use and improve maintained DanceFlow tools"
+  },
+  {
+    "target": "AGENTS.md",
+    "source": "rules/use-and-improve-danceflow.md",
+    "mode": "insert",
+    "anchor": "## Make full use of the project tool library",
+    "identity": "## Use and improve maintained DanceFlow tools"
+  },
+  {
+    "target": "Workflows/scheduled-danceflow-tool-use.md",
+    "source": "workflows/scheduled-danceflow-tool-use.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.26/workflows/scheduled-danceflow-tool-use.md"
+  },
+  {
+    "target": "DanceFlow/ecosystem.md",
+    "source": "workflows/danceflow-ecosystem.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.26/ecosystem.md"
+  }
+]
