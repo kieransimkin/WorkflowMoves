@@ -70,7 +70,9 @@ Bindings contain a public master identity and exact programme duration, approved
 
 ## Fourier frequency-band recordings
 
-StemLab 1.6.0 adds `record-rudiment --frequency-bands N` for exactly N frequency-derived dimensions from a master or stem. Use the maintained [Fourier guide](workflows/stemlab-fourier-frequency-bands.md), source-rate FFT/window/bucket provenance and the existing native clock/bipolar export. `fourier-routes.json` scopes installation to the verified launcher and three relevant guides; publish and verify the runtime before applying it. Existing schedule metadata and publication/access gates are preserved.
+StemLab 1.6.0 adds `record-rudiment --frequency-bands N` for exactly N frequency-derived dimensions from a master or stem. Use the maintained [Fourier guide](workflows/stemlab-fourier-frequency-bands.md), source-rate FFT/window/bucket provenance and the existing native clock/bipolar export. `fourier-routes.json` scopes installation to the verified launcher, three relevant guides and both maintained StemLab skill copies; publish and verify the runtime before applying it. Existing schedule metadata and publication/access gates are preserved.
+
+The CI-generated Arcadians Fourier page demonstrates full-master 4/8/16/32/64/128-channel outputs. The scoped Fourier upgrade also refreshes the existing managed skill block to the1.6.0 baseline and links that example; every recording remains lossless.
 
 ## FrameRudiments offline rendering
 
