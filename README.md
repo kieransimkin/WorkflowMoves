@@ -103,3 +103,5 @@ PrismMoves calls PixelCue analysis and turns measured colour, texture and compos
 ![Original synthetic image and actual PixelCue measurement output](workflows/media/prismmoves-visual-profile-example.png)
 
 Generated measurement figure from PixelCue 0.9.0, not a screenshot or semantic-accuracy evaluation. All DanceFlow downloaded weights and model caches belong inside the owning project's models/ directory, ignored with models/ and excluded from source/release packages. Preserve existing paths until a verified migration. See workflows/prismmoves-visual-analysis.md.
+
+The existing assess-visual-identity skill now routes still-image measurements through PrismMoves and PixelCue while preserving its independent-lineage, authority, collection and outlier review. All eleven guarded routes preserve surrounding content; a single-image profile remains distinct from a collection identity assessment.
