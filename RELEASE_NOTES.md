@@ -1,12 +1,13 @@
-# My Songs workflows v0.1.26
+# My Songs workflows v0.1.27
 
-Use FrameRudiments for shared offline Shorts, Canvas-style and lyric-visualiser
-rendering. Add a maintained workflow and scoped additive routes for relevant
-source/installed skills and video workflows. Preserve canonical inputs,
-StemLab/DanceRudiments ownership, historical generators, technical/listening
-distinctions and all scheduling/publication/EPK gates. No existing job is run
-or rewritten, and no runtime package or private media is bundled.
+Route all chats and recurring workflows to useful maintained DanceFlow tools,
+including FrameRudiments for offline video. Require review of meaningful reusable
+improvements, supported composition, actual runtime evidence and canonical
+source publication. Record automatic immediate authorised software publication
+without a separate human gate; retain CI and distinct social/site requirements.
 
-Preserve the merged 0.1.25 Fourier source, six-target companion routes and
-full-master example guidance. That companion version reservation remains
-independent; this release adds only the FrameRudiments integration above.
+Add guarded global/project instruction, capability guide and ecosystem routes.
+Update the scheduled prompt fragment to twelve tools. Record FrameRudiments
+0.1.1 publication and DanceVault 1.0.0 hosting-test acceptance accurately, while
+preserving destination-host acceptance and separate source/runtime identity.
+No job definitions, private coordination records, runtime packages or media ship.
