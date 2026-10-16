@@ -1,7 +1,12 @@
-# My Songs workflows v0.1.25
+# My Songs workflows v0.1.26
 
-Connect the canonical StemLab launcher to the separately verified 1.6.0 runtime and document Fourier frequency buckets as native recording dimensions. N buckets produce exactly N ascending-frequency dimensions, with existing bipolar scaling and the 64-pip clock.
+Use FrameRudiments for shared offline Shorts, Canvas-style and lyric-visualiser
+rendering. Add a maintained workflow and scoped additive routes for relevant
+source/installed skills and video workflows. Preserve canonical inputs,
+StemLab/DanceRudiments ownership, historical generators, technical/listening
+distinctions and all scheduling/publication/EPK gates. No existing job is run
+or rewritten, and no runtime package or private media is bundled.
 
-Add the Fourier source/FFT/range/spacing/provenance guide, update the audio-motion and complete scheduled-tool capability guides, and retain exact previous-source copies for safe scoped upgrades. The six-target manifest changes only this integration and preserves all other rules, jobs, media and deployment gates.
-
-Include the CI-generated full-master Arcadians Fourier example and refresh both source/installed skill copies through their exact managed predecessor block.
+Preserve the merged 0.1.25 Fourier source, six-target companion routes and
+full-master example guidance. That companion version reservation remains
+independent; this release adds only the FrameRudiments integration above.
