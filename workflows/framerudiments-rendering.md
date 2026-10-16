@@ -45,3 +45,21 @@ Update the README/tests and submit a canonical PR for a demonstrated shared gap.
 Local launcher: `& 'Z:\My Songs\Tools\FrameRudiments.ps1' <command>`.
 The separate runtime is `Tools/FrameRudiments/.venv`; packages and private media
 are not bundled in this workflow archive. See `Tools/FrameRudiments/README.md`.
+
+
+Modular rudiment layers use `type: "rudiment"` with `renderer: "particles"`,
+`"bars"`, `"waveform"`, `"path"` or `"spectrum"`. The views share named, table,
+matched, composite and recording motion adapters; a trusted Python registry
+adds renderers without another clock or encoder. History is frame-addressed
+and viewports are bounded. `framerudiments renderers` lists the built-ins;
+`demo --rudiments` shows the four general views.
+
+Spectrum views consume calibrated saved StemLab Fourier recordings, recover
+RMS/dBFS from gain/normalization metadata, respect silent bands and export
+dominant/local peaks and peak holds to a hashed per-frame JSONL sidecar. Peak
+frequencies are band ranges, and hold uses bounded observed-frame history;
+neither is an exact-pitch or audio true-peak claim. The optional `demo --spectrum`
+uses StemLab 1.6+ to analyse a synthetic sweep; ordinary saved-recording rendering
+does not import StemLab. See the canonical
+[renderer API](https://github.com/kieransimkin/FrameRudiments/blob/main/docs/rudiment-renderers.md)
+and [spectrum contract](https://github.com/kieransimkin/FrameRudiments/blob/main/docs/spectrum.md).

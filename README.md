@@ -4,7 +4,7 @@ Private, versioned project rules and workflow additions for Kieran's local My So
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.27. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.28. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 \`rules/canonical-metadata-wordpress-sync.md\` requires same-job WordPress synchronization of verified canonical BPM, lyric/cue timing and critical song metadata. Local canonical storage is not completion. Narrow property-only changes, preserved live content, existing mandatory approval gates and independent editor/public/runtime/hosted-byte verification remain authoritative. Guarded routes install this rule into project instructions and both weekly workflow copies.
 
@@ -89,3 +89,5 @@ The tool and its private inputs are not bundled.
 ## Shared tool adoption
 
 `rules/use-and-improve-danceflow.md` routes every chat and recurring workflow to useful shared capabilities, including FrameRudiments, and makes worthwhile improvements part of delivery. It preserves task scope and separate live-site/social rules while recording immediate automatic software publication. Install the four guarded targets with `python install.py --root "Z:\My Songs" --routes tool-adoption-routes.json`, using `--check` first. The global target is the canonical Z-side instruction file; leave the existing C-side symlink unchanged. Shared guidance and private notices do not prove adoption by an already-running chat. No scheduler definitions or private coordination records are shipped.
+
+FrameRudiments guidance now covers modular viewport rendering and calibrated Fourier spectra/peak reports. Scoped upgrades replace only the renderer-managed blocks and capability row, preserving another owner's surrounding analysis guidance.

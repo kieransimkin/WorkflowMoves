@@ -14,3 +14,13 @@ Keep source hashes/sample bounds, canonical timing, match windows/offsets,
 Rendering does not upload, schedule or publish; existing publication and EPK
 reconciliation requirements remain authoritative. Extend a demonstrated shared
 gap in the proper package with tests/docs rather than copying another engine.
+
+Use modular `type: "rudiment"` views for particles/trails, signed bars, waveform
+traces, XY paths and calibrated Fourier spectra. Read the package's
+`docs/rudiment-renderers.md` and `docs/spectrum.md`; choose axes, viewports and
+bounded history explicitly. Reuse native motion and saved StemLab Fourier
+calibration, preserving RMS/gain/normalization, silent bands and source clocks.
+Retain `rudiment-analysis.jsonl` for per-frame peaks/holds; frequency-band peaks
+and frame-sampled holds do not establish exact pitch or audio true peaks.
+Extend the trusted renderer registry for a shared view; avoid another engine.
+
