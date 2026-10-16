@@ -23,4 +23,3 @@ calibration, preserving RMS/gain/normalization, silent bands and source clocks.
 Retain `rudiment-analysis.jsonl` for per-frame peaks/holds; frequency-band peaks
 and frame-sampled holds do not establish exact pitch or audio true peaks.
 Extend the trusted renderer registry for a shared view; avoid another engine.
-
