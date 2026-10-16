@@ -21,5 +21,21 @@
     "target": "Workflows/stemlab-fourier-frequency-bands.md",
     "source": "workflows/stemlab-fourier-frequency-bands.md",
     "mode": "copy"
+  },
+  {
+    "target": "skill-source/use-and-improve-stemlab/SKILL.md",
+    "source": "fragments/stemlab-analysis-1.5.md",
+    "mode": "insert",
+    "anchor": "## Default route",
+    "identity": "## Released StemLab analysis and viewer routes",
+    "previous_source": "previous/0.1.24/fragments/stemlab-analysis-1.5.md"
+  },
+  {
+    "target": ".codex-relocated-home/skills/use-and-improve-stemlab/SKILL.md",
+    "source": "fragments/stemlab-analysis-1.5.md",
+    "mode": "insert",
+    "anchor": "## Default route",
+    "identity": "## Released StemLab analysis and viewer routes",
+    "previous_source": "previous/0.1.24/fragments/stemlab-analysis-1.5.md"
   }
 ]
