@@ -678,14 +678,16 @@
     "source": "fragments/stemlab-analysis-1.5.md",
     "mode": "insert",
     "anchor": "## Default route",
-    "identity": "## Released StemLab analysis and viewer routes"
+    "identity": "## Released StemLab analysis and viewer routes",
+    "previous_source": "previous/0.1.24/fragments/stemlab-analysis-1.5.md"
   },
   {
     "target": ".codex-relocated-home/skills/use-and-improve-stemlab/SKILL.md",
     "source": "fragments/stemlab-analysis-1.5.md",
     "mode": "insert",
     "anchor": "## Default route",
-    "identity": "## Released StemLab analysis and viewer routes"
+    "identity": "## Released StemLab analysis and viewer routes",
+    "previous_source": "previous/0.1.24/fragments/stemlab-analysis-1.5.md"
   },
   {
     "target": "skill-source/find-loopable-song-sections/SKILL.md",
