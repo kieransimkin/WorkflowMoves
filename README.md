@@ -95,3 +95,11 @@ FrameRudiments guidance now covers modular viewport rendering and calibrated Fou
 Full-frame Butterchurn/projectM guidance includes lyrics and native animated sprites/atlases, pinned runtimes, exact effect PCM/clocks, feedback replay, final glyph QA and owned-resource cleanup.
 
 The guarded FrameRudiments launcher reads optional `Tools/FrameRudiments/local/effects-runtime.json` and supplies only absent allowlisted process environment variables. Native/browser dependencies remain separately installed and are never bundled in this archive.
+
+## PrismMoves visual-language evidence
+
+PrismMoves calls PixelCue analysis and turns measured colour, texture and composition plus selected model hypotheses into inspectable reports. It adds no competing image-analysis engine. The guarded prismmoves-routes.json installs the launcher, workflow, portable skill, measurement figure and a narrow capability block. Run `python install.py --root WORKSPACE --routes prismmoves-routes.json --check` before applying. Python packages/models are installed separately; no model download or public save is implied.
+
+![Original synthetic image and actual PixelCue measurement output](workflows/media/prismmoves-visual-profile-example.png)
+
+Generated measurement figure from PixelCue 0.9.0, not a screenshot or semantic-accuracy evaluation. All DanceFlow downloaded weights and model caches belong inside the owning project's models/ directory, ignored with models/ and excluded from source/release packages. Preserve existing paths until a verified migration. See workflows/prismmoves-visual-analysis.md.

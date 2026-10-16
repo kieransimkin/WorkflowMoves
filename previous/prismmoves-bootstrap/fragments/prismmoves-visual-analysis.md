@@ -1,0 +1,3 @@
+## PrismMoves and PixelCue visual evidence
+
+For authorised image understanding or identity evidence, use PrismMoves to call PixelCue's Python API or /v1/analysis route. PixelCue owns statistics/model adapters and existing VLM tagging; PrismMoves owns evidence organisation and reports. Follow Workflows/prismmoves-visual-analysis.md. Inspect actual runtime identities, select only useful models and retain unavailable receipts. No automatic downloads, scan, face processing, paid inference or public save. One image does not establish recurring identity rules. This routing is configuration, not proof that another chat adopted it.
