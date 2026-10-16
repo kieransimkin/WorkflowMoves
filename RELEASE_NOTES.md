@@ -1,8 +1,1 @@
-# My Songs workflows v0.1.28
-
-Use FrameRudiments modular particles/trails, bars, waveform traces, XY paths and
-calibrated Fourier spectrum/peak effects. Add native-source/axis/history/viewport
-and peak-sidecar guidance to source/installed skills and the rendering workflow.
-Upgrade only managed renderer blocks and the owned capability row, retaining
-other chats' StemLab/Fourier work. Preserve source clocks, calibration, silent
-bands, scientific limits and separate perceptual/media/site requirements.
+My Songs workflows 0.1.29 adds both full-frame visualisers to source/installed skills, shared workflows and the capability row. Preserve lyrics/native sprite/atlas integration, runtime pins, causal PCM/output clocks, feedback replay, final glyph/safe-zone QA and cleanup. Managed upgrades preserve other owners surrounding work.
