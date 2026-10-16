@@ -1,0 +1,63 @@
+[
+  {
+    "target": "Workflows/framerudiments-preset-profiling.md",
+    "source": "workflows/framerudiments-preset-profiling.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/framerudiments-rendering.md",
+    "source": "fragments/framerudiments-preset-profiling.md",
+    "mode": "insert",
+    "anchor": "## FrameRudiments visual examples",
+    "identity": "## Profile visualiser input response with FrameRudiments and PrismMoves"
+  },
+  {
+    "target": "skill-source/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/framerudiments-preset-profiling.md",
+    "mode": "insert",
+    "anchor": "## Use FrameRudiments for offline rendering",
+    "identity": "## Profile visualiser input response with FrameRudiments and PrismMoves"
+  },
+  {
+    "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/framerudiments-preset-profiling.md",
+    "mode": "insert",
+    "anchor": "## Use FrameRudiments for offline rendering",
+    "identity": "## Profile visualiser input response with FrameRudiments and PrismMoves"
+  },
+  {
+    "target": "skill-source/render-bpm-cue-videos/references/render-contract.md",
+    "source": "fragments/framerudiments-preset-profiling.md",
+    "mode": "insert",
+    "anchor": "## Use FrameRudiments for offline rendering",
+    "identity": "## Profile visualiser input response with FrameRudiments and PrismMoves"
+  },
+  {
+    "target": ".agents/skills/render-bpm-cue-videos/references/render-contract.md",
+    "source": "fragments/framerudiments-preset-profiling.md",
+    "mode": "insert",
+    "anchor": "## Use FrameRudiments for offline rendering",
+    "identity": "## Profile visualiser input response with FrameRudiments and PrismMoves"
+  },
+  {
+    "target": "Workflows/prismmoves-visual-analysis.md",
+    "source": "fragments/framerudiments-preset-profiling.md",
+    "mode": "insert",
+    "anchor": "## Ecosystem applicability",
+    "identity": "## Profile visualiser input response with FrameRudiments and PrismMoves"
+  },
+  {
+    "target": ".codex-relocated-home/skills/prismmoves/SKILL.md",
+    "source": "fragments/framerudiments-preset-profiling.md",
+    "mode": "insert",
+    "anchor": "One image supports an individual profile.",
+    "identity": "## Profile visualiser input response with FrameRudiments and PrismMoves"
+  },
+  {
+    "target": "Workflows/scheduled-danceflow-tool-use.md",
+    "source": "fragments/framerudiments-preset-profiling.md",
+    "mode": "insert",
+    "anchor": "## Retain proof of actual use",
+    "identity": "## Profile visualiser input response with FrameRudiments and PrismMoves"
+  }
+]
