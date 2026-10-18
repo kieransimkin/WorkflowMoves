@@ -2,6 +2,10 @@
 
 Use this contract when auditing or running scheduled music, media, EPK, research and tool-maintenance jobs. Read the job's current prompt and project instructions first. Existing dates, stop/no-op rules, read-only limits, approvals, privacy and cost boundaries remain authoritative. A prompt update is configuration evidence; it is not proof a job ran or an integration worked.
 
+## Current release preflight
+
+At the start of every new workflow, use `Tools/DanceFlow.ps1 -Releases` when available and inspect the official stable release of every applicable component. Compare that result with the actual imported, installed or WordPress identity. Read the versioned complete capability index in the released DanceFlow toolkit, including `docs/workflows/framerudiments-complete.md`; do not treat the historical version annotations later in this document as current-release authority. Record unavailable, older, ahead-of-release and unverified states separately. A release check never installs, deploys, downloads models or proves integration by itself.
+
 ## Use and improve the shared tools in every chat
 
 The same routing applies to ordinary chats, existing in-progress work at a material handoff and scheduled jobs. Use FrameRudiments as the shared offline renderer, with saved StemLab evidence and native DanceRudiments movement; use DanceMoves for live web motion. Follow `Workflows/framerudiments-rendering.md` and the applicable rendering, analysis and movement skills. Review a concrete reusable improvement during substantial use and implement it in the canonical tool when useful and in scope, or record why the existing capability meets the need. Publish completed improvements through their established checks and immutable releases. For authorised software releases, use automatic immediate GitHub/registry publication without a separate human gate; preserve the distinct social scheduling and public-site deployment rules.
@@ -44,6 +48,46 @@ Short Shifter is an independent project, explicitly outside DanceFlow. Existing 
 
 At a substantial tool use, identify a concrete improvement opportunity. Where already authorised, implement the smallest useful reusable fix in its proper tool, with relevant tests, README, example, owned PR, exact-revision CI and matching release/registry verification. If the existing capability already meets the need, record why no change is justified; if source work is outside the job's allowed scope, retain a precise improvement proposal. Do not create activity solely to satisfy an improvement quota.
 
+## Profile visualiser input response with FrameRudiments and PrismMoves
+
+Use FrameRudiments 0.3.0+ `presets-install` and `presets-profile`, or its maintained
+`scripts/profile_visualisers.py`, to compare Butterchurn/projectM presets. Read
+`Workflows/framerudiments-preset-profiling.md` and the canonical
+[capture and synthesis workflow](https://github.com/kieransimkin/FrameRudiments/blob/v0.3.0/docs/preset-profiling.md).
+The separately installed pinned catalogue has 14,680 distinct upstream entries
+and 67 shared textures; membership is separate from actual GPU acceptance and
+public-use rights. Preserve source notices, preset/runtime hashes and aliases.
+
+For the My Songs reference experiment use the directly selected Arcadians and
+The Truth is a Virus, each with canonical master, cover and timed lyrics. Keep
+their inputs and reports private. Cross cover/lyric composition and the three
+static cards with programme/silence controls; replay every preceding feedback
+frame and capture the declared output intervals. Record source offsets, sample
+bounds, source/output clocks, frame rate, mix and actual cleanup. Preserve the
+published source-bound beat adapter and original-time lyric/recording contracts.
+
+Invoke the maintained PrismMoves Python runtime (PrismMoves 0.1.0/PixelCue 0.9.0
+verified baseline); use PixelCue's actual statistics/comparison API instead of
+copying analysis. Keep optional model hypotheses and unavailable states distinct,
+with local weights/caches under the owning experiment models/. No automatic
+downloads or expensive full sweep is implied. Benchmark an explicit batch before
+extending it; retain completed, failed and untested coverage separately.
+
+Combine measured source/output, temporal, programme/silence and shared-card/tune
+comparisons into condition families and response ranges. Review palette, luminance,
+edges/symmetry, texture, spatial frequency and actual text treatment before writing
+a visual thesis or invariants. Near-duplicate frame grabs share a lineage; do not
+invent one overall brand/quality score. Keep legibility, flash safety, musical
+approval, rights and final encoded-video QA as separate evidence.
+
+![Generated static calibration inputs, not preset-output evidence](https://raw.githubusercontent.com/kieransimkin/FrameRudiments/v0.3.0/docs/media/preset-test-cards.png)
+
+Generated test-card illustrations. [Play the actual full-frame pipeline example](https://kieransimkin.github.io/DanceFlow/framerudiments.html)
+with user controls and transcript; that earlier software demo is distinct from
+the private real-song profiles. Keep raw PrismMoves reports, captured PNG hashes,
+resume settings and failure receipts. A stored rule does not prove another chat
+adopted it or that every catalogue entry has been profiled.
+
 ## Retain proof of actual use
 
 In the job's existing dated report/ledger, record the relevant capabilities selected, purpose, actual runtime/source identity, input/output/report hashes, supported handoff and verification result. Distinguish considered, available, invoked, produced, reviewed, approved, scheduled and verified-live states. Retain exact unavailability/omission reasons; reuse a current applicability baseline when scope and capabilities are unchanged. Tool names in a prompt, a loaded library, schema fields or a passing synthetic test do not prove integration or an artistic outcome.
@@ -58,3 +102,15 @@ Scheduled prompt changes must use the supported automation update control after 
 - **Broad tool-use wording expands the job:** explicit role/applicability decisions and the original scope/stop rules take priority. Complete authorised useful work; no automatic model sweeps, LoRA training, deployment, spending or publication from an inventory checklist.
 
 Authority: current tagged READMEs and capability docs in the repositories linked from `DanceFlow/ecosystem.md`; use current versions at action time. Local method verification on 15 October 2026 distinguishes the saved job instruction from any later execution result.
+
+## PrismMoves and PixelCue visual evidence
+
+Use PrismMoves for broad image-understanding reports and PixelCue for the shared decoding, measurements, model adapters and existing VLM tagging. Use Tools/PrismMoves.ps1 or the supported Python/service route in Workflows/prismmoves-visual-analysis.md. The hub's pixelcue_visual_analysis MCP tool returns a PixelCue receipt; PrismMoves creates JSON, Markdown, HTML and SVG reports. Select only useful authorised models, retain unavailable receipts and keep all weights/model caches in the owning project's ignored models/. One image does not establish recurring identity rules; use approved independent comparison evidence. This routing is configuration, not proof of adoption by another chat.
+
+![Actual PixelCue measurements on an original synthetic fixture](media/prismmoves-visual-profile-example.png)
+
+Generated measurement figure; not a UI screenshot or proof of semantic accuracy.
+
+## Project-local model storage
+
+All DanceFlow projects store downloaded model weights and model-specific caches inside the owning project's models/ and add models/ to .gitignore. Configure framework cache roots and adapters explicitly; retain revision/licence/hash manifests and exclude weights/caches from distributions. Choose only task-relevant authorised models. Do not silently migrate or delete existing weights: inventory references, preserve originals, verify loading at the new path and update consumers. Shared guidance is configuration, not evidence that another running chat adopted it.
