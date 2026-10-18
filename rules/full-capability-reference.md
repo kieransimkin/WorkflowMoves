@@ -1,0 +1,3 @@
+## Full ecosystem feature and release references
+
+Before each new run, follow `Workflows/DanceFlow/workflows/release-preflight.md` and inspect `Workflows/DanceFlow/capabilities/index.md`. Check the latest official stable release against the actual runtime, review all relevant capabilities and supported handoffs, then use and improve the canonical owners as the task warrants. For offline composition read `Workflows/DanceFlow/workflows/framerudiments-complete.md`, including advanced compositing, authoring, all native/spectral/sprite/3D views, word lyrics, emitters, routing, render quality and temporal-first preset analysis. Preserve the job's original authority, costs, source clocks and review/approval requirements; availability is not proof of execution.
