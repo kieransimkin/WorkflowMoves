@@ -1,3 +1,9 @@
+# WorkflowMoves v0.1.36
+
+WorkflowMoves 0.1.36 prevents campaign videos and Shorts from being appended as a generic afterthought. It requires a release-specific design profile, places media within the page narrative before end matter and adds rendered visual comparison to the acceptance evidence. The bounded integration helper preserves iframe, video, audio and script bytes and does not infer art direction or publish.
+
+The focused `epk-media-design-routes.json` installer updates the canonical workflow, project rule, WordPress EPK skill fragment and helper without touching unrelated workflow content. The illustrated example labels its generated schematic and live screenshot accurately.
+
 # WorkflowMoves v0.1.35
 
 Web forms can report a successful submission without producing an email message ID. The new duplicate-send gate records verified form receipts using retained success evidence and SHA-256 checks, so cooperating callers can release their owned venue mutex while retaining the permanent original-request claim.
