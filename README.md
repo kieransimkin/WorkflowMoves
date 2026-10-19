@@ -11,7 +11,7 @@ The public repository contains only reusable workflow material. Song audio, artw
 ## What it adds
 
 - **Guarded installation.** `install.py` validates every selected route before it writes, preserves surrounding text and stops on an unknown or edited managed block.
-- **Whole-ecosystem routing.** Maintained guides compose FrameRudiments, StemLab, DanceRudiments, DanceMoves, PrismMoves, PixelCue and the other DanceFlow packages through their supported contracts.
+- **Whole-ecosystem routing.** Maintained guides compose FrameRudiments, StemLab, DanceRudiments, DanceMoves, MediaSlide, PrismMoves, PixelCue and the other DanceFlow packages through their supported contracts.
 - **Evidence gates.** Auditors keep generated files, uploads, schedules, public saves, playback, responsive rendering and verified outcomes as separate states.
 - **People and agent guidance.** Each route explains the human decision, the supported command, the verification evidence and the limits that remain after a passing check.
 - **Reusable improvements.** When a workflow exposes a general gap, the smallest useful fix belongs in the owning tool or this package, with tests and matching documentation.

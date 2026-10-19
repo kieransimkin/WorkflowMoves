@@ -40,6 +40,11 @@
     "mode": "copy"
   },
   {
+    "source": "workflows/danceflow/capabilities/mediaslide.md",
+    "target": "Workflows/DanceFlow/capabilities/mediaslide.md",
+    "mode": "copy"
+  },
+  {
     "source": "workflows/danceflow/capabilities/pixelcue.md",
     "target": "Workflows/DanceFlow/capabilities/pixelcue.md",
     "mode": "copy"

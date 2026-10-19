@@ -24,6 +24,8 @@ Membership does not imply that every pair of tools has an automatic integration.
 | React Timeline Sequence | React timelines, loop regions and shared audio transport | https://github.com/kieransimkin/react-timeline-sequence |
 | EPK Social Metadata | WordPress EPK social and search metadata | https://github.com/kieransimkin/kieran-epk-social-metadata |
 | DanceVault | Encrypted, password-controlled WordPress file delivery; stable 1.0.0 with real Apache/nginx test acceptance; destination-host acceptance still required | https://github.com/kieransimkin/DanceVault |
+| WorkflowMoves | Guarded workflow rules, skills, evidence gates and additive project integration | https://github.com/kieransimkin/WorkflowMoves |
+| MediaSlide | Responsive React media browsing across list, details, adjustable thumbnails and slide views | https://github.com/kieransimkin/react-mediaslide |
 
 Kieran explicitly confirmed that **Short Shifter is entirely unrelated to
 DanceFlow**. Keep it out of DanceFlow membership lists, diagrams, copy and
