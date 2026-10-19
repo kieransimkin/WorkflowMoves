@@ -1,0 +1,149 @@
+[
+  {
+    "source": "workflows/danceflow/capabilities/dancemoves.md",
+    "target": "Workflows/DanceFlow/capabilities/dancemoves.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/dancerudiments.md",
+    "target": "Workflows/DanceFlow/capabilities/dancerudiments.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/dancevault.md",
+    "target": "Workflows/DanceFlow/capabilities/dancevault.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/epk-social-metadata.md",
+    "target": "Workflows/DanceFlow/capabilities/epk-social-metadata.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/framerudiments.md",
+    "target": "Workflows/DanceFlow/capabilities/framerudiments.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/index.md",
+    "target": "Workflows/DanceFlow/capabilities/index.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/keywordmoves.md",
+    "target": "Workflows/DanceFlow/capabilities/keywordmoves.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/likenessforge.md",
+    "target": "Workflows/DanceFlow/capabilities/likenessforge.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/pixelcue.md",
+    "target": "Workflows/DanceFlow/capabilities/pixelcue.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/prismmoves.md",
+    "target": "Workflows/DanceFlow/capabilities/prismmoves.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/rastermoves.md",
+    "target": "Workflows/DanceFlow/capabilities/rastermoves.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/react-timeline-sequence.md",
+    "target": "Workflows/DanceFlow/capabilities/react-timeline-sequence.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/stemlab.md",
+    "target": "Workflows/DanceFlow/capabilities/stemlab.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/thumbmoves.md",
+    "target": "Workflows/DanceFlow/capabilities/thumbmoves.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/toolkit.md",
+    "target": "Workflows/DanceFlow/capabilities/toolkit.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/workflows/framerudiments-complete.md",
+    "target": "Workflows/DanceFlow/workflows/framerudiments-complete.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/workflows/release-preflight.md",
+    "target": "Workflows/DanceFlow/workflows/release-preflight.md",
+    "mode": "copy"
+  },
+  {
+    "source": "rules/latest-release-preflight.md",
+    "target": "AGENTS.md",
+    "mode": "insert",
+    "anchor": "## Make full use of the project tool library",
+    "identity": "## Check current DanceFlow releases before each workflow"
+  },
+  {
+    "source": "rules/full-capability-reference.md",
+    "target": "skill-source/render-bpm-cue-videos/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Profile visualiser input response with FrameRudiments and PrismMoves",
+    "identity": "## Full ecosystem feature and release references"
+  },
+  {
+    "source": "rules/full-capability-reference.md",
+    "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Profile visualiser input response with FrameRudiments and PrismMoves",
+    "identity": "## Full ecosystem feature and release references"
+  },
+  {
+    "source": "rules/full-capability-reference.md",
+    "target": "skill-source/use-and-improve-stemlab/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Use FrameRudiments for offline rendering",
+    "identity": "## Full ecosystem feature and release references"
+  },
+  {
+    "source": "rules/full-capability-reference.md",
+    "target": "skill-source/dance-animations-and-effects/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Use FrameRudiments for offline rendering",
+    "identity": "## Full ecosystem feature and release references"
+  },
+  {
+    "source": "rules/full-capability-reference.md",
+    "target": ".agents/skills/dance-animations-and-effects/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Use FrameRudiments for offline rendering",
+    "identity": "## Full ecosystem feature and release references"
+  },
+  {
+    "source": "tools/DanceFlow.ps1",
+    "target": "Tools/DanceFlow.ps1",
+    "mode": "copy"
+  },
+  {
+    "source": "tools/KeywordMoves.ps1",
+    "target": "Tools/KeywordMoves.ps1",
+    "mode": "copy"
+  },
+  {
+    "source": "tools/RasterMoves.ps1",
+    "target": "Tools/RasterMoves.ps1",
+    "mode": "copy"
+  },
+  {
+    "source": "tools/PixelCue.ps1",
+    "target": "Tools/PixelCue.ps1",
+    "mode": "copy"
+  }
+]

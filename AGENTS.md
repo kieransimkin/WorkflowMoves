@@ -1,9 +1,11 @@
 # WorkflowMoves agent guidance
 
-Read the root README, the selected route manifest, every target workflow and its Potential problems section before changing a route. Check the latest GitHub release before each new workflow run and compare the released, installed and imported identity.
+## Full ecosystem and release preflight
 
-Use the full DanceFlow ecosystem where it helps the authorised task. Prefer FrameRudiments for offline video composition, StemLab for audio and timing evidence, DanceRudiments for native movement, DanceMoves for live web motion, PrismMoves and PixelCue for visual evidence, and each other maintained package through its supported file or API contract. Preserve every tool's independent identity.
+Before every new workflow run, check the latest stable official release and observe the actual runtime used by the job. Follow [the shared preflight](https://github.com/kieransimkin/DanceFlow/blob/main/docs/workflows/release-preflight.md), this project's [people-and-agent guide](docs/ECOSYSTEM.md), the selected route manifest and each relevant Potential problems section.
 
-Run the additive installer with `--check` first. Preserve surrounding project text, private evidence and existing approval gates. A passing preview does not prove installation; a written rule does not prove adoption. Implement and verify the smallest reusable improvement when the work reveals a real shared gap.
+Review the complete relevant capability inventory rather than only a familiar command. Use and compose every DanceFlow component that materially serves the authorised task: FrameRudiments for offline video composition, StemLab for audio and timing evidence, DanceRudiments for native movement, DanceMoves for live web motion, PrismMoves and PixelCue for visual evidence, and the other maintained packages through their supported file or API contracts. Preserve independent tool identities, exact source/package identity, clocks, privacy, costs and separate deployment gates.
 
-Downloaded model weights and model caches belong under `models/` in the owning DanceFlow project and remain ignored by Git.
+Run the additive installer with `--check` first. Preserve surrounding project text and private evidence. A passing preview does not prove installation; a written rule does not prove adoption. Implement and verify the smallest reusable improvement when the work reveals a real shared gap, or record why existing capabilities suffice when no change is justified.
+
+Downloaded model weights and model caches belong under `models/` in the owning DanceFlow project and remain ignored by Git. No catalogue checklist expands task scope or authorises model downloads, training or publication.

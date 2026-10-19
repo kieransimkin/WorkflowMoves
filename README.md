@@ -73,6 +73,16 @@ Run `python -m unittest discover -s tests -v` for the preservation, conflict and
 
 Campaign-media rules require same-job EPK reconciliation of published videos, YouTube Shorts and social posts. Embed distinct YouTube items wherever permitted; proven same-video cross-posts produce one representative. Unavailable YouTube embeds use verified original files hosted in WordPress, with native controls, approved posters and hosted hash/playback checks. Scheduled items remain pending, and existing public-save gates remain authoritative. See workflows/campaign-media-epk-sync.md. Additive routes cover instructions, publishing and campaign skills, platform monitoring and recurring audits.
 
+## Before every new workflow
+
+Check the latest stable official release and the actual installed/imported version before starting; do not infer currency from a directory name or a development checkout. Read the current release notes, tagged capability documentation and relevant Potential problems. Use the [DanceFlow release preflight](https://github.com/kieransimkin/DanceFlow/blob/main/docs/workflows/release-preflight.md) and [complete capability references](https://github.com/kieransimkin/DanceFlow/blob/main/docs/capabilities/index.md).
+
+People and agents should consider the full ecosystem, use all capabilities that materially serve the task, compose supported files/APIs, and improve a demonstrated reusable gap in its canonical tool. Record why no worthwhile change is justified when that is the result. Keep independent tool identities, compatibility, source clocks, privacy, model/download costs and publication/deployment permissions intact. Store weights and model-specific caches in the owning project's ignored `models/`.
+
+## Find your route
+
+[Potential problems](#potential-problems) · [Artwork-first campaign players](#artwork-first-campaign-players) · [Verified master playback bindings](#verified-master-playback-bindings) · [Scheduled jobs and complete tool use](#scheduled-jobs-and-complete-tool-use) · [Fourier frequency-band recordings](#fourier-frequency-band-recordings) · [FrameRudiments offline rendering](#framerudiments-offline-rendering) · [Shared tool adoption](#shared-tool-adoption) · [PrismMoves visual-language evidence](#prismmoves-visual-language-evidence)
+
 ## Potential problems
 
 If a Windows checkout reports that an installed copied document differs immediately after a Git update, compare raw bytes and newline style before overwriting it. Version 0.1.1 pins source text to LF with `.gitattributes`, matching the release archive and initially installed copies. For a preserved old checkout, use the downloaded release source or a fresh 0.1.1 checkout; never normalise unrelated workspace files. Linux and Windows CI cover the additive installer. Different instruction text remains a conflict, even when newlines are consistent.
@@ -140,3 +150,8 @@ The existing assess-visual-identity skill now routes still-image measurements th
 ![Generated calibration input illustrations](https://raw.githubusercontent.com/kieransimkin/FrameRudiments/v0.3.0/docs/media/preset-test-cards.png)
 
 Generated inputs; rendered results belong to each experiment. [Playable pipeline demo with transcript](https://kieransimkin.github.io/DanceFlow/framerudiments.html).
+
+
+## Full ecosystem release and capability routes
+
+`ecosystem-preflight-routes.json` adds the shared release preflight, complete capability references and full FrameRudiments compositor guide, plus additive root/skill discovery blocks. Preview with `python install.py --root WORKSPACE --routes ecosystem-preflight-routes.json --check`, inspect the receipt, then apply that same manifest and verify a second check reports current. The runtime checker and package installations remain separate from this guarded text installer. Existing model/asset data, job schedules, stop rules and public-save gates are preserved.
