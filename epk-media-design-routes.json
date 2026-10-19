@@ -1,0 +1,29 @@
+[
+  {
+    "target": "AGENTS.md",
+    "source": "rules/campaign-media-epk-sync.md",
+    "mode": "insert",
+    "anchor": "## Connect suitable EPK effects to mobile motion",
+    "identity": "## Keep published campaign media in its EPK",
+    "previous_source": "previous/0.1.33/rules/campaign-media-epk-sync.md"
+  },
+  {
+    "target": "Workflows/campaign-media-epk-sync.md",
+    "source": "workflows/campaign-media-epk-sync.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.33/workflows/campaign-media-epk-sync.md"
+  },
+  {
+    "target": "Tools/EPK Campaign Media/integrate_epk_media.py",
+    "source": "tools/integrate_epk_media.py",
+    "mode": "copy"
+  },
+  {
+    "target": ".codex-relocated-home/skills/wordpress-epk-publisher/SKILL.md",
+    "source": "fragments/campaign-media-epk-sync.md",
+    "mode": "insert",
+    "anchor": "## Reconcile DanceMoves before every EPK change",
+    "identity": "## Reconcile published campaign media with EPKs",
+    "previous_source": "previous/0.1.33/fragments/campaign-media-epk-sync.md"
+  }
+]
