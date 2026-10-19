@@ -16,6 +16,8 @@ The public repository contains only reusable workflow material. Song audio, artw
 - **People and agent guidance.** Each route explains the human decision, the supported command, the verification evidence and the limits that remain after a passing check.
 - **Reusable improvements.** When a workflow exposes a general gap, the smallest useful fix belongs in the owning tool or this package, with tests and matching documentation.
 
+`tools/outreach_send_gate.py` provides an atomic venue mutex and permanent original-request claim for cooperating outreach senders. Verified email receipts use persisted message IDs; verified web forms use retained, hash-checked success evidence without inventing an email ID. Read the [duplicate-send workflow](workflows/duplicate-send-gate.md) before use. It does not send messages, grant approval or verify a website.
+
 ## Start here
 
 Check the latest [WorkflowMoves release](https://github.com/kieransimkin/WorkflowMoves/releases) before every new workflow run. Download the matching archive and `SHA256SUMS.txt`, verify the checksum, then preview the exact route set before applying it:
@@ -33,7 +35,7 @@ The repository includes real or generated media beside the relevant guides. The 
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.34. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.35. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 \`rules/canonical-metadata-wordpress-sync.md\` requires same-job WordPress synchronization of verified canonical BPM, lyric/cue timing and critical song metadata. Local canonical storage is not completion. Narrow property-only changes, preserved live content, existing mandatory approval gates and independent editor/public/runtime/hosted-byte verification remain authoritative. Guarded routes install this rule into project instructions and both weekly workflow copies.
 

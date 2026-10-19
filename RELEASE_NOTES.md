@@ -1,7 +1,7 @@
-# WorkflowMoves v0.1.34
+# WorkflowMoves v0.1.35
 
-WorkflowMoves is the public name for the DanceFlow ecosystem's guarded workflow layer. The repository, archive, release title and public copy now describe the maintained rules, task guides, portable skills, validators and additive route installer without referring to private project material.
+Web forms can report a successful submission without producing an email message ID. The new duplicate-send gate records verified form receipts using retained success evidence and SHA-256 checks, so cooperating callers can release their owned venue mutex while retaining the permanent original-request claim.
 
-The README adds a logical overview, people and agent entry points, latest-release checks, visual documentation and clear evidence limits. Existing 0.1.33 FrameRudiments preset-library, interval-capture and PrismMoves response-synthesis routes remain unchanged.
+The standard-library CLI also supports email Sent IDs, explicit pre-send aborts and final email failures. It fails closed on competing owners, changed approved packets, uncertain outcomes, missing form success and altered evidence files. It performs no sending, account action or approval. The claim directory is explicitly supplied and remains private.
 
-The source package includes generated calibration illustrations by immutable link and a playable software-demo reference. Private sample tunes, artwork, lyric text, captures, models and per-preset evidence remain outside the package. No public-site or social publication is performed.
+Tests cover sixteen competing claimants, permanent duplicate prevention, ownership, approved-packet integrity and web-form evidence failures. Linux and Windows CI and the tag release workflow run the complete repository tests. The archive contains only generic code, synthetic tests and documentation; campaign records, recipient data, correspondence, captures and tokens remain outside it.
