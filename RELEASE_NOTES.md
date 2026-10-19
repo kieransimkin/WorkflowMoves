@@ -1,3 +1,9 @@
+# WorkflowMoves v0.1.37
+
+WorkflowMoves 0.1.37 adds MediaSlide to the guarded DanceFlow capability routes and whole-ecosystem guidance. It documents the canonical MediaSlide name, the react-mediaslide package identity, list/details/thumbnails/slide modes, renderer and pagination contracts, and the required GitHub/npm/imported-version comparison.
+
+The release also restores WorkflowMoves in the maintained capability index. Configuration remains additive and does not prove runtime adoption or application rendering.
+
 # WorkflowMoves v0.1.36
 
 WorkflowMoves 0.1.36 prevents campaign videos and Shorts from being appended as a generic afterthought. It requires a release-specific design profile, places media within the page narrative before end matter and adds rendered visual comparison to the acceptance evidence. The bounded integration helper preserves iframe, video, audio and script bytes and does not infer art direction or publish.
