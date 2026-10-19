@@ -1,4 +1,4 @@
-# Contributing to my-songs-workflows
+# Contributing to WorkflowMoves
 
 ## Before every new workflow
 

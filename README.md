@@ -1,10 +1,39 @@
-# My Songs workflows
+# WorkflowMoves
 
-Private, versioned project rules and workflow additions for Kieran's local My Songs workspace. This repository contains maintained instructions, routing fragments and a tool launcher. Song audio, artwork, reports, credentials, correspondence and rights evidence stay outside it.
+WorkflowMoves is the guarded workflow layer of the DanceFlow ecosystem. It packages versioned rules, reusable task guides, portable agent skills, validation tools and an additive installer so people and coding agents can adopt new DanceFlow capabilities without replacing project-owned instructions.
+
+![WorkflowMoves overview: reviewed source blocks pass through guarded routes into project instructions, skills and workflows](docs/media/workflowmoves-overview.svg)
+
+*Generated architecture illustration for WorkflowMoves 0.1.34. It explains the package flow; it is not evidence that a particular workspace has installed a route.*
+
+The public repository contains only reusable workflow material. Song audio, artwork, reports, credentials, correspondence, private coordination and rights evidence remain outside it.
+
+## What it adds
+
+- **Guarded installation.** `install.py` validates every selected route before it writes, preserves surrounding text and stops on an unknown or edited managed block.
+- **Whole-ecosystem routing.** Maintained guides compose FrameRudiments, StemLab, DanceRudiments, DanceMoves, PrismMoves, PixelCue and the other DanceFlow packages through their supported contracts.
+- **Evidence gates.** Auditors keep generated files, uploads, schedules, public saves, playback, responsive rendering and verified outcomes as separate states.
+- **People and agent guidance.** Each route explains the human decision, the supported command, the verification evidence and the limits that remain after a passing check.
+- **Reusable improvements.** When a workflow exposes a general gap, the smallest useful fix belongs in the owning tool or this package, with tests and matching documentation.
+
+## Start here
+
+Check the latest [WorkflowMoves release](https://github.com/kieransimkin/WorkflowMoves/releases) before every new workflow run. Download the matching archive and `SHA256SUMS.txt`, verify the checksum, then preview the exact route set before applying it:
+
+```powershell
+python install.py --root "Z:\My Songs" --routes tool-adoption-routes.json --check
+python install.py --root "Z:\My Songs" --routes tool-adoption-routes.json
+```
+
+For people: read the named workflow and its **Potential problems** section, review the check output, then run the write command only for the intended project. For agents: inspect released, installed and imported identities first; use existing DanceFlow primitives; retain exact source hashes; and verify the destination after every write. A clean preview is evidence of a possible installation, not evidence that another workspace or running chat adopted it.
+
+## Visual walkthroughs
+
+The repository includes real or generated media beside the relevant guides. The [FrameRudiments playable pipeline demo](https://kieransimkin.github.io/DanceFlow/framerudiments.html) includes user-controlled playback and a transcript. The PrismMoves section below includes a generated PixelCue measurement figure. Command and public-page evidence is version-labelled wherever it appears.
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.33. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.34. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 \`rules/canonical-metadata-wordpress-sync.md\` requires same-job WordPress synchronization of verified canonical BPM, lyric/cue timing and critical song metadata. Local canonical storage is not completion. Narrow property-only changes, preserved live content, existing mandatory approval gates and independent editor/public/runtime/hosted-byte verification remain authoritative. Guarded routes install this rule into project instructions and both weekly workflow copies.
 

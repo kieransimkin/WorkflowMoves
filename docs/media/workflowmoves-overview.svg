@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">WorkflowMoves guarded installation overview</title>
+  <desc id="desc">A diagram showing reviewed DanceFlow rules, skills and workflows passing through validated route manifests into preserved project instructions, with evidence checks around the process.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#181126"/><stop offset="1" stop-color="#34203f"/></linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#bff7df"/><stop offset="1" stop-color="#f5ce85"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="1400" height="760" rx="44" fill="url(#bg)"/>
+  <text x="80" y="92" fill="#f7f2ed" font-family="system-ui,Segoe UI,sans-serif" font-size="52" font-weight="750">WorkflowMoves</text>
+  <text x="82" y="137" fill="#d0c4d8" font-family="system-ui,Segoe UI,sans-serif" font-size="24">Guarded workflow composition for the DanceFlow ecosystem</text>
+  <g filter="url(#shadow)" font-family="system-ui,Segoe UI,sans-serif">
+    <rect x="80" y="220" width="320" height="330" rx="26" fill="#241b32" stroke="#6d5a7d" stroke-width="2"/>
+    <text x="120" y="275" fill="#f5ce85" font-size="18" font-weight="700" letter-spacing="2">REVIEWED SOURCE</text>
+    <text x="120" y="334" fill="#f7f2ed" font-size="30" font-weight="700">Rules</text><text x="120" y="370" fill="#d0c4d8" font-size="20">scope and evidence gates</text>
+    <text x="120" y="432" fill="#f7f2ed" font-size="30" font-weight="700">Workflows</text><text x="120" y="468" fill="#d0c4d8" font-size="20">repeatable task contracts</text>
+    <text x="120" y="530" fill="#f7f2ed" font-size="30" font-weight="700">Skills + tools</text>
+    <rect x="540" y="220" width="320" height="330" rx="26" fill="#241b32" stroke="#bff7df" stroke-width="3"/>
+    <text x="580" y="275" fill="#bff7df" font-size="18" font-weight="700" letter-spacing="2">GUARDED ROUTES</text>
+    <text x="580" y="346" fill="#f7f2ed" font-size="31" font-weight="700">Validate first</text>
+    <text x="580" y="393" fill="#d0c4d8" font-size="21">exact anchors</text><text x="580" y="429" fill="#d0c4d8" font-size="21">known predecessors</text><text x="580" y="465" fill="#d0c4d8" font-size="21">conflict stops</text><text x="580" y="501" fill="#d0c4d8" font-size="21">source hashes</text>
+    <rect x="1000" y="220" width="320" height="330" rx="26" fill="#241b32" stroke="#6d5a7d" stroke-width="2"/>
+    <text x="1040" y="275" fill="#f5ce85" font-size="18" font-weight="700" letter-spacing="2">PRESERVED TARGET</text>
+    <text x="1040" y="346" fill="#f7f2ed" font-size="30" font-weight="700">AGENTS.md</text><text x="1040" y="394" fill="#f7f2ed" font-size="30" font-weight="700">Project skills</text><text x="1040" y="442" fill="#f7f2ed" font-size="30" font-weight="700">Task workflows</text>
+    <text x="1040" y="505" fill="#d0c4d8" font-size="20">surrounding text retained</text>
+  </g>
+  <path d="M420 385h95" stroke="url(#flow)" stroke-width="12" stroke-linecap="round"/><path d="m505 365 30 20-30 20" fill="none" stroke="#f5ce85" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M880 385h95" stroke="url(#flow)" stroke-width="12" stroke-linecap="round"/><path d="m965 365 30 20-30 20" fill="none" stroke="#f5ce85" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="210" y="630" width="980" height="70" rx="35" fill="#120d1c" stroke="#51405e"/>
+  <text x="700" y="674" text-anchor="middle" fill="#bff7df" font-family="system-ui,Segoe UI,sans-serif" font-size="22" font-weight="650">check latest release • preview • apply • read back • verify outcome</text>
+</svg>

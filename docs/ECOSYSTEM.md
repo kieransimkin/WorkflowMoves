@@ -1,4 +1,4 @@
-# Use my-songs-workflows with the DanceFlow ecosystem
+# Use WorkflowMoves with the DanceFlow ecosystem
 
 ## Before every new workflow
 
@@ -13,7 +13,7 @@ People and agents should consider the full ecosystem, use all capabilities that 
 - **Run the owning workflow:** Use release preflight, capability references and the specialist media/timing/EPK/publication routes. Keep original dates, stop rules, approvals and private operational data authoritative.
 
 
-Read the [full released feature references](https://github.com/kieransimkin/DanceFlow/blob/main/docs/capabilities/my-songs-workflows.md) for exact commands, schemas, examples and limits. The tool remains independently useful. Consider StemLab, DanceRudiments, FrameRudiments, DanceMoves, KeywordMoves, RasterMoves, LikenessForge, PixelCue, PrismMoves, ThumbMoves, React Timeline Sequence, EPK Social Metadata and DanceVault wherever their supported capabilities serve the task. Short Shifter remains an independent project outside DanceFlow.
+Read the [full released feature references](https://github.com/kieransimkin/DanceFlow/blob/main/docs/capabilities/workflowmoves.md) for exact commands, schemas, examples and limits. The tool remains independently useful. Consider StemLab, DanceRudiments, FrameRudiments, DanceMoves, KeywordMoves, RasterMoves, LikenessForge, PixelCue, PrismMoves, ThumbMoves, React Timeline Sequence, EPK Social Metadata and DanceVault wherever their supported capabilities serve the task. Short Shifter remains an independent project outside DanceFlow.
 
 ## Contribute a reusable improvement
 
