@@ -1,0 +1,3 @@
+## Complete the blogworthiness record
+
+Apply the mandatory per-task blogworthiness check before this workflow finishes. Record PASS/FAIL with a reason and evidence in the existing task report. For PASS, retain the specific reader-interest angle, current-blog and pending-draft duplicate review, and the next action or exact publication blocker. Access or media preparation blocks delivery without changing editorial merit. A quiet run or administrative change may correctly FAIL; changing this rule alone does not warrant a recursive post about posting. Follow `Workflows/blogworthiness-completion.md`. Saved guidance does not establish adoption by a running chat.

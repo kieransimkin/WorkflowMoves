@@ -1,0 +1,6 @@
+[
+  {"target":"Tools/WordPress Blog API/wordpress_blog_api.ps1","source":"tools/wordpress_blog_api.ps1","mode":"copy"},
+  {"target":"Workflows/wordpress-blog-rest-api.md","source":"workflows/wordpress-blog-rest-api.md","mode":"copy"},
+  {"target":"skill-source/project-blog-writer/SKILL.md","source":"fragments/blog-rest-api-skill.md","mode":"insert","anchor":"## Complete the blogworthiness record","identity":"## API-first blog transport"},
+  {"target":".agents/skills/project-blog-writer/SKILL.md","source":"fragments/blog-rest-api-skill.md","mode":"insert","anchor":"## Complete the blogworthiness record","identity":"## API-first blog transport"}
+]
