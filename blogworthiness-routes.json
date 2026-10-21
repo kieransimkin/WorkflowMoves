@@ -1,0 +1,9 @@
+[
+  {"target":"AGENTS.md","source":"rules/blogworthiness-completion.md","mode":"insert","anchor":"# My Songs project instructions","identity":"## Mandatory blogworthiness check for every task and automation"},
+  {"target":"skill-source/project-blog-writer/SKILL.md","source":"fragments/blogworthiness-skill.md","mode":"insert","anchor":"## Establish the story","identity":"## Complete the blogworthiness record"},
+  {"target":".agents/skills/project-blog-writer/SKILL.md","source":"fragments/blogworthiness-skill.md","mode":"insert","anchor":"## Establish the story","identity":"## Complete the blogworthiness record"},
+  {"target":"skill-source/automation-scheduling/SKILL.md","source":"fragments/blogworthiness-skill.md","mode":"insert","anchor":"## Potential problems","identity":"## Complete the blogworthiness record"},
+  {"target":"Workflows/blogworthiness-completion.md","source":"workflows/blogworthiness-completion.md","mode":"copy"},
+  {"target":"Tools/check_blogworthiness.py","source":"tools/check_blogworthiness.py","mode":"copy"},
+  {"target":"Workflows/media/blogworthiness-flow.svg","source":"workflows/media/blogworthiness-flow.svg","mode":"copy"}
+]
