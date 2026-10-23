@@ -1,0 +1,7 @@
+[
+  {"target":"Tools/social_schedule_plan.py","source":"tools/social_schedule_plan.py","mode":"copy"},
+  {"target":"Workflows/direct-social-scheduling.md","source":"workflows/direct-social-scheduling.md","mode":"copy"},
+  {"target":"Workflows/media/direct-social-scheduling.svg","source":"docs/media/direct-social-scheduling.svg","mode":"copy"},
+  {"target":"Workflows/release-video-social-scheduling.md","source":"fragments/direct-social-scheduling.md","mode":"insert","anchor":"## Potential problems","identity":"## Direct publication plan and continuation queue"},
+  {"target":"skill-source/social-video-scheduling/SKILL.md","source":"fragments/direct-social-scheduling.md","mode":"insert","anchor":"## Potential problems","identity":"## Direct publication plan and continuation queue"}
+]

@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.41
+
+Adds a local direct-publication calendar and read-only scheduling preflight: exact attachment hashes, approval payload identity, named-zone/UTC validation, duplicate assets, slot collisions, replacement cancellation evidence, rolling native date windows and independent receipts. Pending mutations remain pending; private drafts never become schedules through a local state assumption. The focused additive routes preserve existing campaign instructions. Native uploads, account access and publication remain separate supported operations.
+
 # WorkflowMoves v0.1.40
 
 Integrates Potbot and DanceFlow for Unity into the seventeen-component ecosystem, purpose-specific workflow routing and current source-pinned capability inventory. Preview/no-stable-release, planned MCP consumption and native-host acceptance remain explicit. Focused additive manifests propagate the references, handoff illustration and project/skill guidance without installing runtimes or changing public sites.

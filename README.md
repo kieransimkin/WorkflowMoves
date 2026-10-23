@@ -28,6 +28,10 @@ The [WordPress blog API workflow](workflows/wordpress-blog-rest-api.md) provides
 
 ## Start here
 
+The [direct social scheduling workflow](workflows/direct-social-scheduling.md) adds a local named-timezone calendar and read-only checks for media/copy/cover hashes, collisions, scheduler takeover, native date windows and independent receipts. It performs no account actions. Preview `social-scheduling-routes.json` to install this focused integration; private account evidence stays in the campaign.
+
+![Direct publication contract, generated illustration](docs/media/direct-social-scheduling.svg)
+
 Check the latest [WorkflowMoves release](https://github.com/kieransimkin/WorkflowMoves/releases) before every new workflow run. Download the matching archive and `SHA256SUMS.txt`, verify the checksum, then preview the exact route set before applying it:
 
 ```powershell
