@@ -1,0 +1,151 @@
+[
+  {
+    "source": "workflows/danceflow-ecosystem.md",
+    "target": "DanceFlow/ecosystem.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow-ecosystem.md"
+  },
+  {
+    "source": "workflows/potbot-unity-integration.md",
+    "target": "Workflows/potbot-unity-integration.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/media/potbot-unity-handoffs.svg",
+    "target": "Workflows/media/potbot-unity-handoffs.svg",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/media/potbot-unity-handoffs.svg",
+    "target": "DanceFlow/media/potbot-unity-handoffs.svg",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/danceflow-unity.md",
+    "target": "Workflows/DanceFlow/capabilities/danceflow-unity.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/dancemoves.md",
+    "target": "Workflows/DanceFlow/capabilities/dancemoves.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/dancemoves.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/dancerudiments.md",
+    "target": "Workflows/DanceFlow/capabilities/dancerudiments.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/dancerudiments.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/dancevault.md",
+    "target": "Workflows/DanceFlow/capabilities/dancevault.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/dancevault.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/epk-social-metadata.md",
+    "target": "Workflows/DanceFlow/capabilities/epk-social-metadata.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/epk-social-metadata.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/framerudiments.md",
+    "target": "Workflows/DanceFlow/capabilities/framerudiments.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/framerudiments.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/index.md",
+    "target": "Workflows/DanceFlow/capabilities/index.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/index.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/keywordmoves.md",
+    "target": "Workflows/DanceFlow/capabilities/keywordmoves.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/keywordmoves.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/likenessforge.md",
+    "target": "Workflows/DanceFlow/capabilities/likenessforge.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/likenessforge.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/mediaslide.md",
+    "target": "Workflows/DanceFlow/capabilities/mediaslide.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/mediaslide.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/pixelcue.md",
+    "target": "Workflows/DanceFlow/capabilities/pixelcue.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/pixelcue.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/potbot.md",
+    "target": "Workflows/DanceFlow/capabilities/potbot.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/prismmoves.md",
+    "target": "Workflows/DanceFlow/capabilities/prismmoves.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/prismmoves.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/rastermoves.md",
+    "target": "Workflows/DanceFlow/capabilities/rastermoves.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/rastermoves.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/react-timeline-sequence.md",
+    "target": "Workflows/DanceFlow/capabilities/react-timeline-sequence.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/react-timeline-sequence.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/stemlab.md",
+    "target": "Workflows/DanceFlow/capabilities/stemlab.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/stemlab.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/thumbmoves.md",
+    "target": "Workflows/DanceFlow/capabilities/thumbmoves.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/thumbmoves.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/toolkit.md",
+    "target": "Workflows/DanceFlow/capabilities/toolkit.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/toolkit.md"
+  },
+  {
+    "source": "workflows/danceflow/capabilities/workflowmoves.md",
+    "target": "Workflows/DanceFlow/capabilities/workflowmoves.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/workflowmoves.md"
+  },
+  {
+    "source": "workflows/danceflow/workflows/potbot-unity.md",
+    "target": "Workflows/DanceFlow/workflows/potbot-unity.md",
+    "mode": "copy"
+  },
+  {
+    "source": "workflows/danceflow/workflows/release-preflight.md",
+    "target": "Workflows/DanceFlow/workflows/release-preflight.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.39/workflows/danceflow/workflows/release-preflight.md"
+  },
+  {
+    "source": "workflows/danceflow/media/potbot-unity-handoffs.svg",
+    "target": "Workflows/DanceFlow/media/potbot-unity-handoffs.svg",
+    "mode": "copy"
+  }
+]
