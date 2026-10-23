@@ -16,6 +16,12 @@ The public repository contains only reusable workflow material. Song audio, artw
 - **People and agent guidance.** Each route explains the human decision, the supported command, the verification evidence and the limits that remain after a passing check.
 - **Reusable improvements.** When a workflow exposes a general gap, the smallest useful fix belongs in the owning tool or this package, with tests and matching documentation.
 
+## Complete tool workflows and development lessons
+
+The [task workflow map](workflows/ecosystem-tool-workflows.md) gives inputs, outputs, acceptance and limits for all seventeen components and the separate DanceFlow toolkit. The [development-learning workflow](workflows/tool-development-lessons.md) generalises verified cases: complete source/asset packaging, immutable editor inputs, canonical rig/character identity, source clocks and tempo families, deterministic asynchronous demos, temporal visual evidence and separate native-host/release acceptance. Private history stays outside the package; unavailable chat bodies remain explicit.
+
+Run `python tools/audit_workflow_coverage.py` from the released package. The standard-library checker derives membership from the capability index and catches a new tool without workflow coverage, duplicate identities, missing local routes and empty contracts. It does not execute tools or validate external links. Preview `python install.py --root WORKSPACE --routes tool-learning-routes.json --check`, inspect the receipt, apply the same manifest, then require a repeat preview to be current. The new guide includes a labelled generated contract diagram; actual native captures remain in the relevant tool examples.
+
 ## Explicit completion checks and blog delivery
 
 Version 0.1.39 puts a concise essential-rules summary and the mandatory blogworthiness check at the front of instruction files. Every task and automation records PASS or FAIL with its evidence; passing stories retain an angle, duplicate review and concrete delivery state. `tools/check_blogworthiness.py` checks retained record completeness without claiming editorial merit, rights clearance or public verification. The [illustrated completion guide](workflows/blogworthiness-completion.md) explains the rubric and precise blockers.
