@@ -1,0 +1,14 @@
+[
+  {
+    "target": "Tools/WordPress Blog API/wordpress_blog_api.ps1",
+    "source": "tools/wordpress_blog_api.ps1",
+    "mode": "copy",
+    "previous_source": "previous/scheduled-blog-update/wordpress_blog_api.ps1"
+  },
+  {
+    "target": "Workflows/wordpress-blog-rest-api.md",
+    "source": "workflows/wordpress-blog-rest-api.md",
+    "mode": "copy",
+    "previous_source": "previous/scheduled-blog-update/wordpress-blog-rest-api.md"
+  }
+]

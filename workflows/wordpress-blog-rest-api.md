@@ -14,6 +14,20 @@ Before publishing or scheduling, check the exact body, title, featured artwork a
 
 Manifest fields: UploadMedia uses `file`, `sha256`, `slug`, `mime_type`, `title`, `alt_text`, `caption`, `public_use_basis`. CreateDraft uses `slug`, `title`, `content_file`, `content_sha256`, `excerpt`, `categories`, `tags`, `featured_media`, `evidence_reviewed`. SchedulePost uses `post_id`, `expected_review_sha256`, `scheduling_authorized`, `prepublication_verified`, `publication_time`, `timezone`, `date_gmt`. PublishPost uses `post_id`, `expected_review_sha256`, `immediate_publication_authorized`, `prepublication_verified`. Authority/check fields must be actual JSON booleans. No mode edits an existing published article.
 
+## Add findings without moving a scheduled article
+
+Use `UpdateScheduledPost` when the user authorises a content addition to an existing future article. Read that post afresh with `ReadPost`, retain its whole review hash and exact local/UTC schedule, merge only the authorised body changes, and preview the resulting article and hosted media at desktop/tablet/mobile widths. Preserve existing artwork, taxonomy, excerpt and other fields. This route sends only `content`; it does not unschedule, publish, redraft or reschedule the article.
+
+The [synthetic manifest example](../examples/scheduled-blog-update.json) names the candidate disk-byte SHA-256, fresh `expected_review_sha256`, strict boolean `content_update_authorized`/`prepublication_verified`, and the existing `publication_time`/`timezone`/`date_gmt`. Replace every synthetic value with reviewed evidence. Hash UTF-8 file bytes after writing them; on Windows pin LF explicitly when the approved hash describes LF. An in-memory hash does not prove that a text writer preserved those bytes.
+
+```powershell
+./tools/wordpress_blog_api.ps1 -Mode UpdateScheduledPost `
+  -ManifestPath reviewed-update.json -ExpectedManifestSha256 REVIEWED_SHA256 `
+  -ReceiptOut new-update-receipt.json -Execute
+```
+
+The helper refuses changed bodies, dates/status, invalid named-zone offsets, string-valued authority, expired slots and an existing receipt. Before the single POST it retains an intent receipt, so an uncertain request cannot silently become a repeat. Fresh readback requires exact candidate content, the original future date and retained page fields/metadata. Independently re-read the post afterwards and verify its candidate theme/media; verify the actual public article only after its preserved publication date. This is a content update, not evidence that the scheduled wakeup or public publication ran.
+
 ## Potential problems
 
 - An uncertain API outcome or existing receipt requires a fresh identity read; never repeat the mutation blindly. Keep the initial receipt even when later verification fails.

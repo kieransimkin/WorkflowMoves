@@ -31,6 +31,12 @@ function Invoke-RestMethod { param($Method,$Uri,$Headers,$TimeoutSec,$Body,$Cont
  if($Method -eq 'Post'){
   $global:MockWrites++
   $global:LastFields=[Text.Encoding]::UTF8.GetString($Body)|ConvertFrom-Json -DateKind String
+  if($global:Case -like 'update-*' -and $global:LastFields.PSObject.Properties.Name -contains 'content'){
+   if(@($global:LastFields.PSObject.Properties).Count -ne 1){throw 'Scheduled edit sent more than content'}
+   $global:MockPost.content.raw=$global:LastFields.content
+   if($global:Case -eq 'update-server-date'){$global:MockPost.date_gmt='2000-01-01T00:00:00'}
+   return $global:MockPost
+  }
   if($global:LastFields.status -eq 'draft'){$global:MockPost.tags=@(9,5);return $global:MockPost}
   if($global:LastFields.status -notin @('publish','future')){throw 'Unexpected synthetic mutation'}
   $global:MockPost.status=$global:LastFields.status
@@ -60,6 +66,32 @@ if($global:Case -eq 'inventory'){
  $manifest=Manifest @{slug='synthetic-article';title='Synthetic title';content_file=$body;content_sha256=(Get-FileHash $body).Hash.ToLowerInvariant();excerpt='Synthetic excerpt';categories=@(21);tags=@(5,9);featured_media=9;evidence_reviewed=$true} 'manifest.json'
  & $tool -Mode CreateDraft -SiteUrl 'https://example.invalid' -ManifestPath $manifest -ExpectedManifestSha256 (Get-FileHash $manifest).Hash -ReceiptOut (Join-Path $root 'draft.json') -Execute
  if($global:MockWrites -ne 1){throw 'Draft creation was repeated'}
+}elseif($global:Case -like 'update-*'){
+ $zoneId=if([Environment]::OSVersion.Platform -eq [PlatformID]::Win32NT){'GMT Standard Time'}else{'Europe/London'}
+ $when=[TimeZoneInfo]::ConvertTime([DateTimeOffset]::UtcNow.AddDays(30),[TimeZoneInfo]::FindSystemTimeZoneById($zoneId))
+ $global:MockPost.status='future'
+ $global:MockPost.date_gmt=$when.UtcDateTime.ToString('yyyy-MM-ddTHH:mm:ss')
+ $read=Join-Path $root 'read.json'
+ & $tool -Mode ReadPost -PostId 4 -SiteUrl 'https://example.invalid' -ReceiptOut $read
+ $review=Get-Content -LiteralPath $read -Raw|ConvertFrom-Json
+ $body=Join-Path $root 'body.html'
+ [IO.File]::WriteAllText($body,'<p>New native findings</p><figure>Actual demo</figure>',[Text.UTF8Encoding]::new($false))
+ $expected=if($global:Case -eq 'update-stale'){'0'*64}else{$review.review_sha256}
+ $authority=if($global:Case -eq 'update-authority'){'false'}else{$true}
+ $bodyHash=if($global:Case -eq 'update-hash'){'0'*64}else{(Get-FileHash $body).Hash.ToLowerInvariant()}
+ $manifest=Manifest @{post_id=4;expected_review_sha256=$expected;content_update_authorized=$authority;prepublication_verified=$true;content_file=$body;content_sha256=$bodyHash;publication_time=$when.ToString('yyyy-MM-ddTHH:mm:sszzz');date_gmt=$global:MockPost.date_gmt;timezone='Europe/London'} 'manifest.json'
+ if($global:Case -eq 'update-date'){$global:MockPost.date_gmt='2000-01-01T00:00:00'}
+ if($global:Case -eq 'update-status'){$global:MockPost.status='draft'}
+ $caught=$false
+ $receipt=Join-Path $root 'update.json'
+ try{ & $tool -Mode UpdateScheduledPost -SiteUrl 'https://example.invalid' -ManifestPath $manifest -ExpectedManifestSha256 (Get-FileHash $manifest).Hash -ReceiptOut $receipt -Execute }catch{$caught=$true;if($global:Case -eq 'update-success'){throw}}
+ if($global:Case -eq 'update-success'){
+  $saved=Get-Content -LiteralPath $receipt -Raw|ConvertFrom-Json -DateKind String
+  if($caught -or $global:MockWrites -ne 1 -or $saved.state -ne 'verified_scheduled_content_update' -or $saved.post.status -ne 'future' -or $saved.post.date_gmt -ne $when.UtcDateTime.ToString('yyyy-MM-ddTHH:mm:ss')){throw 'Scheduled content/date verification failed'}
+ }elseif($global:Case -eq 'update-server-date'){
+  $saved=Get-Content -LiteralPath $receipt -Raw|ConvertFrom-Json
+  if(-not $caught -or $global:MockWrites -ne 1 -or $saved.state -ne 'scheduled_update_request_started'){throw 'Uncertain server mutation was not retained as a hold'}
+ }elseif(-not $caught -or $global:MockWrites -ne 0){throw 'Unsafe scheduled edit mutated the post'}
 }elseif($global:Case -in @('schedule','offset','past','utc','string-authority')){
  $read=Join-Path $root 'read.json'
  & $tool -Mode ReadPost -PostId 4 -SiteUrl 'https://example.invalid' -ReceiptOut $read
@@ -121,3 +153,10 @@ Write-Output ('PASS '+$global:Case)
     def test_past_time_never_schedules(self): self.run_case('past')
     def test_different_utc_time_never_schedules(self): self.run_case('utc')
     def test_string_false_is_not_scheduling_authority(self): self.run_case('string-authority')
+    def test_scheduled_update_changes_content_only_and_keeps_date(self): self.run_case('update-success')
+    def test_scheduled_update_rejects_stale_body(self): self.run_case('update-stale')
+    def test_scheduled_update_rejects_changed_date(self): self.run_case('update-date')
+    def test_scheduled_update_rejects_changed_status(self): self.run_case('update-status')
+    def test_scheduled_update_requires_boolean_authority(self): self.run_case('update-authority')
+    def test_scheduled_update_rejects_changed_disk_bytes(self): self.run_case('update-hash')
+    def test_scheduled_update_retains_uncertain_mutation_without_retry(self): self.run_case('update-server-date')
