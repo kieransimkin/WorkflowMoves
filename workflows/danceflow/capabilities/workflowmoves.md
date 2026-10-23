@@ -1,3 +1,9 @@
+# WorkflowMoves 0.1.41: complete task workflows and development lessons
+
+The [current task workflow map](../../ecosystem-tool-workflows.md) covers seventeen components and the separate toolkit with concrete input, output, acceptance and limit contracts. The [development-learning workflow](../../tool-development-lessons.md) generalises source-verified failures while keeping private chat evidence controlled. Run `python tools/audit_workflow_coverage.py` from this package to check membership and local route completeness. The focused `tool-learning-routes.json` installs the illustrated guides and shared routing through guarded preview/apply/repeat checks. Documentation coverage does not establish native execution or exhaustive history review.
+
+## Historical source-reference snapshot
+
 # WorkflowMoves: capability and package reference
 
 Audited 23 October 2026: **v0.1.39**, exact source [`e7997ba577c02c02ee23d0d8a2e0d39572f557e3`](https://github.com/kieransimkin/WorkflowMoves/tree/e7997ba577c02c02ee23d0d8a2e0d39572f557e3). This is a dated source/documentation audit, not installed-runtime or end-to-end acceptance. [Check current releases before use](../workflows/release-preflight.md).
