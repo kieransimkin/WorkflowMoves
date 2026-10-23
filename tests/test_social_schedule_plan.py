@@ -62,6 +62,9 @@ class SocialPlanTests(unittest.TestCase):
         self.assertEqual(item['action'], 'hold')
         self.assertEqual(item['next_action_at'], '2026-10-29')
         self.assertTrue(any('do not resubmit' in h for h in item['holds']))
+        self.assertFalse(any('existing private draft' in h for h in item['holds']))
+        self.row['state'] = 'private_draft'
+        self.assertTrue(any('existing private draft' in h for h in self.check()['items'][0]['holds']))
 
     def test_same_asset_and_same_slot_conflicts(self):
         second = copy.deepcopy(self.row)
