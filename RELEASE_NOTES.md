@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.44
+
+Adds a guarded content-only update for an already scheduled WordPress article. A fresh whole-post review hash, exact candidate disk bytes, strict authority/preflight booleans and named-zone/UTC schedule are required. The helper records intent before its single POST, then requires exact saved content and unchanged schedule, metadata and other retained fields. It cannot silently publish, redraft or move the article. A synthetic manifest, focused known-predecessor installer and failure-boundary tests document the route. Public playback and publication remain independently verified states.
+
 # WorkflowMoves v0.1.43
 
 Date-window continuations now recommend reusing a private draft only when the retained state actually is private_draft. Pending or merely prepared items retain their payload and original save-verification obligation, without implying that a draft exists. The focused installer supports an exact guarded upgrade from 0.1.42; changed local tools remain conflicts.

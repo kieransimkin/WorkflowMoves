@@ -1,7 +1,7 @@
 #Requires -Version 7.5
 [CmdletBinding()]
 param(
-    [ValidateSet('Inventory','ReadPost','UploadMedia','CreateDraft','PublishPost','SchedulePost')][string]$Mode='Inventory',
+    [ValidateSet('Inventory','ReadPost','UploadMedia','CreateDraft','PublishPost','SchedulePost','UpdateScheduledPost')][string]$Mode='Inventory',
     [string]$SiteUrl='https://kieransimkin.co.uk',
     [string]$CredentialPath='Z:\My Songs\.secrets\wordpress-api\kieransimkin-epk.credential.xml',
     [string]$ManifestPath,
@@ -48,6 +48,24 @@ function Request([string]$Method,[string]$Route,$Value=$null,[string]$File=$null
 function Review($Post){
     $snapshot=[ordered]@{id=$Post.id;status=$Post.status;slug=$Post.slug;title=$Post.title.raw;content=$Post.content.raw;excerpt=$Post.excerpt.raw;author=$Post.author;categories=@($Post.categories);tags=@($Post.tags);featured_media=$Post.featured_media}
     return [ordered]@{post=$Post;review_sha256=(Hash-Bytes $utf8.GetBytes(($snapshot|ConvertTo-Json -Depth 20 -Compress)));content_sha256=(Hash-Bytes $utf8.GetBytes($Post.content.raw))}
+}
+function Preserved-Post($Post){
+    $snapshot=[ordered]@{}
+    foreach($key in @('id','status','date','date_gmt','slug','link','title','excerpt','author','categories','tags','featured_media','meta','template','comment_status','ping_status','sticky','format','password')){
+        if($Post.PSObject.Properties.Name -contains $key){$snapshot[$key]=$Post.$key}
+    }
+    return ($snapshot|ConvertTo-Json -Depth 25 -Compress)
+}
+function Assert-ReviewedSchedule($Manifest){
+    $zoneId=[string]$Manifest.timezone
+    if([Environment]::OSVersion.Platform -eq [PlatformID]::Win32NT -and $zoneId -eq 'Europe/London'){$zoneId='GMT Standard Time'}
+    $zone=[TimeZoneInfo]::FindSystemTimeZoneById($zoneId)
+    if([string]$Manifest.publication_time -notmatch '(Z|[+-]\d{2}:\d{2})$'){throw 'An offset-bearing publication time is required'}
+    $when=[DateTimeOffset]::Parse($Manifest.publication_time,[Globalization.CultureInfo]::InvariantCulture)
+    $inZone=[TimeZoneInfo]::ConvertTime($when,$zone)
+    if($when.Offset -ne $inZone.Offset -or $when.ToString('yyyy-MM-ddTHH:mm:ss') -ne $inZone.ToString('yyyy-MM-ddTHH:mm:ss')){throw 'Publication timezone offset does not match its named zone'}
+    if($when.UtcDateTime.ToString('yyyy-MM-ddTHH:mm:ss') -ne $Manifest.date_gmt){throw 'UTC schedule differs from the reviewed local time'}
+    if($when.UtcDateTime -le [DateTime]::UtcNow.AddMinutes(5)){throw 'Publication time must remain safely in the future'}
 }
 function Collection([string]$Route){
     $all=@();$page=1
@@ -121,6 +139,28 @@ try{
         Write-Output ('Verified draft '+$created.id)
         return
     }
+    if($Mode -eq 'UpdateScheduledPost'){
+        if($manifest.content_update_authorized -isnot [bool] -or -not $manifest.content_update_authorized){throw 'Content-update authority is required'}
+        if($manifest.prepublication_verified -isnot [bool] -or -not $manifest.prepublication_verified){throw 'Completed prepublication checks are required'}
+        Assert-ReviewedSchedule $manifest
+        $body=$utf8.GetString([IO.File]::ReadAllBytes($manifest.content_file))
+        if((Hash-Bytes $utf8.GetBytes($body)) -ne $manifest.content_sha256){throw 'Article content hash mismatch'}
+        $before=Review (Request 'Get' ('posts/'+$manifest.post_id+'?context=edit'))
+        if($before.review_sha256 -ne $manifest.expected_review_sha256){throw 'Fresh reviewed-post snapshot changed'}
+        if($before.post.status -ne 'future' -or $before.post.date_gmt -ne $manifest.date_gmt){throw 'Scheduled post status or date changed'}
+        $preserved=Preserved-Post $before.post
+        Save-Json ([ordered]@{state='scheduled_update_request_started';post_id=$manifest.post_id;source_sha256=$before.content_sha256;candidate_sha256=$manifest.content_sha256;preserved_date_gmt=$manifest.date_gmt})
+        $updated=Request 'Post' ('posts/'+$manifest.post_id) @{content=$body}
+        $read=Review (Request 'Get' ('posts/'+$manifest.post_id+'?context=edit'))
+        if($updated.id -ne $manifest.post_id -or $read.content_sha256 -ne $manifest.content_sha256 -or (Preserved-Post $read.post) -cne $preserved){throw 'Scheduled content or preserved fields mismatch; initial receipt retained; do not retry'}
+        $read['state']='verified_scheduled_content_update'
+        $read['request_fields']=@('content')
+        $read['reviewed_publication_time']=$manifest.publication_time
+        $read['reviewed_timezone']=$manifest.timezone
+        Save-Json $read
+        Write-Output ('Verified scheduled content update '+$manifest.post_id+'; original date and all retained fields unchanged')
+        return
+    }
     if($Mode -in @('PublishPost','SchedulePost')){
         if($manifest.prepublication_verified -isnot [bool] -or -not $manifest.prepublication_verified){throw 'Completed prepublication checks are required'}
         $commitFields=@{status='publish'}
@@ -128,14 +168,7 @@ try{
             if($manifest.immediate_publication_authorized -isnot [bool] -or -not $manifest.immediate_publication_authorized){throw 'Exact immediate-publication authority is required'}
         }else{
             if($manifest.scheduling_authorized -isnot [bool] -or -not $manifest.scheduling_authorized){throw 'Scheduling authority is required'}
-            $zoneId=[string]$manifest.timezone
-            if([Environment]::OSVersion.Platform -eq [PlatformID]::Win32NT -and $zoneId -eq 'Europe/London'){$zoneId='GMT Standard Time'}
-            $zone=[TimeZoneInfo]::FindSystemTimeZoneById($zoneId)
-            $when=[DateTimeOffset]::Parse($manifest.publication_time,[Globalization.CultureInfo]::InvariantCulture)
-            $inZone=[TimeZoneInfo]::ConvertTime($when,$zone)
-            if($when.Offset -ne $inZone.Offset -or $when.ToString('yyyy-MM-ddTHH:mm:ss') -ne $inZone.ToString('yyyy-MM-ddTHH:mm:ss')){throw 'Publication timezone offset does not match its named zone'}
-            if($when.UtcDateTime.ToString('yyyy-MM-ddTHH:mm:ss') -ne $manifest.date_gmt){throw 'UTC schedule differs from the reviewed local time'}
-            if($when.UtcDateTime -le [DateTime]::UtcNow.AddMinutes(5)){throw 'Publication time must remain safely in the future'}
+            Assert-ReviewedSchedule $manifest
             $commitFields=@{status='future';date_gmt=[string]$manifest.date_gmt}
         }
         $before=Review (Request 'Get' ('posts/'+$manifest.post_id+'?context=edit'))
