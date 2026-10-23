@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.43
+
+Date-window continuations now recommend reusing a private draft only when the retained state actually is private_draft. Pending or merely prepared items retain their payload and original save-verification obligation, without implying that a draft exists. The focused installer supports an exact guarded upgrade from 0.1.42; changed local tools remain conflicts.
+
 # WorkflowMoves v0.1.42
 
 Adds a local direct-publication calendar and read-only scheduling preflight: exact attachment hashes, approval payload identity, named-zone/UTC validation, duplicate assets, slot collisions, replacement cancellation evidence, rolling native date windows and independent receipts. Pending mutations remain pending; private drafts never become schedules through a local state assumption. The focused additive routes preserve existing campaign instructions. Native uploads, account access and publication remain separate supported operations.

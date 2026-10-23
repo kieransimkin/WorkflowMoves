@@ -110,7 +110,9 @@ def evaluate(plan, root, now):
                 holds.append("Prior publisher cancellation is unverified")
         window = row.get("window")
         if window and row.get("local_time", "")[:10] > window.get("last_selectable_date", ""):
-            holds.append("Outside observed native date window; reuse the existing private draft")
+            holds.append("Outside observed native date window; " +
+                         ("reuse the existing private draft" if row.get("state") == "private_draft" else
+                          "retain the current payload and verify any pending save before continuing"))
             result["next_action_at"] = window.get("next_check")
         state = row.get("state")
         if state in {"scheduled", "published", "verified_live"}:
