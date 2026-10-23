@@ -1,3 +1,9 @@
+# WorkflowMoves v0.1.41
+
+Adds concrete task/input/output/acceptance contracts for all seventeen DanceFlow components and the separate discovery toolkit. The standard-library coverage checker catches omitted or duplicate tools, missing local workflow routes and incomplete contracts against the maintained capability membership index; CI and release packaging run it automatically.
+
+Generalises verified development lessons about complete source/assets, immutable derived outputs, rig and requested-character identity, tempo families and source clocks, deterministic asynchronous demos, temporal visual evidence and independent package/native-host/public acceptance. A focused guarded manifest installs the illustrated guides and shared routing while preserving project-owned text. The package contains public-safe workflows, generic code and synthetic tests; private chat transcripts, scheduler definitions, artist imagery, models and execution evidence remain outside it. Coverage validation is not runtime or exhaustive-history acceptance.
+
 # WorkflowMoves v0.1.40
 
 Integrates Potbot and DanceFlow for Unity into the seventeen-component ecosystem, purpose-specific workflow routing and current source-pinned capability inventory. Preview/no-stable-release, planned MCP consumption and native-host acceptance remain explicit. Focused additive manifests propagate the references, handoff illustration and project/skill guidance without installing runtimes or changing public sites.

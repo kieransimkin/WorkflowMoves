@@ -1,0 +1,8 @@
+[
+  {"source":"workflows/ecosystem-tool-workflows.md","target":"Workflows/ecosystem-tool-workflows.md","mode":"copy"},
+  {"source":"workflows/tool-development-lessons.md","target":"Workflows/tool-development-lessons.md","mode":"copy"},
+  {"source":"workflows/media/tool-learning-contract.svg","target":"Workflows/media/tool-learning-contract.svg","mode":"copy"},
+  {"source":"workflows/danceflow/capabilities/workflowmoves.md","target":"Workflows/DanceFlow/capabilities/workflowmoves.md","mode":"copy","previous_source":"previous/0.1.40/workflowmoves-capability.md"},
+  {"source":"fragments/tool-learning.md","target":"AGENTS.md","mode":"insert","anchor":"## Make full use of the project tool library","identity":"## Generalise tool lessons and verify workflow coverage"},
+  {"source":"fragments/tool-learning.md","target":"Workflows/scheduled-danceflow-tool-use.md","mode":"insert","anchor":"## Apply the plan to the job","identity":"## Generalise tool lessons and verify workflow coverage"}
+]
