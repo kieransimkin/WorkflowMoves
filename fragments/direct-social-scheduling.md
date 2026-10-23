@@ -1,0 +1,3 @@
+## Direct publication plan and continuation queue
+
+For multi-platform video scheduling, use `Workflows/direct-social-scheduling.md` and `Tools/social_schedule_plan.py` to retain one local calendar, platform-specific payloads, named-zone/UTC slots and independent native receipts. Inspect fresh queues before committing. An external scheduler's pending job is not a native upload; verify cancellation before replacing its publication responsibility. Keep one existing private draft when a native date window is closed. A pending upload/save must be observed, never blindly resubmitted. The local planner checks retained evidence; it does not publish or grant approval.
