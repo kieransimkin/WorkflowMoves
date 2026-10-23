@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.40
+
+Integrates Potbot and DanceFlow for Unity into the seventeen-component ecosystem, purpose-specific workflow routing and current source-pinned capability inventory. Preview/no-stable-release, planned MCP consumption and native-host acceptance remain explicit. Focused additive manifests propagate the references, handoff illustration and project/skill guidance without installing runtimes or changing public sites.
+
 # WorkflowMoves v0.1.39
 
 Every task and automation must now retain an explicit evidence-based blogworthiness decision. Front-loaded instruction routes keep this rule and a concise essential-rules summary visible while preserving the full existing instructions. The assessment checker rejects incomplete handoffs without pretending to verify editorial merit or rights. Saved configuration remains distinct from adoption by a running chat.

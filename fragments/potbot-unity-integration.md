@@ -1,0 +1,3 @@
+## Potbot and Unity ecosystem availability
+
+The DanceFlow catalogue includes Potbot and DanceFlow for Unity. Read `Workflows/potbot-unity-integration.md` and current per-component capability references when their coding-agent or Unity scene work serves this task. Source previews require pinned commits and their native hosts; Potbot consuming DanceFlow MCP remains planned, and Unity Editor/GPU acceptance is outstanding. Keep original master/beat/recording clocks, finite bounds and rig-profile hashes. A successful no-stable-release query is distinct from an unavailable query. Use the canonical engines and preserve model-local storage, privacy, costs and separate public-save/deployment gates. Guidance availability is not proof of adoption.

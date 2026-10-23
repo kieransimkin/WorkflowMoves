@@ -1,0 +1,51 @@
+[
+  {
+    "source": "fragments/potbot-unity-integration.md",
+    "target": "AGENTS.md",
+    "mode": "insert",
+    "anchor": "## Make full use of the project tool library",
+    "identity": "## Potbot and Unity ecosystem availability"
+  },
+  {
+    "source": "fragments/potbot-unity-integration.md",
+    "target": "Workflows/scheduled-danceflow-tool-use.md",
+    "mode": "insert",
+    "anchor": "## Apply the plan to the job",
+    "identity": "## Potbot and Unity ecosystem availability"
+  },
+  {
+    "source": "fragments/potbot-unity-integration.md",
+    "target": "skill-source/render-bpm-cue-videos/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Full ecosystem feature and release references",
+    "identity": "## Potbot and Unity ecosystem availability"
+  },
+  {
+    "source": "fragments/potbot-unity-integration.md",
+    "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Full ecosystem feature and release references",
+    "identity": "## Potbot and Unity ecosystem availability"
+  },
+  {
+    "source": "fragments/potbot-unity-integration.md",
+    "target": "skill-source/use-and-improve-stemlab/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Full ecosystem feature and release references",
+    "identity": "## Potbot and Unity ecosystem availability"
+  },
+  {
+    "source": "fragments/potbot-unity-integration.md",
+    "target": "skill-source/dance-animations-and-effects/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Full ecosystem feature and release references",
+    "identity": "## Potbot and Unity ecosystem availability"
+  },
+  {
+    "source": "fragments/potbot-unity-integration.md",
+    "target": ".agents/skills/dance-animations-and-effects/SKILL.md",
+    "mode": "insert",
+    "anchor": "## Full ecosystem feature and release references",
+    "identity": "## Potbot and Unity ecosystem availability"
+  }
+]

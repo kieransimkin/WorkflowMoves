@@ -43,7 +43,7 @@ The repository includes real or generated media beside the relevant guides. The 
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.39. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.40. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 Campaign media now requires a reviewed release-specific design profile, narrative placement before end matter and rendered desktop, tablet and mobile comparison. `tools/integrate_epk_media.py` applies that reviewed profile while proving iframe, video, audio and script blocks remain unchanged. The [illustrated integration example](examples/epk-media-design-integration.md) explains the contract.
 
@@ -167,3 +167,13 @@ Generated inputs; rendered results belong to each experiment. [Playable pipeline
 ## Full ecosystem release and capability routes
 
 `ecosystem-preflight-routes.json` adds the shared release preflight, complete capability references and full FrameRudiments compositor guide, plus additive root/skill discovery blocks. Preview with `python install.py --root WORKSPACE --routes ecosystem-preflight-routes.json --check`, inspect the receipt, then apply that same manifest and verify a second check reports current. The runtime checker and package installations remain separate from this guarded text installer. Existing model/asset data, job schedules, stop rules and public-save gates are preserved.
+
+## Potbot and Unity integration
+
+The seventeen-component inventory now includes Potbot and DanceFlow for Unity with source-preview and host acceptance status. Current source-pinned README routes, documentation/example inventories and package hashes cover every component. The [joint workflow](workflows/potbot-unity-integration.md) preserves native timing, rig/profile provenance and the planned Potbot MCP consumer.
+
+Preview `python install.py --root YOUR-WORKSPACE --routes potbot-unity-routes.json --check` before applying the exact capability files; use `potbot-unity-guidance-routes.json` for additive project/skill routing. Modified destinations remain conflicts. No route installs engines, downloads models, starts hosts or saves public pages.
+
+![Generated supported-handoff diagram](workflows/media/potbot-unity-handoffs.svg)
+
+Generated contract illustration. Actual Unity Editor/GPU and Potbot service examples require their separately qualified hosts.
