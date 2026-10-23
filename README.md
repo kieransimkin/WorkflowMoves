@@ -34,6 +34,14 @@ The [WordPress blog API workflow](workflows/wordpress-blog-rest-api.md) provides
 
 `tools/outreach_send_gate.py` provides an atomic venue mutex and permanent original-request claim for cooperating outreach senders. Verified email receipts use persisted message IDs; verified web forms use retained, hash-checked success evidence without inventing an email ID. Read the [duplicate-send workflow](workflows/duplicate-send-gate.md) before use. It does not send messages, grant approval or verify a website.
 
+## Hashtag research and reviewed use
+
+The [platform-specific workflow](workflows/hashtag-discovery-and-use.md) connects KeywordMoves 0.6.0 literal discovery, fit/safety review and exact-copy audits to marketing, publishing, SEO and skill entrypoints. It separates native demand, sample supply and whole-post outcomes; preserves the 21-column song register; uses small editorial ceilings; and gives Threads, Pinterest and native music tags their own treatment. New direct-plan items can require a hash-checked KeywordMoves audit bound to their actual video/caption bytes, platform and slot expiry. The optional receipt preserves legacy plans and is included in exact-payload approval. No new campaign execution, account changes, costs or public saves are granted.
+
+Preview `python install.py --root WORKSPACE --routes hashtag-routes.json --check`, review the exact additive changes, then apply the same manifest and verify a repeat preview is current. Existing surrounding text remains intact. Saved automation prompts require separate supported scheduler updates preserving every non-prompt field and original scope. Installation does not prove a running chat used the guide or that reach improved.
+
+![Hashtag discovery, review and final-copy contract, generated diagram](docs/media/hashtag-planner.svg)
+
 ## Start here
 
 The [direct social scheduling workflow](workflows/direct-social-scheduling.md) adds a local named-timezone calendar and read-only checks for media/copy/cover hashes, collisions, scheduler takeover, native date windows and independent receipts. It performs no account actions. Preview `social-scheduling-routes.json` to install this focused integration; private account evidence stays in the campaign.
