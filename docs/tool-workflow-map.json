@@ -1,0 +1,469 @@
+{
+  "schema": "workflowmoves.tool-workflows.v1",
+  "tools": [
+    {
+      "id": "stemlab",
+      "name": "StemLab",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/stemlab.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/stemlab-phrase-and-clip-evidence.md",
+        "workflows/stemlab-fourier-frequency-bands.md"
+      ],
+      "task": "Analyse selected audio/MIDI evidence or edit supported timing lanes",
+      "inputs": [
+        "Master hash, source rate and canonical words",
+        "Saved analysis, selected detectors and explicit model choice"
+      ],
+      "outputs": [
+        "Source-bound analysis, timing proposals and uniquely named derivatives"
+      ],
+      "acceptance": [
+        "Compare original and offset beat grids, including half/double-time hypotheses",
+        "Hash original inputs before/after; review estimated lyrics and MIDI"
+      ],
+      "limits": [
+        "Detector confidence is not artist-approved BPM or transcription",
+        "A timeline control and its editor/gallery applications need their own package/runtime checks"
+      ]
+    },
+    {
+      "id": "dancerudiments",
+      "name": "DanceRudiments",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/dancerudiments.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/stemlab-audio-motion-recordings.md",
+        "workflows/potbot-unity-integration.md"
+      ],
+      "task": "Select native movement or prepare a finite, typed rig recording",
+      "inputs": [
+        "Integer 64-pip source clock, rig profile and provenance",
+        "Reviewed target character and motion/calibration data"
+      ],
+      "outputs": [
+        "Native pattern selection or bounded recording with explicit retarget mapping"
+      ],
+      "acceptance": [
+        "Verify the requested target mesh and bind/profile hashes",
+        "Check start/end/seek, units and loop seams only where a loop is claimed"
+      ],
+      "limits": [
+        "Preview speed is not verified musical beat matching",
+        "Rig-tempo confidence and lyric-match thresholds are separate measures"
+      ]
+    },
+    {
+      "id": "framerudiments",
+      "name": "FrameRudiments",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/framerudiments.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/framerudiments-rendering.md",
+        "workflows/framerudiments-preset-profiling.md"
+      ],
+      "task": "Compose a deterministic offline video or bounded preset experiment",
+      "inputs": [
+        "Pinned audio, timing, artwork/font hashes and source offsets",
+        "Native movement and reviewed renderer/preset parameters"
+      ],
+      "outputs": [
+        "New encoded video, timing/frame ledger and optional response evidence"
+      ],
+      "acceptance": [
+        "Decode actual final bytes; inspect first frames, captions, crop, loop and soundtrack mapping",
+        "For feedback, replay preceding frames and compare programme/silence/probe conditions"
+      ],
+      "limits": [
+        "A controlled response or cached still does not prove musical quality",
+        "Do not rerun a full catalogue or analysis merely for documentation"
+      ]
+    },
+    {
+      "id": "dancemoves",
+      "name": "DanceMoves",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/dancemoves.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/epk-mobile-motion.md",
+        "workflows/epk-evidence-gate.md"
+      ],
+      "task": "Attach live web effects to a verified playback/input owner",
+      "inputs": [
+        "Page-owned appearance and metadata-derived timing",
+        "Exact source/offset association and selected runtime"
+      ],
+      "outputs": [
+        "Bounded shared clock/controllers connected to painted consumers"
+      ],
+      "acceptance": [
+        "Exercise play/pause/seek/end, switches and reset/teardown",
+        "Verify actual pixels and pointer/phone routes; preserve full-page appearance"
+      ],
+      "limits": [
+        "A listener or loaded library is not a connected visual effect",
+        "Synthetic sensors and software rendering are not physical-device acceptance"
+      ]
+    },
+    {
+      "id": "keywordmoves",
+      "name": "KeywordMoves",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/keywordmoves.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md"
+      ],
+      "task": "Research and reconcile source-specific keyword observations",
+      "inputs": [
+        "Canonical phrase register, exact source/window and reviewed exports",
+        "Explicit local/hosted model selection only when needed"
+      ],
+      "outputs": [
+        "Deduplicated phrases, attributed observations and separate hypotheses"
+      ],
+      "acceptance": [
+        "Re-import changed records and verify schema/deduplication",
+        "Keep literal text, demand, platform metric and inference distinct"
+      ],
+      "limits": [
+        "An extraction score is not measured audience demand",
+        "A source import or roadmap does not imply a native live provider"
+      ]
+    },
+    {
+      "id": "rastermoves",
+      "name": "RasterMoves",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/rastermoves.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md"
+      ],
+      "task": "Prepare a reviewed upscale or bounded refinement comparison",
+      "inputs": [
+        "Authorised source image, target dimensions and alpha/crop policy",
+        "Selected plugin/model revision under project-local models/"
+      ],
+      "outputs": [
+        "New image candidates and runtime/model settings"
+      ],
+      "acceptance": [
+        "Inspect actual delivered dimensions, alpha, edges and crop",
+        "Compare target-size candidates against the original"
+      ],
+      "limits": [
+        "A model catalogue entry is not an installed or useful model",
+        "No blanket model downloads or original-image overwrite"
+      ]
+    },
+    {
+      "id": "likenessforge",
+      "name": "LikenessForge",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/likenessforge.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md"
+      ],
+      "task": "Repair likeness or train/use a specifically authorised identity profile",
+      "inputs": [
+        "Authorised reference identity and source composition",
+        "Pinned compatible model/LoRA, seed and bounded settings"
+      ],
+      "outputs": [
+        "Private comparison candidates and reproducible profile evidence"
+      ],
+      "acceptance": [
+        "Review likeness, blend and complete composition at delivery size",
+        "Verify actual optional dependencies and one relevant inference"
+      ],
+      "limits": [
+        "Installed core CLI is not qualified face processing or training",
+        "A successful inference does not establish likeness approval or public-use rights"
+      ]
+    },
+    {
+      "id": "pixelcue",
+      "name": "PixelCue",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/pixelcue.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/prismmoves-visual-analysis.md"
+      ],
+      "task": "Measure visual assets or serve a bounded local analysis request",
+      "inputs": [
+        "Exact media bytes and requested measurements",
+        "Explicit optional model profile and actual service/runtime identity"
+      ],
+      "outputs": [
+        "Statistics, selected model observations and request-scoped receipts"
+      ],
+      "acceptance": [
+        "Verify health and the actual analysis route; retain unavailable model states",
+        "Preserve deterministic measurements independently of semantic hypotheses"
+      ],
+      "limits": [
+        "Do not duplicate its analysis engine in callers",
+        "A loaded model/service is not evidence of a completed request"
+      ]
+    },
+    {
+      "id": "prismmoves",
+      "name": "PrismMoves",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/prismmoves.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/prismmoves-visual-analysis.md",
+        "workflows/framerudiments-preset-profiling.md"
+      ],
+      "task": "Synthesize an image profile or temporal-first preset description",
+      "inputs": [
+        "PixelCue measurements and condition/frame lineage",
+        "Time intervals, programme/silence/probes and selected semantic evidence"
+      ],
+      "outputs": [
+        "Evidence-labelled profile, response families and retained comparisons"
+      ],
+      "acceptance": [
+        "Inspect chronological condition sheets and isolated selected outputs",
+        "Use content-addressed output identity; retain history before revised reports"
+      ],
+      "limits": [
+        "Similar frames do not become independent evidence",
+        "A model interpretation is not a measured identity or one universal quality score"
+      ]
+    },
+    {
+      "id": "thumbmoves",
+      "name": "ThumbMoves",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/thumbmoves.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md"
+      ],
+      "task": "Request a thumbnail already present in the operating-system cache",
+      "inputs": [
+        "Selected local file, cache backend and requested format/size"
+      ],
+      "outputs": [
+        "Cache-hit thumbnail or explicit miss/backend result"
+      ],
+      "acceptance": [
+        "Verify actual cache evidence and bounded failures",
+        "Return miss honestly where no public backend exists"
+      ],
+      "limits": [
+        "A cache miss is not permission to decode the source",
+        "Do not infer macOS cache support from another platform"
+      ]
+    },
+    {
+      "id": "react-timeline-sequence",
+      "name": "React Timeline Sequence",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/react-timeline-sequence.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/stemlab-phrase-and-clip-evidence.md"
+      ],
+      "task": "Build a selected-source audio/timing editor or inspection timeline",
+      "inputs": [
+        "Stable asset identity, source rate and controlled transport",
+        "Beat, line/word/cue or MIDI lanes with explicit coordinate units"
+      ],
+      "outputs": [
+        "Callbacks, sample-frame loop/seek edits and source-bound audition"
+      ],
+      "acceptance": [
+        "Verify controlled callback persistence, seek/loop bounds and selected-source lyrics",
+        "Confirm package consumers and asset changes reset the correct owner"
+      ],
+      "limits": [
+        "A reusable control is distinct from its editor application",
+        "Do not let view coordinates or a second clock alter original source time"
+      ]
+    },
+    {
+      "id": "epk-social-metadata",
+      "name": "EPK Social Metadata",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/epk-social-metadata.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/epk-evidence-gate.md"
+      ],
+      "task": "Stage canonical Open Graph, X and Schema.org music/page facts",
+      "inputs": [
+        "Fresh canonical release/page/audio facts and eligible public media"
+      ],
+      "outputs": [
+        "Reviewed minimal metadata fields and anonymous source evidence"
+      ],
+      "acceptance": [
+        "Read back exact persisted values and public rendered tags",
+        "Preserve WordPress ownership of title/canonical/robots/sitemap"
+      ],
+      "limits": [
+        "Correct markup does not prove social-card display or ranking",
+        "Public saves retain their exact approval and source gates"
+      ]
+    },
+    {
+      "id": "workflowmoves",
+      "name": "WorkflowMoves",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/workflowmoves.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/tool-development-lessons.md"
+      ],
+      "task": "Propagate reviewed shared lessons without replacing project instructions",
+      "inputs": [
+        "Exact maintained route manifest and fresh target bytes",
+        "Public-safe lesson verified against source and execution evidence"
+      ],
+      "outputs": [
+        "Preview/apply/repeat receipts and matching released workflow package"
+      ],
+      "acceptance": [
+        "Require known managed block identity and unchanged surrounding bytes",
+        "Check full ecosystem workflow coverage, then run owning release tests"
+      ],
+      "limits": [
+        "Installed guidance does not prove adoption by another running chat",
+        "Private chat transcripts and scheduler definitions stay outside releases"
+      ]
+    },
+    {
+      "id": "dancevault",
+      "name": "DanceVault",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/dancevault.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md"
+      ],
+      "task": "Prepare authorised encrypted delivery on a qualified destination host",
+      "inputs": [
+        "Exact approved source bytes, recipient/expiry policy and private credentials"
+      ],
+      "outputs": [
+        "Encrypted container, independent source/container hashes and delivery evidence"
+      ],
+      "acceptance": [
+        "Verify the exact Apache/nginx/WordPress host route and actual access behaviour",
+        "Exercise expiry/revocation and fail-closed error paths within authorised scope"
+      ],
+      "limits": [
+        "Test-host acceptance is not destination-host deployment acceptance",
+        "No plaintext fallback, sensitive upload or access-policy expansion"
+      ]
+    },
+    {
+      "id": "mediaslide",
+      "name": "MediaSlide",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/mediaslide.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md"
+      ],
+      "task": "Compose a media browser with stable selection and explicit pagination",
+      "inputs": [
+        "Stable item IDs, bounded fixtures and an explicitly sized host",
+        "Controlled mode/selection/page state and real pagination callbacks"
+      ],
+      "outputs": [
+        "List/details/thumbnails/slide rendering with retained request evidence"
+      ],
+      "acceptance": [
+        "Exercise all four modes, selection, custom rendering and Previous/Next",
+        "Record observer requests without autonomous fixture page changes"
+      ],
+      "limits": [
+        "A deterministic harness must still observe the real callback",
+        "Tagged package, main demo, WordPress ZIP and deployed site are distinct"
+      ]
+    },
+    {
+      "id": "potbot",
+      "name": "Potbot",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/potbot.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/potbot-unity-integration.md"
+      ],
+      "task": "Use durable native coding tasks/jobs on a qualified host",
+      "inputs": [
+        "Registered workspace/sandbox, exact repository/candidate and task contract",
+        "Qualified provider/model, budget and effect authority"
+      ],
+      "outputs": [
+        "Durable jobs, retained candidate artifacts and verification/usage receipts"
+      ],
+      "acceptance": [
+        "Verify actual host isolation, workspace containment and interrupted-run reconciliation",
+        "Keep private custody qualification separate from published verification-key checks"
+      ],
+      "limits": [
+        "Source preview; registered models and planned MCP routes are not implementation",
+        "No unrestricted execution fallback or automatic host/account changes"
+      ]
+    },
+    {
+      "id": "danceflow-unity",
+      "name": "DanceFlow for Unity",
+      "role": "component",
+      "capabilities": "workflows/danceflow/capabilities/danceflow-unity.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/potbot-unity-integration.md"
+      ],
+      "task": "Import the reviewed UPM package and run a source-bound clock/rig sample",
+      "inputs": [
+        "Exact Unity/package identity, approved sample, master clock and rig profile",
+        "Qualified target mesh/GPU and independent finite recording clock"
+      ],
+      "outputs": [
+        "Native Editor/Player sample evidence with exact source and consumer identities"
+      ],
+      "acceptance": [
+        "Test the actual package import and requested visible character/materials",
+        "Verify play/pause/seek, finite bounds and source mapping in the native host"
+      ],
+      "limits": [
+        "Managed tests or a subset-copy CI consumer do not qualify whole-root UPM import",
+        "Deployed WebGL and software rendering do not prove physical GPU or musical alignment"
+      ]
+    },
+    {
+      "id": "toolkit",
+      "name": "DanceFlow toolkit",
+      "role": "toolkit",
+      "capabilities": "workflows/danceflow/capabilities/toolkit.md",
+      "workflows": [
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/scheduled-danceflow-tool-use.md",
+        "workflows/potbot-unity-integration.md"
+      ],
+      "task": "Discover useful components and compose their supported contracts",
+      "inputs": [
+        "Current catalogue, exact releases and observed runtime/host identities"
+      ],
+      "outputs": [
+        "Purpose-specific plan, typed discovery/adapters and explicit availability states"
+      ],
+      "acceptance": [
+        "Run the no-service discovery example and check the actual invoked adapter",
+        "Keep seventeen member engines separate from the discovery/composition toolkit"
+      ],
+      "limits": [
+        "Discovery is not execution or native-host qualification",
+        "Short Shifter remains independent; no blanket model or service setup"
+      ]
+    }
+  ]
+}

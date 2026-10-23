@@ -1,6 +1,12 @@
-# WorkflowMoves v0.1.41
+# WorkflowMoves v0.1.42
 
 Adds a local direct-publication calendar and read-only scheduling preflight: exact attachment hashes, approval payload identity, named-zone/UTC validation, duplicate assets, slot collisions, replacement cancellation evidence, rolling native date windows and independent receipts. Pending mutations remain pending; private drafts never become schedules through a local state assumption. The focused additive routes preserve existing campaign instructions. Native uploads, account access and publication remain separate supported operations.
+
+# WorkflowMoves v0.1.41
+
+Adds concrete task/input/output/acceptance contracts for all seventeen DanceFlow components and the separate discovery toolkit. The standard-library coverage checker catches omitted or duplicate tools, missing local workflow routes and incomplete contracts against the maintained capability membership index; CI and release packaging run it automatically.
+
+Generalises verified development lessons about complete source/assets, immutable derived outputs, rig and requested-character identity, tempo families and source clocks, deterministic asynchronous demos, temporal visual evidence and independent package/native-host/public acceptance. A focused guarded manifest installs the illustrated guides and shared routing while preserving project-owned text. The package contains public-safe workflows, generic code and synthetic tests; private chat transcripts, scheduler definitions, artist imagery, models and execution evidence remain outside it. Coverage validation is not runtime or exhaustive-history acceptance.
 
 # WorkflowMoves v0.1.40
 

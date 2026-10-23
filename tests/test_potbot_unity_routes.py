@@ -13,7 +13,7 @@ spec.loader.exec_module(installer)
 
 class PreviewIntegrationRoutes(unittest.TestCase):
     def test_preview_apply_and_repeat_preserve_unrelated_text(self):
-        for manifest in ('potbot-unity-routes.json', 'potbot-unity-guidance-routes.json'):
+        for manifest in ('potbot-unity-routes.json', 'potbot-unity-guidance-routes.json', 'tool-learning-routes.json'):
             with self.subTest(manifest=manifest), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 routes = json.loads((PACKAGE/manifest).read_text('utf-8'))
