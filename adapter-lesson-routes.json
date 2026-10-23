@@ -1,0 +1,8 @@
+[
+  {
+    "target": "Workflows/tool-development-lessons.md",
+    "source": "workflows/tool-development-lessons.md",
+    "mode": "copy",
+    "previous_source": "previous/0.1.43/tool-development-lessons.md"
+  }
+]
