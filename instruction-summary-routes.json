@@ -1,3 +1,10 @@
 [
-  {"target":"AGENTS.md","source":"rules/project-instruction-summary.md","mode":"insert","anchor":"## Mandatory blogworthiness check for every task and automation","identity":"# My Songs: essential rules and task-start guide"}
+  {
+    "target": "AGENTS.md",
+    "source": "rules/project-instruction-summary.md",
+    "mode": "insert",
+    "anchor": "## Mandatory blogworthiness check for every task and automation",
+    "identity": "# My Songs: essential rules and task-start guide",
+    "previous_source": "previous/social-only-publishing/project-instruction-summary.md"
+  }
 ]
