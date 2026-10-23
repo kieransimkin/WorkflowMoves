@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.45
+
+Adds platform-specific hashtag discovery and use with exact-asset review, fresh native evidence, KeywordMoves 0.6.0 final-copy audits, guarded 21-column register maintenance and outcome learning without per-tag causal claims. The scoped additive installer connects fourteen existing instruction, marketing, publishing, keyword and skill entrypoints while retaining their surrounding content and approval/stop rules. Counts are editorial experiment ceilings, not proven optima or platform hard limits; native topics, taxonomies and music tags remain separate. Includes a labelled explanatory visual, runnable tool reference and idempotence/preservation tests. No private automation definitions ship in the package.
+
 # WorkflowMoves v0.1.44
 
 Adds a guarded content-only update for an already scheduled WordPress article. A fresh whole-post review hash, exact candidate disk bytes, strict authority/preflight booleans and named-zone/UTC schedule are required. The helper records intent before its single POST, then requires exact saved content and unchanged schedule, metadata and other retained fields. It cannot silently publish, redraft or move the article. A synthetic manifest, focused known-predecessor installer and failure-boundary tests document the route. Public playback and publication remain independently verified states.

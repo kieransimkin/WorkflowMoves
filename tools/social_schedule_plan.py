@@ -23,6 +23,8 @@ def payload_hash(row):
     payload = {key: row.get(key) for key in
                ("destination", "account", "local_time", "timezone", "utc",
                 "files", "settings")}
+    if "hashtag_audit" in row:
+        payload["hashtag_audit"] = row["hashtag_audit"]
     return digest(json.dumps(payload, sort_keys=True, ensure_ascii=False,
                              separators=(",", ":")).encode("utf-8"))
 
@@ -48,6 +50,46 @@ def resolve_time(local_time, zone, expected_utc):
 def evidence_present(value, root):
     return (isinstance(value, str) and bool(value.strip()) and
             (root / value).is_file())
+
+
+def hashtag_audit_problems(row, root, now, instant):
+    """Bind a caller-supplied KeywordMoves receipt to exact video/caption bytes."""
+    receipt = row.get("hashtag_audit")
+    settings = row.get("settings", {})
+    if not isinstance(settings, dict):
+        return ["settings must be an object"]
+    required = settings.get("require_hashtag_review", False)
+    if not isinstance(required, bool):
+        return ["require_hashtag_review must be boolean"]
+    if receipt is None:
+        return ["Hashtag audit required before native preflight"] if required else []
+    try:
+        if not isinstance(receipt, dict) or set(receipt) != {"path", "sha256"}:
+            raise ValueError("receipt needs path and sha256")
+        raw = (root / receipt["path"]).read_bytes()
+        if digest(raw) != receipt["sha256"]:
+            raise ValueError("changed receipt bytes")
+        audit = json.loads(raw.decode("utf-8-sig"))
+        meta = audit["metadata"]
+        if audit.get("plugin") != "hashtag-planner" or audit.get("operation") != "audit" or meta.get("passed") is not True or meta.get("issues") != []:
+            raise ValueError("not a passing hashtag-planner audit")
+        if meta["target_platform"] != row["destination"].strip().casefold():
+            raise ValueError("wrong platform")
+        for field, file in (("asset_sha256", "video"), ("caption_sha256", "caption")):
+            expected = digest((root / row["files"][file]["path"]).read_bytes())
+            if meta.get(field) != expected:
+                raise ValueError("audit does not match actual " + file + " bytes")
+        checked = datetime.fromisoformat(meta["checked_at"].replace("Z", "+00:00"))
+        native = datetime.fromisoformat(meta["native_checked_at"].replace("Z", "+00:00"))
+        reviewed = datetime.fromisoformat(meta["reviewed_at"].replace("Z", "+00:00"))
+        if any(d.tzinfo is None for d in (checked, native, reviewed)) or checked > now or native > checked or reviewed > checked:
+            raise ValueError("invalid/future audit dates")
+        use_at = now  # Fresh at commitment; long-future publication needs a retained due recheck.
+        if (use_at - native).total_seconds() > 7 * 86400 or (use_at - reviewed).total_seconds() > 14 * 86400:
+            raise ValueError("evidence expired before commitment; refresh review")
+    except (OSError, ValueError, KeyError, TypeError, AttributeError) as exc:
+        return ["Hashtag audit hold: " + str(exc)]
+    return []
 
 
 def evaluate(plan, root, now):
@@ -96,6 +138,7 @@ def evaluate(plan, root, now):
                     problems.append(f"Changed {name} bytes")
             except (OSError, KeyError, TypeError) as exc:
                 problems.append(f"Unavailable {name}: {exc}")
+        holds.extend(hashtag_audit_problems(row, root, now, instant))
         current_hash = payload_hash(row)
         result["payload_sha256"] = current_hash
         approval = row.get("approval", {})

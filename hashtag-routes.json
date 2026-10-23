@@ -1,0 +1,116 @@
+[
+  {
+    "target": "Tools/social_schedule_plan.py",
+    "source": "tools/social_schedule_plan.py",
+    "mode": "copy",
+    "previous_source": "previous/0.1.44/tools/social_schedule_plan.py"
+  },
+  {
+    "target": "Workflows/hashtag-discovery-and-use.md",
+    "source": "workflows/hashtag-discovery-and-use.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/hashtag-planner.svg",
+    "source": "docs/media/hashtag-planner.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "AGENTS.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Read the detailed rules for the selected task",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "Workflows/keywordmoves-evidence-research.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Evidence workspace",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "Workflows/keyword-evidence-job-maintenance.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "Workflows/release-video-social-scheduling.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "Workflows/direct-social-scheduling.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "SHORT-FORM-PUBLISHING-WORKFLOW.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "Workflows/SHORT-FORM-VIDEO-WORKFLOW.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "Workflows/scheduled-danceflow-tool-use.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Establish the capability plan",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "Workflows/epk-keyword-metadata.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "skill-source/daily-music-marketing-run/SKILL.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "skill-source/fighting-entropy-marketing-daily/SKILL.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "skill-source/research-keyword-database/SKILL.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "skill-source/social-video-scheduling/SKILL.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  },
+  {
+    "target": "Keyword Targets/README.md",
+    "source": "fragments/hashtag-discovery-and-use.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Evidence-led hashtag discovery and use"
+  }
+]
