@@ -1,0 +1,9 @@
+[
+  {"target":"Workflows/cyclic-event-keyword-planning.md","source":"workflows/cyclic-event-keyword-planning.md","mode":"copy"},
+  {"target":"Workflows/media/cyclic-event-keyword-planning.svg","source":"docs/media/cyclic-event-keyword-planning.svg","mode":"copy"},
+  {"target":"Workflows/campaign-metadata-refresh.md","source":"fragments/cyclic-event-keyword-planning.md","mode":"insert","anchor":"## Resolve the item and its current policy","identity":"## Recurring-event keyword and publication planning"},
+  {"target":"Workflows/hashtag-discovery-and-use.md","source":"fragments/cyclic-event-keyword-planning.md","mode":"insert","anchor":"## Start with the content and intended listener","identity":"## Recurring-event keyword and publication planning"},
+  {"target":"Workflows/direct-social-scheduling.md","source":"fragments/cyclic-event-keyword-planning.md","mode":"insert","anchor":"## Potential problems","identity":"## Recurring-event keyword and publication planning"},
+  {"target":"Workflows/release-video-social-scheduling.md","source":"fragments/cyclic-event-keyword-planning.md","mode":"insert","anchor":"## Potential problems","identity":"## Recurring-event keyword and publication planning"},
+  {"target":"Workflows/release-marketing-plan-source-reconciliation.md","source":"fragments/cyclic-event-keyword-planning.md","mode":"insert","anchor":"## Potential problems","identity":"## Recurring-event keyword and publication planning"}
+]

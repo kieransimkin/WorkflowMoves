@@ -44,6 +44,10 @@ Preview `python install.py --root WORKSPACE --routes hashtag-routes.json --check
 
 ## Start here
 
+The [recurring-event planning workflow](workflows/cyclic-event-keyword-planning.md) turns source-specific historical timing into a bounded publication decision. It separates song/listening intent from broad event interest, verifies fixed/movable/event-relative anchors, aligns comparable completed cycles, retains normalized-scale and precision limits, and requires temporal holdouts where enough cycles exist. A predicted window is combined with actual platform readiness, audience activity, calendar clashes and scoped authority before an independently verified native schedule. Daily series never establish an optimal posting hour.
+
+Preview `python install.py --root WORKSPACE --routes cyclic-event-routes.json --check`, inspect the seven targets, apply the same manifest, then require a repeat preview to be current. The five existing destination guides must be present with their named anchors; missing/edited text is a conflict, not permission to replace it. The illustrated guide and routes introduce no collector, paid request, native save, reschedule authority, automation or notification. Use only actual released KeywordMoves operations; importing relative-interest data does not prove that an event forecast ran.
+
 The [direct social scheduling workflow](workflows/direct-social-scheduling.md) adds a local named-timezone calendar and read-only checks for media/copy/cover hashes, collisions, scheduler takeover, native date windows and independent receipts. It performs no account actions. Preview `social-scheduling-routes.json` to install this focused integration; private account evidence stays in the campaign.
 
 ![Direct publication contract, generated illustration](docs/media/direct-social-scheduling.svg)
@@ -63,7 +67,7 @@ The repository includes real or generated media beside the relevant guides. The 
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.40. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.46. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 Campaign media now requires a reviewed release-specific design profile, narrative placement before end matter and rendered desktop, tablet and mobile comparison. `tools/integrate_epk_media.py` applies that reviewed profile while proving iframe, video, audio and script blocks remain unchanged. The [illustrated integration example](examples/epk-media-design-integration.md) explains the contract.
 

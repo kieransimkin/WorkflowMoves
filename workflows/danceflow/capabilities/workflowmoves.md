@@ -1,3 +1,9 @@
+# WorkflowMoves 0.1.46: recurring-event publication planning
+
+The [cyclic-event workflow](../../cyclic-event-keyword-planning.md) gives a portable contract for exact music intent, verified per-edition anchors, matching completed historical series, source normalization/precision, honest temporal holdouts and bounded publication windows. `cyclic-event-routes.json` installs the guide/media and additive routing in five existing project guides. Preview, apply and repeat verification preserve other owners and unrelated scope. The [explanatory illustration](../../media/cyclic-event-keyword-planning.svg) depicts the contract rather than real series or native output. Source/tool execution and actual native schedule persistence require separate evidence; the workflow cannot grant rescheduling authority or infer an optimal hour from daily data.
+
+## Previous complete-workflow integration
+
 # WorkflowMoves 0.1.41: complete task workflows and development lessons
 
 The [current task workflow map](../../ecosystem-tool-workflows.md) covers seventeen components and the separate toolkit with concrete input, output, acceptance and limit contracts. The [development-learning workflow](../../tool-development-lessons.md) generalises source-verified failures while keeping private chat evidence controlled. Run `python tools/audit_workflow_coverage.py` from this package to check membership and local route completeness. The focused `tool-learning-routes.json` installs the illustrated guides and shared routing through guarded preview/apply/repeat checks. Documentation coverage does not establish native execution or exhaustive history review.
