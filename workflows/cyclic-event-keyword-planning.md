@@ -63,6 +63,20 @@ Confirm the latest released KeywordMoves version and the runtime actually import
 
 For a missing reusable analysis capability, implement and test the smallest owning-tool operation, documentation and synthetic example before claiming it exists. Retain current source/tested/released/installed identities separately. Do not use a hand-written per-campaign forecasting engine, invent a command or describe this guide as a statistical validator. A new local keyword hypothesis enters the canonical evidence register as proposed through its guarded workflow; forecast confidence does not grant public-copy adoption.
 
+### Version-gated KeywordMoves event-cycle route
+
+For KeywordMoves **0.6.2 or later**, use the released [event-cycle contract](https://github.com/kieransimkin/KeywordMoves/blob/main/docs/event-cycles.md), verifying its identity against the runtime actually imported. Earlier versions' normalization/import operations do not provide this planner. A guide that names a minimum version does not establish that it is released or installed on this machine.
+
+```powershell
+keywordmoves run google-trends --operation plan-event-cycles --input event-manifest.json --input cycle-a.csv --input cycle-b.csv --input cycle-c.csv
+```
+
+The first input is `keywordmoves-event-cycle-plan/v1`; subsequent inputs are the exact retained CSV bytes, not inline keyword seeds. Bind `subject`, `planned_at`, verified next event, exact `scope`, event-relative `window`, per-source CSV index/hash/observation/event date/reference and explicit phrase `reviews`. The scope includes geography, search property, category, query kind and temporal basis. Use the owning guide's complete schema and bounds; source labels and a valid manifest alone do not prove those assertions. Optional preferred-source mappings resolve multiple captures of the same phrase/event without counting them as extra cycles.
+
+Retain the complete result JSON, including `metadata.policy` and each candidate's `metadata.event_profile`: source quality and exclusions, independent usable events, forecast intervals, chronological whole-cycle holdouts, timing support, source-selection issues and any proposal. The fixed quality thresholds and high-interest rule are exposed heuristics; record them with the version. A sparse or jointly suppressed term can abstain even if a broad event term has a clear peak. Original `<1` censors remain distinct from zeros; re-scaling cannot restore resolution lost in a shared comparison.
+
+Optional `scheduling` declares platform, timezone, editorial `lead_days`, allowed date boundaries and blocked dates. Its proposal is a date window only: `optimal_hour=null`, `music_demand_validated=false` and `implementation_authorised=false` remain explicit. It saves nothing. Two usable cycles remain limited; failed held-out timing, unvalidated intent or insufficient quality can withhold a proposal. Run the shipped synthetic example as a contract check, label it synthetic and apply the real retained sources separately. A successful synthetic example does not validate a campaign forecast or native schedule.
+
 ## 6. Turn the demand window into platform-specific candidates
 
 Start with the supported **window**, not a supposedly optimal minute. Combine it with the actual public-eligibility/release boundary, media/cover/caption readiness, measured or currently observed processing/check duration, native search/discovery evidence, account audience activity and nearby campaign slots. Record each component's source and uncertainty.
@@ -73,6 +87,8 @@ Inspect all relevant native queues/calendars for the actual account, format, com
 
 Record the original slot, proposed local start/end or chosen slot, IANA timezone, explicit offset/UTC, evidence-backed reason, unchanged and changed fields, relevant user authority and expected trade-off. Use a named zone across daylight-saving transitions; reject nonexistent times and disambiguate repeated times with UTC. The historical data's timezone and the native publication zone must both remain explicit.
 
+A native city/current-timezone label alone is insufficient across daylight saving. Retain the explicitly displayed offset, entered wallclock/zone and the future UTC instant; independently round-trip the reopened native candidate and saved queue against the intended IANA-zone time. A native interface may retain its current offset for a future date. A supported fixed-offset control can express the reviewed instant only when that conversion and the independent persisted readback agree; do not claim that a displayed city label proves the future offset. If the instant cannot be established, retain a precise schedule hold rather than guessing a one-hour correction.
+
 ## 7. Preserve authority and commit an authorised schedule once
 
 A forecast and this workflow do not themselves authorise an external action. Apply the latest direct user instruction to its actual scope: an explicit request to optimise/reschedule relevant upcoming posts can supersede their earlier dates; it does not move unrelated posts, distributor release dates, rights, embargoes or automation definitions. Preserve earlier explicit dates outside that scope. Do not re-ask for general permission already granted; retain the authority-to-item mapping and the concrete reviewed before/after proposal.
@@ -80,7 +96,7 @@ A forecast and this workflow do not themselves authorise an external action. App
 Already public media is not rescheduled by deleting/reuploading it. An unsupported editor/scheduler or unresolved pending save is a hold. Future scheduling remains the default unless immediate publication was explicitly requested for that item. Follow [direct scheduling](direct-social-scheduling.md) and [release-video scheduling](release-video-social-scheduling.md):
 
 1. Freshly identify the account/native item, current complete copy, media/cover/labels/settings and original persisted slot. Resolve source drift and other-owner/pending actions before mutation.
-2. Review the exact new time and any necessary relative-date/copy correction. Refresh source/native context, payload/approval and hashtag/native-metadata checks against the actual committing date. A text-only audit does not verify schedule, media or settings.
+2. Review the exact new time and any necessary relative-date/copy correction. Refresh source/native context, payload/approval and hashtag/native-metadata checks against the actual committing date. Far-future items retain a named prepublication recheck in the existing continuation queue, without creating an extra automation. A text-only audit does not verify schedule, media or settings.
 3. Read back the intended local date/time/timezone and explicit UTC, complete changed copy and preserved fields in the supported native control. Save the intended change once. Do not publish immediately or cancel/recreate an item to bypass a missing reschedule control.
 4. Independently reopen/reload the native queue/item. Require the same account/object, accepted fields and exact new slot/timezone/UTC, plus preserved media/cover/labels/privacy. A toast, local plan or calendar entry is not native persistence. Keep an ambiguous save pending and inspect it before any retry.
 5. Reconcile current campaign plans, local calendar/copy/generator inputs and action records with the verified native result; retain original slots and receipts as history. Do not overwrite an existing source calendar merely to make it agree with a proposal. Later verify actual public state/playback and perform eligible same-job EPK media reconciliation through its own gate.
