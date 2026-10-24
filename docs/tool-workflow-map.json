@@ -115,7 +115,8 @@
       "role": "component",
       "capabilities": "workflows/danceflow/capabilities/keywordmoves.md",
       "workflows": [
-        "workflows/ecosystem-tool-workflows.md"
+        "workflows/ecosystem-tool-workflows.md",
+        "workflows/cyclic-event-keyword-planning.md"
       ],
       "task": "Research and reconcile source-specific keyword observations",
       "inputs": [
@@ -319,7 +320,8 @@
       "capabilities": "workflows/danceflow/capabilities/workflowmoves.md",
       "workflows": [
         "workflows/ecosystem-tool-workflows.md",
-        "workflows/tool-development-lessons.md"
+        "workflows/tool-development-lessons.md",
+        "workflows/cyclic-event-keyword-planning.md"
       ],
       "task": "Propagate reviewed shared lessons without replacing project instructions",
       "inputs": [
