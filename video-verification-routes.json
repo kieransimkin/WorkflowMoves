@@ -1,0 +1,50 @@
+[
+  {
+    "target": "Workflows/rendered-video-verification.md",
+    "source": "workflows/rendered-video-verification.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/rendered-video-verification.svg",
+    "source": "workflows/media/rendered-video-verification.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/verify-rendered-music-video/SKILL.md",
+    "source": "skills/verify-rendered-music-video/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/verify-rendered-music-video/SKILL.md",
+    "source": "skills/verify-rendered-music-video/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/rendered-video-verification.md",
+    "mode": "insert",
+    "anchor": "## Establish timing authority",
+    "identity": "## Verify the exact encoded film"
+  },
+  {
+    "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/rendered-video-verification.md",
+    "mode": "insert",
+    "anchor": "## Establish timing authority",
+    "identity": "## Verify the exact encoded film"
+  },
+  {
+    "target": "skill-source/render-bpm-cue-videos/references/render-contract.md",
+    "source": "fragments/rendered-video-verification.md",
+    "mode": "insert",
+    "anchor": "## Evidence and inputs",
+    "identity": "## Verify the exact encoded film"
+  },
+  {
+    "target": ".agents/skills/render-bpm-cue-videos/references/render-contract.md",
+    "source": "fragments/rendered-video-verification.md",
+    "mode": "insert",
+    "anchor": "## Evidence and inputs",
+    "identity": "## Verify the exact encoded film"
+  }
+]
