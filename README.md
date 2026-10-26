@@ -42,6 +42,12 @@ Preview `python install.py --root WORKSPACE --routes hashtag-routes.json --check
 
 ![Hashtag discovery, review and final-copy contract, generated diagram](docs/media/hashtag-planner.svg)
 
+## Exact rendered-video verification
+
+The [encoded-video verification workflow](workflows/rendered-video-verification.md) and focused [verification skill](skills/verify-rendered-music-video/SKILL.md) separate slow native finalisation from a failed render, then bind technical, encoded visual, motion, listening and publication evidence to one exact file. They preserve frozen inputs, native health, full decode/CFR/sample mapping, intended sprite exits, caption derivatives and final quality. Resource observations remain hypotheses rather than invented OS diagnoses.
+
+Preview `python install.py --root WORKSPACE --routes video-verification-routes.json --check`, inspect all eight targets, apply that same focused manifest only to the intended workspace and require a repeat preview to be current. The routes install the guide, explanatory illustration and focused skill, and add a small pointer to existing rendering skill/reference entrypoints. Private media, scheduler definitions and operational receipts stay outside this package. Native source/public pipeline examples have explicit version and evidence limits.
+
 ## Start here
 
 The [recurring-event planning workflow](workflows/cyclic-event-keyword-planning.md) turns source-specific historical timing into a bounded publication decision. It separates song/listening intent from broad event interest, verifies fixed/movable/event-relative anchors, aligns comparable completed cycles, retains normalized-scale and precision limits, and requires temporal holdouts where enough cycles exist. A predicted window is combined with actual platform readiness, audience activity, calendar clashes and scoped authority before an independently verified native schedule. Daily series never establish an optimal posting hour.
@@ -67,7 +73,7 @@ The repository includes real or generated media beside the relevant guides. The 
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.46. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.47. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 Campaign media now requires a reviewed release-specific design profile, narrative placement before end matter and rendered desktop, tablet and mobile comparison. `tools/integrate_epk_media.py` applies that reviewed profile while proving iframe, video, audio and script blocks remain unchanged. The [illustrated integration example](examples/epk-media-design-integration.md) explains the contract.
 

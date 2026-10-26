@@ -1,0 +1,3 @@
+## Verify the exact encoded film
+
+For final native health/manifest checks, suspected verification stalls and encoded lyric/trajectory/phone/effect QA, follow `Workflows/rendered-video-verification.md` and the `verify-rendered-music-video` skill when installed. Identify exact owned processes and frozen inputs, distinguish stale status from progress, preserve quality and storage reservations, and keep technical, sampled visual, continuous-motion, attended-listening, exact-file approval and publication states separate. A renamed MP4, source preview or approved excerpt does not establish a newly generated film's final acceptance.
