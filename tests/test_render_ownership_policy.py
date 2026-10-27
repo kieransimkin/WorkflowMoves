@@ -12,6 +12,7 @@ class RenderOwnershipPolicy(unittest.TestCase):
         self.assertIn("more than 15 minutes", text)
         self.assertIn("Keep every other\nrender inside the active Codex session", text)
         self.assertIn("render-progress.json", text)
+        self.assertIn("do not recursively scan frame, chunk or QA directories", text)
         self.assertNotIn("Every long-running or high-quality render", text)
 
     def test_skill_fragment_and_scheduled_guide_match_threshold(self):

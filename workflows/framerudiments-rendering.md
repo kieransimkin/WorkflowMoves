@@ -58,7 +58,9 @@ FrameRudiments 0.4.14+ writes atomic `render-progress.json` and flushes a stderr
 heartbeat every 10 seconds by default, including while one expensive frame is
 still composing. Inspect its state, phase, active/completed/finalized frames and
 provisional ETA without controlling the worker. Use `--progress-seconds` for a
-different bounded cadence. Progress is liveness evidence, not completion or QA.
+different bounded cadence. Poll only that one file, no faster than the configured
+heartbeat; do not recursively scan frame, chunk or QA directories while a render is
+active. Progress is liveness evidence, not completion or QA.
 
 For a qualifying background job, verify Task Scheduler/service ancestry and
 retain the task identity, launch time, run directory, worker PID, frozen inputs,

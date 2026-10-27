@@ -22,7 +22,8 @@ High-quality settings and FrameRudiments' 30-second chunk threshold alone do not
 qualify. Record the evidence, arithmetic and decision, never migrate or duplicate
 a live render, and reconsider only at a safe new-attempt boundary. FrameRudiments
 0.4.14+ `render-progress.json` and flushed stderr heartbeats provide regular
-liveness/ETA evidence without proving completion or technical QA.
+liveness/ETA evidence without proving completion or technical QA. Poll only that
+file, no faster than its configured heartbeat; do not scan render trees for status.
 
 Use modular `type: "rudiment"` views for particles/trails, signed bars, waveform
 traces, XY paths and calibrated Fourier spectra. Read the package's
