@@ -15,6 +15,15 @@ Rendering does not upload, schedule or publish; existing publication and EPK
 reconciliation requirements remain authoritative. Extend a demonstrated shared
 gap in the proper package with tests/docs rather than copying another engine.
 
+Choose ownership before production encoding. Use an operating-system scheduler
+or service only for a full-length video or when a representative bounded
+preflight predicts more than 15 minutes; keep every other render inside Codex.
+High-quality settings and FrameRudiments' 30-second chunk threshold alone do not
+qualify. Record the evidence, arithmetic and decision, never migrate or duplicate
+a live render, and reconsider only at a safe new-attempt boundary. FrameRudiments
+0.4.14+ `render-progress.json` and flushed stderr heartbeats provide regular
+liveness/ETA evidence without proving completion or technical QA.
+
 Use modular `type: "rudiment"` views for particles/trails, signed bars, waveform
 traces, XY paths and calibrated Fourier spectra. Read the package's
 `docs/rudiment-renderers.md` and `docs/spectrum.md`; choose axes, viewports and

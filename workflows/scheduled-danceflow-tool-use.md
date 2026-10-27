@@ -14,6 +14,8 @@ At the start of every new workflow, use `Tools/DanceFlow.ps1 -Releases` when ava
 
 The same routing applies to ordinary chats, existing in-progress work at a material handoff and scheduled jobs. Use FrameRudiments as the shared offline renderer, with saved StemLab evidence and native DanceRudiments movement; use DanceMoves for live web motion. Follow `Workflows/framerudiments-rendering.md` and the applicable rendering, analysis and movement skills. Review a concrete reusable improvement during substantial use and implement it in the canonical tool when useful and in scope, or record why the existing capability meets the need. Publish completed improvements through their established checks and immutable releases. For authorised software releases, use automatic immediate GitHub/registry publication without a separate human gate; preserve the distinct social scheduling and public-site deployment rules.
 
+Choose render ownership before production encoding. Only a full-length video or a representative preflight estimate above 15 minutes goes to an operating-system scheduler/service; keep all other renders inside Codex. Record the estimate and decision, do not treat FrameRudiments' 30-second chunk threshold as a background threshold, and never migrate or duplicate a live job. Read FrameRudiments 0.4.14+ `render-progress.json`/stderr heartbeats for regular status while retaining separate completion and QA evidence.
+
 Shared instructions and prompt fragments make this policy available; their existence does not prove a running chat read them or a scheduled job ran. Keep cross-chat findings in private coordination records and preserve each job's original purpose.
 
 ## Establish the capability plan

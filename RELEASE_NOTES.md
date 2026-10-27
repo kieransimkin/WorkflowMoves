@@ -1,3 +1,16 @@
+# WorkflowMoves v0.1.48
+
+Render ownership is now decided before production encoding: only full-length
+videos or jobs whose representative preflight predicts more than 15 minutes use
+an operating-system scheduler/service; shorter work remains inside Codex.
+High-quality settings and FrameRudiments' 30-second chunk boundary no longer act
+as proxy background thresholds. The workflow records estimate evidence and
+forbids migrating or duplicating a live render. It also documents FrameRudiments
+0.4.14's atomic progress snapshot and regular stderr heartbeat while keeping
+liveness, completion and technical QA distinct. The existing generated chunk
+architecture is retained as the explanatory visual; no private campaign media or
+scheduler receipts are packaged.
+
 # WorkflowMoves v0.1.47
 
 Adds an exact rendered-video verification workflow, focused agent skill and eight guarded installation routes. It diagnoses owned finalisation phases without treating stale health, a live PID or slow metadata startup as a deadlock; preserves full-quality source-bound decode/CFR/hash gates; and requires actual encoded lyric transitions, intended prop exits, phone previews, effect regions and canonical upload captions. Human motion/listening approval and independent native/public publication remain separate. Includes a labelled contract illustration, versioned public native media references and preservation/conflict/idempotence coverage. No private campaign media, account captures, scheduler records or credentials are included.
