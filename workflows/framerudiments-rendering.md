@@ -37,14 +37,73 @@ framerudiments preflight release/project.json --output release/preflight --ffmpe
 framerudiments render release/project.json --output release/render --ffmpeg /path/ffmpeg
 ```
 
+## Choose foreground or operating-system render ownership
+
+Classify the render once before production encoding. Use an operating-system
+scheduler or service only when the deliverable is a full-length video or a
+representative bounded preflight predicts more than 15 minutes. Keep every other
+render inside the active Codex session. High-quality settings, a duration over
+FrameRudiments' 30-second chunk threshold, or the availability of a scheduler do
+not make a render a background job.
+
+Estimate wall time from named evidence: representative sequential composition
+seconds per frame multiplied by the complete frame count, plus observed or
+conservatively bounded encoding, assembly and required QA overhead. Retain the
+calibration range, arithmetic, estimate, threshold comparison and decision. If
+evidence is insufficient, perform a bounded calibration inside Codex first. Do
+not migrate, restart or duplicate a live render when a later ETA changes;
+reconsider ownership only at a safe new-attempt boundary.
+
+FrameRudiments 0.4.14+ writes atomic `render-progress.json` and flushes a stderr
+heartbeat every 10 seconds by default, including while one expensive frame is
+still composing. Inspect its state, phase, active/completed/finalized frames and
+provisional ETA without controlling the worker. Use `--progress-seconds` for a
+different bounded cadence. Poll only that one file, no faster than the configured
+heartbeat; do not recursively scan frame, chunk or QA directories while a render is
+active. Progress is liveness evidence, not completion or QA.
+
+### Use a separate fast working cache when final storage is contended
+
+FrameRudiments 0.4.14+ accepts `--work-cache` (or
+`FRAMERUDIMENTS_WORK_CACHE`) with a required `--reserve-gib` complete peak
+estimate. Prefer a fast physical device separate from the final destination when
+that destination is contended. Keep this reusable workflow deployment-neutral;
+the owning project's local instructions select the actual path.
+
+The cache route hash-verifies checksum-pinned inputs before frame rendering,
+writes all high-I/O render/effect/chunk/analysis/QA artifacts in cache, completes
+technical QA there, then copies the tree to hidden final-side staging. Every
+file's size/hash must match before the final directory appears. FrameRudiments
+physically reserves the declared payload plus 2% at both locations, releasing
+each payload only as replacement bytes are written and retaining both margins
+through final verification.
+
+Use `framerudiments cache-status --work-cache PATH --expect-empty` before
+unrelated work and after handoff. Successful jobs remove their cache. Interrupted
+jobs retain evidence/recovery state but release reservations; inspect ownership
+and resume state rather than deleting them. During active work, read only
+`work-cache.json` and `render/render-progress.json` at their heartbeat cadence.
+
+For a qualifying background job, verify Task Scheduler/service ancestry and
+retain the task identity, launch time, run directory, worker PID, frozen inputs,
+state/log paths and ordinary storage/resume/QA evidence. `Start-Process`, a hidden
+window or a detached label is not proof of independent ownership. Existing live
+jobs keep their current owner until their documented safe boundary.
+
+![Generated FrameRudiments sequential chunk architecture](https://raw.githubusercontent.com/kieransimkin/FrameRudiments/main/docs/media/chunked-rendering.svg)
+
+*Generated architecture diagram. It explains the sequential recovery path used
+by qualifying background jobs; saved ancestry and progress receipts are the
+evidence for a particular run.*
+
 Use a trusted Python scene hook only for release-owned drawing. It receives the
 shared frame/source/output/beat/lyric/cue context; do not add another scheduler,
 native sampler or encoder. Validate its custom bounds, occlusion and collisions.
 Update the README/tests and submit a canonical PR for a demonstrated shared gap.
 
-Local launcher: `& 'Z:\My Songs\Tools\FrameRudiments.ps1' <command>`.
-The separate runtime is `Tools/FrameRudiments/.venv`; packages and private media
-are not bundled in this workflow archive. See `Tools/FrameRudiments/README.md`.
+Use the owning project's configured FrameRudiments launcher and isolated runtime;
+packages, deployment paths and private media are not bundled in this workflow
+archive. Follow that project's local runtime guide.
 
 
 Modular rudiment layers use `type: "rudiment"` with `renderer: "particles"`,

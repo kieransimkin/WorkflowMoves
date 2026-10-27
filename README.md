@@ -73,7 +73,7 @@ The repository includes real or generated media beside the relevant guides. The 
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.47. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.48. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
 
 Campaign media now requires a reviewed release-specific design profile, narrative placement before end matter and rendered desktop, tablet and mobile comparison. `tools/integrate_epk_media.py` applies that reviewed profile while proving iframe, video, audio and script blocks remain unchanged. The [illustrated integration example](examples/epk-media-design-integration.md) explains the contract.
 
@@ -159,6 +159,11 @@ The CI-generated Arcadians Fourier page demonstrates full-master 4/8/16/32/64/12
 
 `workflows/framerudiments-rendering.md` routes new/revised Shorts, Canvas-style
 clips and lyric visualisers through the shared FrameRudiments package. The
+workflow keeps rendering inside Codex unless the deliverable is full length or a
+representative preflight predicts more than 15 minutes. FrameRudiments 0.4.14+
+provides an atomic progress snapshot and regular stderr heartbeats for either
+ownership mode; chunking above 30 seconds remains a recovery rule rather than a
+background threshold. The
 `framerudiments-routes.json` manifest installs this guide and additive routing
 blocks into the six relevant source/installed skills, render contract and two
 video workflows. It preserves all original instructions and applies no media

@@ -1,8 +1,8 @@
 ## Use FrameRudiments for offline rendering
 
 For new or materially revised Shorts, Canvas-style clips and lyric visualisers,
-use `Z:/My Songs/Tools/FrameRudiments.ps1` and read
-`Z:/My Songs/Workflows/framerudiments-rendering.md`. The canonical package is
+use the owning project's configured FrameRudiments launcher and maintained local
+rendering workflow. The canonical package is
 https://github.com/kieransimkin/FrameRudiments (`framerudiments` on PyPI).
 Reuse its project/frame ledger, captions, layers, native motion adapters,
 FFmpeg encoding and technical QA; keep release artwork and choreography in
@@ -14,6 +14,25 @@ Keep source hashes/sample bounds, canonical timing, match windows/offsets,
 Rendering does not upload, schedule or publish; existing publication and EPK
 reconciliation requirements remain authoritative. Extend a demonstrated shared
 gap in the proper package with tests/docs rather than copying another engine.
+
+Choose ownership before production encoding. Use an operating-system scheduler
+or service only for a full-length video or when a representative bounded
+preflight predicts more than 15 minutes; keep every other render inside Codex.
+High-quality settings and FrameRudiments' 30-second chunk threshold alone do not
+qualify. Record the evidence, arithmetic and decision, never migrate or duplicate
+a live render, and reconsider only at a safe new-attempt boundary. FrameRudiments
+0.4.14+ `render-progress.json` and flushed stderr heartbeats provide regular
+liveness/ETA evidence without proving completion or technical QA. Poll only that
+file, no faster than its configured heartbeat; do not scan render trees for status.
+
+When final storage is contended, select a fast `--work-cache`, preferably on a
+different physical device, and provide the complete peak `--reserve-gib` estimate.
+FrameRudiments 0.4.14+ stages pinned inputs and high-I/O outputs there, physically
+reserves payload plus 2% at cache and final locations, and exposes the final
+directory only after technical QA plus full staging-tree hash/size verification.
+Keep reusable guidance drive-neutral. Check `cache-status --expect-empty` before
+unrelated work and after handoff; inspect retained failed jobs rather than deleting
+them without ownership/recovery evidence.
 
 Use modular `type: "rudiment"` views for particles/trails, signed bars, waveform
 traces, XY paths and calibrated Fourier spectra. Read the package's
