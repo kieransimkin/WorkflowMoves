@@ -1,8 +1,8 @@
 ## Use FrameRudiments for offline rendering
 
 For new or materially revised Shorts, Canvas-style clips and lyric visualisers,
-use `Z:/My Songs/Tools/FrameRudiments.ps1` and read
-`Z:/My Songs/Workflows/framerudiments-rendering.md`. The canonical package is
+use the owning project's configured FrameRudiments launcher and maintained local
+rendering workflow. The canonical package is
 https://github.com/kieransimkin/FrameRudiments (`framerudiments` on PyPI).
 Reuse its project/frame ledger, captions, layers, native motion adapters,
 FFmpeg encoding and technical QA; keep release artwork and choreography in
@@ -24,6 +24,15 @@ a live render, and reconsider only at a safe new-attempt boundary. FrameRudiment
 0.4.14+ `render-progress.json` and flushed stderr heartbeats provide regular
 liveness/ETA evidence without proving completion or technical QA. Poll only that
 file, no faster than its configured heartbeat; do not scan render trees for status.
+
+When final storage is contended, select a fast `--work-cache`, preferably on a
+different physical device, and provide the complete peak `--reserve-gib` estimate.
+FrameRudiments 0.4.14+ stages pinned inputs and high-I/O outputs there, physically
+reserves payload plus 2% at cache and final locations, and exposes the final
+directory only after technical QA plus full staging-tree hash/size verification.
+Keep reusable guidance drive-neutral. Check `cache-status --expect-empty` before
+unrelated work and after handoff; inspect retained failed jobs rather than deleting
+them without ownership/recovery evidence.
 
 Use modular `type: "rudiment"` views for particles/trails, signed bars, waveform
 traces, XY paths and calibrated Fourier spectra. Read the package's

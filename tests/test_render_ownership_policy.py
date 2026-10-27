@@ -13,6 +13,12 @@ class RenderOwnershipPolicy(unittest.TestCase):
         self.assertIn("Keep every other\nrender inside the active Codex session", text)
         self.assertIn("render-progress.json", text)
         self.assertIn("do not recursively scan frame, chunk or QA directories", text)
+        self.assertIn("separate from the final destination", text)
+        self.assertIn("cache-status --work-cache PATH --expect-empty", text)
+        self.assertNotIn("C:\\", text)
+        self.assertNotIn("Z:\\", text)
+        self.assertNotIn("C:/", text)
+        self.assertNotIn("Z:/", text)
         self.assertNotIn("Every long-running or high-quality render", text)
 
     def test_skill_fragment_and_scheduled_guide_match_threshold(self):
@@ -24,6 +30,9 @@ class RenderOwnershipPolicy(unittest.TestCase):
             self.assertIn("full-length video", text)
             self.assertIn("15 minutes", text)
             self.assertIn("render-progress.json", text)
+            self.assertIn("drive-neutral", text)
+            for prefix in ("C:\\", "Z:\\", "C:/", "Z:/"):
+                self.assertNotIn(prefix, text)
 
 
 if __name__ == "__main__":

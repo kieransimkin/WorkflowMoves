@@ -62,6 +62,28 @@ different bounded cadence. Poll only that one file, no faster than the configure
 heartbeat; do not recursively scan frame, chunk or QA directories while a render is
 active. Progress is liveness evidence, not completion or QA.
 
+### Use a separate fast working cache when final storage is contended
+
+FrameRudiments 0.4.14+ accepts `--work-cache` (or
+`FRAMERUDIMENTS_WORK_CACHE`) with a required `--reserve-gib` complete peak
+estimate. Prefer a fast physical device separate from the final destination when
+that destination is contended. Keep this reusable workflow deployment-neutral;
+the owning project's local instructions select the actual path.
+
+The cache route hash-verifies checksum-pinned inputs before frame rendering,
+writes all high-I/O render/effect/chunk/analysis/QA artifacts in cache, completes
+technical QA there, then copies the tree to hidden final-side staging. Every
+file's size/hash must match before the final directory appears. FrameRudiments
+physically reserves the declared payload plus 2% at both locations, releasing
+each payload only as replacement bytes are written and retaining both margins
+through final verification.
+
+Use `framerudiments cache-status --work-cache PATH --expect-empty` before
+unrelated work and after handoff. Successful jobs remove their cache. Interrupted
+jobs retain evidence/recovery state but release reservations; inspect ownership
+and resume state rather than deleting them. During active work, read only
+`work-cache.json` and `render/render-progress.json` at their heartbeat cadence.
+
 For a qualifying background job, verify Task Scheduler/service ancestry and
 retain the task identity, launch time, run directory, worker PID, frozen inputs,
 state/log paths and ordinary storage/resume/QA evidence. `Start-Process`, a hidden
@@ -79,9 +101,9 @@ shared frame/source/output/beat/lyric/cue context; do not add another scheduler,
 native sampler or encoder. Validate its custom bounds, occlusion and collisions.
 Update the README/tests and submit a canonical PR for a demonstrated shared gap.
 
-Local launcher: `& 'Z:\My Songs\Tools\FrameRudiments.ps1' <command>`.
-The separate runtime is `Tools/FrameRudiments/.venv`; packages and private media
-are not bundled in this workflow archive. See `Tools/FrameRudiments/README.md`.
+Use the owning project's configured FrameRudiments launcher and isolated runtime;
+packages, deployment paths and private media are not bundled in this workflow
+archive. Follow that project's local runtime guide.
 
 
 Modular rudiment layers use `type: "rudiment"` with `renderer: "particles"`,
