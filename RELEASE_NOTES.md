@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.51
+
+Fixes artwork-first EPK players that accepted only the small Play button. Whole-picture clicks and taps now reveal the same source player, retaining keyboard controls, close/reopen and shared playback events. Adds a guarded existing-page repair for explicit native URLs and provider IDs, touch gesture filtering, byte-preservation receipts and one-line WordPress-safe runtimes. Provider facades clear the playing controls; no invisible overlay remains. Includes focused installation routes, seven preservation/safety tests and an illustrated verification guide. Actual source playback, WordPress deployment and public-save approval remain separate. No private campaign pages, credentials or captured account evidence are packaged.
+
 # WorkflowMoves v0.1.50
 
 Adds owner-only reapproval of changed outreach copy before any send. Exact new approval and independent fully paginated no-Sent reconciliation are required. The same venue mutex and original obligation remain; immutable revision journals preserve previous packet bindings. Exclusive transitions serialize reapproval and finish, and crash or replacement ambiguity fails closed. Includes synthetic wrong-owner, stale/changed-packet, incomplete evidence, concurrency, atomic-failure and permanent-duplicate regression checks. No private correspondence, approval records or claim tokens are packaged.

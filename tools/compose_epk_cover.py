@@ -31,6 +31,13 @@ def repair_cover_styles(source):
 class Attributes(HTMLParser):
  def __init__(self,s):super().__init__();self.attrs={};self.feed(s)
  def handle_starttag(self,t,a):self.attrs=dict(a)
+HIT_CSS='.epk-cover-player:not(.is-revealed){pointer-events:auto;cursor:pointer}'
+CSS+=HIT_CSS
+def runtime_text():
+ """One physical line without WordPress entity-sensitive operators."""
+ runtime=''.join(line.strip() for line in Path(__file__).with_name('epk_cover_player.js').read_bytes().decode('utf-8').splitlines())
+ if '<' in runtime or '&' in runtime:raise ValueError('WordPress-unsafe runtime')
+ return runtime
 def compose(source,cover_url,cover_alt):
  if 'data-epk-cover-player' in source:raise ValueError('Already composed; re-read current source')
  widget=re.search(r'<div class="epk-campaign-featured"[^>]*data-campaign-main-video="true">[\s\S]*?</figure></div>',source)
@@ -46,7 +53,7 @@ def compose(source,cover_url,cover_alt):
  box='<div class="epk-cover-player" data-epk-cover-player="'+url.rsplit('/',1)[1]+'">'+original+'<button type="button" class="epk-cover-player__play" data-epk-video-play aria-label="Play '+esc(title)+'">&#9654;</button><div class="epk-cover-player__slot" data-epk-video-slot hidden></div><button type="button" class="epk-cover-player__close" data-epk-video-close hidden aria-label="Return to cover artwork">&#215;</button><template data-epk-video-template>'+iframe+'</template></div>'
  if image:body=body[:image.start()]+box+body[image.end():]
  else:body=body[:widget.start()]+box+body[widget.start():]
- js=Path(__file__).with_name('epk_cover_player.js').read_text(encoding='utf-8').strip()
+ js=runtime_text()
  return body+'<style id="epk-cover-player-style">'+CSS+'</style><script data-epk-cover-runtime>'+js+'</script>'
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('source',type=Path);p.add_argument('--cover-url',required=True);p.add_argument('--cover-alt',required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();s=compose(a.source.read_text(encoding='utf-8'),a.cover_url,a.cover_alt);a.output.write_text(s,encoding='utf-8');print(hashlib.sha256(s.encode()).hexdigest())
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('source',type=Path);p.add_argument('--cover-url',required=True);p.add_argument('--cover-alt',required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();s=compose(a.source.read_bytes().decode('utf-8'),a.cover_url,a.cover_alt);a.output.write_bytes(s.encode('utf-8'));print(hashlib.sha256(s.encode()).hexdigest())

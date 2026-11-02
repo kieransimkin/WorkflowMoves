@@ -1,0 +1,41 @@
+[
+  {
+    "target": "Tools/EPK Campaign Media/compose_epk_cover.py",
+    "source": "tools/compose_epk_cover.py",
+    "mode": "copy",
+    "previous_source": "previous/0.1.50/tools/compose_epk_cover.py"
+  },
+  {
+    "target": "Tools/EPK Campaign Media/epk_cover_player.js",
+    "source": "tools/epk_cover_player.js",
+    "mode": "copy",
+    "previous_source": "previous/0.1.50/tools/epk_cover_player.js"
+  },
+  {
+    "target": "Tools/EPK Campaign Media/repair_epk_video_surface.py",
+    "source": "tools/repair_epk_video_surface.py",
+    "mode": "copy"
+  },
+  {
+    "target": "Tools/EPK Campaign Media/epk_native_video_surface.js",
+    "source": "tools/epk_native_video_surface.js",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/epk-video-surface.md",
+    "source": "workflows/epk-video-surface.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/epk-video-surface.svg",
+    "source": "workflows/media/epk-video-surface.svg",
+    "mode": "copy"
+  },
+  {
+    "target": ".codex-relocated-home/skills/wordpress-epk-publisher/SKILL.md",
+    "source": "fragments/epk-video-surface.md",
+    "mode": "insert",
+    "anchor": "## Merge safely",
+    "identity": "## Whole-picture video activation"
+  }
+]
