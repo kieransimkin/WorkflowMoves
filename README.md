@@ -212,3 +212,12 @@ Preview `python install.py --root YOUR-WORKSPACE --routes potbot-unity-routes.js
 ![Generated supported-handoff diagram](workflows/media/potbot-unity-handoffs.svg)
 
 Generated contract illustration. Actual Unity Editor/GPU and Potbot service examples require their separately qualified hosts.
+
+## Cross-platform repository bytes
+
+The root `.gitattributes` stores and checks out text as LF on every platform;
+declared binary media, archives, fonts and native libraries remain byte-exact.
+Workflow and package hashes therefore do not depend on `core.autocrlf`.
+
+This repository-byte policy has no interface whose screenshot or video would add
+verification value. `git ls-files --eol`, workflow coverage and CI are the evidence.
