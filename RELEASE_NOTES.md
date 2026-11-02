@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.49
+
+Normalizes repository text to LF so guarded workflow archives and installed source hashes agree on Windows and Linux, while retaining CRLF only for Windows command scripts. No private workspace records, browser state, credentials or generated caches are included.
+
 # WorkflowMoves v0.1.48
 
 Render ownership is now decided before production encoding: only full-length
