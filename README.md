@@ -133,11 +133,13 @@ If a Windows checkout reports that an installed copied document differs immediat
 
 ## Artwork-first campaign players
 
-`tools/compose_epk_cover.py` replaces an added, vertically stacked hero player with the original square cover and an accessible Play button. The iframe stays in an inert template until an explicit click; playback is requested on reveal. Return to artwork removes the player and stops it; pagehide resets active covers. Existing source, timing metadata, motion and other videos are preserved. The paired `epk_cover_player.js` is embedded verbatim by the composer, with no animation clock, sensor listener, iframe API polling or plugin deployment.
+`tools/compose_epk_cover.py` replaces an added, vertically stacked hero player with the original square cover and an accessible Play button. The whole picture accepts a click or tap; the iframe stays in an inert template until that gesture. Return to artwork removes the player and stops it; pagehide resets active covers. Existing source, timing metadata, motion and other videos are preserved. The paired `epk_cover_player.js` is emitted on one WordPress-safe physical line, with no animation clock, sensor listener, iframe API polling or plugin deployment.
 
 Example: `python tools/compose_epk_cover.py fresh-page.html --cover-url https://example.invalid/cover.png --cover-alt "Release artwork" --output candidate.html`. Preview and inspect the exact candidate before an approved save. The coverage auditor labels this `deferred_embed_source_present`; that label does not prove playback. Click every player and record an advancing media timeline, buffering/error/age states and responsive cover/reveal bounds. HTTP, oEmbed or iframe load success alone is insufficient.
 
 Cinematic heroes retain their existing frame height and title overlay, with a square cover fitted inside the frame. During video playback the title clears the controls; closing restores it. Existing direct-child cover selectors gain the new wrapper path inside their original scope and media query, retaining their declarations. Use `repair_cover_styles(source)` for a narrow upgrade of a previously composed cover. Compare canonical hero geometry, artwork styling, pointer response and playback/close states at phone, tablet and desktop widths before an approved save.
+
+For existing cover, native and provider-only players, use the explicit-profile [whole-picture repair guide](workflows/epk-video-surface.md). It preserves unrelated source bytes, rejects ambiguous media targets and retains native controls and touch scrolling. Install only its focused routes with `python install.py --root PROJECT --routes video-surface-routes.json --check` first. Preview/source acceptance is separate from a live playback pass.
 
 ## Verified master playback bindings
 
