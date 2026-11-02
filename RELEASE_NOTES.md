@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.50
+
+Adds owner-only reapproval of changed outreach copy before any send. Exact new approval and independent fully paginated no-Sent reconciliation are required. The same venue mutex and original obligation remain; immutable revision journals preserve previous packet bindings. Exclusive transitions serialize reapproval and finish, and crash or replacement ambiguity fails closed. Includes synthetic wrong-owner, stale/changed-packet, incomplete evidence, concurrency, atomic-failure and permanent-duplicate regression checks. No private correspondence, approval records or claim tokens are packaged.
+
 # WorkflowMoves v0.1.49
 
 Normalizes repository text to LF so guarded workflow archives and installed source hashes agree on Windows and Linux, while retaining CRLF only for Windows command scripts. No private workspace records, browser state, credentials or generated caches are included.
