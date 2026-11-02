@@ -7,3 +7,6 @@ models/
 
 .task-temp/
 .test-tmp/
+
+.tmp/
+.tmp-unrestricted/

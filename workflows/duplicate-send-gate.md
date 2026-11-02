@@ -21,6 +21,18 @@ python -B tools/outreach_send_gate.py --root /private/send-claims inspect --key 
 python -B tools/outreach_send_gate.py --root /private/send-claims finish --key KEY --token TOKEN --receipt /private/verified-receipt.json
 ```
 
+## Reapprove changed copy before any send
+
+When the same owner has never attempted the action, new exact-payload approval can revise the active binding without releasing the venue mutex or creating a different obligation. Preserve the old packet and original permanent claim. Independently reconcile the full thread and fully paginate Sent by recipient and subject; include intentional archives. Stop on an attempted/uncertain send, sufficient later Sent, conflicting correspondence or another owner.
+
+Save a private approval JSON with strict `approved: true` and the new `packet_sha256`. Save private pre-send evidence with the claim's `key` and `action`, `checked_at`, strict `send_attempted: false`, `no_sufficient_sent: true`, `fully_paginated: true`, and the independent `recipient_sent_query` and `subject_sent_query`. These are caller attestations, not mailbox verification by the tool.
+
+```sh
+python -B tools/outreach_send_gate.py --root /private/send-claims reapprove --key KEY --token TOKEN --packet /private/amended-packet.json --approval /private/new-approval.json --expected-packet-sha256 PREVIOUS_PACKET_HASH --pre-send-evidence /private/reconciliation.json
+```
+
+An exclusive transition guard serializes reapproval and finish. An immutable numbered journal retains both bindings and evidence hashes before atomic active-file replacement. The original account, venue, owner, token, obligation and permanent duplicate claim stay unchanged. Recheck the live draft, thread and Sent again, then inspect the new binding immediately before the separate send. A receipt closes the same obligation. Use the updated engine for all mutations by this owner; older engines do not understand the transition guard. A crashed guard or a journal whose replacement failed is a hold for reviewed recovery, never automatic deletion or takeover.
+
 ## Retain the right receipt
 
 - Email transmission: `state: sent_verified` with a genuine persisted `message_id`.

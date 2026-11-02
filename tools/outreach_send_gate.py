@@ -1,5 +1,6 @@
 """Private atomic send claims. No email access, sending, credentials or approval grants."""
 import argparse
+from contextlib import contextmanager
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -43,7 +44,7 @@ def claim(root, account, venue, obligation, owner, packet, approval):
         raise
     return value
 
-def inspect(root, key, token):
+def _inspect(root, key, token):
     if not key or len(key) != 64 or any(c not in '0123456789abcdef' for c in key):
         raise ValueError('Invalid claim key')
     value = read(Path(root) / (key + '.active.json'))
@@ -53,8 +54,84 @@ def inspect(root, key, token):
         raise ValueError('Approved packet changed; do not send')
     return value
 
+def inspect(root, key, token):
+    transition = Path(root) / (key + '.transition.json')
+    if transition.exists():
+        raise ValueError('Owned claim transition pending; do not send')
+    value = _inspect(root, key, token)
+    if transition.exists():
+        raise ValueError('Owned claim transition pending; do not send')
+    return value
+
+
+@contextmanager
+def _transition(root, key, token):
+    _inspect(root, key, token)
+    path = Path(root) / (key + '.transition.json')
+    nonce = secrets.token_hex(24)
+    write_new(path, dict(token=token, nonce=nonce))
+    try:
+        yield _inspect(root, key, token)
+    finally:
+        if read(path).get('nonce') == nonce:
+            path.unlink()
+
+
+def reapprove(root, key, token, packet, approval, expected_packet_sha256, pre_send_evidence):
+    """Rebind a never-sent owned obligation after explicit changed-copy approval.
+
+    Caller evidence does not prove mailbox state or grant send permission.
+    Crashed transitions fail closed; there is no automatic takeover.
+    """
+    with _transition(root, key, token) as value:
+        if value.get('state') != 'claimed_not_sent':
+            raise ValueError('Only a never-sent claim can be reapproved')
+        if (Path(root) / (value['action'] + '.receipt.json')).exists():
+            raise ValueError('Completed obligation cannot be reapproved')
+        if value['packet_sha256'] != expected_packet_sha256:
+            raise ValueError('Claim changed since review; do not send')
+        packet = Path(packet).resolve(strict=True)
+        packet_hash = hashlib.sha256(packet.read_bytes()).hexdigest()
+        approval_path = Path(approval).resolve(strict=True)
+        approved = read(approval_path)
+        evidence_path = Path(pre_send_evidence).resolve(strict=True)
+        evidence = read(evidence_path)
+        if approved.get('packet_sha256') != packet_hash or approved.get('approved') is not True:
+            raise ValueError('Exact new packet approval required')
+        if (evidence.get('send_attempted') is not False or
+                evidence.get('no_sufficient_sent') is not True or
+                evidence.get('fully_paginated') is not True or
+                evidence.get('key') != key or evidence.get('action') != value['action'] or
+                not evidence.get('checked_at') or
+                not evidence.get('recipient_sent_query') or not evidence.get('subject_sent_query')):
+            raise ValueError('Independent pre-send reconciliation required')
+        revision = int(value.get('revision', 0)) + 1
+        journal = Path(root) / (value['action'] + '.reapproval.' + str(revision) + '.json')
+        updated = dict(value, packet=str(packet), packet_sha256=packet_hash,
+                       approval_reference=str(approval_path), revision=revision,
+                       reapproval_record=str(journal),
+                       reapproved_at=datetime.now(timezone.utc).isoformat())
+        record = dict(schema='outreach.send.reapproval.v1', previous=value, current=updated,
+                      approval_sha256=hashlib.sha256(approval_path.read_bytes()).hexdigest(),
+                      pre_send_evidence=str(evidence_path),
+                      pre_send_evidence_sha256=hashlib.sha256(evidence_path.read_bytes()).hexdigest())
+        write_new(journal, record)
+        staged = Path(root) / (key + '.revision-' + secrets.token_hex(12) + '.tmp')
+        write_new(staged, updated)
+        try:
+            os.replace(staged, Path(root) / (key + '.active.json'))
+        finally:
+            if staged.exists():
+                staged.unlink()
+        return updated
+
+
 def finish(root, key, token, receipt):
-    value = inspect(root, key, token)
+    with _transition(root, key, token) as value:
+        return _finish(root, key, token, receipt, value)
+
+
+def _finish(root, key, token, receipt, value):
     receipt = read(receipt)
     if receipt.get('state') not in ('sent_verified', 'submission_verified', 'final_failure', 'aborted_before_send'):
         raise ValueError('Uncertain send retains the active claim; never retry blindly')
@@ -81,9 +158,9 @@ def finish(root, key, token, receipt):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('operation', choices=('claim', 'inspect', 'finish', 'list'))
+    p.add_argument('operation', choices=('claim', 'inspect', 'reapprove', 'finish', 'list'))
     p.add_argument('--root', type=Path, required=True, help='Private persistent claim directory; never commit its contents')
-    for option in ('account', 'venue', 'obligation', 'owner', 'packet', 'approval', 'key', 'token', 'receipt'):
+    for option in ('account', 'venue', 'obligation', 'owner', 'packet', 'approval', 'key', 'token', 'receipt', 'expected-packet-sha256', 'pre-send-evidence'):
         p.add_argument('--' + option)
     a = p.parse_args()
     if a.operation == 'claim':
@@ -92,6 +169,9 @@ def main():
         result = [read(x) for x in sorted(a.root.glob('*.active.json'))]
     elif a.operation == 'inspect':
         result = inspect(a.root, a.key, a.token)
+    elif a.operation == 'reapprove':
+        result = reapprove(a.root, a.key, a.token, a.packet, a.approval,
+                           a.expected_packet_sha256, a.pre_send_evidence)
     else:
         result = finish(a.root, a.key, a.token, a.receipt)
     print(json.dumps(result, ensure_ascii=False))
