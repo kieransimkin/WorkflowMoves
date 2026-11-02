@@ -73,7 +73,9 @@ The repository includes real or generated media beside the relevant guides. The 
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.48. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+Version: 0.1.49. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+
+On Windows, run the Python contracts through `powershell -File scripts/Invoke-Tests.ps1`. It probes a unique project-scoped LocalAppData directory, redirects `TEMP`, `TMP` and `TMPDIR` for the run, and removes that exact directory afterward. GitHub CI remains the release-wide Linux authority.
 
 Campaign media now requires a reviewed release-specific design profile, narrative placement before end matter and rendered desktop, tablet and mobile comparison. `tools/integrate_epk_media.py` applies that reviewed profile while proving iframe, video, audio and script blocks remain unchanged. The [illustrated integration example](examples/epk-media-design-integration.md) explains the contract.
 

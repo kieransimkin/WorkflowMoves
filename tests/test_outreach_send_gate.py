@@ -12,7 +12,7 @@ spec.loader.exec_module(gate)
 
 class SendGateTests(unittest.TestCase):
     def test_verified_form_receipt_has_no_invented_message_id(self):
-        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as d:
+        with tempfile.TemporaryDirectory() as d:
             root = Path(d)
             packet = root / 'packet.txt'
             packet.write_text('approved form fixture', encoding='utf-8')
@@ -31,7 +31,7 @@ class SendGateTests(unittest.TestCase):
                 gate.claim(root, 'a@example.invalid', 'form-venue', 'original-request', 'other', packet, 'fixture')
 
     def test_unverified_form_evidence_retains_claim(self):
-        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as d:
+        with tempfile.TemporaryDirectory() as d:
             root = Path(d)
             packet = root / 'packet.txt'
             packet.write_text('approved', encoding='utf-8')
@@ -50,7 +50,7 @@ class SendGateTests(unittest.TestCase):
             self.assertFalse(list(root.glob('*.receipt.json')))
 
     def test_competing_owners_and_permanent_duplicate_block(self):
-        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as d:
+        with tempfile.TemporaryDirectory() as d:
             root = Path(d)
             packet = root / 'packet.txt'
             packet.write_text('exact approved fixture', encoding='utf-8')
@@ -75,7 +75,7 @@ class SendGateTests(unittest.TestCase):
             self.assertEqual(len(list(root.glob('*.receipt.json'))), 1)
 
     def test_changed_packet_and_uncertain_state_fail_closed(self):
-        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as d:
+        with tempfile.TemporaryDirectory() as d:
             root = Path(d)
             packet = root / 'packet.txt'
             packet.write_text('approved', encoding='utf-8')

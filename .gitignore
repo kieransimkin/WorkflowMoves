@@ -6,3 +6,4 @@ models/
 .work/
 
 .task-temp/
+.test-tmp/
