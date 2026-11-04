@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Bounded skill and workflow discovery</title>
+  <desc id="desc">Explicit skill, workflow and chat evidence roots pass through depth, file and byte limits into a human-reviewed reusable package queue. Drive-wide traversal is blocked.</desc>
+  <rect width="1200" height="675" fill="#10131d"/>
+  <text x="70" y="85" fill="#f4f1e8" font-family="system-ui, sans-serif" font-size="38" font-weight="700">Bounded skill + workflow discovery</text>
+  <text x="70" y="122" fill="#9aa6bd" font-family="system-ui, sans-serif" font-size="20">Generated contract illustration — not execution evidence</text>
+  <g font-family="system-ui, sans-serif">
+    <rect x="70" y="185" width="260" height="270" rx="22" fill="#182234" stroke="#65d7c7" stroke-width="3"/>
+    <text x="100" y="235" fill="#65d7c7" font-size="25" font-weight="700">Named roots only</text>
+    <text x="100" y="285" fill="#f4f1e8" font-size="20">.agents/skills</text>
+    <text x="100" y="325" fill="#f4f1e8" font-size="20">skill-source</text>
+    <text x="100" y="365" fill="#f4f1e8" font-size="20">Workflows</text>
+    <text x="100" y="405" fill="#f4f1e8" font-size="20">exact chat evidence</text>
+
+    <path d="M350 320 H445" stroke="#f5bc54" stroke-width="7" marker-end="url(#arrow)"/>
+
+    <rect x="455" y="185" width="290" height="270" rx="22" fill="#201d30" stroke="#f5bc54" stroke-width="3"/>
+    <text x="485" y="235" fill="#f5bc54" font-size="25" font-weight="700">Hard safety envelope</text>
+    <text x="485" y="285" fill="#f4f1e8" font-size="20">depth + file caps</text>
+    <text x="485" y="325" fill="#f4f1e8" font-size="20">per-file + total bytes</text>
+    <text x="485" y="365" fill="#f4f1e8" font-size="20">no links or junctions</text>
+    <text x="485" y="405" fill="#f4f1e8" font-size="20">root checkpoints</text>
+
+    <path d="M765 320 H860" stroke="#f5bc54" stroke-width="7" marker-end="url(#arrow)"/>
+
+    <rect x="870" y="185" width="260" height="270" rx="22" fill="#241b27" stroke="#ef7d9a" stroke-width="3"/>
+    <text x="900" y="235" fill="#ef7d9a" font-size="25" font-weight="700">Review queue</text>
+    <text x="900" y="285" fill="#f4f1e8" font-size="20">already packaged</text>
+    <text x="900" y="325" fill="#f4f1e8" font-size="20">used + missing</text>
+    <text x="900" y="365" fill="#f4f1e8" font-size="20">external dependency</text>
+    <text x="900" y="405" fill="#f4f1e8" font-size="20">not observed</text>
+
+    <rect x="70" y="515" width="1060" height="90" rx="18" fill="#2b1820" stroke="#ef7d9a" stroke-width="2"/>
+    <text x="105" y="570" fill="#f4f1e8" font-size="25" font-weight="700">Blocked: drive roots, workspace-root traversal, uncapped archives, automatic copying</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#f5bc54"/>
+    </marker>
+  </defs>
+</svg>

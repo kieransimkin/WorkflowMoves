@@ -1,0 +1,86 @@
+{
+  "schema": "workflowmoves.external-skill-dependencies.v2",
+  "snapshot_date": "2026-10-27",
+  "tree_hash_contract": "sha256 of each relative POSIX path, NUL, lowercase file sha256 and newline, concatenated in relative-path order",
+  "dependencies": [
+    {
+      "id": "imagegen",
+      "provider": "OpenAI Codex system skills",
+      "classification": "system",
+      "observed_source": "<codex-skills-root>/.system/imagegen",
+      "license": "Apache-2.0",
+      "copy_status": "vendored",
+      "vendored_path": "vendor/skill-dependencies/codex-system/imagegen",
+      "files": 12,
+      "bytes": 129734,
+      "tree_sha256": "931aa39bcfed0acacd904426cdc256728d3d3389746fb203ebda2b9a2733118d"
+    },
+    {
+      "id": "openai-docs",
+      "provider": "OpenAI Codex system skills",
+      "classification": "system",
+      "observed_source": "<codex-skills-root>/.system/openai-docs",
+      "license": "Apache-2.0",
+      "copy_status": "vendored",
+      "vendored_path": "vendor/skill-dependencies/codex-system/openai-docs",
+      "files": 17,
+      "bytes": 94018,
+      "tree_sha256": "abffbf98add23881e1ef31acbf800735649e403285b7a261add0a0008f196ece"
+    },
+    {
+      "id": "skill-creator",
+      "provider": "OpenAI Codex system skills",
+      "classification": "system",
+      "observed_source": "<codex-skills-root>/.system/skill-creator",
+      "license": "Apache-2.0",
+      "copy_status": "vendored",
+      "vendored_path": "vendor/skill-dependencies/codex-system/skill-creator",
+      "files": 9,
+      "bytes": 54476,
+      "tree_sha256": "5ca6c3d6354757e7f5db71134533f4f0aab2035091ffdeb6eaa7112bd5414ead"
+    },
+    {
+      "id": "skill-installer",
+      "provider": "OpenAI Codex system skills",
+      "classification": "system",
+      "observed_source": "<codex-skills-root>/.system/skill-installer",
+      "license": "Apache-2.0",
+      "copy_status": "vendored",
+      "vendored_path": "vendor/skill-dependencies/codex-system/skill-installer",
+      "files": 8,
+      "bytes": 33229,
+      "tree_sha256": "d3506857b206a40d94b25c3ebabc25d0913a539e9ff563c0f67db24b30bec579"
+    },
+    {
+      "id": "browser:control-in-app-browser",
+      "provider": "OpenAI bundled Browser plugin",
+      "classification": "external",
+      "observed_source": "<codex-plugin-cache>/openai-bundled/browser/26.1021.31345/skills/control-in-app-browser",
+      "provider_version": "26.1021.31345",
+      "license": "Proprietary",
+      "copy_status": "blocked_proprietary",
+      "skill_sha256": "9bfc67329756b085569c4b6800d709f2d75c78754cba5a8f03c8134c78cb46cf",
+      "associated_files": [
+        {
+          "path": "agents/openai.yaml",
+          "sha256": "9f7e6a788c0da250c3b09a67c026eedfcdb679afdbda99d993da50aa71d2e139"
+        },
+        {
+          "path": ".codex-plugin/plugin.json",
+          "sha256": "e2e00ed1bd4a8b6c1ef27938252d528829a81cd666fe12331dcc2ebdc95be4d5"
+        }
+      ],
+      "blocker": "The provider manifest declares the Browser plugin Proprietary; no redistribution permission was found. Resolve and read the installed provider skill at use time."
+    },
+    {
+      "id": "review-agent",
+      "provider": "OpenAI Codex system skills",
+      "classification": "system",
+      "observed_source": "<codex-skills-root>/.system/review-agent",
+      "license": "unavailable",
+      "copy_status": "blocked_no_redistribution_license",
+      "skill_sha256": "bb46315f6bc4b7051c05f807d19b1689b20418ac6c42590406d805c10fa2fd1a",
+      "blocker": "No licence file was present and this skill was not exposed in the current available-skills catalogue. It is inventoried but not redistributed."
+    }
+  ]
+}

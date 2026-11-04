@@ -22,7 +22,7 @@ Analyse selected audio/MIDI evidence or edit supported timing lanes. [Native com
 
 **Limits:** Detector confidence is not artist-approved BPM or transcription; A timeline control and its editor/gallery applications need their own package/runtime checks.
 
-Use [stemlab-phrase-and-clip-evidence](stemlab-phrase-and-clip-evidence.md), [stemlab-fourier-frequency-bands](stemlab-fourier-frequency-bands.md).
+Use [stemlab-phrase-and-clip-evidence](stemlab-phrase-and-clip-evidence.md), [stemlab-fourier-frequency-bands](stemlab-fourier-frequency-bands.md) and [source-bound beat alignment](stemlab-beat-offsets-and-epk-sync.md).
 
 ### DanceRudiments
 

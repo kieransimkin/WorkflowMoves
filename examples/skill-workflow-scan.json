@@ -1,0 +1,61 @@
+{
+  "schema": "workflowmoves.skill-workflow-scan.v1",
+  "workspace_root": "D:/Example Music",
+  "allowed_roots": [
+    "D:/Example Music"
+  ],
+  "repository_root": "D:/Example Music/Repositories/WorkflowMoves",
+  "limits": {
+    "max_total_files": 300,
+    "max_files_per_root": 120,
+    "max_bytes_per_file": 262144,
+    "max_total_bytes": 8388608,
+    "max_route_manifests": 100
+  },
+  "catalog_roots": [
+    {
+      "id": "project-skills",
+      "path": "D:/Example Music/.agents/skills",
+      "kind": "skill",
+      "classification": "project",
+      "patterns": ["SKILL.md"],
+      "max_depth": 2
+    },
+    {
+      "id": "project-workflows",
+      "path": "D:/Example Music/Workflows",
+      "kind": "workflow",
+      "classification": "project",
+      "patterns": ["*.md"],
+      "max_depth": 2
+    },
+    {
+      "id": "installed-system-skills",
+      "path": "D:/Example Music/.codex/skills/.system",
+      "kind": "skill",
+      "classification": "system",
+      "patterns": ["SKILL.md"],
+      "max_depth": 2
+    },
+    {
+      "id": "bundled-browser-skills",
+      "path": "D:/Example Music/.codex/plugins/cache/openai-bundled/browser/current/skills",
+      "kind": "skill",
+      "classification": "external",
+      "patterns": ["SKILL.md"],
+      "max_depth": 3
+    }
+  ],
+  "usage_roots": [
+    {
+      "id": "private-coordination",
+      "path": "D:/Example Music/.codex/coordination",
+      "patterns": ["*.md", "*.json"],
+      "max_depth": 1,
+      "max_files": 100
+    }
+  ],
+  "usage_files": [
+    "D:/Example Music/Reports/identified-task/REPORT.md"
+  ]
+}
