@@ -42,8 +42,10 @@ def plan(root: Path, package: Path = PACKAGE, manifest: str = "routes.json") -> 
         before = seen.get(target, target.read_bytes() if target.exists() else b"")
         source = contained(package, row["source"]).read_bytes()
         if row["mode"] == "copy":
-            if before and before != source and not (row.get('previous_source') and before == contained(package, row['previous_source']).read_bytes()):
-                raise ValueError(f"Existing destination differs: {row['target']}")
+            if before and before != source:
+                predecessors = [row.get('previous_source'), *row.get('previous_sources', [])]
+                if not any(before == contained(package, path).read_bytes() for path in predecessors if path):
+                    raise ValueError(f"Existing destination differs: {row['target']}")
             after = source
         else:
             if not before:
