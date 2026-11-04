@@ -1,0 +1,9 @@
+## Recover and prove native persistence
+
+An interrupted browser or closed transport does not establish whether a form was saved, scheduled, published or abandoned. Start recovery from the exact local asset/hash and approval packet, then inspect the current native queue before opening a new composer. If the expected item exists, verify its copy, media duration, cover, audience, disclosure, slot and timezone. If it does not, retain the prior attempt as unresolved until the platform state and upload processing are understood; do not blind-resubmit.
+
+Use platform-supported input events. A script assigning an input's DOM `value`, an automation tool returning success or a field appearing filled can still leave the framework's native state blank. After text entry, blur or advance through the platform's normal validation path, then reread the platform-visible value. Where clipboard paste is the supported reliable route, use it only for the exact approved text and verify the native queue after the commit.
+
+Do not navigate away while media is still processing. Require the platform's own accepted/complete state for video, cover, caption attachment and disclosure fields before one authorised save or schedule action. Treat `In progress`, delayed acknowledgement and disabled controls as the existing attempt still resolving. Wait and reinspect; never create a replacement merely because the UI is slow.
+
+After the platform acknowledges the mutation, reopen Scheduled/Planner in a fresh view and verify the exact caption, native date/time/timezone, audience or visibility, media duration and platform-specific settings. Capture private evidence at useful transition points. Then close every completed job-created tab and released borrowed tab through supported controls and confirm with a fresh inventory; preserve any active upload or unsaved form with a named owner and next action.

@@ -1,3 +1,11 @@
+# WorkflowMoves 0.1.49: bounded discovery and native schedule recovery
+
+The [bounded discovery workflow](../../skill-workflow-discovery.md) and scanner inventory only named skill/workflow/chat-evidence roots, enforce hard depth/file/byte budgets, never follow links and checkpoint at root boundaries. The released dependency snapshot includes complete Apache-2.0 system-skill trees with deterministic hashes; proprietary or unlicensed skills retain explicit copy blockers. Three used project workflows identified by the bounded audit are now packaged with guarded fresh-workspace routes and explanatory media.
+
+The [direct scheduling workflow](../../direct-social-scheduling.md) now has a focused skill and recovery contract for interrupted tabs, framework-controlled input persistence, media-processing completion, fresh native queue readback and verified tab cleanup. These additions preserve separate preparation, upload, schedule, publication and public-playback evidence states and grant no account/publication authority.
+
+## Previous recurring-event integration
+
 # WorkflowMoves 0.1.46: recurring-event publication planning
 
 The [cyclic-event workflow](../../cyclic-event-keyword-planning.md) gives a portable contract for exact music intent, verified per-edition anchors, matching completed historical series, source normalization/precision, honest temporal holdouts and bounded publication windows. `cyclic-event-routes.json` installs the guide/media and additive routing in five existing project guides. Preview, apply and repeat verification preserve other owners and unrelated scope. The [explanatory illustration](../../media/cyclic-event-keyword-planning.svg) depicts the contract rather than real series or native output. Source/tool execution and actual native schedule persistence require separate evidence; the workflow cannot grant rescheduling authority or infer an optimal hour from daily data.

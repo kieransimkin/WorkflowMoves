@@ -1,3 +1,37 @@
+# WorkflowMoves v0.1.55
+
+Adds a bounded, resumable skill/workflow discovery audit that searches only
+manifest-named normal locations and exact chat evidence. Drive/workspace roots,
+links/junctions and uncapped archives are rejected; independent depth, file and
+byte budgets retain explicit partial results instead of overloading storage. A
+focused skill, guarded six-target installer, synthetic manifest, generated
+boundary diagram and tests cover classification, caps, resume identity,
+conflicts and repeat installation.
+
+Those observed workflows now ship as reusable campaign patch-save recovery,
+safe-editor recovery and LikenessForge image-preparation guides, with guarded
+fresh-workspace routes and two explanatory SVGs. The patch guidance removes a
+machine-specific executable path and preserves exact approval, partial-write,
+structured-readback and boundary checks. The LikenessForge storage illustration
+and MIT licence are retained with its model/privacy/human-review contract.
+
+Direct social scheduling now has a first-class portable skill and exact upgrade
+routes. Recovery starts from the native queue after an interrupted tab, treats
+framework-visible values as unproven until native validation/readback, waits for
+media processing, verifies copy/duration/audience/slot/timezone in a fresh queue
+view and confirms completed-tab cleanup. No account access or publication
+authority is added.
+
+All redistributable Codex system-skill dependencies are snapshotted with their
+complete associated files and Apache-2.0 licences. Deterministic tree hashes are
+checked in CI and release builds. The observed Browser plugin declares a
+Proprietary licence and the unlisted review skill had no redistribution licence;
+their exact source identities and hashes remain explicit blockers rather than
+being copied into this public release.
+
+Restores source-bound beat and EPK timing guidance and repairs the mirrored
+DanceFlow preflight and toolkit links.
+
 # WorkflowMoves v0.1.54
 
 Adds exact-candidate evidence checks for the idle, playing and restored states of YouTube cover players. The responsive collector records visible copy and controls, frame bounds, the next section and restored focus. The gate checks desktop and phone flow, including hidden copy and failures to restore the layout on close.

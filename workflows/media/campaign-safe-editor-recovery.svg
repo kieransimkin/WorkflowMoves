@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Safe editor recovery decision flow</title>
+  <desc id="desc">A normal patch failure leads to exact path inspection. Unresolved links or access boundaries stop. Ordinary authorised paths proceed through one reviewed patch and fresh readback.</desc>
+  <rect width="1200" height="675" fill="#101722"/>
+  <g font-family="system-ui, sans-serif">
+    <text x="70" y="82" fill="#f4f0e6" font-size="38" font-weight="700">Safe editor recovery</text>
+    <text x="70" y="120" fill="#9fb0c6" font-size="20">Generated decision illustration — not persistence evidence</text>
+    <rect x="70" y="190" width="250" height="130" rx="20" fill="#18283a" stroke="#63cdda" stroke-width="3"/>
+    <text x="105" y="245" fill="#f4f0e6" font-size="23" font-weight="700">Normal patch fails</text>
+    <text x="105" y="280" fill="#b9c6d8" font-size="18">retain exact error</text>
+    <path d="M335 255 H435" stroke="#f2b84b" stroke-width="7" marker-end="url(#arrow)"/>
+    <rect x="450" y="170" width="300" height="170" rx="20" fill="#24233a" stroke="#f2b84b" stroke-width="3"/>
+    <text x="485" y="225" fill="#f2b84b" font-size="23" font-weight="700">Inspect exact path</text>
+    <text x="485" y="265" fill="#f4f0e6" font-size="18">attributes · links · target</text>
+    <text x="485" y="298" fill="#f4f0e6" font-size="18">scope · ownership · authority</text>
+    <path d="M600 350 V430" stroke="#ef7794" stroke-width="7" marker-end="url(#arrowPink)"/>
+    <rect x="400" y="450" width="400" height="105" rx="18" fill="#321c25" stroke="#ef7794" stroke-width="3"/>
+    <text x="445" y="495" fill="#ef7794" font-size="22" font-weight="700">Unresolved boundary: STOP</text>
+    <text x="445" y="528" fill="#f4f0e6" font-size="17">no ACL, link, app-state or shell bypass</text>
+    <path d="M765 255 H865" stroke="#63d6a1" stroke-width="7" marker-end="url(#arrowGreen)"/>
+    <rect x="880" y="170" width="250" height="170" rx="20" fill="#173128" stroke="#63d6a1" stroke-width="3"/>
+    <text x="915" y="220" fill="#63d6a1" font-size="22" font-weight="700">Ordinary + authorised</text>
+    <text x="915" y="260" fill="#f4f0e6" font-size="18">one literal patch</text>
+    <text x="915" y="295" fill="#f4f0e6" font-size="18">fresh read + parse</text>
+    <rect x="880" y="395" width="250" height="160" rx="20" fill="#1d2733" stroke="#63cdda" stroke-width="3"/>
+    <text x="915" y="445" fill="#63cdda" font-size="22" font-weight="700">Partial apply?</text>
+    <text x="915" y="485" fill="#f4f0e6" font-size="18">inspect every target</text>
+    <text x="915" y="520" fill="#f4f0e6" font-size="18">retry unresolved hunks only</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#f2b84b"/></marker>
+    <marker id="arrowPink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#ef7794"/></marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12z" fill="#63d6a1"/></marker>
+  </defs>
+</svg>

@@ -1,6 +1,6 @@
 # Start a DanceFlow workflow with current releases
 
-People and agents use the same preflight. Review the [component catalogue](../../catalogue.json), choose the capabilities that serve the requested result, and read their released guides. Each tool remains independently useful; membership alone does not create an integration.
+People and agents use the same preflight. Review the [component catalogue](https://github.com/kieransimkin/DanceFlow/blob/main/catalogue.json), choose the capabilities that serve the requested result, and read their released guides. Each tool remains independently useful; membership alone does not create an integration.
 
 1. Run `danceflow-releases --output runs/NEW-RUN/releases.json` before every new workflow. This queries official GitHub releases afresh. It ignores documentation-only tags, drafts and prereleases, and resolves ThumbMoves' separate tag stream inside PixelCue. GitHub CLI authentication is used when available; otherwise it uses the public API. Network/rate-limit failures remain `unavailable` and require resolution before claiming a tool is current.
 2. Observe the actual runtimes used by the job. The checker sees only its own Python environment. For other Python environments, run their package/version commands; for npm inspect the installed package manifest; for WordPress read the active plugin version. Pass a JSON mapping of component names to observed versions with `--installed installed.json`. A directory name, checkout version or loaded script is insufficient.

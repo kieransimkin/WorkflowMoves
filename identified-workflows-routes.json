@@ -1,0 +1,27 @@
+[
+  {
+    "target": "Workflows/campaign-patch-save-recovery.md",
+    "source": "workflows/campaign-patch-save-recovery.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/campaign-safe-editor-recovery.md",
+    "source": "workflows/campaign-safe-editor-recovery.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/campaign-safe-editor-recovery.svg",
+    "source": "workflows/media/campaign-safe-editor-recovery.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/likenessforge-image-preparation.md",
+    "source": "workflows/likenessforge-image-preparation.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/likenessforge-model-storage.svg",
+    "source": "workflows/media/likenessforge-model-storage.svg",
+    "mode": "copy"
+  }
+]

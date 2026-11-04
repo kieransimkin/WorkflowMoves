@@ -1,0 +1,32 @@
+[
+  {
+    "target": "Tools/discover_skill_workflow_usage.py",
+    "source": "tools/discover_skill_workflow_usage.py",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/skill-workflow-discovery.md",
+    "source": "workflows/skill-workflow-discovery.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/skill-workflow-discovery.svg",
+    "source": "workflows/media/skill-workflow-discovery.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/external-skill-dependencies.json",
+    "source": "external-skill-dependencies.json",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/discover-skill-workflow-usage/SKILL.md",
+    "source": "skills/discover-skill-workflow-usage/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/discover-skill-workflow-usage/SKILL.md",
+    "source": "skills/discover-skill-workflow-usage/SKILL.md",
+    "mode": "copy"
+  }
+]

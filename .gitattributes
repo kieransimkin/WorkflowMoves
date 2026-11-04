@@ -32,3 +32,4 @@ previous/0.1.33/workflows/campaign-media-epk-sync.md -text
 *.dll binary
 *.so binary
 *.dylib binary
+vendor/skill-dependencies/** -text -eol whitespace=cr-at-eol
