@@ -1,5 +1,15 @@
 [
   {
+    "target": "Tools/EPK Motion QA/Assert-EpkYouTubeFlow.ps1",
+    "source": "tools/Assert-EpkYouTubeFlow.ps1",
+    "mode": "copy"
+  },
+  {
+    "target": "Tools/EPK Motion QA/audit_epk_youtube_flow.py",
+    "source": "tools/audit_epk_youtube_flow.py",
+    "mode": "copy"
+  },
+  {
     "target": "AGENTS.md",
     "source": "rules/canonical-metadata-wordpress-sync.md",
     "mode": "insert",
@@ -244,7 +254,10 @@
     "target": "Tools/EPK Motion QA/audit_epk_evidence.py",
     "source": "tools/audit_epk_evidence.py",
     "mode": "copy",
-    "previous_source": "previous/0.1.21/tools/audit_epk_evidence.py"
+    "previous_source": "previous/0.1.21/tools/audit_epk_evidence.py",
+    "previous_sources": [
+      "previous/0.1.53/tools/audit_epk_evidence.py"
+    ]
   },
   {
     "target": "Workflows/epk-evidence-gate.md",
@@ -767,13 +780,19 @@
     "target": "Tools/EPK Motion QA/audit_epk_layout.py",
     "source": "tools/audit_epk_layout.py",
     "mode": "copy",
-    "previous_source": "previous/0.1.51/tools/audit_epk_layout.py"
+    "previous_source": "previous/0.1.51/tools/audit_epk_layout.py",
+    "previous_sources": [
+      "previous/0.1.53/tools/audit_epk_layout.py"
+    ]
   },
   {
     "target": "Tools/EPK Motion QA/collect_epk_layout.js",
     "source": "tools/collect_epk_layout.js",
     "mode": "copy",
-    "previous_source": "previous/0.1.51/tools/collect_epk_layout.js"
+    "previous_source": "previous/0.1.51/tools/collect_epk_layout.js",
+    "previous_sources": [
+      "previous/0.1.53/tools/collect_epk_layout.js"
+    ]
   },
   {
     "target": "Workflows/epk-responsive-layout-qa.md",
@@ -838,5 +857,12 @@
     "mode": "insert",
     "anchor": "## Merge safely",
     "identity": "## Whole-picture video activation"
+  },
+  {
+    "target": "Workflows/epk-responsive-layout-qa.md",
+    "source": "fragments/epk-youtube-flow.md",
+    "mode": "insert",
+    "anchor": "## Regression cases",
+    "identity": "## Check YouTube reveal and return before publishing"
   }
 ]

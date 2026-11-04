@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.54
+
+Adds exact-candidate evidence checks for the idle, playing and restored states of YouTube cover players. The responsive collector records visible copy and controls, frame bounds, the next section and restored focus. The gate checks desktop and phone flow, including hidden copy and failures to restore the layout on close.
+
 # WorkflowMoves v0.1.53
 
 New EPK heroes with a square cover and a verified 16:9 YouTube source widen inline on desktop and mobile. The composer keeps the original responsive picture and delegates the transition to DanceMoves 3.4.3. The player and copy retain their reading order, with Return to artwork outside the iframe. The focused installer updates the two existing composer files from either supported predecessor.

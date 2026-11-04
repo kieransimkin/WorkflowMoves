@@ -5,6 +5,7 @@ import json
 import math
 from pathlib import Path
 from audit_epk_layout import audit_widths
+from audit_epk_youtube_flow import audit as audit_youtube_flow
 
 RESETS = ('motion_off', 'reduced_motion', 'forced_colours', 'hidden', 'rotation', 'teardown')
 
@@ -83,6 +84,8 @@ def audit_timing(timing):
 def audit(record):
     failures = audit_motion(record.get('motion', {})) + audit_timing(record.get('timing', {}))
     failures.extend(audit_widths(record.get('widths')))
+    if record.get('youtube_flow_required') is True:
+        failures.extend(audit_youtube_flow(record))
     kinds = sorted({r.get('evidence_kind') for r in record.get('motion', {}).get('routes', []) if r.get('evidence_kind')})
     return {'page_id': record.get('page_id'), 'status': 'failed' if failures else 'passed',
             'failures': failures, 'motion_evidence_kinds': kinds,
