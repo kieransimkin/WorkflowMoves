@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.52
+
+The responsive EPK layout gate now checks declared content panels for two-axis overlap at every sampled viewport. The collector records actual panel rectangles, and the standalone and combined validators reject collisions and incomplete measurements. Intentional decorative layers are outside the declared pairs. Includes a focused upgrade route, an updated evidence example and tests for a vertical collision with zero horizontal overflow.
+
 # WorkflowMoves v0.1.51
 
 Fixes artwork-first EPK players that accepted only the small Play button. Whole-picture clicks and taps now reveal the same source player, retaining keyboard controls, close/reopen and shared playback events. Adds a guarded existing-page repair for explicit native URLs and provider IDs, touch gesture filtering, byte-preservation receipts and one-line WordPress-safe runtimes. Provider facades clear the playing controls; no invisible overlay remains. Includes focused installation routes, seven preservation/safety tests and an illustrated verification guide. Actual source playback, WordPress deployment and public-save approval remain separate. No private campaign pages, credentials or captured account evidence are packaged.

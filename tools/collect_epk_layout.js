@@ -8,7 +8,8 @@
   };
   const rect = element => {
     const value = element.getBoundingClientRect();
-    return {left: value.left, right: value.right, top: value.top + scrollY, width: value.width, height: value.height};
+    return {left: value.left, right: value.right, top: value.top + scrollY, bottom: value.bottom + scrollY,
+      width: value.width, height: value.height};
   };
   const hidden = element => {
     for (let node = element; node; node = node.parentElement) {
@@ -64,12 +65,25 @@
     }
     return result;
   });
-  return {schema: 'epk.layout-observation.v1', measured_width: innerWidth, measured_height: innerHeight,
+  const panelPairs = (options.panel_pairs || []).map(({first, second}) => {
+    const firstNodes = typeof first === 'string' && first.trim() ? document.querySelectorAll(first) : [];
+    const secondNodes = typeof second === 'string' && second.trim() ? document.querySelectorAll(second) : [];
+    const result = {first, second, first_matches: firstNodes.length, second_matches: secondNodes.length};
+    if (firstNodes.length === 1 && secondNodes.length === 1) {
+      const a = firstNodes[0], b = secondNodes[0];
+      result.independent = !a.contains(b) && !b.contains(a);
+      if (!hidden(a)) result.first_rect = rect(a);
+      if (!hidden(b)) result.second_rect = rect(b);
+    }
+    return result;
+  });
+  return {schema: 'epk.layout-observation.v2', measured_width: innerWidth, measured_height: innerHeight,
     ready_state: document.readyState, client_width: viewport,
     scroll_width: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth),
     overflow: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) > viewport + 1,
     content_overflow: contentOverflow, text_overflow: textOverflow, clipped_text: clippedText,
     scrolling_descendants: scrollingDescendants, offscreen_focus_links: offscreenFocusLinks, alignments,
+    panel_pairs: panelPairs,
     visible_images: [...document.images].filter(element => !hidden(element) && element.getBoundingClientRect().top < innerHeight && element.getBoundingClientRect().bottom > 0)
       .map(element => ({selector: path(element), complete: element.complete, natural_width: element.naturalWidth}))};
 }

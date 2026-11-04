@@ -7,12 +7,19 @@ spec = importlib.util.spec_from_file_location('epk_layout', Path(__file__).paren
 module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
 
 
+def panel_pair(width):
+    return dict(first='.hero-content', second='.release-summary', first_matches=1, second_matches=1,
+                independent=True, first_rect=dict(left=20, right=width-20, top=90, bottom=500),
+                second_rect=dict(left=20, right=width-20, top=540, bottom=690))
+
+
 def observation(width):
     return dict(width=width, height=900, measured_width=width, measured_height=900,
                 client_width=width, scroll_width=width, overflow=False, ready_state='complete', evidence_kind='emulated',
                 content_overflow=[], text_overflow=[], clipped_text=[], scrolling_descendants=[], offscreen_focus_links=[], visible_images=[],
                 alignments=[dict(selector='.art', matches=1, container_matches=1, expected='center',
                                  target=dict(left=30, right=width-30), container=dict(left=14, right=width-14))],
+                panel_pairs=[panel_pair(width)],
                 screenshot=dict(path=f'fixture-{width}.jpg', width=width, height=900, reviewed=True), below_fold_reviewed=True)
 
 
@@ -32,6 +39,40 @@ class LayoutTests(unittest.TestCase):
         row['content_overflow']=[dict(selector='h1',right=463)]
         self.assertFalse(row['overflow'])
         self.assertTrue(module.audit_widths(rows))
+
+    def test_overlapping_panels_fail_even_without_horizontal_scroll(self):
+        rows = widths()
+        row = rows[-1]
+        row['panel_pairs'][0]['second_rect']['top'] = 465
+        self.assertFalse(row['overflow'])
+        self.assertEqual(module.audit_widths(rows), [
+            '1440px: .hero-content and .release-summary overlap by 35.0px vertically (1400.0px horizontally)'
+        ])
+
+    def test_touching_and_horizontally_separate_panels_pass(self):
+        rows = widths()
+        row = rows[-1]
+        pair = row['panel_pairs'][0]
+        pair['second_rect']['top'] = 499
+        self.assertEqual(module.audit_widths(rows), [])
+        pair['second_rect'].update(left=850, top=465)
+        pair['first_rect']['right'] = 850
+        self.assertEqual(module.audit_widths(rows), [])
+
+    def test_missing_duplicate_hidden_or_nested_panels_fail(self):
+        for update in ({'first_matches': 0}, {'second_matches': 2}, {'second_rect': None},
+                       {'first_rect': dict(left=5, right=0, top=0, bottom=5)}, {'independent': False}):
+            rows = widths()
+            rows[0]['panel_pairs'][0].update(update)
+            self.assertTrue(module.audit_widths(rows), update)
+        rows = widths()
+        rows[0]['panel_pairs'] = []
+        self.assertTrue(module.audit_widths(rows))
+
+    def test_panel_pairs_cannot_be_swapped_out_at_a_breakpoint(self):
+        rows = widths()
+        rows[-1]['panel_pairs'][0]['second'] = '.different-panel'
+        self.assertIn('1440px: content-panel pairs differ across viewport observations', module.audit_widths(rows))
 
     def test_clipped_text_and_identifiers_fail(self):
         for field in ('clipped_text','text_overflow'):
@@ -58,7 +99,7 @@ class LayoutTests(unittest.TestCase):
         self.assertTrue(module.audit_widths(rows))
 
     def test_missing_measurements_are_not_zero(self):
-        for field in ('content_overflow','text_overflow','clipped_text','alignments','visible_images','measured_width'):
+        for field in ('content_overflow','text_overflow','clipped_text','alignments','panel_pairs','visible_images','measured_width'):
             rows=widths(); del rows[0][field]
             self.assertTrue(module.audit_widths(rows))
 
