@@ -12,6 +12,45 @@ def finite(value):
     return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
 
 
+def panel_edges(value):
+    if not isinstance(value, dict):
+        return None
+    left, right, top, bottom = (value.get(edge) for edge in ('left', 'right', 'top', 'bottom'))
+    if not all(finite(edge) for edge in (left, right, top, bottom)) or left >= right or top >= bottom:
+        return None
+    return left, right, top, bottom
+
+
+def audit_panel_pairs(pairs, label):
+    if not isinstance(pairs, list) or not pairs:
+        return set(), [f'{label}: no declared content-panel separation checks']
+    failures = []
+    identities = set()
+    for pair in pairs:
+        first, second = (pair.get('first'), pair.get('second')) if isinstance(pair, dict) else (None, None)
+        if not all(isinstance(selector, str) and selector.strip() for selector in (first, second)) or first == second:
+            failures.append(f'{label}: invalid content-panel pair')
+            continue
+        identity = tuple(sorted((first, second)))
+        pair_label = f'{label}: {first} and {second}'
+        if identity in identities:
+            failures.append(f'{pair_label} are a duplicate content-panel pair')
+            continue
+        identities.add(identity)
+        if any(type(pair.get(key)) is not int or pair[key] != 1 for key in ('first_matches', 'second_matches')):
+            failures.append(f'{pair_label} must each resolve uniquely')
+            continue
+        a, b = panel_edges(pair.get('first_rect')), panel_edges(pair.get('second_rect'))
+        if pair.get('independent') is not True or a is None or b is None:
+            failures.append(f'{pair_label} must be separate visible panels with valid rectangles')
+            continue
+        overlap_x = min(a[1], b[1]) - max(a[0], b[0])
+        overlap_y = min(a[3], b[3]) - max(a[2], b[2])
+        if overlap_x > 1 and overlap_y > 1:
+            failures.append(f'{pair_label} overlap by {overlap_y:.1f}px vertically ({overlap_x:.1f}px horizontally)')
+    return identities, failures
+
+
 def audit_widths(rows):
     failures = []
     if not isinstance(rows, list):
@@ -24,6 +63,7 @@ def audit_widths(rows):
     missing = sorted(set(REQUIRED_WIDTHS) - set(widths))
     if missing:
         failures.append(f'Missing responsive widths: {missing}')
+    required_pairs = None
     for row in rows:
         width = row['width']
         label = f'{width}px'
@@ -75,6 +115,12 @@ def audit_widths(rows):
                           'fill': [abs(left - c_left), abs(right - c_right)]}
                 if expected not in errors or max(errors[expected]) > tolerance:
                     failures.append(f'{label}: {ident} has uneven alignment/gutters')
+        pairs, panel_failures = audit_panel_pairs(row.get('panel_pairs'), label)
+        failures.extend(panel_failures)
+        if required_pairs is None:
+            required_pairs = pairs
+        elif pairs != required_pairs:
+            failures.append(f'{label}: content-panel pairs differ across viewport observations')
         screenshot = row.get('screenshot', {})
         if not isinstance(screenshot, dict) or not screenshot.get('path') or type(screenshot.get('width')) is not int or type(screenshot.get('height')) is not int or abs(screenshot['width']-width)>1 or not finite(height) or abs(screenshot['height']-height)>1 or screenshot.get('reviewed') is not True:
             failures.append(f'{label}: missing reviewed screenshot at the actual target dimensions')

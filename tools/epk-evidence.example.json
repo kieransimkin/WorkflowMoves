@@ -48,7 +48,28 @@
         "height": 900,
         "reviewed": true
       },
-      "below_fold_reviewed": true
+      "below_fold_reviewed": true,
+      "panel_pairs": [
+        {
+          "first": ".hero-content",
+          "second": ".release-summary",
+          "first_matches": 1,
+          "second_matches": 1,
+          "independent": true,
+          "first_rect": {
+            "left": 20,
+            "right": 300,
+            "top": 90,
+            "bottom": 500
+          },
+          "second_rect": {
+            "left": 20,
+            "right": 300,
+            "top": 540,
+            "bottom": 690
+          }
+        }
+      ]
     },
     {
       "width": 375,
@@ -88,7 +109,28 @@
         "height": 900,
         "reviewed": true
       },
-      "below_fold_reviewed": true
+      "below_fold_reviewed": true,
+      "panel_pairs": [
+        {
+          "first": ".hero-content",
+          "second": ".release-summary",
+          "first_matches": 1,
+          "second_matches": 1,
+          "independent": true,
+          "first_rect": {
+            "left": 20,
+            "right": 355,
+            "top": 90,
+            "bottom": 500
+          },
+          "second_rect": {
+            "left": 20,
+            "right": 355,
+            "top": 540,
+            "bottom": 690
+          }
+        }
+      ]
     },
     {
       "width": 390,
@@ -128,7 +170,28 @@
         "height": 900,
         "reviewed": true
       },
-      "below_fold_reviewed": true
+      "below_fold_reviewed": true,
+      "panel_pairs": [
+        {
+          "first": ".hero-content",
+          "second": ".release-summary",
+          "first_matches": 1,
+          "second_matches": 1,
+          "independent": true,
+          "first_rect": {
+            "left": 20,
+            "right": 370,
+            "top": 90,
+            "bottom": 500
+          },
+          "second_rect": {
+            "left": 20,
+            "right": 370,
+            "top": 540,
+            "bottom": 690
+          }
+        }
+      ]
     },
     {
       "width": 414,
@@ -168,7 +231,28 @@
         "height": 900,
         "reviewed": true
       },
-      "below_fold_reviewed": true
+      "below_fold_reviewed": true,
+      "panel_pairs": [
+        {
+          "first": ".hero-content",
+          "second": ".release-summary",
+          "first_matches": 1,
+          "second_matches": 1,
+          "independent": true,
+          "first_rect": {
+            "left": 20,
+            "right": 394,
+            "top": 90,
+            "bottom": 500
+          },
+          "second_rect": {
+            "left": 20,
+            "right": 394,
+            "top": 540,
+            "bottom": 690
+          }
+        }
+      ]
     },
     {
       "width": 430,
@@ -208,7 +292,28 @@
         "height": 900,
         "reviewed": true
       },
-      "below_fold_reviewed": true
+      "below_fold_reviewed": true,
+      "panel_pairs": [
+        {
+          "first": ".hero-content",
+          "second": ".release-summary",
+          "first_matches": 1,
+          "second_matches": 1,
+          "independent": true,
+          "first_rect": {
+            "left": 20,
+            "right": 410,
+            "top": 90,
+            "bottom": 500
+          },
+          "second_rect": {
+            "left": 20,
+            "right": 410,
+            "top": 540,
+            "bottom": 690
+          }
+        }
+      ]
     },
     {
       "width": 760,
@@ -248,7 +353,28 @@
         "height": 900,
         "reviewed": true
       },
-      "below_fold_reviewed": true
+      "below_fold_reviewed": true,
+      "panel_pairs": [
+        {
+          "first": ".hero-content",
+          "second": ".release-summary",
+          "first_matches": 1,
+          "second_matches": 1,
+          "independent": true,
+          "first_rect": {
+            "left": 20,
+            "right": 740,
+            "top": 90,
+            "bottom": 500
+          },
+          "second_rect": {
+            "left": 20,
+            "right": 740,
+            "top": 540,
+            "bottom": 690
+          }
+        }
+      ]
     },
     {
       "width": 768,
@@ -288,7 +414,28 @@
         "height": 900,
         "reviewed": true
       },
-      "below_fold_reviewed": true
+      "below_fold_reviewed": true,
+      "panel_pairs": [
+        {
+          "first": ".hero-content",
+          "second": ".release-summary",
+          "first_matches": 1,
+          "second_matches": 1,
+          "independent": true,
+          "first_rect": {
+            "left": 20,
+            "right": 748,
+            "top": 90,
+            "bottom": 500
+          },
+          "second_rect": {
+            "left": 20,
+            "right": 748,
+            "top": 540,
+            "bottom": 690
+          }
+        }
+      ]
     },
     {
       "width": 900,
@@ -328,7 +475,28 @@
         "height": 900,
         "reviewed": true
       },
-      "below_fold_reviewed": true
+      "below_fold_reviewed": true,
+      "panel_pairs": [
+        {
+          "first": ".hero-content",
+          "second": ".release-summary",
+          "first_matches": 1,
+          "second_matches": 1,
+          "independent": true,
+          "first_rect": {
+            "left": 20,
+            "right": 880,
+            "top": 90,
+            "bottom": 500
+          },
+          "second_rect": {
+            "left": 20,
+            "right": 880,
+            "top": 540,
+            "bottom": 690
+          }
+        }
+      ]
     },
     {
       "width": 1440,
@@ -368,7 +536,28 @@
         "height": 900,
         "reviewed": true
       },
-      "below_fold_reviewed": true
+      "below_fold_reviewed": true,
+      "panel_pairs": [
+        {
+          "first": ".hero-content",
+          "second": ".release-summary",
+          "first_matches": 1,
+          "second_matches": 1,
+          "independent": true,
+          "first_rect": {
+            "left": 20,
+            "right": 1420,
+            "top": 90,
+            "bottom": 500
+          },
+          "second_rect": {
+            "left": 20,
+            "right": 1420,
+            "top": 540,
+            "bottom": 690
+          }
+        }
+      ]
     }
   ]
 }
