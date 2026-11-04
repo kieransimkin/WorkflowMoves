@@ -4,6 +4,7 @@ import argparse
 import json
 import math
 from pathlib import Path
+from audit_epk_youtube_flow import audit as audit_youtube_flow
 
 REQUIRED_WIDTHS = (320, 375, 390, 414, 430, 760, 768, 900, 1440)
 
@@ -141,6 +142,8 @@ def audit_widths(rows):
 
 def audit(record):
     failures = audit_widths(record.get('widths'))
+    if record.get('youtube_flow_required') is True:
+        failures.extend(audit_youtube_flow(record))
     return {'page_id': record.get('page_id'), 'status': 'failed' if failures else 'passed',
             'failures': failures, 'required_widths': list(REQUIRED_WIDTHS),
             'limits': 'Recorded layout evidence only. Screenshot dimensions and review declarations must come from the actual capture. No publication, playback or physical-phone certification.'}

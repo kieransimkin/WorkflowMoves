@@ -14,7 +14,8 @@
   const hidden = element => {
     for (let node = element; node; node = node.parentElement) {
       const style = getComputedStyle(node);
-      if (node.hasAttribute('hidden') || node.getAttribute('aria-hidden') === 'true' || style.display === 'none' || style.visibility === 'hidden') return true;
+      if (node.hidden || node.inert || node.getAttribute('aria-hidden') === 'true' ||
+          style.display === 'none' || ['hidden', 'collapse'].includes(style.visibility) || Number(style.opacity) === 0) return true;
     }
     return false;
   };
@@ -77,13 +78,65 @@
     }
     return result;
   });
+  const coverIds = [...document.querySelectorAll('[data-epk-cover-player]')]
+    .map(node => node.getAttribute('data-epk-cover-player')).filter(id => /^[\w-]{11}$/.test(id));
+  const unique = (root, selector) => {
+    if (!selector) return null;
+    const matches = root.querySelectorAll(selector);
+    return matches.length === 1 ? matches[0] : null;
+  };
+  const visibleRect = (node, inspectText = false) => {
+    if (!node || hidden(node)) return null;
+    const box = node.getBoundingClientRect();
+    if (!box.width || !box.height) return null;
+    const boxes = [box];
+    if (inspectText) {
+      const range = document.createRange();
+      range.selectNodeContents(node);
+      boxes.push(...[...range.getClientRects()].filter(rect => rect.width > 1));
+    }
+    if (boxes.some(rect => rect.left < -1 || rect.right > viewport + 1)) return null;
+    for (let parent = node; parent && parent !== document.body; parent = parent.parentElement) {
+      const style = getComputedStyle(parent);
+      const clipping = parent.getBoundingClientRect();
+      if (['hidden', 'clip'].includes(style.overflowX) &&
+          boxes.some(rect => rect.left < clipping.left - 1 || rect.right > clipping.right + 1)) return null;
+      if (['hidden', 'clip'].includes(style.overflowY) &&
+          boxes.some(rect => rect.top < clipping.top - 1 || rect.bottom > clipping.bottom + 1)) return null;
+    }
+    return rect(node);
+  };
+  const youtubeStates = (options.youtube_reveal || []).map(spec => {
+    const player = unique(document, spec.player);
+    const frames = player?.querySelectorAll(spec.frame || '[data-epk-video-slot] iframe');
+    const frame = frames?.length === 1 ? frames[0] : null;
+    const opener = player && unique(player, spec.opener || '[data-epk-video-play]');
+    const poster = player && unique(player, spec.poster || 'img');
+    const close = player && unique(player, spec.close || '[data-epk-video-close]');
+    const following = unique(document, spec.following);
+    const copy = Object.fromEntries((spec.copy || []).map(selector => {
+      const target = unique(document, selector);
+      return [selector, visibleRect(target, true)];
+    }));
+    let videoId = player?.getAttribute('data-epk-cover-player') || spec.video_id || null;
+    if (frame) {
+      const url = new URL(frame.getAttribute('src') || '', location.href);
+      videoId = /^(www\.)?youtube(?:-nocookie)?\.com$/.test(url.hostname)
+        ? url.pathname.match(/^\/embed\/([\w-]{11})$/)?.[1] : null;
+    }
+    return {player: spec.player, video_id: videoId, viewport_width: innerWidth,
+      horizontal_overflow: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) > viewport + 1,
+      frame_count: frames?.length ?? null, poster: visibleRect(poster), opener: visibleRect(opener),
+      frame: visibleRect(frame), close: visibleRect(close), focus_on_opener: !!opener && opener === document.activeElement,
+      copy, following_selector: spec.following, following: visibleRect(following)};
+  });
   return {schema: 'epk.layout-observation.v2', measured_width: innerWidth, measured_height: innerHeight,
     ready_state: document.readyState, client_width: viewport,
     scroll_width: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth),
     overflow: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) > viewport + 1,
     content_overflow: contentOverflow, text_overflow: textOverflow, clipped_text: clippedText,
     scrolling_descendants: scrollingDescendants, offscreen_focus_links: offscreenFocusLinks, alignments,
-    panel_pairs: panelPairs,
+    panel_pairs: panelPairs, youtube_cover_ids: coverIds, youtube_reveal_states: youtubeStates,
     visible_images: [...document.images].filter(element => !hidden(element) && element.getBoundingClientRect().top < innerHeight && element.getBoundingClientRect().bottom > 0)
       .map(element => ({selector: path(element), complete: element.complete, natural_width: element.naturalWidth}))};
 }

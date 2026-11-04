@@ -1,15 +1,26 @@
 [
   {
+    "target": "Tools/EPK Motion QA/audit_epk_youtube_flow.py",
+    "source": "tools/audit_epk_youtube_flow.py",
+    "mode": "copy"
+  },
+  {
     "target": "Tools/EPK Motion QA/audit_epk_layout.py",
     "source": "tools/audit_epk_layout.py",
     "mode": "copy",
-    "previous_source": "previous/0.1.51/tools/audit_epk_layout.py"
+    "previous_source": "previous/0.1.51/tools/audit_epk_layout.py",
+    "previous_sources": [
+      "previous/0.1.53/tools/audit_epk_layout.py"
+    ]
   },
   {
     "target": "Tools/EPK Motion QA/collect_epk_layout.js",
     "source": "tools/collect_epk_layout.js",
     "mode": "copy",
-    "previous_source": "previous/0.1.51/tools/collect_epk_layout.js"
+    "previous_source": "previous/0.1.51/tools/collect_epk_layout.js",
+    "previous_sources": [
+      "previous/0.1.53/tools/collect_epk_layout.js"
+    ]
   },
   {
     "target": "Workflows/epk-responsive-layout-qa.md",
