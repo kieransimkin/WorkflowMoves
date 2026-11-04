@@ -2,6 +2,22 @@
   "use strict";
   if(document.documentElement.dataset.epkCoverOwner)return;
   document.documentElement.dataset.epkCoverOwner="2";
+  function mountWidescreenHeroes(){
+    var effects=window.DanceMovesEffects;
+    if(!effects?.layoutReveal)return;
+    document.querySelectorAll("[data-epk-widescreen-hero]").forEach(function(root){
+      effects.layoutReveal({
+        id:"epk-widescreen-"+root.dataset.epkCoverPlayer,
+        root:root,
+        openEvent:"epk-cover-video-revealed",
+        closeEvent:"epk-cover-video-closing",
+        initiallyExpanded:root.classList.contains("is-revealed"),
+        durationMilliseconds:480
+      });
+    });
+  }
+  if(window.DanceMovesEffects)mountWidescreenHeroes();
+  else document.addEventListener("dance-moves-effects-ready",mountWidescreenHeroes,{once:true});
   function close(root,focus){
     (root._epkStableParents||[]).forEach(function(parent){parent.classList.remove("epk-video-stable");});
     root._epkStableParents=[];

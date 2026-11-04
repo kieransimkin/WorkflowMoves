@@ -16,6 +16,21 @@ class CoverContract(unittest.TestCase):
   self.assertRaises(ValueError,compose.compose,W.replace('www.youtube.com','example.invalid'),'x','x')
  def test_video_count_and_other_shorts_preserved(self):
   extra='<iframe src="https://www.youtube.com/embed/LMNOPQRSTUV"></iframe>';out=compose.compose(W+extra,'https://example.invalid/art.png','Art');self.assertEqual(out.count('<iframe'),2);self.assertIn(extra,out)
+ def test_widescreen_default_keeps_the_responsive_picture_intact(self):
+  picture='<picture class="epk-responsive-art"><source srcset="art.webp"><img src="art.png" width="1254" height="1254"></picture>'
+  source='<header class="epk-hero"><div class="epk-cover-wrap">'+picture+'</div><div class="epk-heading">Title</div></header>'+W
+  out=compose.compose(source,'art.png','Art',video_width=854,video_height=480)
+  self.assertIn('data-epk-cover-player="ABCDEFGHIJK" data-epk-widescreen-hero>'+picture,out)
+  self.assertIn('aspect-ratio:16/9',out)
+  self.assertIn('effects.layoutReveal',out)
+  self.assertEqual(compose.repair_cover_styles(out),out)
+ def test_only_verified_widescreen_dimensions_select_the_layout(self):
+  for dimensions in ({},{'video_width':600,'video_height':600},{'video_width':720,'video_height':1280}):
+   with self.subTest(dimensions=dimensions):
+    out=compose.compose(W,'art.png','Art',**dimensions)
+    self.assertNotIn('data-epk-cover-player="ABCDEFGHIJK" data-epk-widescreen-hero',out)
+  with self.assertRaises(ValueError):
+   compose.compose(W,'art.png','Art',video_width=1280)
  def test_deferred_is_distinct_from_working_playback(self):
   out=compose.compose(W,'https://example.invalid/art.png','Art');r=audit.audit([dict(epk_id=1,url='https://youtu.be/ABCDEFGHIJK',kind='video',publication_state='verified_public')],[dict(id=1,content=dict(rendered=out))]);self.assertEqual(r['items'][0]['coverage'],'deferred_embed_source_present')
  def test_ordinary_hidden_template_not_accepted(self):

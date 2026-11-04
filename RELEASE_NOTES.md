@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.53
+
+New EPK heroes with a square cover and a verified 16:9 YouTube source widen inline on desktop and mobile. The composer keeps the original responsive picture and delegates the transition to DanceMoves 3.4.3. The player and copy retain their reading order, with Return to artwork outside the iframe. The focused installer updates the two existing composer files from either supported predecessor.
+
 # WorkflowMoves v0.1.52
 
 The responsive EPK layout gate now checks declared content panels for two-axis overlap at every sampled viewport. The collector records actual panel rectangles, and the standalone and combined validators reject collisions and incomplete measurements. Intentional decorative layers are outside the declared pairs. Includes a focused upgrade route, an updated evidence example and tests for a vertical collision with zero horizontal overflow.

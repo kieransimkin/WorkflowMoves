@@ -595,13 +595,15 @@
     "target": "Tools/EPK Campaign Media/compose_epk_cover.py",
     "source": "tools/compose_epk_cover.py",
     "mode": "copy",
-    "previous_source": "previous/0.1.50/tools/compose_epk_cover.py"
+    "previous_source": "previous/0.1.50/tools/compose_epk_cover.py",
+    "previous_sources": ["previous/0.1.52/tools/compose_epk_cover.py"]
   },
   {
     "target": "Tools/EPK Campaign Media/epk_cover_player.js",
     "source": "tools/epk_cover_player.js",
     "mode": "copy",
-    "previous_source": "previous/0.1.50/tools/epk_cover_player.js"
+    "previous_source": "previous/0.1.50/tools/epk_cover_player.js",
+    "previous_sources": ["previous/0.1.52/tools/epk_cover_player.js"]
   },
   {
     "target": "Workflows/codex-browser-runtime-recovery.md",
