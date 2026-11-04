@@ -64,7 +64,8 @@ Attach live web effects to a verified playback/input owner. [Native commands and
 
 **Limits:** A listener or loaded library is not a connected visual effect; Synthetic sensors and software rendering are not physical-device acceptance.
 
-Use [epk-mobile-motion](epk-mobile-motion.md), [epk-evidence-gate](epk-evidence-gate.md).
+Use [epk-mobile-motion](epk-mobile-motion.md), [epk-evidence-gate](epk-evidence-gate.md)
+and [DanceMoves lyric visualisers](dancemoves-lyric-visualisers.md).
 
 ### KeywordMoves
 

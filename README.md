@@ -22,6 +22,12 @@ The [task workflow map](workflows/ecosystem-tool-workflows.md) gives inputs, out
 
 Run `python tools/audit_workflow_coverage.py` from the released package. The standard-library checker derives membership from the capability index and catches a new tool without workflow coverage, duplicate identities, missing local routes and empty contracts. It does not execute tools or validate external links. Preview `python install.py --root WORKSPACE --routes tool-learning-routes.json --check`, inspect the receipt, apply the same manifest, then require a repeat preview to be current. The new guide includes a labelled generated contract diagram; actual native captures remain in the relevant tool examples.
 
+The [DanceMoves lyric visualiser workflow](workflows/dancemoves-lyric-visualisers.md)
+uses campaign visual-language evidence to style the inline lyric frame. It
+checks the actual song and its WordPress timing attachment, then brings
+desktop and mobile previews to review before any public save. Use
+`dancemoves-lyric-visualisers-routes.json` for a focused installation.
+
 ## Explicit completion checks and blog delivery
 
 `UpdateScheduledPost` adds reviewed content to a future article without moving its publication date. It requires the fresh post snapshot, exact UTF-8 candidate bytes, strict authority/preflight booleans and the existing named-zone/UTC slot; one content-only request is followed by preserved-field and exact-content readback. The [working manifest example](examples/scheduled-blog-update.json) is deliberately synthetic. Use `scheduled-blog-update-routes.json` for the focused guarded upgrade; [the illustrated blog workflow](workflows/wordpress-blog-rest-api.md#add-findings-without-moving-a-scheduled-article) explains the separate media/theme/public checks and uncertain-request receipt.

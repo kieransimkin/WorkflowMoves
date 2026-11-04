@@ -1,3 +1,9 @@
+# WorkflowMoves v0.1.56
+
+Documents how to adopt DanceMoves scrolling lyrics using campaign-led CSS,
+the existing WordPress lyric attachment and real-song desktop and mobile
+previews. Includes a focused route and a link to the renderer demonstration.
+
 # WorkflowMoves v0.1.55
 
 Adds a bounded, resumable skill/workflow discovery audit that searches only
