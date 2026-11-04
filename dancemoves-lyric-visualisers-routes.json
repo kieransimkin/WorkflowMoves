@@ -1,0 +1,21 @@
+[
+  {
+    "target": "Workflows/dancemoves-lyric-visualisers.md",
+    "source": "workflows/dancemoves-lyric-visualisers.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/dance-animations-and-effects/SKILL.md",
+    "source": "fragments/dancemoves-lyric-visualisers.md",
+    "mode": "insert",
+    "anchor": "Use `DanceMovesEffects.lyricStage()` for a previous/current/next lyric treatment.",
+    "identity": "### Inline scrolling lyric visualisers"
+  },
+  {
+    "target": ".agents/skills/dance-animations-and-effects/SKILL.md",
+    "source": "fragments/dancemoves-lyric-visualisers.md",
+    "mode": "insert",
+    "anchor": "Use `DanceMovesEffects.lyricStage()` for a previous/current/next lyric treatment.",
+    "identity": "### Inline scrolling lyric visualisers"
+  }
+]
