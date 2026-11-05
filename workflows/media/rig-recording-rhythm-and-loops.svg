@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" role="img" aria-labelledby="title description">
+  <title id="title">Review rig recording loops</title>
+  <desc id="description">Verified capture leads to StemLab hypotheses leads to Evaluated rig audition. Record the accepted source range after playback review.</desc>
+  <rect width="960" height="260" rx="20" fill="#101828"/>
+  <text x="32" y="48" fill="#f9fafb" font-family="system-ui, sans-serif" font-size="27" font-weight="700">Review rig recording loops</text>
+  <g font-family="system-ui, sans-serif">
+    <rect x="32" y="82" width="276" height="91" rx="12" fill="#1d2939" stroke="#5b91cf" stroke-width="2"/>
+    <text x="48" y="116" fill="#f9fafb" font-size="19" font-weight="700">Verified capture</text>
+    <text x="48" y="145" fill="#d0d5dd" font-size="16">Pin source time and coverage</text>
+    <rect x="342" y="82" width="276" height="91" rx="12" fill="#1d2939" stroke="#5b91cf" stroke-width="2"/>
+    <text x="358" y="116" fill="#f9fafb" font-size="19" font-weight="700">StemLab hypotheses</text>
+    <text x="358" y="145" fill="#d0d5dd" font-size="16">Tempo families and seam scores</text>
+    <rect x="652" y="82" width="276" height="91" rx="12" fill="#1d2939" stroke="#5b91cf" stroke-width="2"/>
+    <text x="668" y="116" fill="#f9fafb" font-size="19" font-weight="700">Evaluated rig audition</text>
+    <text x="668" y="145" fill="#d0d5dd" font-size="16">Watch continuity over cycles</text>
+    <path d="M 313,127 h 22 l -7,-6 m 7,6 l -7,6 M 623,127 h 22 l -7,-6 m 7,6 l -7,6" fill="none" stroke="#84caff" stroke-width="2"/>
+    <text x="32" y="218" fill="#d0d5dd" font-size="17">Record the accepted source range after playback review.</text>
+  </g>
+</svg>

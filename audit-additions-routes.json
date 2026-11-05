@@ -1,0 +1,72 @@
+[
+  {
+    "target": "Workflows/recurring-campaign-queue.md",
+    "source": "workflows/recurring-campaign-queue.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/epk-timing-authority-audit.md",
+    "source": "workflows/epk-timing-authority-audit.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/wordpress-epk-rest-publishing.md",
+    "source": "workflows/wordpress-epk-rest-publishing.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/rig-recording-rhythm-and-loops.md",
+    "source": "workflows/rig-recording-rhythm-and-loops.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/recurring-campaign-queue.svg",
+    "source": "workflows/media/recurring-campaign-queue.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/epk-timing-authority.svg",
+    "source": "workflows/media/epk-timing-authority.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/rig-recording-rhythm-and-loops.svg",
+    "source": "workflows/media/rig-recording-rhythm-and-loops.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/ecosystem-tool-workflows.md",
+    "source": "fragments/rig-recording-workflow-map.md",
+    "mode": "insert",
+    "anchor": "### FrameRudiments",
+    "identity": "#### Review rhythm and loop candidates"
+  },
+  {
+    "target": "Workflows/dancemoves-lyric-visualisers.md",
+    "source": "fragments/dancemoves-lyric-countdown-qa.md",
+    "mode": "insert",
+    "anchor": "## Potential problems",
+    "identity": "## Verify the optional beat countdown"
+  },
+  {
+    "target": "skill-source/daily-music-marketing-run/SKILL.md",
+    "source": "fragments/recurring-campaign-queue-skill.md",
+    "mode": "insert",
+    "anchor": "## Establish the evidence window",
+    "identity": "## Work through a recurring campaign queue"
+  },
+  {
+    "target": "skill-source/automation-scheduling/SKILL.md",
+    "source": "fragments/recurring-campaign-queue-skill.md",
+    "mode": "insert",
+    "anchor": "## Publication scope and execution evidence",
+    "identity": "## Work through a recurring campaign queue"
+  },
+  {
+    "target": ".codex-relocated-home/skills/wordpress-epk-publisher/SKILL.md",
+    "source": "fragments/epk-timing-authority-audit-skill.md",
+    "mode": "insert",
+    "anchor": "## Select motion with StemLab's DanceRudiments matcher",
+    "identity": "## Audit saved and public timing"
+  }
+]

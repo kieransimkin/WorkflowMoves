@@ -2,7 +2,8 @@
   {
     "source": "workflows/ecosystem-tool-workflows.md",
     "target": "Workflows/ecosystem-tool-workflows.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.57/workflows/ecosystem-tool-workflows.md"
   },
   {
     "source": "workflows/tool-development-lessons.md",

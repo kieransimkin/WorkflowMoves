@@ -2,7 +2,8 @@
   {
     "target": "Workflows/dancemoves-lyric-visualisers.md",
     "source": "workflows/dancemoves-lyric-visualisers.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.57/workflows/dancemoves-lyric-visualisers.md"
   },
   {
     "target": "skill-source/dance-animations-and-effects/SKILL.md",
