@@ -20,7 +20,7 @@ function Assert-EpkYouTubeFlow {
     $arguments = @((Resolve-Path -LiteralPath $EvidencePath).Path,
         '--page-id', $PageId, '--source-sha256', $SourceSha, '--candidate-sha256', $CandidateSha)
     foreach ($videoId in $videoIds) {
-        $arguments += @('--expected-video-id', $videoId)
+        $arguments += "--expected-video-id=$videoId"
     }
     $report = & python -B $validator @arguments
     if ($LASTEXITCODE -ne 0) {

@@ -2,7 +2,10 @@
   {
     "target": "Tools/EPK Motion QA/Assert-EpkYouTubeFlow.ps1",
     "source": "tools/Assert-EpkYouTubeFlow.ps1",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.56/tools/Assert-EpkYouTubeFlow.ps1"
+    ]
   },
   {
     "target": "Tools/EPK Motion QA/audit_epk_youtube_flow.py",
