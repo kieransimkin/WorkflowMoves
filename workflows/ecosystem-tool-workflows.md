@@ -38,6 +38,11 @@ Select native movement or prepare a finite, typed rig recording. [Native command
 
 Use [stemlab-audio-motion-recordings](stemlab-audio-motion-recordings.md), [potbot-unity-integration](potbot-unity-integration.md).
 
+#### Review rhythm and loop candidates
+
+Use [rig-recording rhythm and loops](rig-recording-rhythm-and-loops.md)
+for the verified capture, StemLab candidate and evaluated-rig audition handoff.
+
 ### FrameRudiments
 
 Compose a deterministic offline video or bounded preset experiment. [Native commands and examples](https://github.com/kieransimkin/WorkflowMoves/blob/v0.1.41/workflows/danceflow/capabilities/framerudiments.md).

@@ -1,3 +1,12 @@
+# WorkflowMoves v0.1.58
+
+Adds a recurring campaign queue with evidence-based recovery and overdue
+reconciliation, an EPK timing-authority audit, and a rig-recording rhythm and
+loop review. Includes a portable WordPress EPK REST guide, DanceMoves 3.6.1
+countdown QA and guarded entry points for the existing daily marketing,
+automation scheduling and EPK publishing skills. The documentation uses
+synthetic examples and released tool references.
+
 # WorkflowMoves v0.1.57
 
 Pass YouTube IDs that start with a hyphen as values to the WordPress
