@@ -1,3 +1,9 @@
+# WorkflowMoves v0.1.57
+
+Pass YouTube IDs that start with a hyphen as values to the WordPress
+publication gate. The wrapper still requires the same exact candidate and
+nine-width layout evidence.
+
 # WorkflowMoves v0.1.56
 
 Documents how to adopt DanceMoves scrolling lyrics using campaign-led CSS,
