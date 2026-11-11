@@ -49,6 +49,18 @@ Observed native workflows exposed rolling date windows, delayed save acknowledge
 
 Observed recovery also showed that a visually populated framework field could persist as blank until entered through a native event path, and that leaving before upload processing completed could invalidate the attempt. These are bounded implementation lessons, not claims about every platform or browser version.
 
+## Facebook Page video via Graph API
+
+Use the [Page Video API](https://developers.facebook.com/docs/graph-api/reference/page/videos/) for new Facebook video uploads and scheduling. Use the Page's resumable start, transfer and finish phases on `graph.facebook.com`. Apply this route to full-length visualisers and short videos. Use the browser queue for readback when available.
+
+1. Verify the approved Page, exact video and cover hashes, copy, disclosures and local/UTC slot in the social plan. Check the Page access token with `GET /me?fields=id,name`, confirm the owner's content-creation access and inspect the current Page videos and scheduled posts for duplicates and slot conflicts. Keep access tokens out of commands, logs, screenshots and campaign records.
+2. With the Page token, start `POST /{page-id}/videos` with `upload_phase=start`, the exact `file_size` and `published=false`. Retain the returned video ID, upload session ID and byte offsets privately. Use the app's supported Graph API version consistently for the attempt.
+3. On the same edge, submit `upload_phase=transfer`, the session ID, `start_offset` and a multipart `video_file_chunk` containing the server-requested byte range. Verify contiguous acknowledgement through the original file size. If a transfer is interrupted, reconcile the existing session and server-confirmed offset before continuing.
+4. Finish the same session with `upload_phase=finish`, `published=false` and `unpublished_content_type=DRAFT`. Submit the exact approved title, description, cover and supported disclosure settings. Verify the same video reads back as unpublished and ready, with the expected duration and copy, before scheduling. If the preferred thumbnail is still automatic, send the approved image to `POST /{video-id}/thumbnails` as `source` with `is_preferred=true` and verify the preferred thumbnail ID. Check any required captions and disclosures separately.
+5. Recheck the Page queue, then update the existing video once with `POST /{video-id}`, `published=false` and the approved UTC epoch in `scheduled_publish_time`. Independently read the Video node and the Page's `/{page-id}/scheduled_posts` edge. Match the post and video IDs, exact copy, future timestamp and unpublished state. Save the native schedule receipt and check public playback after the slot.
+
+An upload acknowledgement proves byte transfer. A ready unpublished video and a persisted schedule require their own readbacks. Keep the original master resolution, frame rate and duration. If the API route is unavailable, hold the existing item and record the precise blocker before changing routes. The full-length 4K60 case reached draft readiness and scheduling through Page-scoped chunks after app-level file-handle finalization failed and a single multipart upload returned HTTP 413. [Meta Video API overview](https://developers.facebook.com/documentation/video-api/overview) · [Meta Video API reference](https://developers.facebook.com/docs/graph-api/reference/video/)
+
 ## Potential problems
 
 - Missing timezone data: install the declared dependency; never guess offsets. Explicit UTC disambiguates a repeated local hour.

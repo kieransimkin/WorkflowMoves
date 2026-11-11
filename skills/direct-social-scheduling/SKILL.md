@@ -7,6 +7,10 @@ description: Prepare, recover, commit and verify approved multi-platform social 
 
 Use the maintained [direct social scheduling workflow](https://github.com/kieransimkin/WorkflowMoves/blob/main/workflows/direct-social-scheduling.md), or the installed `Workflows/direct-social-scheduling.md`. Also read the owning campaign's rights, approval, platform-order, timing, disclosure, hashtag and browser-control rules.
 
+## Facebook video publishing
+
+Use the Facebook Page Video API by default for My Songs video uploads. Send the exact approved master in Page-scoped resumable chunks, verify it as a ready unpublished draft, then schedule the same video ID and read back the Page's saved schedule. Follow the Facebook section in `Workflows/direct-social-scheduling.md`.
+
 1. Bind each destination to exact approved media, caption, cover, disclosure settings, account and named-zone/UTC slot. Run `Tools/social_schedule_plan.py`; its output is preparation only.
 2. Inspect the native queue immediately before a commit. Preserve unrelated posts and resolve replacements/cancellations before taking responsibility from another scheduler.
 3. On recovery, inspect the current native queue and retained attempt evidence before reopening a composer. Never infer that an interrupted tab saved, failed or published.

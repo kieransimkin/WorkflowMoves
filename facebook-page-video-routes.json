@@ -1,0 +1,8 @@
+[
+  {"target":"Workflows/direct-social-scheduling.md","source":"fragments/facebook-page-video-scheduling.md","mode":"insert","anchor":"## Potential problems","identity":"## Facebook Page video via Graph API"},
+  {"target":"AGENTS.md","source":"fragments/facebook-page-video-route.md","mode":"insert","anchor":"## Evidence-led hashtag discovery and use","identity":"## Facebook video publishing"},
+  {"target":"Workflows/release-video-social-scheduling.md","source":"fragments/facebook-page-video-route.md","mode":"insert","anchor":"## Potential problems","identity":"## Facebook video publishing"},
+  {"target":"skill-source/social-video-scheduling/SKILL.md","source":"fragments/facebook-page-video-route.md","mode":"insert","anchor":"## Potential problems","identity":"## Facebook video publishing"},
+  {"target":"skill-source/direct-social-scheduling/SKILL.md","source":"fragments/facebook-page-video-route.md","mode":"insert","anchor":"1. Bind each destination","identity":"## Facebook video publishing"},
+  {"target":".agents/skills/direct-social-scheduling/SKILL.md","source":"fragments/facebook-page-video-route.md","mode":"insert","anchor":"1. Bind each destination","identity":"## Facebook video publishing"}
+]
