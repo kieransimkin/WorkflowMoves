@@ -11,6 +11,8 @@ Use the maintained [direct social scheduling workflow](https://github.com/kieran
 
 Use the Facebook Page Video API by default for My Songs video uploads. Send the exact approved master in Page-scoped resumable chunks, verify it as a ready unpublished draft, then schedule the same video ID and read back the Page's saved schedule. Follow the Facebook section in `Workflows/direct-social-scheduling.md`.
 
+Check the existing authorised Meta app through its supported credential store or Meta Graph API Explorer before treating the API as unavailable. Verify the Page identity and `CREATE_CONTENT` before starting the Page-scoped upload. Record the exact access blocker and reconcile pending uploads before changing routes.
+
 1. Bind each destination to exact approved media, caption, cover, disclosure settings, account and named-zone/UTC slot. Run `Tools/social_schedule_plan.py`; its output is preparation only.
 2. Inspect the native queue immediately before a commit. Preserve unrelated posts and resolve replacements/cancellations before taking responsibility from another scheduler.
 3. On recovery, inspect the current native queue and retained attempt evidence before reopening a composer. Never infer that an interrupted tab saved, failed or published.
