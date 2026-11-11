@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.60
+
+Check the existing Meta app and Page content-creation access before deciding the Facebook Page Video API is unavailable. The workflow and skill describe the existing credential route and safe handoff. The focused installer upgrades the v0.1.59 Facebook blocks and preserves surrounding project text.
+
 # WorkflowMoves v0.1.59
 
 Use Page-scoped Graph API chunks for Facebook video uploads. The scheduling guide covers the unpublished readiness check, preferred cover verification and scheduling the same video ID. A focused installer adds the route to existing My Songs publishing instructions and skills.

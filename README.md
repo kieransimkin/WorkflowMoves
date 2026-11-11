@@ -81,7 +81,7 @@ Preview `python install.py --root WORKSPACE --routes cyclic-event-routes.json --
 
 The [direct social scheduling workflow](workflows/direct-social-scheduling.md) adds a local named-timezone calendar and read-only checks for media/copy/cover hashes, collisions, scheduler takeover, native date windows and independent receipts. The local preflight performs no account actions. Preview `social-scheduling-routes.json` to install this focused integration. Keep private account evidence in the campaign.
 
-The [Facebook video route](workflows/direct-social-scheduling.md#facebook-page-video-via-graph-api) uses Page-scoped chunks and verifies an unpublished draft before scheduling the same video. Preview `facebook-page-video-routes.json` to apply the route to the existing My Songs publishing instructions and skills.
+The [Facebook video route](workflows/direct-social-scheduling.md#facebook-page-video-via-graph-api) checks the existing Meta app and Page credential, uses Page-scoped chunks and verifies an unpublished draft before scheduling the same video. Preview `facebook-page-video-routes.json` to apply the route to the existing My Songs publishing instructions and skills.
 
 Version 0.1.49 adds the focused [direct-social-scheduling skill](skills/direct-social-scheduling/SKILL.md) and native recovery gates: inspect the queue after an interrupted tab, prove framework-controlled fields through native validation and persisted readback, wait for upload processing, verify exact copy/duration/audience/slot/timezone in a fresh Scheduled/Planner view and close completed tabs with a fresh inventory. Visible form values and automation acknowledgements remain distinct from native persistence.
 
