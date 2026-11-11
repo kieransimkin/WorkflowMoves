@@ -1,3 +1,7 @@
+# WorkflowMoves v0.1.59
+
+Use Page-scoped Graph API chunks for Facebook video uploads. The scheduling guide covers the unpublished readiness check, preferred cover verification and scheduling the same video ID. A focused installer adds the route to existing My Songs publishing instructions and skills.
+
 # WorkflowMoves v0.1.58
 
 Adds a recurring campaign queue with evidence-based recovery and overdue
