@@ -55,7 +55,7 @@ Compose a deterministic offline video or bounded preset experiment. [Native comm
 
 **Limits:** A controlled response or cached still does not prove musical quality; Do not rerun a full catalogue or analysis merely for documentation.
 
-Use [framerudiments-rendering](framerudiments-rendering.md), [framerudiments-preset-profiling](framerudiments-preset-profiling.md).
+Use [FrameRudiments rendering](framerudiments-rendering.md) and [preset profiling](framerudiments-preset-profiling.md). Follow [lyric timing review](lyric-timing-review.md) for an estimated or corrected LRC, [video revision](rendered-video-revision.md) for changes to an existing film and [encoded verification](rendered-video-verification.md) for recovery and final QA.
 
 ### DanceMoves
 

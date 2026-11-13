@@ -1,3 +1,12 @@
+# WorkflowMoves v0.1.61
+
+Adds lyric timing review and bounded video revision workflows, with two
+agent skills and a verified synthetic 60 fps splice demonstration. The
+encoded verification workflow now covers recovery from a retained chunk
+prefix, frame-grid assembly failures, verifier-only failures and proof
+for byte-identical delivery copies. Focused installer routes preserve
+local guides and upgrade the existing verification skill.
+
 # WorkflowMoves v0.1.60
 
 Check the existing Meta app and Page content-creation access before deciding the Facebook Page Video API is unavailable. The workflow and skill describe the existing credential route and safe handoff. The focused installer upgrades the v0.1.59 Facebook blocks and preserves surrounding project text.

@@ -1,0 +1,70 @@
+[
+  {
+    "target": "Workflows/lyric-timing-review.md",
+    "source": "workflows/lyric-timing-review.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/rendered-video-revision.md",
+    "source": "workflows/rendered-video-revision.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/video-revision-comparison.png",
+    "source": "workflows/media/video-revision-comparison.png",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/video-revision-demo.mp4",
+    "source": "workflows/media/video-revision-demo.mp4",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/review-lyric-timing/SKILL.md",
+    "source": "skills/review-lyric-timing/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/revise-rendered-music-video/SKILL.md",
+    "source": "skills/revise-rendered-music-video/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/review-lyric-timing/SKILL.md",
+    "source": "skills/review-lyric-timing/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/revise-rendered-music-video/SKILL.md",
+    "source": "skills/revise-rendered-music-video/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/framerudiments-rendering.md",
+    "source": "fragments/video-production-review.md",
+    "mode": "insert",
+    "anchor": "## Choose foreground or operating-system render ownership",
+    "identity": "## Review lyric timing and revisions"
+  },
+  {
+    "target": "Workflows/SHORT-FORM-VIDEO-WORKFLOW.md",
+    "source": "fragments/video-production-review.md",
+    "mode": "insert",
+    "anchor": "## Acceptance checklist",
+    "identity": "## Review lyric timing and revisions"
+  },
+  {
+    "target": "skill-source/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/video-production-skill.md",
+    "mode": "insert",
+    "anchor": "## Establish timing authority",
+    "identity": "## Review lyric timing and revisions"
+  },
+  {
+    "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/video-production-skill.md",
+    "mode": "insert",
+    "anchor": "## Establish timing authority",
+    "identity": "## Review lyric timing and revisions"
+  }
+]

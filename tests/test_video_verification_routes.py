@@ -71,6 +71,24 @@ class VideoVerificationRoutes(unittest.TestCase):
                 installer.install(workspace, ROOT, manifest="video-verification-routes.json")
             self.assertEqual(target.read_bytes(), changed)
 
+    def test_released_verification_files_upgrade_in_place(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            workspace = Path(tmp)
+            self.fixture(workspace)
+            legacy = [row for row in self.routes if row.get("previous_source")]
+            for row in legacy:
+                target = workspace / row["target"]
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes((ROOT / row["previous_source"]).read_bytes())
+            installer.install(workspace, ROOT, manifest="video-verification-routes.json")
+            for row in legacy:
+                self.assertEqual(
+                    (workspace / row["target"]).read_bytes(),
+                    (ROOT / row["source"]).read_bytes(),
+                )
+            repeat = installer.install(workspace, ROOT, check=True, manifest="video-verification-routes.json")
+            self.assertTrue(all(row["status"] == "current" for row in repeat))
+
     def test_illustration_link_resolves_and_skill_has_focused_identity(self):
         guide = (ROOT / "workflows/rendered-video-verification.md").read_text(encoding="utf-8")
         self.assertIn("media/rendered-video-verification.svg", guide)
