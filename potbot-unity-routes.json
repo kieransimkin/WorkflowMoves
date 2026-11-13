@@ -113,7 +113,8 @@
     "source": "workflows/danceflow/capabilities/stemlab.md",
     "target": "Workflows/DanceFlow/capabilities/stemlab.md",
     "mode": "copy",
-    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/stemlab.md"
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/stemlab.md",
+    "previous_sources": ["previous/0.1.65/stemlab-capability.md"]
   },
   {
     "source": "workflows/danceflow/capabilities/thumbmoves.md",
