@@ -22,7 +22,8 @@
   {
     "source": "workflows/danceflow/capabilities/framerudiments.md",
     "target": "Workflows/DanceFlow/capabilities/framerudiments.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.64/framerudiments-capabilities.md"
   },
   {
     "source": "workflows/danceflow/capabilities/index.md",
@@ -82,7 +83,8 @@
   {
     "source": "workflows/danceflow/workflows/framerudiments-complete.md",
     "target": "Workflows/DanceFlow/workflows/framerudiments-complete.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.64/framerudiments-complete.md"
   },
   {
     "source": "workflows/danceflow/workflows/release-preflight.md",

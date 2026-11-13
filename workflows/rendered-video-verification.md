@@ -157,6 +157,27 @@ beginning, middle and end of the transition and the layers that should stay
 outside the effect. The [native underlay comparison](https://github.com/kieransimkin/FrameRudiments/blob/v0.4.29/docs/visualisers.md#isolated-underlay)
 includes sampled composition checkpoints and a two-second synthetic encode.
 
+### Verify the effect-graph backend and samples
+
+For a project using `effect_graph`, read
+`composition.effect_graph_backend` in its native manifest. Match the
+requested backend, actual context and renderer to the pinned run, then
+inspect `last_dispatch` and `last_transport` for work on the GPU and CPU.
+An attached GPU context can accompany CPU fallback. With temporal
+supersampling, `sampling.scope: last_subframe` limits those counters to
+the last evaluated subframe. Keep the sample rate and encoded rate with the
+receipt. Allocation/reuse counts and retained RGBA payload describe the
+renderer pool. An optional driver query has its own reported scope.
+
+Check the effect at the authored seam, extrema and transitions in the exact
+encoded file. For a fallback, retain the affected setting, driver and
+available dispatch evidence alongside the rendered comparison. Use a
+separate bounded project preflight when a sampled manifest leaves an
+important state unobserved. `qa/composed-*` may already include the effect
+graph, since that capture precedes the optional feedback engine. Use a
+matched graph-disabled comparison when a pre-graph image is needed.
+[Feature selection and backend evidence](https://github.com/kieransimkin/WorkflowMoves/blob/main/workflows/framerudiments-rendering-features.md#choose-and-verify-the-effect-graph-backend).
+
 ### Check planned motion variants
 
 When a brief calls for a reduced-motion export, keep the intended audio

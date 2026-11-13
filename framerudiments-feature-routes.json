@@ -1,0 +1,91 @@
+[
+  {
+    "target": "Workflows/framerudiments-rendering-features.md",
+    "source": "workflows/framerudiments-rendering-features.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/framerudiments-rendering.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "Portable CLI examples (replace paths with pinned authorised inputs):",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": "Workflows/SHORT-FORM-VIDEO-WORKFLOW.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Acceptance checklist",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": "Workflows/scheduled-danceflow-tool-use.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Establish the capability plan",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": "Workflows/DanceFlow/workflows/framerudiments-complete.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Choose inputs and clocks first",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": "Workflows/DanceFlow/capabilities/framerudiments.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Current README feature routes",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": "skill-source/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Select motion with StemLab's DanceRudiments matcher",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": "skill-source/render-bpm-cue-videos/references/render-contract.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Evidence and inputs",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": "skill-source/dance-animations-and-effects/SKILL.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Implement mechanics in DanceMoves first",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Select motion with StemLab's DanceRudiments matcher",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": ".agents/skills/render-bpm-cue-videos/references/render-contract.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Evidence and inputs",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": ".agents/skills/dance-animations-and-effects/SKILL.md",
+    "source": "fragments/framerudiments-rendering-features.md",
+    "mode": "insert",
+    "anchor": "## Implement mechanics in DanceMoves first",
+    "identity": "## Choose rendering and visualisation features"
+  },
+  {
+    "target": "Workflows/ecosystem-tool-workflows.md",
+    "source": "fragments/framerudiments-feature-map.md",
+    "mode": "insert",
+    "anchor": "### DanceMoves",
+    "identity": "Select a native view, source signal, composition stage and backend with the"
+  }
+]

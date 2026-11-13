@@ -2,6 +2,17 @@
 
 Read the [release preflight](release-preflight.md) before every new run. The baseline for this guide is the inspected FrameRudiments **0.4.0** release, not a promise that the version will stay latest. Use the [indexed released references](../capabilities/framerudiments.md) for exact option names and every documented feature. Keep music analysis in StemLab, native movement in DanceRudiments, web playback in DanceMoves and timeline mechanics in React Timeline Sequence.
 
+## Choose rendering and visualisation features
+
+For new or materially revised offline renders, use
+`Workflows/framerudiments-rendering-features.md`. Match the intended image to
+the installed native renderer, source signal, effect stage and backend.
+Consider procedural or recorded motion, calibrated spectra, sprite and 3D
+views, rich lyrics, graph transitions and warps, or sequential preset feedback
+as the scene calls for them. Preflight the chosen route and verify the exact
+encode. Use DanceMoves for live effects and playback.
+[WorkflowMoves feature guide](https://github.com/kieransimkin/WorkflowMoves/blob/main/workflows/framerudiments-rendering-features.md).
+
 ## Choose inputs and clocks first
 
 Hash the authorised source audio, artwork, fonts, lyrics, cues and recordings. Reuse saved StemLab analyses. Accepted `stemlab.loops.v1` IDs can supply sample-exact clip bounds; exploratory cuts need independent review. A native `dancerudiments.recording` is bounded captured data, not a looping procedural pattern. A calibrated Fourier recording is required for spectral displays; generic motion values are not spectrum measurements.

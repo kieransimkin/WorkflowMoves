@@ -60,6 +60,9 @@ Use [FrameRudiments rendering](framerudiments-rendering.md) and [preset profilin
 Use [motion diagnosis](render-motion-diagnosis.md) for a render whose encoded
 cadence passes but whose movement looks stepped, flickery or smeared.
 
+Select a native view, source signal, composition stage and backend with the
+[rendering and visualisation feature guide](framerudiments-rendering-features.md).
+
 ### DanceMoves
 
 Attach live web effects to a verified playback/input owner. [Native commands and examples](https://github.com/kieransimkin/WorkflowMoves/blob/v0.1.41/workflows/danceflow/capabilities/dancemoves.md).
