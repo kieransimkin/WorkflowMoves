@@ -1,3 +1,11 @@
+# WorkflowMoves v0.1.63
+
+Adds a rendered-motion diagnosis skill and workflow with a reproducible
+60 fps comparison. Encoded verification now covers visualiser visibility
+and pre-effect, post-effect and decoded checkpoints. It also covers wrapper
+errors after encoding and independent scene diagnostics that encounter the
+same failed prerequisite.
+
 # WorkflowMoves v0.1.62
 
 Preflight custom caption adapters across clear events, fully faded frames and

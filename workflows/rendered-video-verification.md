@@ -31,6 +31,15 @@ Keep a progressing job with its current owner. For a real failure, retain the er
 | Encoding completed and an owned verifier failed or wedged. | Identify its exact phase. After confirming exit and a finalized, stable file, run the maintained verifier on the file or a hash-verified copy in a healthy location. Preserve the original failure and require fresh passing evidence. The presence of an MP4 alone leaves review on hold. |
 | The requested change alters the prepared project or a dependency. | Treat it as a [new revision](rendered-video-revision.md). Determine the affected range and temporal dependencies before deciding whether any existing video can be reused. |
 
+When a run reports a wrapper error after encoding, locate the first failed
+stage in the native receipts. Read the file, chunk and QA states alongside the
+wrapper exit. A failed cleanup can coexist with an intact encoded file, which
+still needs its own passing QA before delivery. If authorised independent scene
+diagnostics share a failing prerequisite, stop that diagnostic batch once the
+same failure is established. Keep any independently rendered scenes separate
+from the continuous candidate. A reset feedback scene cannot establish the
+state it would have inherited in the continuous film.
+
 Keep the original composition/runtime identity in the receipt. If a newer tool
 performs assembly or verification, record that version and the specific
 operation separately. See the [released FrameRudiments chunking and cache contract](https://github.com/kieransimkin/FrameRudiments/blob/v0.4.28/docs/chunked-rendering.md).
@@ -66,11 +75,38 @@ Use actual decoded frames from the exact final file, not composition previews. I
 
 Inspect at native size and phone size. Check title/artist identity, canonical words and punctuation, contrast, safe areas, faces, sprite alpha edges and the ending. A contact sheet supports sampled visual review, not continuous-motion or attended-listening approval. Inspect real destination overlays and the exact native upload preview before scheduling; an offline text rectangle alone does not prove platform fit.
 
+For a centred caption panel, compare the panel centre with the painted ink,
+stroke and shadow of the complete wrapped block. Nominal line heights can
+leave the visible text high or low. Verify short, long and wrapped states
+in decoded frames after changing alignment.
+
 Eight-source-time shutter integration can blend adjacent lyric states in a boundary frame. Inspect the actual preceding/onset/following frames and record the observed behaviour; do not silently move canonical onsets or call a sampled blend an unrelated text corruption.
 
 Check transformed bounds for each moving prop. Reports may contain only the visible intersection with the canvas, so an extent ending at canvas width does not prove the whole transformed sprite stayed inside. Document deliberate exits by layer, interval and direction, and inspect encoded entry/tip/fall/exit points. Distinguish intended canvas exits from accidental clipping of faces, lyrics or artwork. Do not turn one creative exit into a general clipping exception.
 
 For contained effects, compare actual pre/post-effect checkpoint pairs and the encoded result. Measure the declared region and representative outside regions, retaining frame, pixel coordinates, scale and differences. Composition, supersampling and antialiasing can affect comparisons; do not claim outside-region stability or musical response merely from loading a shader or recording its configuration.
+
+### Prove visualiser routing in the encoded output
+
+Record the expected input, clean overlay and visibility window for each
+important layer. When an element must stay readable through a beat reveal,
+inspect it before, at and after that reveal. Check the count and shape of
+required foreground elements as well as the changing effect. A layer that
+exists in the project may still be occluded or visible only inside feedback.
+
+In FrameRudiments 0.4.29, `qa/composed-*` is captured before optional
+visualiser processing. `qa/source-*` is captured after processing and final
+antialiasing, before encoding. `qa/encoded-*` comes from the decoded video.
+Use the installed version's capture order to label evidence. Match those
+checkpoints by frame index, then play the sequential encoded transition.
+If the routing is correct but the motion looks jerky, follow the
+[motion diagnosis workflow](render-motion-diagnosis.md).
+
+When the visualiser should reveal a plate, check the stage's output alpha,
+matte or opacity. Opaque black can still hide the plate. Inspect the
+beginning, middle and end of the transition and the layers that should stay
+outside the effect. The [native underlay comparison](https://github.com/kieransimkin/FrameRudiments/blob/v0.4.29/docs/visualisers.md#isolated-underlay)
+includes sampled composition checkpoints and a two-second synthetic encode.
 
 ## Keep canonical caption exports
 

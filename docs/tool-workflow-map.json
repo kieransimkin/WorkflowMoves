@@ -65,6 +65,7 @@
         "workflows/framerudiments-rendering.md",
         "workflows/framerudiments-preset-profiling.md",
         "workflows/lyric-timing-review.md",
+        "workflows/render-motion-diagnosis.md",
         "workflows/rendered-video-revision.md",
         "workflows/rendered-video-verification.md"
       ],
@@ -78,6 +79,7 @@
       ],
       "acceptance": [
         "Decode actual final bytes and inspect first frames, captions, crop, loop and soundtrack mapping",
+        "Compare decoded object motion with the native source-time trajectory when the output looks stepped",
         "For feedback, replay preceding frames and compare programme, silence and probe conditions",
         "For a bounded splice, verify decoded seams and any retained picture and soundtrack against the parent"
       ],

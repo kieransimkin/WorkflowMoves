@@ -74,6 +74,14 @@ framerudiments preflight release/project.json --output release/preflight --ffmpe
 framerudiments render release/project.json --output release/render --ffmpeg /path/ffmpeg
 ```
 
+## Diagnose motion and effect visibility
+
+Use `Workflows/render-motion-diagnosis.md` or `diagnose-rendered-video-motion`
+when the encoded cadence passes but a layer looks stepped, flickery or
+smeared. For a missing effect or hidden foreground, use the
+[visualiser routing checks](https://github.com/kieransimkin/WorkflowMoves/blob/main/workflows/rendered-video-verification.md#prove-visualiser-routing-in-the-encoded-output)
+to identify pre-effect, post-effect and decoded checkpoints.
+
 ## Choose foreground or operating-system render ownership
 
 Classify the render once before production encoding. Use an operating-system

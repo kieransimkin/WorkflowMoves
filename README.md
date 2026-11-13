@@ -69,6 +69,13 @@ Preview `python install.py --root WORKSPACE --routes hashtag-routes.json --check
 
 ## Review, revise and verify music videos
 
+[Diagnose rendered video motion](workflows/render-motion-diagnosis.md) follows
+a jerky or flickering layer from its source-time pose through visualiser
+processing and the final decode. It includes a 60 fps motion comparison and
+a [focused skill](skills/diagnose-rendered-video-motion/SKILL.md). Preview
+`python install.py --root WORKSPACE --routes render-motion-diagnosis-routes.json --check`
+to add the guide, media and entry points to existing render instructions.
+
 [Review lyric timing](workflows/lyric-timing-review.md) covers provisional LRCs, flagged listening windows and adoption of corrected timestamps. [Revise a rendered video](workflows/rendered-video-revision.md) uses bounded auditions, feedback-aware revision boundaries and a synthetic splice demo with independently verified audio and video. Both have [lyric review](skills/review-lyric-timing/SKILL.md) and [video revision](skills/revise-rendered-music-video/SKILL.md) skill entry points.
 
 Preview `python install.py --root WORKSPACE --routes video-production-review-routes.json --check`. The focused route adds both guides, skills and demonstration media, with short pointers in the existing render and Short guides and rendering skill. Use the package guides directly if those destination files are absent.

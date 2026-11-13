@@ -1,0 +1,60 @@
+[
+  {
+    "target": "Workflows/render-motion-diagnosis.md",
+    "source": "workflows/render-motion-diagnosis.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/render-motion-comparison.png",
+    "source": "workflows/media/render-motion-comparison.png",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/render-motion-comparison.mp4",
+    "source": "workflows/media/render-motion-comparison.mp4",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/render-motion-comparison.json",
+    "source": "workflows/media/render-motion-comparison.json",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/diagnose-rendered-video-motion/SKILL.md",
+    "source": "skills/diagnose-rendered-video-motion/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/diagnose-rendered-video-motion/SKILL.md",
+    "source": "skills/diagnose-rendered-video-motion/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/framerudiments-rendering.md",
+    "source": "fragments/render-motion-diagnosis.md",
+    "mode": "insert",
+    "anchor": "## Choose foreground or operating-system render ownership",
+    "identity": "## Diagnose motion and effect visibility"
+  },
+  {
+    "target": "Workflows/SHORT-FORM-VIDEO-WORKFLOW.md",
+    "source": "fragments/render-motion-diagnosis.md",
+    "mode": "insert",
+    "anchor": "## Acceptance checklist",
+    "identity": "## Diagnose motion and effect visibility"
+  },
+  {
+    "target": "skill-source/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/render-motion-diagnosis.md",
+    "mode": "insert",
+    "anchor": "## Establish timing authority",
+    "identity": "## Diagnose motion and effect visibility"
+  },
+  {
+    "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
+    "source": "fragments/render-motion-diagnosis.md",
+    "mode": "insert",
+    "anchor": "## Establish timing authority",
+    "identity": "## Diagnose motion and effect visibility"
+  }
+]
