@@ -38,6 +38,20 @@ check temporal dependencies and verify any retained footage and audio. The
 `review-lyric-timing` and `revise-rendered-music-video` skills provide the
 corresponding entry points.
 
+### Preflight caption clears and gaps
+
+Include a captioned frame, a clear or fully faded frame, and the next lyric
+entry when calibrating a custom caption adapter. Include an instrumental
+section or fade tail if it takes a different code path. In a FrameRudiments
+compositor override, return an iterable of painted bounds. Return an empty
+tuple or list when the adapter paints nothing. A `None` return reaches the
+compositor's bounds collector and can stop an otherwise healthy full render.
+
+Check the actual production adapter at the planned output dimensions and
+temporal sampling. Require the correct caption before and after the gap,
+no residual painted bounds in the clear state, and a passing bounded encode.
+A preview drawn entirely inside a lyric line leaves this case untested.
+
 ### Plan title and lyric placement before making plates
 
 For a new illustrated scene, choose the delivery aspect ratios and resolve
