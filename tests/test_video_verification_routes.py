@@ -75,11 +75,12 @@ class VideoVerificationRoutes(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             workspace = Path(tmp)
             self.fixture(workspace)
-            legacy = [row for row in self.routes if row.get("previous_source")]
+            legacy = [row for row in self.routes if row.get("previous_source") or row.get("previous_sources")]
             for row in legacy:
                 target = workspace / row["target"]
                 target.parent.mkdir(parents=True, exist_ok=True)
-                target.write_bytes((ROOT / row["previous_source"]).read_bytes())
+                predecessor = row["previous_sources"][-1] if "previous_sources" in row else row["previous_source"]
+                target.write_bytes((ROOT / predecessor).read_bytes())
             installer.install(workspace, ROOT, manifest="video-verification-routes.json")
             for row in legacy:
                 self.assertEqual(

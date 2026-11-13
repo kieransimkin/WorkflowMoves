@@ -1,0 +1,11 @@
+{
+  "renderer": "0.4.29",
+  "frames": 120,
+  "fps": 60,
+  "adjacent_pairs": 119,
+  "held_pose_pairs": 56,
+  "interpolated_pose_pairs": 0,
+  "centroid_hold_threshold_px": 0.75,
+  "full_decode_and_native_cfr": "passed",
+  "video_sha256": "7cd6d3f78ad8fc87c12d75b4ccd2baf394f3bee22864087ccb85db8069f7b20a"
+}

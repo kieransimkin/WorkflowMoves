@@ -57,6 +57,9 @@ Compose a deterministic offline video or bounded preset experiment. [Native comm
 
 Use [FrameRudiments rendering](framerudiments-rendering.md) and [preset profiling](framerudiments-preset-profiling.md). Follow [lyric timing review](lyric-timing-review.md) for an estimated or corrected LRC, [video revision](rendered-video-revision.md) for changes to an existing film and [encoded verification](rendered-video-verification.md) for recovery and final QA.
 
+Use [motion diagnosis](render-motion-diagnosis.md) for a render whose encoded
+cadence passes but whose movement looks stepped, flickery or smeared.
+
 ### DanceMoves
 
 Attach live web effects to a verified playback/input owner. [Native commands and examples](https://github.com/kieransimkin/WorkflowMoves/blob/v0.1.41/workflows/danceflow/capabilities/dancemoves.md).
