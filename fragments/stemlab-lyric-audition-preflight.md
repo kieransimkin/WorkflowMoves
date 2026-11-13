@@ -4,7 +4,7 @@ Check the current stable release and the actual imported runtime before starting
 StemLab 1.14.1 exposes the released word ensemble and display review commands.
 Use the installed `Tools/StemLab.ps1` if it imports the verified release and shows
 both commands. An older environment needs the matching official package.
-[Release and distribution](https://github.com/kieransimkin/stemlab/releases/tag/v1.14.1)
+[Current My Songs launcher release](https://github.com/kieransimkin/stemlab/releases/tag/v1.14.2)
 
 Use the [released line gates](https://github.com/kieransimkin/stemlab/blob/v1.14.1/docs/lyric-line-gates.md)
 for `python -m stemlab.lyric_batch`, optional `stemlab.lyric_acoustic` and explicit

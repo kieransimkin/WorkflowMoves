@@ -30,7 +30,7 @@ canonical lyrics, and saved word evidence from the master or full-length
 stems verified against its clock.
 
 The My Songs launcher uses its existing Python 3.11 analysis environment and
-the verified versioned wheel under `Tools/stemlab/models/runtimes/stemlab-1.14.1`.
+the verified versioned wheel under `Tools/stemlab/models/runtimes/stemlab-1.14.2`.
 Install the matching official distribution and confirm the imported version
 before applying the launcher update. On other installations, use the
 verified `stemlab` executable in the chosen environment.
@@ -67,31 +67,22 @@ stemlab lyric-ensemble request.json --master master.wav --output ensemble-review
 For singing activity, use the optional FireRed adapter on a verified audio
 view or saved analysis. Retain `events.json` and `activity-scores.npz` with their
 source mapping. Its 10 ms score spacing describes sampling, while its detected
-events can span multiple words. In StemLab 1.14.1 the command-line evidence
-model-path and backend-Python options validate against the MIDI model list,
-which rejects FireRed and Qwen overrides. Use the released Python evidence API
-for a local override on this version. Provision the model under the owning
-project's ignored `models/` and install its dependencies in the worker
-interpreter, which starts in Python isolation mode.
+events can span multiple words. Provision the model under the owning project's
+ignored `models/` and install its dependencies in the worker interpreter,
+which starts in Python isolation mode. Use StemLab 1.14.2 or later for the
+evidence model-path and backend-Python CLI options.
 
-```python
-from pathlib import Path
-from stemlab.analysis.evidence import EvidenceConfig, analyze_path
-
-config = EvidenceConfig(
-    models=("firered_aed",),
-    model_paths={"firered_aed": str(Path("models/FireRedVAD/AED").resolve())},
-    backend_pythons={"firered_aed": str(Path("/path/to/worker/python").resolve())},
-    device="cpu",
-)
-analyze_path(Path("vocals.wav"), Path("singing-activity"), config=config)
+```powershell
+stemlab evidence vocals.wav --output singing-activity --model firered_aed --device cpu `
+  --model-path "firered_aed=models/FireRedVAD/AED" `
+  --backend-python "firered_aed=PATH_TO_WORKER_PYTHON"
 ```
 
 The command combines existing observations. Decode the required audio views
 before assembling the request. It selects observed edges and keeps alternatives
 and untimed rows. Keep the master, saved inference and approved timing untouched.
 [Tagged request and CTC instructions](https://github.com/kieransimkin/stemlab/blob/v1.14.1/docs/lyric-boundaries.md)
-· [Tagged FireRed and pitch routes](https://github.com/kieransimkin/stemlab/blob/v1.14.1/docs/evidence-models.md)
+· [Tagged FireRed and pitch routes](https://github.com/kieransimkin/stemlab/blob/v1.14.2/docs/evidence-models.md)
 
 ![Actual synthetic crop-test output showing an estimate moving with the crop while the selected onset stays fixed](https://kieransimkin.co.uk/wp-content/uploads/2026/11/crop-stability-demo-still.png)
 
@@ -192,6 +183,9 @@ requests a clearly marked draft.
 - **A timestamp moves when its crop moves.** Retain both native-frame estimates
   and the crop check in the draft. Give the occurrence more verified context
   or audition it with another model family.
+- **FireRed or Qwen rejects a valid local model override.** Check the imported
+  StemLab version. The CLI in 1.14.1 checked the MIDI model list. Use 1.14.2
+  or the 1.14.1 Python evidence API with an isolated worker environment.
 - **A line stays up after singing ends.** Preserve the display clear and the
   final word release as separate times. Compare the LRC against display
   proposals and keep word evidence on the master clock.

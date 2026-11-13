@@ -94,7 +94,7 @@ the lyric guide covers source-bound word ensembles, crop checks, singing
 activity, and separate acoustic and display timings. Preview
 `python install.py --root WORKSPACE --routes stemlab-word-timing-routes.json --check`
 to apply the focused guide, skill, launcher and workflow pointers. Provision
-the verified 1.14.1 package in the launcher's versioned runtime first.
+the verified 1.14.2 package in the launcher's versioned runtime first.
 
 Preview `python install.py --root WORKSPACE --routes video-production-review-routes.json --check`. The focused route adds both guides, skills and demonstration media, with short pointers in the existing render and Short guides and rendering skill. Use the package guides directly if those destination files are absent.
 
@@ -137,7 +137,7 @@ The repository includes real or generated media beside the relevant guides. The 
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-The current StemLab launcher expects a separately provisioned 1.14.1 wheel
+The current StemLab launcher expects a separately provisioned 1.14.2 wheel
 and Python environment. Verify the imported runtime for the selected workflow.
 
 On Windows, run the Python contracts through `powershell -File scripts/Invoke-Tests.ps1`. It probes a unique project-scoped LocalAppData directory, redirects `TEMP`, `TMP` and `TMPDIR` for the run, and removes that exact directory afterward. GitHub CI remains the release-wide Linux authority.

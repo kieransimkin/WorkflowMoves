@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 $stemlabProject = Join-Path $PSScriptRoot 'stemlab'
 $stemlabRuntime = Join-Path $stemlabProject '.venv-beats-311/Scripts/python.exe'
 $stemlabModels = Join-Path $stemlabProject 'models'
-$stemlabVersion = '1.14.1'
+$stemlabVersion = '1.14.2'
 $stemlabSource = Join-Path $stemlabModels "runtimes/stemlab-$stemlabVersion"
 if (-not (Test-Path -LiteralPath $stemlabRuntime -PathType Leaf) -or
     -not (Test-Path -LiteralPath (Join-Path $stemlabSource 'stemlab/__init__.py') -PathType Leaf)) {
