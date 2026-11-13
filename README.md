@@ -67,7 +67,11 @@ Preview `python install.py --root WORKSPACE --routes hashtag-routes.json --check
 
 ![Hashtag discovery, review and final-copy contract, generated diagram](docs/media/hashtag-planner.svg)
 
-## Exact rendered-video verification
+## Review, revise and verify music videos
+
+[Review lyric timing](workflows/lyric-timing-review.md) covers provisional LRCs, flagged listening windows and adoption of corrected timestamps. [Revise a rendered video](workflows/rendered-video-revision.md) uses bounded auditions, feedback-aware revision boundaries and a synthetic splice demo with independently verified audio and video. Both have [lyric review](skills/review-lyric-timing/SKILL.md) and [video revision](skills/revise-rendered-music-video/SKILL.md) skill entry points.
+
+Preview `python install.py --root WORKSPACE --routes video-production-review-routes.json --check`. The focused route adds both guides, skills and demonstration media, with short pointers in the existing render and Short guides and rendering skill. Use the package guides directly if those destination files are absent.
 
 The [encoded-video verification workflow](workflows/rendered-video-verification.md) and focused [verification skill](skills/verify-rendered-music-video/SKILL.md) separate slow native finalisation from a failed render, then bind technical, encoded visual, motion, listening and publication evidence to one exact file. They preserve frozen inputs, native health, full decode/CFR/sample mapping, intended sprite exits, caption derivatives and final quality. Resource observations remain hypotheses rather than invented OS diagnoses.
 

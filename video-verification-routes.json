@@ -2,7 +2,8 @@
   {
     "target": "Workflows/rendered-video-verification.md",
     "source": "workflows/rendered-video-verification.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.60/rendered-video-verification.md"
   },
   {
     "target": "Workflows/media/rendered-video-verification.svg",
@@ -12,12 +13,14 @@
   {
     "target": "skill-source/verify-rendered-music-video/SKILL.md",
     "source": "skills/verify-rendered-music-video/SKILL.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.60/verify-rendered-music-video.md"
   },
   {
     "target": ".agents/skills/verify-rendered-music-video/SKILL.md",
     "source": "skills/verify-rendered-music-video/SKILL.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.60/verify-rendered-music-video.md"
   },
   {
     "target": "skill-source/render-bpm-cue-videos/SKILL.md",

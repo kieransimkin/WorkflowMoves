@@ -29,6 +29,29 @@ DanceMoves. Preserve a historical generator when reproducing an approved film.
    caption ledger, alpha bounds, full decode and CFR evidence. Publication and
    EPK reconciliation remain later actions under their own authorised workflows.
 
+## Review lyric timing and revisions
+
+Use [lyric timing review](lyric-timing-review.md) when the wording is known and
+the timestamps are estimated or awaiting correction. For changes to a rendered
+video, use [video revision](rendered-video-revision.md) to choose the audition,
+check temporal dependencies and verify any retained footage and audio. The
+`review-lyric-timing` and `revise-rendered-music-video` skills provide the
+corresponding entry points.
+
+### Plan title and lyric placement before making plates
+
+For a new illustrated scene, choose the delivery aspect ratios and resolve
+where text needs to stay readable through the proposed crop and camera motion.
+Reserve quiet areas in the artwork and add the typography as its own layer.
+Keep lyrics outside any distortion that makes them hard to read, unless the
+brief calls for a specific processed treatment. Preflight long lines, the
+opening title/artist/lyric combination, and motion extremes at delivery size
+and phone size. Measure painted glyphs, stroke and shadow. For short-form
+delivery, check each applicable placement's current overlay and exact native
+preview. Reflow the portrait composition where a landscape crop loses
+required content. Size the source plate for the maximum crop and push-in, and
+record source upscaling separately from native output composition.
+
 Portable CLI examples (replace paths with pinned authorised inputs):
 
 ```sh
@@ -83,6 +106,10 @@ unrelated work and after handoff. Successful jobs remove their cache. Interrupte
 jobs retain evidence/recovery state but release reservations; inspect ownership
 and resume state rather than deleting them. During active work, read only
 `work-cache.json` and `render/render-progress.json` at their heartbeat cadence.
+
+After an interrupted encode, failed assembly or failed verifier, follow
+[encoded video verification](rendered-video-verification.md#recover-only-the-failed-stage).
+An all-frames-encoded progress report can precede assembly and QA failure.
 
 For a qualifying background job, verify Task Scheduler/service ancestry and
 retain the task identity, launch time, run directory, worker PID, frozen inputs,

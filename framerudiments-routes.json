@@ -3,7 +3,10 @@
     "target": "Workflows/framerudiments-rendering.md",
     "source": "workflows/framerudiments-rendering.md",
     "mode": "copy",
-    "previous_source": "previous/0.1.28/workflows/framerudiments-rendering.md"
+    "previous_sources": [
+      "previous/0.1.28/workflows/framerudiments-rendering.md",
+      "previous/0.1.60/framerudiments-rendering.md"
+    ]
   },
   {
     "target": "skill-source/render-bpm-cue-videos/SKILL.md",
