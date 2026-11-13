@@ -1,0 +1,15 @@
+{
+  "renderer": "0.4.29",
+  "ffmpeg": "ffmpeg version 9.0.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "prior_video_sha256": "90c977faccc0c5e89b36bf2353c5dcf6a790066332e76537305ba5537813be43",
+  "current_video_sha256": "7ac17f17d21da1ae9fb96b613a6cc0200730cd99a89f33a206a151727fe0ac95",
+  "frames": 120,
+  "last_decoded_frame": 119,
+  "last_decoded_video_time": "1.983333",
+  "unguarded_seek_exit_code": 0,
+  "unguarded_seek_empty_output": true,
+  "guarded_seek_failed": true,
+  "stale_png_sha256": "0bdafcf4b04116fe89008765085f2654a6f120cb5d1eec517c0cd4758874cc92",
+  "fresh_png_sha256": "ad947b8ca6bce7a2ec40856c75f03cc6169611008e1a226915e3ff6ac09f1e29",
+  "comparison_png_sha256": "7a968332d319bd9d0536a3c6b91930f04787e94c6e253454f34cfd680b3b4719"
+}

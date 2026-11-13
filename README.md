@@ -82,7 +82,9 @@ Preview `python install.py --root WORKSPACE --routes video-production-review-rou
 
 The [encoded-video verification workflow](workflows/rendered-video-verification.md) and focused [verification skill](skills/verify-rendered-music-video/SKILL.md) separate slow native finalisation from a failed render, then bind technical, encoded visual, motion, listening and publication evidence to one exact file. They preserve frozen inputs, native health, full decode/CFR/sample mapping, intended sprite exits, caption derivatives and final quality. Resource observations remain hypotheses rather than invented OS diagnoses.
 
-Preview `python install.py --root WORKSPACE --routes video-verification-routes.json --check`, inspect all eight targets, apply that same focused manifest only to the intended workspace and require a repeat preview to be current. The routes install the guide, explanatory illustration and focused skill, and add a small pointer to existing rendering skill/reference entrypoints. Private media, scheduler definitions and operational receipts stay outside this package. Native source/public pipeline examples have explicit version and evidence limits.
+[Bind decoded checks to the current encode](workflows/rendered-video-verification.md#bind-decoded-checkpoints-to-the-current-encode) includes a synthetic demonstration of a stale ending still, exact-frame extraction and loop endpoint checks. The same workflow covers reduced-motion variants and the separation of performed captions from editorial overlays.
+
+Preview `python install.py --root WORKSPACE --routes video-verification-routes.json --check`, inspect all eleven targets, apply that same focused manifest only to the intended workspace and require a repeat preview to be current. The routes install the guide, its media and focused skill, with a pointer in the existing rendering skill and references. Private media, scheduler definitions and operational receipts stay outside the package.
 
 ## Start here
 

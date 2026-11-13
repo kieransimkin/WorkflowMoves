@@ -5,7 +5,8 @@
     "mode": "copy",
     "previous_sources": [
       "previous/0.1.60/rendered-video-verification.md",
-      "previous/0.1.62/rendered-video-verification.md"
+      "previous/0.1.62/rendered-video-verification.md",
+      "previous/0.1.63/rendered-video-verification.md"
     ]
   },
   {
@@ -14,16 +15,37 @@
     "mode": "copy"
   },
   {
+    "target": "Workflows/media/ending-frame-comparison.png",
+    "source": "workflows/media/ending-frame-comparison.png",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/ending-frame-demo.mp4",
+    "source": "workflows/media/ending-frame-demo.mp4",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/ending-frame-evidence.json",
+    "source": "workflows/media/ending-frame-evidence.json",
+    "mode": "copy"
+  },
+  {
     "target": "skill-source/verify-rendered-music-video/SKILL.md",
     "source": "skills/verify-rendered-music-video/SKILL.md",
     "mode": "copy",
-    "previous_source": "previous/0.1.60/verify-rendered-music-video.md"
+    "previous_sources": [
+      "previous/0.1.60/verify-rendered-music-video.md",
+      "previous/0.1.63/verify-rendered-music-video.md"
+    ]
   },
   {
     "target": ".agents/skills/verify-rendered-music-video/SKILL.md",
     "source": "skills/verify-rendered-music-video/SKILL.md",
     "mode": "copy",
-    "previous_source": "previous/0.1.60/verify-rendered-music-video.md"
+    "previous_sources": [
+      "previous/0.1.60/verify-rendered-music-video.md",
+      "previous/0.1.63/verify-rendered-music-video.md"
+    ]
   },
   {
     "target": "skill-source/render-bpm-cue-videos/SKILL.md",

@@ -75,6 +75,55 @@ Use actual decoded frames from the exact final file, not composition previews. I
 
 Inspect at native size and phone size. Check title/artist identity, canonical words and punctuation, contrast, safe areas, faces, sprite alpha edges and the ending. A contact sheet supports sampled visual review, not continuous-motion or attended-listening approval. Inspect real destination overlays and the exact native upload preview before scheduling; an offline text rectangle alone does not prove platform fit.
 
+### Bind decoded checkpoints to the current encode
+
+1. Pin the encoded file by hash. Request checkpoints by zero-based decoded
+   frame index, including frame zero and the last verified video frame. Use
+   FrameRudiments' native encoded checkpoints when they cover the request.
+   For a custom extraction, create a fresh output directory for that file and
+   request the exact indices with frame sync set to passthrough.
+2. Require the requested count, readable images and a mapping from image to
+   encoded file hash, frame index and video presentation timestamp. Hash any
+   stills that will be reused. Build the contact sheet from that list after
+   checking the images. Reuse a prior sheet only when its source and image
+   hashes and checkpoint mapping still match.
+3. Use the actual decoded frame table for variable-rate, offset or rounded
+   streams. For a zero-based CFR encode of N frames at rate f, the last
+   picture starts at (N − 1) / f seconds. A visual cycle of N output frames
+   reaches its endpoint at N / f. Check the expected phase step over the
+   wrap and watch the repeated encoded seam with audio. The first and last
+   stills can differ by one frame of expected motion.
+
+A seek near the container's end can return zero without writing a single
+image. A previously existing PNG at that path may survive unchanged. Treat
+an end-relative seek as a tail sample until its decoded index is established.
+The following command extracts frame 119 from a verified 120-frame file.
+Create the destination directory before running it.
+
+```sh
+ffmpeg -n -nostdin -v error -xerror -abort_on empty_output_stream -i verified.mp4 -map 0:v:0 -vf "select=eq(n\,119)" -fps_mode passthrough -frames:v 1 -update 1 fresh-qa/encoded-00000119.png
+```
+
+Use the verified local executable directly if a shell shim fails. Check
+FFmpeg and FFprobe identities independently when the utilities come from
+different installs. For syntax and output handling see the [FFmpeg command
+reference](https://ffmpeg.org/ffmpeg.html) and [select filter reference](https://ffmpeg.org/ffmpeg-filters.html#select_002c-aselect).
+
+![A stale still titled Prior ending beside frame 119 from the exact Current ending encode](media/ending-frame-comparison.png)
+
+The synthetic 60 fps fixture reproduced exit code zero with an unchanged
+PNG after a seek within five milliseconds of the end. The last video frame
+started at 1.983333 seconds. A guarded empty extraction failed and an exact
+index extraction wrote the current ending. [Play the current two-second encode](media/ending-frame-demo.mp4) · [Verification receipt](media/ending-frame-evidence.json) · [Reproduction source](https://github.com/kieransimkin/WorkflowMoves/blob/main/examples/verify-ending-frames.py)
+
+If a new derivative takes visual cues from a finished edit, sample the
+approved edit in sequence and around the relevant transitions. Record
+decoded frame identity or the approximate time shown by the published player.
+Use the asset inventory to trace provenance and the finished frames to show
+what appeared. One still supports a claim about that moment alone.
+
+### Check captions, prop bounds and effect regions
+
 For a centred caption panel, compare the panel centre with the painted ink,
 stroke and shadow of the complete wrapped block. Nominal line heights can
 leave the visible text high or low. Verify short, long and wrapped states
@@ -108,9 +157,28 @@ beginning, middle and end of the transition and the layers that should stay
 outside the effect. The [native underlay comparison](https://github.com/kieransimkin/FrameRudiments/blob/v0.4.29/docs/visualisers.md#isolated-underlay)
 includes sampled composition checkpoints and a two-second synthetic encode.
 
+### Check planned motion variants
+
+When a brief calls for a reduced-motion export, keep the intended audio
+interval, information, lyric order and cue mapping consistent across the
+standard and reduced-motion versions. Where both use the same layout, keep
+their text timing aligned. Compare the decoded opening, maximum movement,
+caption changes and ending at phone size. Verify readable information in the
+static treatment and record the separate hashes and review status of both
+files. Keep the destination's accessibility and publication review with the
+exact variant being delivered.
+
 ## Keep canonical caption exports
 
 Retain native SRT/ASS and the native frame ledger. If a destination displays HTML-escaped apostrophes literally, create a separately named upload SRT by unescaping the native text. Verify its complete text and interval mapping against the canonical ledger/native export, hash it and retain both originals and derivative. Do not rewrite canonical words or treat a burned-in caption as proof that an attached subtitle file is correct.
+
+Verify the performed sequence before timing a long alignment that stacks
+many words or repeats the wrong chorus. Resolve omitted, reordered or
+substituted lines against the exact recorded arrangement with targeted
+listening, then retain the approved text and regenerate the dependent
+timings. Keep campaign slogans, release cards and other editorial overlays
+as separately identified visual events. Time the performed captions from
+the accepted recording and check their export against that lyric track.
 
 ## Deliver and continue without conflating states
 
