@@ -49,7 +49,8 @@ class FrameRudimentsFeatureRoutes(unittest.TestCase):
             baseline = PACKAGE / routes[0]["previous_source"]
             guide.write_bytes(baseline.read_bytes())
             upgraded = install.install(workspace, PACKAGE, manifest=MANIFEST)
-            self.assertEqual([row["target"] for row in upgraded if row["status"] == "updated"], [str(guide)])
+            changed = [Path(row["target"]) for row in upgraded if row["status"] == "updated"]
+            self.assertEqual(changed, [guide.resolve()])
             self.assertEqual(guide.read_bytes(), (PACKAGE / routes[0]["source"]).read_bytes())
 
 
