@@ -1,3 +1,9 @@
+# WorkflowMoves v0.1.62
+
+Preflight custom caption adapters across clear events, fully faded frames and
+the next lyric entry. Document the empty painted-bounds return for an
+unpainted frame and upgrade the existing video-production route in place.
+
 # WorkflowMoves v0.1.61
 
 Adds lyric timing review and bounded video revision workflows, with two

@@ -47,3 +47,28 @@ class VideoProductionReviewRoutes(unittest.TestCase):
                 self.assertGreater((workspace / "Workflows" / rel).stat().st_size, 1000)
             repeat = installer.install(workspace, ROOT, check=True, manifest=MANIFEST)
             self.assertTrue(all(item["status"] == "current" for item in repeat))
+
+    def test_upgrade_preserves_project_text_and_second_route(self):
+        routes = json.loads((ROOT / MANIFEST).read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp:
+            workspace = Path(tmp)
+            originals = {}
+            for row in routes:
+                if row["mode"] != "insert":
+                    continue
+                target = workspace / row["target"]
+                target.parent.mkdir(parents=True, exist_ok=True)
+                previous = (ROOT / row["previous_source"]).read_text(encoding="utf-8").strip()
+                before = "Project brief.\n\n"
+                after = "\n\nProject verification guidance.\n\n" + row["anchor"] + "\n"
+                originals[row["target"]] = (before, after)
+                target.write_bytes((before + previous + after).encode("utf-8"))
+
+            installer.install(workspace, ROOT, manifest=MANIFEST)
+            for row in routes:
+                if row["mode"] != "insert":
+                    continue
+                before, after = originals[row["target"]]
+                current = (ROOT / row["source"]).read_text(encoding="utf-8").strip()
+                actual = (workspace / row["target"]).read_bytes()
+                self.assertEqual(actual, (before + current + after).encode("utf-8"))

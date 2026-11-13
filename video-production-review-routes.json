@@ -44,27 +44,31 @@
     "source": "fragments/video-production-review.md",
     "mode": "insert",
     "anchor": "## Choose foreground or operating-system render ownership",
-    "identity": "## Review lyric timing and revisions"
+    "identity": "## Review lyric timing and revisions",
+    "previous_source": "previous/0.1.61/video-production-review.md"
   },
   {
     "target": "Workflows/SHORT-FORM-VIDEO-WORKFLOW.md",
     "source": "fragments/video-production-review.md",
     "mode": "insert",
     "anchor": "## Acceptance checklist",
-    "identity": "## Review lyric timing and revisions"
+    "identity": "## Review lyric timing and revisions",
+    "previous_source": "previous/0.1.61/video-production-review.md"
   },
   {
     "target": "skill-source/render-bpm-cue-videos/SKILL.md",
     "source": "fragments/video-production-skill.md",
     "mode": "insert",
     "anchor": "## Establish timing authority",
-    "identity": "## Review lyric timing and revisions"
+    "identity": "## Review lyric timing and revisions",
+    "previous_source": "previous/0.1.61/video-production-skill.md"
   },
   {
     "target": ".agents/skills/render-bpm-cue-videos/SKILL.md",
     "source": "fragments/video-production-skill.md",
     "mode": "insert",
     "anchor": "## Establish timing authority",
-    "identity": "## Review lyric timing and revisions"
+    "identity": "## Review lyric timing and revisions",
+    "previous_source": "previous/0.1.61/video-production-skill.md"
   }
 ]
