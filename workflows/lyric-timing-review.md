@@ -67,8 +67,25 @@ stemlab lyric-ensemble request.json --master master.wav --output ensemble-review
 For singing activity, use the optional FireRed adapter on a verified audio
 view or saved analysis. Retain `events.json` and `activity-scores.npz` with their
 source mapping. Its 10 ms score spacing describes sampling, while its detected
-events can span multiple words. Use the tagged model guide for the exact local
-checkpoint and optional backend environment.
+events can span multiple words. In StemLab 1.14.1 the command-line evidence
+model-path and backend-Python options validate against the MIDI model list,
+which rejects FireRed and Qwen overrides. Use the released Python evidence API
+for a local override on this version. Provision the model under the owning
+project's ignored `models/` and install its dependencies in the worker
+interpreter, which starts in Python isolation mode.
+
+```python
+from pathlib import Path
+from stemlab.analysis.evidence import EvidenceConfig, analyze_path
+
+config = EvidenceConfig(
+    models=("firered_aed",),
+    model_paths={"firered_aed": str(Path("models/FireRedVAD/AED").resolve())},
+    backend_pythons={"firered_aed": str(Path("/path/to/worker/python").resolve())},
+    device="cpu",
+)
+analyze_path(Path("vocals.wav"), Path("singing-activity"), config=config)
+```
 
 The command combines existing observations. Decode the required audio views
 before assembling the request. It selects observed edges and keeps alternatives
