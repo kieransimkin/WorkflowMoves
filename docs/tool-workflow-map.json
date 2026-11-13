@@ -63,6 +63,7 @@
       "workflows": [
         "workflows/ecosystem-tool-workflows.md",
         "workflows/framerudiments-rendering.md",
+        "workflows/framerudiments-rendering-features.md",
         "workflows/framerudiments-preset-profiling.md",
         "workflows/lyric-timing-review.md",
         "workflows/render-motion-diagnosis.md",

@@ -1,3 +1,13 @@
+# WorkflowMoves v0.1.65
+
+Choose FrameRudiments rendering and visualisation features from the installed
+registry and exact source signal. The new guide connects native motion,
+calibrated spectra, sprite and 3D views, word lyrics, compositing, transitions,
+warps and feedback presets to representative preflight and encoded QA.
+It covers 0.4.32 GPU qualification, precision fallback, target reuse and
+last-subframe evidence. Scoped routes add the guide to My Songs workflows
+and skills, and the workflow map exposes it to DanceFlow discovery.
+
 # WorkflowMoves v0.1.64
 
 Bind decoded checkpoints to the current encode and check the exact last

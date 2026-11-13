@@ -2,6 +2,17 @@
 
 Audited 23 October 2026: **v0.4.7**, exact source [`abf7217bb8199b1d091b7d109ddea06484ae249f`](https://github.com/kieransimkin/FrameRudiments/tree/abf7217bb8199b1d091b7d109ddea06484ae249f). This is a dated source/documentation audit, not installed-runtime or end-to-end acceptance. [Check current releases before use](../workflows/release-preflight.md).
 
+## Choose rendering and visualisation features
+
+For new or materially revised offline renders, use
+`Workflows/framerudiments-rendering-features.md`. Match the intended image to
+the installed native renderer, source signal, effect stage and backend.
+Consider procedural or recorded motion, calibrated spectra, sprite and 3D
+views, rich lyrics, graph transitions and warps, or sequential preset feedback
+as the scene calls for them. Preflight the chosen route and verify the exact
+encode. Use DanceMoves for live effects and playback.
+[WorkflowMoves feature guide](https://github.com/kieransimkin/WorkflowMoves/blob/main/workflows/framerudiments-rendering-features.md).
+
 ## Current README feature routes
 
 - [Complete x264 preset range](https://github.com/kieransimkin/FrameRudiments/blob/abf7217bb8199b1d091b7d109ddea06484ae249f/README.md#complete-x264-preset-range)

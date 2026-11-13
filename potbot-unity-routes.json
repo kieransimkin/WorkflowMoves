@@ -53,7 +53,8 @@
     "source": "workflows/danceflow/capabilities/framerudiments.md",
     "target": "Workflows/DanceFlow/capabilities/framerudiments.md",
     "mode": "copy",
-    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/framerudiments.md"
+    "previous_source": "previous/0.1.39/workflows/danceflow/capabilities/framerudiments.md",
+    "previous_sources": ["previous/0.1.64/framerudiments-capabilities.md"]
   },
   {
     "source": "workflows/danceflow/capabilities/index.md",

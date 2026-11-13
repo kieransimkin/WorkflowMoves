@@ -20,6 +20,17 @@ When final storage is contended, use FrameRudiments 0.4.14+'s working cache on a
 
 Shared instructions and prompt fragments make this policy available; their existence does not prove a running chat read them or a scheduled job ran. Keep cross-chat findings in private coordination records and preserve each job's original purpose.
 
+## Choose rendering and visualisation features
+
+For new or materially revised offline renders, use
+`Workflows/framerudiments-rendering-features.md`. Match the intended image to
+the installed native renderer, source signal, effect stage and backend.
+Consider procedural or recorded motion, calibrated spectra, sprite and 3D
+views, rich lyrics, graph transitions and warps, or sequential preset feedback
+as the scene calls for them. Preflight the chosen route and verify the exact
+encode. Use DanceMoves for live effects and playback.
+[WorkflowMoves feature guide](https://github.com/kieransimkin/WorkflowMoves/blob/main/workflows/framerudiments-rendering-features.md).
+
 ## Establish the capability plan
 
 Use the owning project's maintained DanceFlow ecosystem guide for membership. Review current released documentation, available commands/APIs, installed/imported runtime identity, reusable workflows and their Potential problems sections before selecting a route. Familiar entrypoints and loaded plugins do not represent the entire tool. Distinguish released, installed, served and merely staged capabilities; inspect tagged docs and feature coverage when release notes are sparse. Avoid historical checkout or policy-only release tags as runtime authority.

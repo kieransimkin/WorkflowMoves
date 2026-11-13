@@ -69,6 +69,17 @@ Preview `python install.py --root WORKSPACE --routes hashtag-routes.json --check
 
 ## Review, revise and verify music videos
 
+[Choose FrameRudiments rendering and visualisation features](workflows/framerudiments-rendering-features.md)
+maps the installed renderer, source signal and effect stage to the intended
+picture. It covers native motion, spectral and 3D views, lyrics, layered
+compositing, transitions, warps and feedback presets, with tagged examples
+and GPU acceptance. Preview
+`python install.py --root WORKSPACE --routes framerudiments-feature-routes.json --check`
+to add the guide and its entry points to existing render, Short, scheduled
+and live-motion workflows and skills. Use the video verification routes
+below for the effect-graph QA additions. Apply the scoped routes and verify
+a repeat preview is current. The guide is also usable directly from the package.
+
 [Diagnose rendered video motion](workflows/render-motion-diagnosis.md) follows
 a jerky or flickering layer from its source-time pose through visualiser
 processing and the final decode. It includes a 60 fps motion comparison and

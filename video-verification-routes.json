@@ -6,7 +6,8 @@
     "previous_sources": [
       "previous/0.1.60/rendered-video-verification.md",
       "previous/0.1.62/rendered-video-verification.md",
-      "previous/0.1.63/rendered-video-verification.md"
+      "previous/0.1.63/rendered-video-verification.md",
+      "previous/0.1.64/rendered-video-verification.md"
     ]
   },
   {
@@ -35,7 +36,8 @@
     "mode": "copy",
     "previous_sources": [
       "previous/0.1.60/verify-rendered-music-video.md",
-      "previous/0.1.63/verify-rendered-music-video.md"
+      "previous/0.1.63/verify-rendered-music-video.md",
+      "previous/0.1.64/verify-rendered-music-video.md"
     ]
   },
   {
@@ -44,7 +46,8 @@
     "mode": "copy",
     "previous_sources": [
       "previous/0.1.60/verify-rendered-music-video.md",
-      "previous/0.1.63/verify-rendered-music-video.md"
+      "previous/0.1.63/verify-rendered-music-video.md",
+      "previous/0.1.64/verify-rendered-music-video.md"
     ]
   },
   {
