@@ -89,6 +89,13 @@ to add the guide, media and entry points to existing render instructions.
 
 [Review lyric timing](workflows/lyric-timing-review.md) covers provisional LRCs, flagged listening windows and adoption of corrected timestamps. [Revise a rendered video](workflows/rendered-video-revision.md) uses bounded auditions, feedback-aware revision boundaries and a synthetic splice demo with independently verified audio and video. Both have [lyric review](skills/review-lyric-timing/SKILL.md) and [video revision](skills/revise-rendered-music-video/SKILL.md) skill entry points.
 
+With [StemLab 1.14.1](https://github.com/kieransimkin/stemlab/releases/tag/v1.14.1),
+the lyric guide covers source-bound word ensembles, crop checks, singing
+activity, and separate acoustic and display timings. Preview
+`python install.py --root WORKSPACE --routes stemlab-word-timing-routes.json --check`
+to apply the focused guide, skill, launcher and workflow pointers. Provision
+the verified 1.14.1 package in the launcher's versioned runtime first.
+
 Preview `python install.py --root WORKSPACE --routes video-production-review-routes.json --check`. The focused route adds both guides, skills and demonstration media, with short pointers in the existing render and Short guides and rendering skill. Use the package guides directly if those destination files are absent.
 
 The [encoded-video verification workflow](workflows/rendered-video-verification.md) and focused [verification skill](skills/verify-rendered-music-video/SKILL.md) separate slow native finalisation from a failed render, then bind technical, encoded visual, motion, listening and publication evidence to one exact file. They preserve frozen inputs, native health, full decode/CFR/sample mapping, intended sprite exits, caption derivatives and final quality. Resource observations remain hypotheses rather than invented OS diagnoses.
@@ -130,7 +137,8 @@ The repository includes real or generated media beside the relevant guides. The 
 
 `tools/clean_epk_video_links.py` removes redundant matching embed links while preserving styled actions, plain caption titles, citations, fallbacks and all player/hero/timing source. Cover composition omits its redundant link. Source preparation never publishes pages.
 
-Version: 0.1.49. StemLab runtime baseline: released 1.6.0 with native DanceRudiments 0.3.0. The runtime wheel, model dependencies and source checkout are separately installed and are not bundled here.
+The current StemLab launcher expects a separately provisioned 1.14.1 wheel
+and Python environment. Verify the imported runtime for the selected workflow.
 
 On Windows, run the Python contracts through `powershell -File scripts/Invoke-Tests.ps1`. It probes a unique project-scoped LocalAppData directory, redirects `TEMP`, `TMP` and `TMPDIR` for the run, and removes that exact directory afterward. GitHub CI remains the release-wide Linux authority.
 
@@ -164,7 +172,7 @@ Campaign media now requires a reviewed release-specific design profile, narrativ
 
 `workflows/stemlab-audio-motion-recordings.md` routes arbitrary-dimensional native recordings, stem-pair batches, fixed-reference smoothing comparisons, master/percussion beat evidence and the shared trajectory/bar/timeline display controls. `workflows/stemlab-phrase-and-clip-evidence.md` routes phrase-complete auditions, explicit listening feedback and soundtrack-offset matching without promoting hypotheses to approval. Both keep source-clock provenance and existing deployment gates. New controls require fresh exported HTML; installing packages does not update saved viewers or live EPKs.
 
-Install only this reviewed integration with `python install.py --root "Z:\My Songs" --routes stemlab-routes.json --check`, then omit `--check` to apply. A selected manifest must stay inside the package; all selected routes preflight before writes and preserve unselected files. Use this scope when unrelated workflows have independent owners or holds. `previous/0.1.17/` supplies exact known predecessors; modified managed text remains a conflict. The launcher requires a separately provisioned checksum-verified environment at `Tools/stemlab-runtime-1.5.0/.venv`; packages/model dependencies are not bundled.
+Install only this reviewed integration with `python install.py --root "Z:\My Songs" --routes stemlab-routes.json --check`, then omit `--check` to apply. A selected manifest must stay inside the package; all selected routes preflight before writes and preserve unselected files. Use this scope when unrelated workflows have independent owners or holds. `previous/0.1.17/` supplies exact known predecessors; modified managed text remains a conflict. Follow the [lyric review guide](workflows/lyric-timing-review.md#compare-saved-word-alignments) for the current launcher's separately provisioned, checksum-verified environment.
 
 `workflows/stemlab-rudiment-motion-selection.md` is the shared motion-selection contract. `routes.json` defines additive insertions into the existing video, EPK, analysis, sprite, Canvas and shared-template workflows and their discoverable skill copies. `rules/github-publication.md` is the project-wide GitHub completion rule. `tools/StemLab.ps1` installs to the workspace's Tools directory.
 

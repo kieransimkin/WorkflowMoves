@@ -57,6 +57,14 @@ For the job's actual work, consider every member below and record a purpose-spec
 
 Short Shifter is an independent project, explicitly outside DanceFlow. Existing independent workflows may still use it when applicable, without adding it to this membership inventory.
 
+For new StemLab word timing, verify that the runtime exposes `lyric-ensemble`
+and `lyric-display` from 1.14.1 or later. Combine saved observations by canonical
+occurrence and model family, replay doubtful crop edges, and audition the draft
+on the verified master clock. Keep acoustic word releases separate from line
+visibility and score same-recording artist LRCs as read-only display references.
+Follow the [lyric timing review guide](https://github.com/kieransimkin/WorkflowMoves/blob/main/workflows/lyric-timing-review.md)
+or its installed copy at `Workflows/lyric-timing-review.md`.
+
 ## Apply the plan to the job
 
 - **Campaign/media preparation:** combine canonical analysis and selection, supported native motion, scoped image/media preparation and searchable asset/thumbnail review as useful. Use KeywordMoves for evidence-backed copy/targeting and EPK metadata for actual page tasks. Review all visual/audio handoffs, hashes, source offsets, transformed extents, phone crops, first frames, loop seams and final listening. Likeness repair, custom authoring, refinement and private delivery are conditional, not default steps.

@@ -2,7 +2,8 @@
   {
     "target": "Workflows/lyric-timing-review.md",
     "source": "workflows/lyric-timing-review.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.65/lyric-timing-review.md"
   },
   {
     "target": "Workflows/rendered-video-revision.md",
@@ -22,7 +23,8 @@
   {
     "target": "skill-source/review-lyric-timing/SKILL.md",
     "source": "skills/review-lyric-timing/SKILL.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.65/review-lyric-timing-SKILL.md"
   },
   {
     "target": "skill-source/revise-rendered-music-video/SKILL.md",
@@ -32,7 +34,8 @@
   {
     "target": ".agents/skills/review-lyric-timing/SKILL.md",
     "source": "skills/review-lyric-timing/SKILL.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.65/review-lyric-timing-SKILL.md"
   },
   {
     "target": ".agents/skills/revise-rendered-music-video/SKILL.md",

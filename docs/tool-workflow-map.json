@@ -8,6 +8,7 @@
       "capabilities": "workflows/danceflow/capabilities/stemlab.md",
       "workflows": [
         "workflows/ecosystem-tool-workflows.md",
+        "workflows/lyric-timing-review.md",
         "workflows/stemlab-phrase-and-clip-evidence.md",
         "workflows/stemlab-fourier-frequency-bands.md"
       ],
@@ -21,6 +22,7 @@
       ],
       "acceptance": [
         "Compare original and offset beat grids, including half/double-time hypotheses",
+        "Verify source-bound word edges and compare display starts and clears separately",
         "Hash original inputs before/after; review estimated lyrics and MIDI"
       ],
       "limits": [

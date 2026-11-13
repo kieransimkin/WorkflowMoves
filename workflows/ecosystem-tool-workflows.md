@@ -24,6 +24,14 @@ Analyse selected audio/MIDI evidence or edit supported timing lanes. [Native com
 
 Use [stemlab-phrase-and-clip-evidence](stemlab-phrase-and-clip-evidence.md), [stemlab-fourier-frequency-bands](stemlab-fourier-frequency-bands.md) and [source-bound beat alignment](stemlab-beat-offsets-and-epk-sync.md).
 
+For new StemLab word timing, verify that the runtime exposes `lyric-ensemble`
+and `lyric-display` from 1.14.1 or later. Combine saved observations by canonical
+occurrence and model family, replay doubtful crop edges, and audition the draft
+on the verified master clock. Keep acoustic word releases separate from line
+visibility and score same-recording artist LRCs as read-only display references.
+Follow the [lyric timing review guide](https://github.com/kieransimkin/WorkflowMoves/blob/main/workflows/lyric-timing-review.md)
+or its installed copy at `Workflows/lyric-timing-review.md`.
+
 ### DanceRudiments
 
 Select native movement or prepare a finite, typed rig recording. [Native commands and examples](https://github.com/kieransimkin/WorkflowMoves/blob/v0.1.41/workflows/danceflow/capabilities/dancerudiments.md).

@@ -1,3 +1,12 @@
+# WorkflowMoves v0.1.67
+
+Use the released StemLab 1.14.1 commands to compare saved word alignments,
+replay unstable crops and draft line visibility. The lyric timing workflow
+connects singing activity and pitch to listening review, preserves original
+word endpoints and approved LRCs, and shows a verified synthetic crop replay.
+The scoped installer upgrades the guide, skill and My Songs launcher and
+links the existing StemEdit, analysis, scheduled and capability instructions.
+
 # WorkflowMoves v0.1.66
 
 Add the FrameRudiments 0.4.33 ISF metadata inspection route to the rendering
