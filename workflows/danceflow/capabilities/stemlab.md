@@ -2,6 +2,14 @@
 
 Audited 23 October 2026: **v1.11.0**, exact source [`f15f3d38c5e337e7ddd86d36878b61a99bf8f5b0`](https://github.com/kieransimkin/stemlab/tree/f15f3d38c5e337e7ddd86d36878b61a99bf8f5b0). This is a dated source/documentation audit, not installed-runtime or end-to-end acceptance. [Check current releases before use](../workflows/release-preflight.md).
 
+For new StemLab word timing, verify that the runtime exposes `lyric-ensemble`
+and `lyric-display` from 1.14.1 or later. Combine saved observations by canonical
+occurrence and model family, replay doubtful crop edges, and audition the draft
+on the verified master clock. Keep acoustic word releases separate from line
+visibility and score same-recording artist LRCs as read-only display references.
+Follow the [lyric timing review guide](https://github.com/kieransimkin/WorkflowMoves/blob/main/workflows/lyric-timing-review.md)
+or its installed copy at `Workflows/lyric-timing-review.md`.
+
 ## Current README feature routes
 
 - [Before every new workflow](https://github.com/kieransimkin/stemlab/blob/f15f3d38c5e337e7ddd86d36878b61a99bf8f5b0/README.md#before-every-new-workflow)

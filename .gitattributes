@@ -1,6 +1,7 @@
 * text=auto eol=lf
 *.zip -text
 previous/0.1.33/workflows/campaign-media-epk-sync.md -text
+previous/0.1.65/StemLab-*.ps1 -text -eol whitespace=cr-at-eol
 
 *.bat text eol=crlf
 *.cmd text eol=crlf
