@@ -1,3 +1,4 @@
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
@@ -29,7 +30,7 @@ class VideoVerificationRoutes(unittest.TestCase):
             workspace = Path(tmp)
             originals = self.fixture(workspace)
             preview = installer.install(workspace, ROOT, check=True, manifest="video-verification-routes.json")
-            self.assertEqual(len(preview), 8)
+            self.assertEqual(len(preview), 11)
             self.assertTrue(all(row["status"] == "pending" for row in preview))
             self.assertFalse((workspace / self.routes[0]["target"]).exists())
             for rel, original in originals.items():
@@ -97,6 +98,19 @@ class VideoVerificationRoutes(unittest.TestCase):
         skill = (ROOT / "skills/verify-rendered-music-video/SKILL.md").read_text(encoding="utf-8")
         self.assertTrue(skill.startswith("---\nname: verify-rendered-music-video\n"))
         self.assertIn("attended-listening", skill)
+
+    def test_ending_frame_example_matches_its_receipt(self):
+        media = ROOT / "workflows/media"
+        receipt = json.loads((media / "ending-frame-evidence.json").read_text(encoding="utf-8"))
+        self.assertEqual(receipt["last_decoded_frame"], receipt["frames"] - 1)
+        self.assertNotEqual(receipt["stale_png_sha256"], receipt["fresh_png_sha256"])
+        self.assertTrue(receipt["unguarded_seek_empty_output"])
+        self.assertTrue(receipt["guarded_seek_failed"])
+        for name, field in (
+            ("ending-frame-comparison.png", "comparison_png_sha256"),
+            ("ending-frame-demo.mp4", "current_video_sha256"),
+        ):
+            self.assertEqual(hashlib.sha256((media / name).read_bytes()).hexdigest(), receipt[field])
 
 if __name__ == "__main__":
     unittest.main()

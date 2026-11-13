@@ -1,3 +1,11 @@
+# WorkflowMoves v0.1.64
+
+Bind decoded checkpoints to the current encode and check the exact last
+frame before reviewing a loop or rerender. A reproducible 60 fps example
+shows an empty FFmpeg seek leaving a stale still. Verification guidance also
+covers reduced-motion variants and keeping performed captions separate from
+editorial overlays.
+
 # WorkflowMoves v0.1.63
 
 Adds a rendered-motion diagnosis skill and workflow with a reproducible
