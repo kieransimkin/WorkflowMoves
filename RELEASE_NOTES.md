@@ -1,3 +1,9 @@
+# WorkflowMoves v0.1.66
+
+Add the FrameRudiments 0.4.33 ISF metadata inspection route to the rendering
+feature guide. Existing entry points lead to the same guide and the additive
+installer upgrades the exact 0.1.65 copy.
+
 # WorkflowMoves v0.1.65
 
 Choose FrameRudiments rendering and visualisation features from the installed
