@@ -40,6 +40,18 @@ window and framing. Change one choice at a time when comparing a renderer,
 effect stage or signal. Retain the selected renderer ID, input hash, axes or
 calibrated band contract, parameter values and a matching checkpoint.
 
+### Inspect a candidate ISF shader
+
+With FrameRudiments 0.4.33 or later, run
+`framerudiments inspect-isf /path/to/fragment.fs` before planning the use of
+an Interactive Shader Format source. Retain the `metadata_only` JSON and
+the source SHA-256. Compare the declared image inputs and typed controls
+with the effect the scene needs. Use `--expect-sha256` when rechecking a
+reviewed source. A supported single-pass declaration gives you a control
+inventory. Choose an existing render route for production while external
+shader execution is still a separate milestone.
+[ISF metadata, example and limits](https://github.com/kieransimkin/FrameRudiments/blob/v0.4.33/docs/isf-metadata.md).
+
 ## Match the image to its source signal
 
 | Intended result | Native route and what to verify |

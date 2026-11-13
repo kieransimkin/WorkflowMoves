@@ -2,7 +2,8 @@
   {
     "target": "Workflows/framerudiments-rendering-features.md",
     "source": "workflows/framerudiments-rendering-features.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_source": "previous/0.1.65/framerudiments-rendering-features.md"
   },
   {
     "target": "Workflows/framerudiments-rendering.md",
