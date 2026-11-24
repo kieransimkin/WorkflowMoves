@@ -312,6 +312,25 @@ Preview `python install.py --root YOUR-WORKSPACE --routes potbot-unity-routes.js
 
 Generated contract illustration. Actual Unity Editor/GPU and Potbot service examples require their separately qualified hosts.
 
+## Shorts evidence and stronger opening tests
+
+The [Shorts learning workflow](workflows/shorts-performance-learning.md) separates
+platform-native exposure, watch depth, response and full-song listening. It defines
+controlled opening tests and a private local report ledger with source hashes,
+explicit format qualification, incompatible-window retention and guarded editions.
+No native account or public publication action is included.
+
+Preview `python install.py --root WORKSPACE --routes shorts-performance-routes.json --check`
+before installing the guide and `Tools/ShortsReport/shorts_report.py`. Use an owning
+project's private account/configuration and baseline; no campaign metrics ship in
+the package. JSON/HTML/Markdown require the standard library; the optional PDF
+route needs an already authorised ReportLab/pypdf runtime. See the synthetic
+observation example and the workflow's acceptance and no-op rules.
+
+![Generated opening-test evidence diagram](workflows/media/shorts-learning-loop.svg)
+
+Illustration of the intended contract, not a completed audience experiment.
+
 ## Cross-platform repository bytes
 
 The root `.gitattributes` stores and checks out text as LF on every platform;

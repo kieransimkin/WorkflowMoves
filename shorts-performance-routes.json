@@ -1,0 +1,58 @@
+[
+  {
+    "target": "Workflows/shorts-performance-learning.md",
+    "source": "workflows/shorts-performance-learning.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/shorts-learning-loop.svg",
+    "source": "workflows/media/shorts-learning-loop.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "Tools/ShortsReport/shorts_report.py",
+    "source": "tools/shorts_report.py",
+    "mode": "copy"
+  },
+  {
+    "target": "Tools/ShortsReport/shorts-observation.example.json",
+    "source": "examples/shorts-observation.json",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/lyric-video-storyboarding.md",
+    "source": "workflows/lyric-video-storyboarding.md",
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.72/workflows/lyric-video-storyboarding.md"
+    ]
+  },
+  {
+    "target": "Workflows/SHORT-FORM-VIDEO-WORKFLOW.md",
+    "source": "fragments/shorts-production-learning.md",
+    "mode": "insert",
+    "anchor": "## Plan readable text before generating",
+    "identity": "shorts-production-learning:v1"
+  },
+  {
+    "target": "SHORT-FORM-PUBLISHING-WORKFLOW.md",
+    "source": "fragments/shorts-publishing-learning.md",
+    "mode": "insert",
+    "anchor": "## TikTok performance-quality gate",
+    "identity": "shorts-publishing-learning:v1"
+  },
+  {
+    "target": "Workflows/campaign-traffic-improvement.md",
+    "source": "fragments/shorts-campaign-learning.md",
+    "mode": "insert",
+    "anchor": "## Set a listening target for each platform",
+    "identity": "shorts-campaign-learning:v1"
+  },
+  {
+    "target": "Workflows/release-marketing-plan-source-reconciliation.md",
+    "source": "fragments/shorts-campaign-learning.md",
+    "mode": "insert",
+    "anchor": "## Plan request versus campaign execution",
+    "identity": "shorts-campaign-learning:v1"
+  }
+]
