@@ -1,6 +1,6 @@
 ---
 name: storyboard-lyric-videos
-description: Storyboard lyric videos and music Shorts from campaign files, audio/visual analysis and audience evidence; source and prepare backgrounds, sprites, 3D and rigged-character assets. Write reference-led Seedance and Nano Banana prompts and generate a built-in GPT baseline for every required generated asset. Use for creative planning and asset preparation before production.
+description: Storyboard lyric videos and music Shorts using campaign evidence, current FrameRudiments features/effects and StemLab analysis/workflows; source backgrounds, sprites, 3D and rigged-character assets. Write reference-led Seedance and Nano Banana prompts and generate a built-in GPT baseline for every required generated asset. Use for creative planning and asset preparation before production.
 ---
 
 # Storyboard lyric videos and Shorts
@@ -30,6 +30,12 @@ Create a short evidence map with source paths/IDs, hashes for selected media and
 
 Where available, use the maintained analysis, loop-selection and lyric-timing skills. Read current DanceFlow capability and release guidance before a new tool invocation. StemLab owns audio/timing evidence, FrameRudiments offline composition, DanceRudiments native movement, and DanceMoves live web motion. Other available tools are conditional on a real need; no new engine or model run is required for a written plan.
 
+Before locking a treatment or asset list, follow [current native capabilities and analysis planning](references/tool-capability-planning.md). Check the latest official FrameRudiments and StemLab releases against the exact selected runtimes, read their relevant tagged feature/API documentation and maintained workflows, and record the check date and source identities. A copied guide's old version, an MCP tool list, a release-note milestone or a familiar effect name is not a complete current capability review. Refresh at a material handoff or when the selected runtime changes; preserve a frozen render's source/version pins.
+
+Use the current FrameRudiments renderer/effect inventory to inform creative alternatives: native movement and sprites/3D, rich lyrics, masks/mattes/keying, transitions, styles/warps/procedural fields, feedback/temporal effects and applicable newer authoring, video, interchange or control routes. Use StemLab's retained rhythm/structure, word/line timing, phrase/loop, Fourier, native-motion and other relevant analysis through their maintained workflows. Consider what serves this song and explicitly record relevant unavailable or unneeded routes. Do not invent extra effects, analysis, downloads or generation just to exercise features.
+
+For each chosen effect or audio-driven scene, link the exact feature/configuration route to its StemLab evidence, original source time, input/layer contract, backend and required assets. Separate documented, installed, host-qualified and actually previewed states. A capability found only in a newer release remains conditional until its required runtime is available; a generic raster baseline cannot prove a native effect works. Save this mapping in the storyboard's capability/analysis plan and carry it into the generation briefs and production handoff.
+
 For excerpts, use `find-loopable-song-sections` or its maintained workflow to select a musically and narratively complete passage. Preserve original source bounds; do not choose an arbitrary duration and cut a word, setup or punchline to fit it. A non-looping mini-story is a valid Short. A full lyric video should develop across the song; a Short needs an intelligible local promise and payoff rather than a scaled-down full-film plot.
 
 ## 3. Explore genuinely different storytelling treatments
@@ -56,7 +62,7 @@ For every shot or visual state specify:
 - composition, focal subject, action, camera/motion, transition and the visual information gained or feeling developed; specify effect onset, growth, release and reset instead of naming an effect alone;
 - viewer promise, progression and payoff; map planned attention events to timestamps so later retention can be compared with actual scenes;
 - displayed sung text versus separate editorial text, line holds/clears, type treatment and reserved quiet space; do not make an unsung word appear as a performed lyric;
-- asset IDs/provenance, continuity/seed or reference requirements, foreground/background/effect order, native implementation route and any unverified capability;
+- asset IDs/provenance, continuity/seed or reference requirements, foreground/background/effect order, exact current native feature/configuration route, linked StemLab evidence and any unverified capability;
 - destination crop/overlay constraints, key pose and readability checks, ending behaviour and dependencies still awaiting review.
 
 For a full video cover all lyric and instrumental intervals, including deliberate holds and gaps. For a Short, cover its whole selected output and any intended repeat or ending. A nonlinear visual edit must not silently reorder the canonical soundtrack or sung words. Do not repeat a chorus scene unchanged unless that recurrence serves the chosen story.
@@ -93,7 +99,7 @@ Before an authorised audience test, write a prediction, the changed variable, pl
 
 Complete a short retrospective even for an aborted, blocked or analytics-free run. Record the skill revision/hash, inputs, selected approach, observed review results, uncertainty, avoidable friction and what should change in this skill itself. Later audience results supplement this record; they do not replace the immediate process review.
 
-Ask whether intake missed useful release evidence, alternatives were genuinely different, the hook paid off, lyric meaning and identity survived, timing/safe regions were usable, evidence was overstated, asset searches or references were useful, prompts preserved identity across providers, all required baselines were actually made, 3D readiness was overstated, the production handoff was actionable, or a step wasted effort. Identify the smallest reusable correction supported by what actually happened.
+Ask whether intake missed useful release evidence, the capability review was current, a suitable native effect or saved analysis was overlooked, alternatives were genuinely different, the hook paid off, lyric meaning and identity survived, timing/safe regions were usable, evidence was overstated, asset searches or references were useful, prompts preserved identity across providers, all required baselines were actually made, 3D readiness was overstated, the production handoff was actionable, or a step wasted effort. Identify the smallest reusable correction supported by what actually happened.
 
 Apply a worthwhile, authorised correction to the maintained canonical skill/reference/template, then validate it and replay the relevant case plus a contrasting case. Keep public guidance free of private campaign records; store the evidence and change receipt locally. Reconcile source and installed copies through the maintained installer and normal release process rather than silently editing a managed copy. Preserve other owners' changes and publication/cost gates. If no correction is justified, record the reason. If a useful patch cannot be applied, retain the exact proposal, blocker and named continuation. Do not manufacture a skill edit after every run or promote one noisy result into a universal rule.
 
@@ -106,3 +112,4 @@ Apply a worthwhile, authorised correction to the maintained canonical skill/refe
 - **A shared file is protected, modified or owned elsewhere.** Inspect the saved destination after a failed write, use the approved workspace editor/installer route, and retain a verified candidate plus exact installation hold if needed. Never infer installation from the source file alone.
 - **Prompts exist but assets do not.** Check each generated-asset row against its saved GPT output/hash, actual references and review. Resume only missing items; a sheet of thumbnails does not close individual baseline obligations.
 - **A character image is labelled rigged.** Keep the concept and 3D file states separate; require actual skeleton/skin/pose or clip playback evidence before marking a rig usable.
+- **A feature guide or milestone label is stale.** Reconcile the official release, matching tagged source/API docs and selected runtime; record host qualification separately. Keep genuinely unavailable features conditional and choose a verified alternative without silently upgrading a live render.

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Connect current tools and retained musical evidence to the storyboard</title>
+<desc id="desc">Current release and runtime evidence, retained StemLab analysis, and the approved song brief feed a capability plan. That plan identifies a source-timed native effect, the assets it needs and the checks still required.</desc>
+<defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#edf2f7}.muted{fill:#bcc8d7}.gold{fill:#ffda8c}.title{font-size:25px;font-weight:bold}.label{font-size:20px;font-weight:bold}.body{font-size:17px}.card{fill:#1b2b43;stroke:#536a87;stroke-width:2}</style><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#ffda8c"/></marker></defs>
+<rect width="1200" height="430" rx="18" fill="#0e1726"/>
+<text x="32" y="42" class="title">A current native feature needs a musical purpose and an input contract.</text>
+<rect x="32" y="72" width="300" height="76" rx="9" class="card"/>
+<text x="48" y="102" class="label gold">Release + actual runtime</text><text x="48" y="129" class="body">Tagged docs, registry/API, host limits</text>
+<rect x="32" y="169" width="300" height="76" rx="9" class="card"/>
+<text x="48" y="199" class="label gold">Retained StemLab evidence</text><text x="48" y="226" class="body">Lyrics, phrases, rhythm and controls</text>
+<rect x="32" y="266" width="300" height="76" rx="9" class="card"/>
+<text x="48" y="296" class="label gold">Approved song / story brief</text><text x="48" y="323" class="body">Meaning, identity, source and timing</text>
+<path d="M333 110H368V207H401" fill="none" stroke="#ffda8c" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M333 207H401" fill="none" stroke="#ffda8c" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M333 304H368V207H401" fill="none" stroke="#ffda8c" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="414" y="135" width="330" height="144" rx="12" class="card"/>
+<text x="434" y="171" class="label gold">Storyboard capability plan</text>
+<text x="434" y="203" class="body">Exact native feature + source interval</text><text x="434" y="231" class="body">Input layers, clock, backend and state</text><text x="434" y="259" class="body">A reason to use it in this song</text>
+<path d="M745 207H791V110H817" fill="none" stroke="#ffda8c" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M745 207H817" fill="none" stroke="#ffda8c" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M745 207H791V304H817" fill="none" stroke="#ffda8c" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="830" y="72" width="338" height="76" rx="9" class="card"/>
+<text x="846" y="102" class="label">Native effect / scene proposal</text><text x="846" y="129" class="body">Selected, supported or conditional</text>
+<rect x="830" y="169" width="338" height="76" rx="9" class="card"/>
+<text x="846" y="199" class="label">Only the required assets</text><text x="846" y="226" class="body">Refs, prompt packs and GPT baselines</text>
+<rect x="830" y="266" width="338" height="76" rx="9" class="card"/>
+<text x="846" y="296" class="label">Bounded verification plan</text><text x="846" y="323" class="body">Readability, timing, backend and ending</text>
+<text x="32" y="385" class="body muted">Generated planning diagram. Documentation, installation and real preview acceptance are separate states.</text>
+<text x="32" y="414" class="body muted">Reuse saved analysis; refresh capability evidence; preserve source clocks and existing cost/approval limits.</text>
+</svg>

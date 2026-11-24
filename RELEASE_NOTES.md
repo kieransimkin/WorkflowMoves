@@ -1,3 +1,13 @@
+# WorkflowMoves v0.1.70
+
+Storyboard planning now refreshes official FrameRudiments/StemLab releases,
+selected runtime identities, native inventories and relevant tagged contracts
+before choosing treatments or assets. The new capability/analysis matrix links
+each native effect to retained musical evidence, source clocks, input assets,
+backend and qualification state. Current feature families and maintained
+analysis/production workflows have a focused reference and planning diagram.
+Guarded routes preserve earlier upgrades and add exact v0.1.69 predecessors.
+
 # WorkflowMoves v0.1.69
 
 The storyboarding skill now owns asset sourcing and preparation: backgrounds,

@@ -78,7 +78,10 @@ backgrounds, sprites and 3D or rigged-character assets, writes detailed
 Seedance and Nano Banana prompts with supplied references and usage notes,
 and makes a built-in GPT baseline draft for every required generated asset.
 Concept images stay distinct from usable meshes and rigs. Every run reviews
-how the skill itself could improve, including planning-only runs. Preview the focused
+how the skill itself could improve, including planning-only runs. Its capability
+plan checks current FrameRudiments effects/features and selected StemLab
+analysis workflows against fresh release and runtime evidence before choosing
+the treatment and assets. Preview the focused
 `lyric-video-storyboarding-routes.json` manifest to install the complete skill
 and [illustrated workflow](workflows/lyric-video-storyboarding.md).
 
