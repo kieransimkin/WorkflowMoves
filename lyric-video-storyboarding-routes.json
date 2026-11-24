@@ -2,17 +2,26 @@
   {
     "target": "skill-source/storyboard-lyric-videos/SKILL.md",
     "source": "skills/storyboard-lyric-videos/SKILL.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.68/skills/storyboard-lyric-videos/SKILL.md"
+    ]
   },
   {
     "target": "skill-source/storyboard-lyric-videos/references/evidence-and-learning.md",
     "source": "skills/storyboard-lyric-videos/references/evidence-and-learning.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.68/skills/storyboard-lyric-videos/references/evidence-and-learning.md"
+    ]
   },
   {
     "target": "skill-source/storyboard-lyric-videos/assets/storyboard-template.md",
     "source": "skills/storyboard-lyric-videos/assets/storyboard-template.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.68/skills/storyboard-lyric-videos/assets/storyboard-template.md"
+    ]
   },
   {
     "target": "skill-source/storyboard-lyric-videos/assets/treatment-comparison.svg",
@@ -22,22 +31,34 @@
   {
     "target": "skill-source/storyboard-lyric-videos/agents/openai.yaml",
     "source": "skills/storyboard-lyric-videos/agents/openai.yaml",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.68/skills/storyboard-lyric-videos/agents/openai.yaml"
+    ]
   },
   {
     "target": ".agents/skills/storyboard-lyric-videos/SKILL.md",
     "source": "skills/storyboard-lyric-videos/SKILL.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.68/skills/storyboard-lyric-videos/SKILL.md"
+    ]
   },
   {
     "target": ".agents/skills/storyboard-lyric-videos/references/evidence-and-learning.md",
     "source": "skills/storyboard-lyric-videos/references/evidence-and-learning.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.68/skills/storyboard-lyric-videos/references/evidence-and-learning.md"
+    ]
   },
   {
     "target": ".agents/skills/storyboard-lyric-videos/assets/storyboard-template.md",
     "source": "skills/storyboard-lyric-videos/assets/storyboard-template.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.68/skills/storyboard-lyric-videos/assets/storyboard-template.md"
+    ]
   },
   {
     "target": ".agents/skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
@@ -47,16 +68,42 @@
   {
     "target": ".agents/skills/storyboard-lyric-videos/agents/openai.yaml",
     "source": "skills/storyboard-lyric-videos/agents/openai.yaml",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.68/skills/storyboard-lyric-videos/agents/openai.yaml"
+    ]
   },
   {
     "target": "Workflows/lyric-video-storyboarding.md",
     "source": "workflows/lyric-video-storyboarding.md",
-    "mode": "copy"
+    "mode": "copy",
+    "previous_sources": [
+      "previous/0.1.68/workflows/lyric-video-storyboarding.md"
+    ]
   },
   {
     "target": "Workflows/media/storyboard-treatment-comparison.svg",
     "source": "skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/references/asset-preparation.md",
+    "source": "skills/storyboard-lyric-videos/references/asset-preparation.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/assets/asset-prompt-template.md",
+    "source": "skills/storyboard-lyric-videos/assets/asset-prompt-template.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/references/asset-preparation.md",
+    "source": "skills/storyboard-lyric-videos/references/asset-preparation.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/assets/asset-prompt-template.md",
+    "source": "skills/storyboard-lyric-videos/assets/asset-prompt-template.md",
     "mode": "copy"
   }
 ]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Storyboard Lyric Videos and Shorts"
+  short_description: "Compare song narratives and visual hooks using evidence"
+  default_prompt: "Use $storyboard-lyric-videos to compare storytelling treatments for this release and prepare a timed visual storyboard with an evidence review and skill retrospective."

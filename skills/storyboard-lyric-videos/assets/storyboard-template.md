@@ -37,13 +37,24 @@ If the user fixed the treatment: {source and bounded weakness review instead of 
 Coverage: {all selected output accounted for, including lyric gaps and intentional holds}.
 Ending: {resolved ending, deliberate hold, or source-bound repeat/seam needing listening review}.
 
+## Asset register and individual generation packs
+
+| Asset ID / required variant | Type / shot IDs / purpose | Reuse, source or generate | Actual files / provenance / licence | Reference images and usage notes | Seedance / Nano Banana / GPT prompt paths and hashes | GPT baseline file / hash / review | Separate production state / next action |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| {ID} | {background, sprite, 3D, rigged character or other; shots} | {decision and reason} | {provided files; exact licence/attribution; known gaps} | {IDs, supplied files/hashes, roles, crop evidence} | {complete per-asset prompts saved before the call} | {actual generated file or precise pending item} | {image, mesh/rig/motion readiness distinguished} |
+
+Use [the per-asset prompt template](asset-prompt-template.md) for every generated asset/variant; copy it into the campaign pack with a stable name before filling it out.
+Generation coverage: {required asset IDs; all prompt packs ready; GPT baselines generated/reviewed; exact missing items and owner}.
+Asset sourcing evidence: {original item/file URLs, saved licence/attribution, references and cover-crop parent/coordinates/hash}.
+3D production evidence: {actual mesh/skeleton/skin/material/clip import and pose checks or named dependency; concept images alone are insufficient}.
+
 ## Visual review and production handoff
 
 {Embed opening/development/payoff contact sheets beside their explanation. Caption sources and label concepts/synthetic imagery. Link a bounded animatic only if made.}
 
 Actual review: {what was inspected, normal-speed motion / phone-size readability / listening, results and remaining limits}.
-Media omitted: {medium and specific reason, if applicable}.
-Generation/assets brief: {scene composition, references, stable identities, empty text space, editable type, provenance; no generation implied}.
+Media omitted: {optional medium and reason; required baseline omissions remain explicit pending asset IDs}.
+Asset pack: {register, sourced files, detailed provider/GPT prompts, actual reference images/usage notes, individual GPT baseline drafts and review; external provider prompts remain prepared unless executed with authority}.
 Cover: {distinct composition, required song/artist text, intended crops}.
 Production: {verified tools/capabilities or provisional route; timing, effect order, 60 fps target and source limits}.
 Acceptance: {meaning/continuity, exact lyric windows, source sync, native crop/text checks, hook payoff and ending}.

@@ -1,3 +1,13 @@
+# WorkflowMoves v0.1.69
+
+The storyboarding skill now owns asset sourcing and preparation: backgrounds,
+sprites, mixed media, 3D models and rigged characters. Each generated asset
+needs detailed Seedance, Nano Banana and GPT prompts, actual reference images
+with usage notes, and its own built-in GPT baseline draft. New asset and
+reference contracts retain licence/crop provenance, generation coverage and
+separate mesh/rig readiness. Focused routes upgrade exact v0.1.68 files while
+preserving local edits and install the new reference and per-asset template.
+
 # WorkflowMoves v0.1.68
 
 Add the lyric-video and Shorts storyboarding skill with contrasting lyric-led
