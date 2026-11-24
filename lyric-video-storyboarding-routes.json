@@ -1,0 +1,62 @@
+[
+  {
+    "target": "skill-source/storyboard-lyric-videos/SKILL.md",
+    "source": "skills/storyboard-lyric-videos/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/references/evidence-and-learning.md",
+    "source": "skills/storyboard-lyric-videos/references/evidence-and-learning.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/assets/storyboard-template.md",
+    "source": "skills/storyboard-lyric-videos/assets/storyboard-template.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "source": "skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/agents/openai.yaml",
+    "source": "skills/storyboard-lyric-videos/agents/openai.yaml",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/SKILL.md",
+    "source": "skills/storyboard-lyric-videos/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/references/evidence-and-learning.md",
+    "source": "skills/storyboard-lyric-videos/references/evidence-and-learning.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/assets/storyboard-template.md",
+    "source": "skills/storyboard-lyric-videos/assets/storyboard-template.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "source": "skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/agents/openai.yaml",
+    "source": "skills/storyboard-lyric-videos/agents/openai.yaml",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/lyric-video-storyboarding.md",
+    "source": "workflows/lyric-video-storyboarding.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/storyboard-treatment-comparison.svg",
+    "source": "skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "mode": "copy"
+  }
+]

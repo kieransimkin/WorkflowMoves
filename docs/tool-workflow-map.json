@@ -70,7 +70,8 @@
         "workflows/lyric-timing-review.md",
         "workflows/render-motion-diagnosis.md",
         "workflows/rendered-video-revision.md",
-        "workflows/rendered-video-verification.md"
+        "workflows/rendered-video-verification.md",
+        "workflows/lyric-video-storyboarding.md"
       ],
       "task": "Compose a deterministic offline video or bounded preset experiment",
       "inputs": [
@@ -330,7 +331,8 @@
       "workflows": [
         "workflows/ecosystem-tool-workflows.md",
         "workflows/tool-development-lessons.md",
-        "workflows/cyclic-event-keyword-planning.md"
+        "workflows/cyclic-event-keyword-planning.md",
+        "workflows/lyric-video-storyboarding.md"
       ],
       "task": "Propagate reviewed shared lessons without replacing project instructions",
       "inputs": [

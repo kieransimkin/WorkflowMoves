@@ -203,6 +203,9 @@ Propagate reviewed shared lessons without replacing project instructions. [Nativ
 **Limits:** Installed guidance does not prove adoption by another running chat; Private chat transcripts and scheduler definitions stay outside releases.
 
 Use [tool-development-lessons](tool-development-lessons.md).
+For pre-production song storytelling, use the [lyric video and Shorts storyboard](lyric-video-storyboarding.md)
+to compare narrative and visual-hook treatments, retain source evidence and
+review improvements to the skill after every run.
 
 ### DanceVault
 
