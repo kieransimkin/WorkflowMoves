@@ -85,6 +85,11 @@ the treatment and assets. Preview the focused
 `lyric-video-storyboarding-routes.json` manifest to install the complete skill
 and [illustrated workflow](workflows/lyric-video-storyboarding.md).
 
+The storyboard also identifies actual DanceRudiments motions and keeps a song
+cue/action ledger: selected native identities and bindings, source/output
+timing, the intended start/peak/contact or reveal, phase and bounded playback.
+It preserves canonical cues and separates native sampling from visual approval.
+
 [Choose FrameRudiments rendering and visualisation features](workflows/framerudiments-rendering-features.md)
 maps the installed renderer, source signal and effect stage to the intended
 picture. It covers native motion, spectral and 3D views, lyrics, layered

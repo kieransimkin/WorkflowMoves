@@ -1,3 +1,13 @@
+# WorkflowMoves v0.1.71
+
+Add explicit DanceRudiments motion selection and song cue-point choreography
+to the storyboarding skill. Native identities, sampled axes/rig bindings and
+matched source evidence feed a cue/action ledger with intended landmarks,
+phase/rate, lead-in/hold/release and one-shot/loop/finite playback semantics.
+The new reference preserves canonical cues, source/output occurrence mapping
+and finite capture bounds. Guarded routes retain earlier upgrade history and
+the exact v0.1.70 predecessors.
+
 # WorkflowMoves v0.1.70
 
 Storyboard planning now refreshes official FrameRudiments/StemLab releases,
