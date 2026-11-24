@@ -24,6 +24,8 @@ Preview `python install.py --root WORKSPACE --routes lyric-video-storyboarding-r
 
 Use [lyric timing review](lyric-timing-review.md) for unresolved sung boundaries and [FrameRudiments feature selection](framerudiments-rendering-features.md) when handing a treatment to production. FrameRudiments owns offline composition; StemLab owns audio and timing; DanceRudiments native movement; DanceMoves live web motion.
 
+Before an audience-facing opening test, apply [Shorts performance learning](shorts-performance-learning.md) for platform-specific metrics, a single-variable control/treatment, source identity and comparable-age decisions. Keep a production preference distinct from an audience result.
+
 ## Potential problems
 
 If source identities conflict, keep precise timing pending and retain the conceptual brief. If audience evidence is missing, label the creative hypothesis and plan a later native readback. If the chosen hook cannot be judged from stills, use an authorised bounded animatic, preserving its original source clock; a contact sheet cannot verify continuous motion. See the skill's Potential problems for recovery and installation holds.

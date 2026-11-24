@@ -1,3 +1,14 @@
+# WorkflowMoves v0.1.73
+
+Add platform-specific Shorts learning, controlled opening-test contracts and a
+source-hashed private local reporting ledger. Immutable observations and dated
+editions preserve the retrospective, exact windows and missing-data states.
+Account/artist, publication/geometry, replay/conflict and writer guards prevent
+unsafe merges. A synthetic suite covers counter revisions, old cutoffs and
+report idempotency. Focused additive routes preserve project workflows and the
+exact previous storyboarding guide. No private campaign metrics ship in the
+package; no account, social schedule, public-save or spending capability is added.
+
 # WorkflowMoves v0.1.72
 
 Carry production-history lessons into storyboarding: a source-labelled manual

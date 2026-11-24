@@ -332,7 +332,8 @@
         "workflows/ecosystem-tool-workflows.md",
         "workflows/tool-development-lessons.md",
         "workflows/cyclic-event-keyword-planning.md",
-        "workflows/lyric-video-storyboarding.md"
+        "workflows/lyric-video-storyboarding.md",
+        "workflows/shorts-performance-learning.md"
       ],
       "task": "Propagate reviewed shared lessons without replacing project instructions",
       "inputs": [
