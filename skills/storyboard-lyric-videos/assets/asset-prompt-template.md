@@ -30,6 +30,8 @@ Palette, materials, texture and light/shadow direction: {campaign-grounded const
 Canvas/aspect, intended display size and output/layer/alpha: {requirements; actual API settings separate}.
 Lyric-safe quiet area and layer order: {bounds and what must remain empty}.
 Continuity: {named subjects, viewpoint, wardrobe/props, shared anchors across shots}.
+State/registration family: {base plate and lighting/prop states, locked geometry/camera and alignment anchors, editable regions/emissive mattes; individual required variants and prompts, or not applicable}.
+Motion construction: {pivots, separate articulating parts, overlapping/rounded joints, carrier lengths, occlusion/depth/alpha and overscan required by the behaviour contract; or not applicable}.
 Exclusions: {unwanted words/logos, merged backgrounds, extra people/objects, baked shadows or other relevant negatives}.
 Acceptance: {observable checks; image baseline and actual mesh/rig/motion requirements distinguished}.
 
