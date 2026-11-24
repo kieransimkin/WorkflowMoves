@@ -17,6 +17,15 @@ Audio trajectory: {phrase/cue/source times, vocal density, tension/release, grid
 Visual identity: {invariants, permitted variation, relevant motifs, typography and texture}.
 Source/output mapping: {native rate, sample bounds, source offset, repeats or no repeats, target fps; provisional values labelled}.
 
+## Creative direction recovered from production
+
+| Decision ID / direct source message and date | Earlier behaviour and requested amendment | Later project/asset/review evidence | Scope / supersession / application to this board |
+| --- | --- | --- | --- |
+| {source role and exact turn; automation/agent proposals separate} | {actual before/after, or requested addition with baseline unknown} | {request, configured, previewed, accepted or rejected; exact identities} | {current requirement, repeated preference, release-only choice or hypothesis; preserved decision} |
+
+History coverage/limits: {relevant threads/receipts inspected, oldest turn reached or exact read/asset hold; private raw evidence stays local}.
+Accepted features carried from sample/full-film/other format: {explicit checklist and verification, not inferred from a filename}.
+
 ## Current native capability and analysis plan
 
 Preflight date and receipts: {official release/tag/source; selected FrameRudiments and StemLab distribution/module/import identities; launcher and tagged-doc evidence; relevant gaps}.
@@ -39,6 +48,18 @@ Handoff refresh/pins: {when capability evidence must be refreshed; frozen media/
 
 Selected: {candidate and reasons}. Strongest alternative: {candidate and what would favour it}.
 If the user fixed the treatment: {source and bounded weakness review instead of unnecessary alternatives}.
+
+Mechanism behind each serious idea: {subject + visible rule + cue landmark + changed state/hold; source fit and audience hypothesis}.
+Exploration operators: {relevant choices from creative-direction-and-ideas; purposeful combinations, rejected mechanisms and restrained alternative when useful}.
+
+## Visual behaviour and layer contract
+
+| Subject/layer and role | Entrance / readable hold / exit or persistent state | Source control / cadence / phase / intensity bounds | Matte / injection / feedback / final-overlay order | Occurrence variation / seed / repeat and seek state | Assets / actual review or remaining check |
+| --- | --- | --- | --- | --- | --- |
+| {lyrics, hero prop, atmosphere, reflection, background light or other} | {what continues, transforms, resets or remains changed} | {native cue/motion/analysis ID; half/double-time judgement; no whole-scene default pulse} | {exact semantic region and clean reading stage; continuous feedback when intended} | {stable cue/occurrence identity; bounded differences or deliberate invariant} | {carrier lengths, registered light variants, mattes, pivots/parts, overscan; still or sequential test} |
+
+Typography/material specification: {campaign type and native effects, title/artist hierarchy, short/long line cases, palette/contrast; reference comparison}.
+State progression through the full song: {what each recurrence changes; section/character worlds, quiet space, instrumental/coda role and ending}.
 
 ## DanceRudiments motion selections
 
@@ -101,6 +122,7 @@ Result: {unavailable, pending, inconclusive or observed, with source evidence; n
 ## Run retrospective and skill improvement
 
 Observed strengths/friction/failures: {evidence, including planning-only findings}.
+Manual amendments and regression review: {new human choices missed by the default board; lost accepted decisions; shared lesson versus release-specific choice}.
 Skill improvement examined: {specific reusable gap or reason no change is justified}.
 Action: {applied correction with canonical paths and validation/contrasting-case evidence, or exact retained proposal/blocker/owner}.
 Source/install/release state: {readback evidence if changed; no inferred adoption}.

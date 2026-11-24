@@ -1,3 +1,14 @@
+# WorkflowMoves v0.1.72
+
+Carry production-history lessons into storyboarding: a source-labelled manual
+creative-decision register, a mechanism-based idea playbook and a visual
+behaviour/layer contract. Material lyrics, semantic feedback, cumulative state,
+registered lighting, prop actions, control roles and reproducible variation
+remain song-specific choices. Prompt packs now specify state registration and
+articulation needs. Private transcripts and campaign assets stay outside the
+package; history-access limits and audience evidence remain explicit.
+Guarded routes preserve exact v0.1.71 predecessors and earlier upgrade paths.
+
 # WorkflowMoves v0.1.71
 
 Add explicit DanceRudiments motion selection and song cue-point choreography

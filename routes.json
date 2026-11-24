@@ -884,7 +884,8 @@
     "previous_sources": [
       "previous/0.1.68/skills/storyboard-lyric-videos/SKILL.md",
       "previous/0.1.69/skills/storyboard-lyric-videos/SKILL.md",
-      "previous/0.1.70/skills/storyboard-lyric-videos/SKILL.md"
+      "previous/0.1.70/skills/storyboard-lyric-videos/SKILL.md",
+      "previous/0.1.71/skills/storyboard-lyric-videos/SKILL.md"
     ]
   },
   {
@@ -902,7 +903,8 @@
     "previous_sources": [
       "previous/0.1.68/skills/storyboard-lyric-videos/assets/storyboard-template.md",
       "previous/0.1.69/skills/storyboard-lyric-videos/assets/storyboard-template.md",
-      "previous/0.1.70/skills/storyboard-lyric-videos/assets/storyboard-template.md"
+      "previous/0.1.70/skills/storyboard-lyric-videos/assets/storyboard-template.md",
+      "previous/0.1.71/skills/storyboard-lyric-videos/assets/storyboard-template.md"
     ]
   },
   {
@@ -925,7 +927,8 @@
     "previous_sources": [
       "previous/0.1.68/skills/storyboard-lyric-videos/SKILL.md",
       "previous/0.1.69/skills/storyboard-lyric-videos/SKILL.md",
-      "previous/0.1.70/skills/storyboard-lyric-videos/SKILL.md"
+      "previous/0.1.70/skills/storyboard-lyric-videos/SKILL.md",
+      "previous/0.1.71/skills/storyboard-lyric-videos/SKILL.md"
     ]
   },
   {
@@ -943,7 +946,8 @@
     "previous_sources": [
       "previous/0.1.68/skills/storyboard-lyric-videos/assets/storyboard-template.md",
       "previous/0.1.69/skills/storyboard-lyric-videos/assets/storyboard-template.md",
-      "previous/0.1.70/skills/storyboard-lyric-videos/assets/storyboard-template.md"
+      "previous/0.1.70/skills/storyboard-lyric-videos/assets/storyboard-template.md",
+      "previous/0.1.71/skills/storyboard-lyric-videos/assets/storyboard-template.md"
     ]
   },
   {
@@ -966,7 +970,8 @@
     "previous_sources": [
       "previous/0.1.68/workflows/lyric-video-storyboarding.md",
       "previous/0.1.69/workflows/lyric-video-storyboarding.md",
-      "previous/0.1.70/workflows/lyric-video-storyboarding.md"
+      "previous/0.1.70/workflows/lyric-video-storyboarding.md",
+      "previous/0.1.71/workflows/lyric-video-storyboarding.md"
     ]
   },
   {
@@ -984,7 +989,8 @@
     "source": "skills/storyboard-lyric-videos/assets/asset-prompt-template.md",
     "mode": "copy",
     "previous_sources": [
-      "previous/0.1.69/skills/storyboard-lyric-videos/assets/asset-prompt-template.md"
+      "previous/0.1.69/skills/storyboard-lyric-videos/assets/asset-prompt-template.md",
+      "previous/0.1.71/skills/storyboard-lyric-videos/assets/asset-prompt-template.md"
     ]
   },
   {
@@ -997,7 +1003,8 @@
     "source": "skills/storyboard-lyric-videos/assets/asset-prompt-template.md",
     "mode": "copy",
     "previous_sources": [
-      "previous/0.1.69/skills/storyboard-lyric-videos/assets/asset-prompt-template.md"
+      "previous/0.1.69/skills/storyboard-lyric-videos/assets/asset-prompt-template.md",
+      "previous/0.1.71/skills/storyboard-lyric-videos/assets/asset-prompt-template.md"
     ]
   },
   {
@@ -1034,6 +1041,26 @@
   {
     "target": ".agents/skills/storyboard-lyric-videos/references/motion-cue-planning.md",
     "source": "skills/storyboard-lyric-videos/references/motion-cue-planning.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/references/creative-direction-and-ideas.md",
+    "source": "skills/storyboard-lyric-videos/references/creative-direction-and-ideas.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/references/creative-direction-and-ideas.md",
+    "source": "skills/storyboard-lyric-videos/references/creative-direction-and-ideas.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/assets/creative-mechanisms.svg",
+    "source": "skills/storyboard-lyric-videos/assets/creative-mechanisms.svg",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/assets/creative-mechanisms.svg",
+    "source": "skills/storyboard-lyric-videos/assets/creative-mechanisms.svg",
     "mode": "copy"
   }
 ]

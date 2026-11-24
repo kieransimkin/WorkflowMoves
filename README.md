@@ -90,6 +90,13 @@ cue/action ledger: selected native identities and bindings, source/output
 timing, the intended start/peak/contact or reveal, phase and bounded playback.
 It preserves canonical cues and separates native sampling from visual approval.
 
+The [creative direction playbook](skills/storyboard-lyric-videos/references/creative-direction-and-ideas.md)
+recovers manual production amendments without turning every preference into a
+universal default. It develops material lyrics, semantic feedback, prop actions,
+cumulative states, registered lighting and other visual mechanisms, then pins
+their typography, control roles, layer/history order and reproducible variation.
+The template preserves accepted decisions and records real history-access gaps.
+
 [Choose FrameRudiments rendering and visualisation features](workflows/framerudiments-rendering-features.md)
 maps the installed renderer, source signal and effect stage to the intended
 picture. It covers native motion, spectral and 3D views, lyrics, layered
