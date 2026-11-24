@@ -55,4 +55,17 @@ class ShortsReportTests(unittest.TestCase):
     def test_identical_timestamp_conflict_is_not_silently_chosen(self):
         m.ingest(self.cfg,self.o);o=copy.deepcopy(self.o);o['run_id']='run2';o['posts'][0]['metrics']['views']['value']=121;m.ingest(self.cfg,o)
         with self.assertRaises(ValueError):m.assemble(self.cfg)
+    def test_baseline_native_geometry_is_preserved(self):
+        d=json.loads(self.baseline.read_text());d['TikTok'][0]['rendition']={'width':576,'height':1024,'duration':14.1};self.baseline.write_text(json.dumps(d))
+        row=m.baseline_rows(self.cfg)[0];self.assertEqual('confirmed_9_16',row['format_status']);self.assertEqual(576,row['geometry']['width'])
+    def test_markdown_summary_is_rendered_as_structured_html(self):
+        rendered=m.rich_html('# Title\n\n| First | Second |\n|---|---|\n| Safe <value> | 2 |')
+        self.assertIn('<h1>Title</h1>',rendered);self.assertIn('<th>First</th>',rendered);self.assertIn('Safe &lt;value&gt;',rendered);self.assertNotIn('<td>---</td>',rendered)
+    def test_archived_source_survives_reuse_of_original_capture_path(self):
+        m.ingest(self.cfg,self.o);self.e.write_text('later capture');rows,_=m.assemble(self.cfg)
+        source=rows[0]['metrics']['views']['source'];self.assertEqual(120,rows[0]['metrics']['views']['value']);self.assertEqual(self.o['source']['sha256'],m.digest(source['path']));self.assertEqual(str(self.e),source['original_path'])
+    def test_changed_pinned_baseline_holds_publication(self):
+        self.cfg['baseline_hashes']={'baseline_dataset':m.digest(self.baseline)};self.baseline.write_text('{}')
+        with self.assertRaises(ValueError):m.publish(self.cfg)
+        self.assertFalse((Path(self.cfg['report_root'])/'latest').exists())
 if __name__=='__main__':unittest.main()

@@ -3,7 +3,7 @@
 No network, social publication, scheduling, inference of missing metrics or lease recovery.
 """
 from __future__ import annotations
-import argparse, contextlib, datetime as dt, hashlib, html, json, math, os, re, statistics, sys, uuid
+import argparse, contextlib, copy, datetime as dt, hashlib, html, json, math, os, re, statistics, sys, uuid
 from pathlib import Path
 
 SCHEMA='shorts.observations.v1'
@@ -80,8 +80,18 @@ def order(m):
     if len(value)==10:value+='T00:00:00+00:00'
     return (instant(value),instant(m['observed_at']))
 def ingest(config,obs):
-    validate(config,obs);root=Path(config['report_root']);data=encoded(obs);key=hashlib.sha256(data).hexdigest()
+    validate(config,obs);root=Path(config['report_root']);obs=copy.deepcopy(obs)
     with lock(root):
+        source=Path(obs['source']['path']);archive=contained(root,'sources/'+obs['source']['sha256']+source.suffix)
+        archive.parent.mkdir(exist_ok=True)
+        if archive.exists():
+            if digest(archive)!=obs['source']['sha256']:raise ValueError('Archived source hash differs')
+        else:
+            data=source.read_bytes()
+            if hashlib.sha256(data).hexdigest()!=obs['source']['sha256']:raise ValueError('Evidence changed during ingestion')
+            with archive.open('xb') as f:f.write(data)
+        obs['source']={**obs['source'],'original_path':str(source),'path':str(archive)}
+        data=encoded(obs);key=hashlib.sha256(data).hexdigest()
         folder=contained(root,'observations/'+re.sub(r'[^a-z0-9]+','-',obs['platform'].lower()))
         folder.mkdir(parents=True,exist_ok=True)
         same=list(folder.glob(obs['run_id']+'--*.json'))
@@ -99,6 +109,11 @@ def baseline_rows(config):
             state=r.get('format_status','candidate');state='excluded' if state=='full film excluded' else 'unresolved' if 'unresolved' in state else 'candidate'
             if r.get('geometry')=='native 720x1280':state='confirmed_9_16'
             row={'platform':platform,'id':str(r['id']),'title':r.get('title',r.get('caption','')),'url':r.get('url'),'format_status':state,'publication_state':'published','published_at':r.get('published_at'),'baseline_date':r.get('date_label',r.get('date')),'metrics':{},'baseline':True}
+            geometries=list(r.get('native_video',[]))
+            if isinstance(r.get('rendition'),dict):geometries.append(r['rendition'])
+            if r.get('geometry')=='native 720x1280':geometries.append({'width':720,'height':1280})
+            native=next((g for g in geometries if g.get('width') and g.get('height') and abs(g['width']/g['height']-9/16)<.005),None)
+            if native and state!='excluded':row.update(format_status='confirmed_9_16',geometry={**native,'source':config['baseline_dataset']})
             for key,value in r.items():
                 name=mappings.get(platform,{}).get(key,key)
                 if name not in METRICS or value is None:continue
@@ -142,10 +157,31 @@ def assemble(config):
     return list(by.values()),sorted(events,key=lambda r:instant(r['observed_at']))
 def fmt(v):return 'Unavailable' if v is None else f'{v:,.2f}'.rstrip('0').rstrip('.')
 def esc(s):return html.escape(str(s or ''))
+def sections(text):
+    lines=text.splitlines();i=0
+    while i<len(lines):
+        line=lines[i]
+        if line.startswith('|'):
+            rows=[]
+            while i<len(lines) and lines[i].startswith('|'):
+                cells=[v.strip() for v in lines[i].strip().strip('|').split('|')]
+                if not all(re.fullmatch(r'[-:]+',v) for v in cells):rows.append(cells)
+                i+=1
+            yield 'table',rows;continue
+        if line.strip():yield 'h1' if line.startswith('# ') else 'h2' if line.startswith('## ') else 'p',line.lstrip('# ').strip()
+        i+=1
+def rich_html(text):
+    out=[]
+    for kind,value in sections(text):
+        if kind=='table':out.append('<div class="wrap"><table><thead><tr>'+''.join('<th>'+esc(v)+'</th>' for v in value[0])+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+esc(v)+'</td>' for v in row)+'</tr>' for row in value[1:])+'</tbody></table></div>')
+        else:out.append('<'+kind+'>'+esc(value)+'</'+kind+'>')
+    return ''.join(out)
 def publish(config):
     root=Path(config['report_root']);baseline=Path(config['baseline_report']);built=stamp()
     with lock(root):
-        inputs={'config':config,'baseline_sha256':digest(config['baseline_dataset']),'baseline_report_sha256':digest(config['baseline_report']),'tests_sha256':digest(config['tests_file']) if config.get('tests_file') else None,'snapshot_hashes':[digest(p) for p in sorted((root/'observations').glob('*/*.json'))],'publisher_sha256':digest(__file__)}
+        for field,expected in config.get('baseline_hashes',{}).items():
+            if digest(config[field])!=expected:raise ValueError('Immutable baseline hash differs: '+field)
+        inputs={'config':config,'baseline_sha256':digest(config['baseline_dataset']),'baseline_report_sha256':digest(config['baseline_report']),'baseline_pdf_sha256':digest(config['baseline_pdf']) if config.get('baseline_pdf') else None,'tests_sha256':digest(config['tests_file']) if config.get('tests_file') else None,'snapshot_hashes':[digest(p) for p in sorted((root/'observations').glob('*/*.json'))],'publisher_sha256':digest(__file__)}
         fingerprint=hashlib.sha256(encoded(inputs)).hexdigest();old_manifest=root/'latest/manifest.json'
         if old_manifest.exists():
             old=read(old_manifest)
@@ -168,7 +204,7 @@ def publish(config):
         for t in tests:lines.append('| '+' | '.join(str(t.get(k,'Unavailable')).replace('|','/').replace('\n',' ') for k in ['id','release','variable','state','owner_review'])+' |')
         lines+=['\n## Historical retrospective\n',f"[Read the original 24 November retrospective]({baseline.as_uri()})",'\nThe appended PDF baseline retains its original dates, denominators, uncertainties and proposed tests. Later observations do not retroactively establish a controlled experiment. The full current per-post metric series and exact sources are in report-data.json.']
         text='\n'.join(lines)+'\n';(generation/'REPORT.md').write_text(text,encoding='utf-8')
-        body='<h1>Shorts performance report — current edition</h1><p>'+esc(config['artist'])+' · '+esc(built)+'</p><p>Private local report. Baseline and subsequent observations remain distinct. No web/social publication occurs.</p><pre style="white-space:pre-wrap">'+esc(text)+'</pre>'
+        body=rich_html(text)
         body+='<p><a href="'+baseline.as_uri()+'">Historical retrospective</a> · <a href="report-data.json">Full metric/source series</a></p><label>Filter posts <input id="filter" type="search"></label><span id="count"></span>'
         for platform in config['accounts']:
             body+='<h2>'+esc(platform)+'</h2><div class="wrap"><table><thead><tr><th>Post / format</th><th>Views</th><th>Average watch</th><th>Full watch</th><th>Follows</th><th>Metric observation dates / other series</th></tr></thead><tbody>'
@@ -183,13 +219,22 @@ def publish(config):
         (generation/'REPORT.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shorts performance report</title><style>body{max-width:1160px;margin:auto;padding:24px;font:16px/1.55 system-ui;color:#19354b}table{border-collapse:collapse;width:100%;font-size:12px}td,th{border:1px solid #cad8e3;padding:8px;text-align:left;vertical-align:top;overflow-wrap:anywhere}td:first-child{min-width:240px}th{background:#e5eef4}.wrap{overflow:auto}pre{font:inherit;background:#f2f6f8;padding:18px}input{padding:10px;margin:15px}</style>'+body+'</html>',encoding='utf-8')
         if config.get('baseline_pdf'):
             from reportlab.lib.styles import getSampleStyleSheet
-            from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer
+            from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,Table,TableStyle
+            from reportlab.lib import colors
+            from reportlab.lib.pagesizes import A4
+            from reportlab.lib.styles import ParagraphStyle
             from pypdf import PdfReader,PdfWriter
-            front=generation/'update-pages.pdf';styles=getSampleStyleSheet();flow=[]
-            for line in text.splitlines():
-                if not line.strip():continue
-                flow.extend([Paragraph(esc(line).replace('→','-&gt;'),styles['Heading1'] if line.startswith('# ') else styles['Heading2'] if line.startswith('## ') else styles['BodyText']),Spacer(1,5)])
-            SimpleDocTemplate(str(front),title='Shorts performance report — current updates',author=config['artist']).build(flow)
+            front=generation/'update-pages.pdf';styles=getSampleStyleSheet();styles.add(ParagraphStyle(name='ReportCell',fontName='Helvetica',fontSize=7.8,leading=10.3,wordWrap='CJK'));flow=[];width=A4[0]-88
+            for kind,value in sections(text):
+                if kind=='table':
+                    weights=[.15,.12,.13,.13,.12,.35] if len(value[0])==6 else [.16,.18,.30,.09,.27]
+                    cells=[[Paragraph(esc(v),styles['ReportCell']) for v in row] for row in value]
+                    tab=Table(cells,colWidths=[width*w for w in weights],repeatRows=1)
+                    tab.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#dbe8f1')),('VALIGN',(0,0),(-1,-1),'TOP'),('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.white,colors.HexColor('#f1f6f9')]),('TOPPADDING',(0,0),(-1,-1),6),('BOTTOMPADDING',(0,0),(-1,-1),6),('LINEBELOW',(0,0),(-1,-1),.25,colors.HexColor('#cad8e3'))]));flow.extend([tab,Spacer(1,10)])
+                else:flow.extend([Paragraph(esc(value).replace('→','-&gt;'),styles['Heading1'] if kind=='h1' else styles['Heading2'] if kind=='h2' else styles['BodyText']),Spacer(1,7)])
+            def footer(c,d):
+                c.setFont('Helvetica',8);c.drawString(44,24,'Current updates | '+config['artist']+' | Private');c.drawRightString(A4[0]-44,24,str(d.page))
+            SimpleDocTemplate(str(front),pagesize=A4,leftMargin=44,rightMargin=44,topMargin=40,bottomMargin=42,title='Shorts performance report — current updates',author=config['artist']).build(flow,onFirstPage=footer,onLaterPages=footer)
             writer=PdfWriter()
             for path in [front,Path(config['baseline_pdf'])]:writer.append(str(path))
             writer.write(str(generation/'REPORT.pdf'));PdfReader(str(generation/'REPORT.pdf'))

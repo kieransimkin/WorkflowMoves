@@ -112,7 +112,10 @@ enabled. Inspect the actual runtime and preflight temporary-directory access.
 No package/model download is implied. Missing PDF dependencies hold publication;
 they must not leave a new partial stable report or erase the prior edition.
 
-The publisher retains immutable observations and dated editions, then replaces
+Ingestion archives the exact hashed source bytes and retains their original path,
+so reuse of a dashboard capture filename cannot invalidate the historical ledger.
+Pin baseline dataset/report/PDF hashes in the private configuration; a mismatch
+holds publication. The publisher retains immutable observations and dated editions, then replaces
 the stable local view only after building all files. The manifest is committed
 last; consumers verify its hashes or read the immutable edition it names.
 An atomic writer lock prevents two publishers; leave a conflicting contribution
