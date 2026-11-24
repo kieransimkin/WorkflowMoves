@@ -49,7 +49,7 @@ For Instagram/Reels or other destinations, inspect their current native analytic
 Every run, including planning-only and failed runs, records:
 
 - run ID/date, owning release/report, skill source revision/hash and treatment chosen;
-- the evidence actually available, observations from concept/preview review and any later audience readback;
+- the evidence actually available, observations from concept/preview and asset review, individual GPT baseline coverage, actual mesh/rig readiness and any later audience readback;
 - what helped, what failed or wasted effort, unresolved uncertainty and a candidate improvement to the skill;
 - the decision: applied correction, no justified change with reason, or retained proposal with exact blocker/owner;
 - changed canonical paths, public-safe rationale, validation/contrasting-case result and source/install/release state when a patch was made;

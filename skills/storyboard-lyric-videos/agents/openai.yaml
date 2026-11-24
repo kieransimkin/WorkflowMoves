@@ -1,4 +1,4 @@
 interface:
   display_name: "Storyboard Lyric Videos and Shorts"
-  short_description: "Compare song narratives and visual hooks using evidence"
-  default_prompt: "Use $storyboard-lyric-videos to compare storytelling treatments for this release and prepare a timed visual storyboard with an evidence review and skill retrospective."
+  short_description: "Plan song stories, source assets and generate GPT drafts"
+  default_prompt: "Use $storyboard-lyric-videos to compare treatments, prepare the timed board and asset pack, write reference-led Seedance and Nano Banana prompts, generate every required GPT baseline, and review improvements to the skill."

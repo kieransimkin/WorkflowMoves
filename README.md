@@ -73,8 +73,12 @@ The [lyric video and Shorts storyboarding skill](skills/storyboard-lyric-videos/
 compares a lyric-led narrative, a single developing visual/effect hook and
 justified alternatives before production. It uses release files, audio and
 visual analysis, and source-labelled audience evidence, then hands off a timed
-board, visual panels and a measurement plan. Every run reviews how the skill
-itself could improve, including planning-only runs. Preview the focused
+board, visual panels and a measurement plan. It also sources the required
+backgrounds, sprites and 3D or rigged-character assets, writes detailed
+Seedance and Nano Banana prompts with supplied references and usage notes,
+and makes a built-in GPT baseline draft for every required generated asset.
+Concept images stay distinct from usable meshes and rigs. Every run reviews
+how the skill itself could improve, including planning-only runs. Preview the focused
 `lyric-video-storyboarding-routes.json` manifest to install the complete skill
 and [illustrated workflow](workflows/lyric-video-storyboarding.md).
 
