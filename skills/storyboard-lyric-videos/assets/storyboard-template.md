@@ -17,6 +17,18 @@ Audio trajectory: {phrase/cue/source times, vocal density, tension/release, grid
 Visual identity: {invariants, permitted variation, relevant motifs, typography and texture}.
 Source/output mapping: {native rate, sample bounds, source offset, repeats or no repeats, target fps; provisional values labelled}.
 
+## Current native capability and analysis plan
+
+Preflight date and receipts: {official release/tag/source; selected FrameRudiments and StemLab distribution/module/import identities; launcher and tagged-doc evidence; relevant gaps}.
+
+| Creative need / shot IDs | Current native feature / exact ID or config / tagged reference | Selected runtime / backend / optional requirements | Saved StemLab evidence / source interval / review state | Required asset/layer inputs | Readiness / smallest remaining check |
+| --- | --- | --- | --- | --- | --- |
+| {purpose} | {renderer, effect, transition, lyrics, temporal or other relevant route} | {actual observed version and host; no inferred support} | {report/schema/hash, clock mapping; or authored non-audio control} | {plate, sprite, mesh/rig, alpha/map/depth, clean text stage} | {documented, installed, host-qualified, previewed, conditional, unavailable or not needed} |
+
+Relevant workflow links: {selected rendering/features, lyric timing, phrase/loop, motion/Fourier and verification routes}.
+New analysis, optional setup or upgrade needed: {specific evidence gap and authorised smallest action, or none; saved evidence reused}.
+Handoff refresh/pins: {when capability evidence must be refreshed; frozen media/project/clock identities}.
+
 ## Treatment comparison
 
 | Candidate | First frame and visual promise | Development and earned ending | Lyric/music/campaign fit | Audience evidence and limits | Feasibility / decision |

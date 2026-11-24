@@ -8,6 +8,7 @@ Type and shot IDs: {background, sprite, model, rigged character, texture, footag
 Narrative/visual-hook purpose: {what this asset contributes}.
 Decision: {reuse, source, generate, or source plus generated concept/texture}; reason: {fit/gap}.
 Required files: {actual image/mesh/rig/material/animation formats and compatible consumer}.
+Native consumer/effect: {current FrameRudiments feature/configuration, exact version/tagged contract, linked StemLab control evidence/source clock, layer order and alpha/depth/overscan requirements; unverified dependencies labelled}.
 Existing/sourced file and evidence: {paths, hashes, author, source page/file URLs, licence and attribution; or exact missing dependency}.
 Current state: {required, sourced, prompts_ready, baseline_generated, baseline_reviewed, production_ready or blocked}.
 
