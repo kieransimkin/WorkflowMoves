@@ -40,6 +40,21 @@ Handoff refresh/pins: {when capability evidence must be refreshed; frozen media/
 Selected: {candidate and reasons}. Strongest alternative: {candidate and what would favour it}.
 If the user fixed the treatment: {source and bounded weakness review instead of unnecessary alternatives}.
 
+## DanceRudiments motion selections
+
+| Selection ID / target asset or control | Actual native pattern, finite recording or rig-motion/profile identity | Fit evidence / source section / grid / descriptor / alternatives | Sampled axes or rig binding / units / sign / amplitude / bounds | Period / rate / phase / origin / playback mode | Review state / remaining check |
+| --- | --- | --- | --- | --- | --- |
+| {ID} | {native ID, version and hash/profile; no invented names} | {match report/schema/hash, window and reason; no fabricated score} | {observed active components mapped to actual target} | {one-shot, looping or finite; reset or continue source phase} | {proposed, sampled, previewed or accepted; exact hold} |
+
+## Song cue / action ledger
+
+| Cue/action/shot IDs and authority | Source time / sample / beat and timing evidence | Output occurrence / time / frame and error | Target and exact action landmark at the cue | Linked motion and binding | Lead-in / onset / landmark / hold / release | Trigger, phase reset, repeat, seek and overlap policy | End state / bounds / review |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| {IDs; canonical or proposed} | {source/hash; known coordinates and uncertainty} | {each cut/repeat occurrence; preserve offset} | {start, peak, contact, reveal, stop or other precise action} | {selection ID; native phase/rate and channels} | {source/output states with durations} | {one-shot/loop/finite; reconstruction; shared-control order} | {lyric clearance; native/visual/listening checks remaining} |
+
+Cue-file authority and proposals: {canonical source retained; new cue proposals separate and awaiting adoption if applicable}.
+Clock/phase notes: {64-pip native mapping, accepted beat map, excerpt/repeat mapping and rounding; no guessed alignment}.
+
 ## Timed board
 
 | Shot/state ID | Source in/out and timing authority | Output in/out (seconds; frames if established) | Exact lyric or instrumental / musical trigger | Picture, action, camera/effect and transition | Attention development / payoff | Text, holds/clears and safe region | Assets, continuity and implementation |
