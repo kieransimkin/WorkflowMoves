@@ -1,3 +1,13 @@
+# WorkflowMoves v0.1.68
+
+Add the lyric-video and Shorts storyboarding skill with contrasting lyric-led
+narrative, single visual/effect hook and hybrid treatments. Release files,
+source-bound audio/visual analysis and scoped audience evidence inform a timed
+board and production handoff. A template, generated concept comparison and
+primary-source evidence guide make the result reviewable. Every run inspects
+the skill itself for justified improvements, even before audience data exists.
+The focused additive installer preserves existing campaign and provider files.
+
 # WorkflowMoves v0.1.67
 
 Use the released StemLab 1.14.1 commands to compare saved word alignments,

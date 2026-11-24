@@ -395,7 +395,10 @@
     "source": "tools/StemLab.ps1",
     "mode": "copy",
     "previous_source": "previous/0.1.24/tools/StemLab.ps1",
-    "previous_sources": ["previous/0.1.65/StemLab-1.6.0.ps1", "previous/0.1.65/StemLab-1.12.1.ps1"]
+    "previous_sources": [
+      "previous/0.1.65/StemLab-1.6.0.ps1",
+      "previous/0.1.65/StemLab-1.12.1.ps1"
+    ]
   },
   {
     "target": "AGENTS.md",
@@ -610,14 +613,18 @@
     "source": "tools/compose_epk_cover.py",
     "mode": "copy",
     "previous_source": "previous/0.1.50/tools/compose_epk_cover.py",
-    "previous_sources": ["previous/0.1.52/tools/compose_epk_cover.py"]
+    "previous_sources": [
+      "previous/0.1.52/tools/compose_epk_cover.py"
+    ]
   },
   {
     "target": "Tools/EPK Campaign Media/epk_cover_player.js",
     "source": "tools/epk_cover_player.js",
     "mode": "copy",
     "previous_source": "previous/0.1.50/tools/epk_cover_player.js",
-    "previous_sources": ["previous/0.1.52/tools/epk_cover_player.js"]
+    "previous_sources": [
+      "previous/0.1.52/tools/epk_cover_player.js"
+    ]
   },
   {
     "target": "Workflows/codex-browser-runtime-recovery.md",
@@ -869,5 +876,65 @@
     "mode": "insert",
     "anchor": "## Regression cases",
     "identity": "## Check YouTube reveal and return before publishing"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/SKILL.md",
+    "source": "skills/storyboard-lyric-videos/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/references/evidence-and-learning.md",
+    "source": "skills/storyboard-lyric-videos/references/evidence-and-learning.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/assets/storyboard-template.md",
+    "source": "skills/storyboard-lyric-videos/assets/storyboard-template.md",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "source": "skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "mode": "copy"
+  },
+  {
+    "target": "skill-source/storyboard-lyric-videos/agents/openai.yaml",
+    "source": "skills/storyboard-lyric-videos/agents/openai.yaml",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/SKILL.md",
+    "source": "skills/storyboard-lyric-videos/SKILL.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/references/evidence-and-learning.md",
+    "source": "skills/storyboard-lyric-videos/references/evidence-and-learning.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/assets/storyboard-template.md",
+    "source": "skills/storyboard-lyric-videos/assets/storyboard-template.md",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "source": "skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "mode": "copy"
+  },
+  {
+    "target": ".agents/skills/storyboard-lyric-videos/agents/openai.yaml",
+    "source": "skills/storyboard-lyric-videos/agents/openai.yaml",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/lyric-video-storyboarding.md",
+    "source": "workflows/lyric-video-storyboarding.md",
+    "mode": "copy"
+  },
+  {
+    "target": "Workflows/media/storyboard-treatment-comparison.svg",
+    "source": "skills/storyboard-lyric-videos/assets/treatment-comparison.svg",
+    "mode": "copy"
   }
 ]

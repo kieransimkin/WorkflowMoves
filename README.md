@@ -69,6 +69,15 @@ Preview `python install.py --root WORKSPACE --routes hashtag-routes.json --check
 
 ## Review, revise and verify music videos
 
+The [lyric video and Shorts storyboarding skill](skills/storyboard-lyric-videos/SKILL.md)
+compares a lyric-led narrative, a single developing visual/effect hook and
+justified alternatives before production. It uses release files, audio and
+visual analysis, and source-labelled audience evidence, then hands off a timed
+board, visual panels and a measurement plan. Every run reviews how the skill
+itself could improve, including planning-only runs. Preview the focused
+`lyric-video-storyboarding-routes.json` manifest to install the complete skill
+and [illustrated workflow](workflows/lyric-video-storyboarding.md).
+
 [Choose FrameRudiments rendering and visualisation features](workflows/framerudiments-rendering-features.md)
 maps the installed renderer, source signal and effect stage to the intended
 picture. It covers native motion, spectral and 3D views, lyrics, layered
